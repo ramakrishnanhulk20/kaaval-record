@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789212432040,
+  "generatedAt": 1789214367049,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 6,
-    "decisions": 34,
-    "marks": 34
+    "decisions": 36,
+    "marks": 36
   },
   "bundle": {
     "source": {
@@ -152,7 +152,7 @@
           "spreadAtEntryBps": 4.7148582327859945,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 18510233,
-          "nextEventMinutes": null,
+          "nextEventMinutes": 54,
           "bookShareAtEntry": 0.00125023803859338,
           "usualSpreadBps": 4.7148582327859945,
           "stop": {
@@ -162,17 +162,18 @@
           }
         },
         "scores": {
-          "entry": 4.95,
+          "entry": 3.72,
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
           "reasoning": 2,
-          "total": 83.25,
+          "total": 77.1,
           "letter": "B",
           "evidence": [
             "entry: price was 0.54 percent from the last regular close",
             "entry: spread was 4.7 bps against a usual 4.7 bps, 1.00 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: the stop at 679.42 was honoured",
             "cost: 0.4502 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
@@ -684,6 +685,14 @@
       {
         "ts": 1789212090651,
         "equity": 9996.015298205259
+      },
+      {
+        "ts": 1789213093039,
+        "equity": 9996.004550205258
+      },
+      {
+        "ts": 1789214065077,
+        "equity": 9996.10711020526
       }
     ]
   },
@@ -693,7 +702,24 @@
       "judgeReason": "no note"
     },
     "ledger:9>open": {
-      "eventsNearEntry": [],
+      "eventsNearEntry": [
+        {
+          "ts": 1789105500000,
+          "title": "VOO vs . QQQ : Which Popular ETF Is Right for Your Portfolio in 2026 ? (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789105500000,
+          "title": "How to Research Any ETF in Five Minutes (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789109100000,
+          "title": "History Says the Stock Market Has a 95 % Chance of Gains Over the Next Year : 3 Top Index ETFs to Buy Before November (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789118100000,
+          "title": "What History Reveals When the S & P 500 Sends Its Rarest Warning Signal (gdelt/finance.yahoo.com)"
+        }
+      ],
       "judgeReason": "no note"
     },
     "ledger:12>ledger:28": {

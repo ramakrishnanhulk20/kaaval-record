@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789212508097,
+  "generatedAt": 1789214442588,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 15,
-    "decisions": 34,
-    "marks": 34
+    "fills": 16,
+    "decisions": 37,
+    "marks": 37
   },
   "bundle": {
     "source": {
@@ -17,7 +17,7 @@
     },
     "range": {
       "fromTs": 1789204114109,
-      "toTs": 1789211057613
+      "toTs": 1789212992185
     },
     "graded": [
       {
@@ -722,8 +722,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 1,
-          "total": 72.65,
+          "reasoning": 2,
+          "total": 75.65,
           "letter": "B",
           "evidence": [
             "entry: price was 0.43 percent from the last regular close",
@@ -733,7 +733,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 212.65 was honoured",
             "cost: 0.9773 USDT of friction is 90.1 percent of the 1.0849 USDT gross",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -940,6 +940,87 @@
             "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
+      },
+      {
+        "trade": {
+          "id": "ledger:250>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "TSLAUSDT",
+          "side": "short",
+          "entryTs": 1789212992185,
+          "exitTs": null,
+          "entryPrice": 365.697701880734,
+          "exitPrice": null,
+          "qty": 1.09,
+          "grossPnl": null,
+          "feesUsdt": 0.23916629703,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.220383037628603,
+          "fills": [
+            {
+              "id": "ledger:250",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789212992185,
+              "category": "USDT-FUTURES",
+              "symbol": "TSLAUSDT",
+              "side": "sell",
+              "qty": 1.09,
+              "price": 365.697701880734,
+              "notionalUsdt": 398.61049505000005,
+              "feeUsdt": 0.23916629703,
+              "slippageBps": 5.528781614266305,
+              "bookHash": "c73a1ae584779d19b60130e5af2cd97910552678e94f8e567916c73098af7009",
+              "decisionId": "decision-246",
+              "rationale": "the NYSE stays shut for 49.89 hours, over the 24 hour line, so carry 0.5 of the RTSLAUSDT delta short in TSLAUSDT, 399.70 USDT",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "the NYSE stays shut for 49.89 hours, over the 24 hour line, so carry 0.5 of the RTSLAUSDT delta short in TSLAUSDT, 399.70 USDT",
+          "equityAtEntry": 9992.585074680263
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.021252087066891488,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 1.0931351115003407,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 179607815,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.005539251202559438,
+          "usualSpreadBps": 1.0931351115003407,
+          "stop": {
+            "existed": true,
+            "price": 373.01165591834865,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 3,
+          "total": 86.5,
+          "letter": "A",
+          "evidence": [
+            "entry: price was 0.02 percent from the last regular close",
+            "entry: spread was 1.1 bps against a usual 1.1 bps, 1.00 times",
+            "entry: 07:36 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 398.61 USDT is 3.99 percent of 9992.59 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.6 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 373.01 was honoured",
+            "cost: 0.4595 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 3 out of 5"
+          ]
+        }
       }
     ],
     "patterns": [
@@ -966,10 +1047,11 @@
           "ledger:196>ledger:212",
           "ledger:205>ledger:212",
           "ledger:223>ledger:234",
-          "ledger:226>ledger:237"
+          "ledger:226>ledger:237",
+          "ledger:250>open"
         ],
         "evidence": [
-          "5.1861 USDT of fees, slippage and funding against 4.2905 USDT of gross, 120.9 percent"
+          "5.6456 USDT of fees, slippage and funding against 4.2905 USDT of gross, 131.6 percent"
         ]
       }
     ],
@@ -1123,6 +1205,18 @@
       {
         "ts": 1789212090653,
         "equity": 9992.585074680263
+      },
+      {
+        "ts": 1789213093043,
+        "equity": 9992.103603433234
+      },
+      {
+        "ts": 1789214065078,
+        "equity": 9992.038203433232
+      },
+      {
+        "ts": 1789214223063,
+        "equity": 9992.043653433233
       }
     ]
   },
@@ -1232,7 +1326,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The note cites a concrete observable cause (a mispricing band vs NVDAUSDT) satisfying criteria 1 and 2, but the trade was closed after only 17 minutes at a small loss with no evidence the convergence thesis played out or was invalidated, so the exit doesn't match a mean-reversion horizon and no skill/failure claim is made either way, making this a weak, ambiguous, quickly-abandoned execution of the stated thesis."
+      "judgeReason": "judge reply invalid"
     },
     "ledger:223>ledger:234": {
       "eventsNearEntry": [
@@ -1267,6 +1361,10 @@
         }
       ],
       "judgeReason": "judge reply invalid"
+    },
+    "ledger:250>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names a specific observable cause (weekend NYSE closure requiring proxy delta hedge) that was present at entry, but since the trade is still open with no exit, criteria 3 and 4 cannot be assessed as matched or mismatched, capping the score."
     }
   },
   "detectorsRun": [
