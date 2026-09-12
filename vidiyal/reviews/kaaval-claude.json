@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789208475835,
+  "generatedAt": 1789212432040,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 6,
-    "decisions": 30,
-    "marks": 30
+    "decisions": 34,
+    "marks": 34
   },
   "bundle": {
     "source": {
@@ -74,7 +74,7 @@
           "msToNextOpenAtEntry": 18510857,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00035242617923211106,
-          "usualSpreadBps": 26.284194215298392,
+          "usualSpreadBps": 26.510649968003662,
           "stop": {
             "existed": true,
             "price": 213.40965150000002,
@@ -91,7 +91,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.76 percent from the last regular close",
-            "entry: spread was 1.8 bps against a usual 26.3 bps, 0.07 times",
+            "entry: spread was 1.8 bps against a usual 26.5 bps, 0.07 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 213.41 was honoured",
@@ -152,7 +152,7 @@
           "spreadAtEntryBps": 4.7148582327859945,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 18510233,
-          "nextEventMinutes": 54,
+          "nextEventMinutes": null,
           "bookShareAtEntry": 0.00125023803859338,
           "usualSpreadBps": 4.7148582327859945,
           "stop": {
@@ -162,18 +162,17 @@
           }
         },
         "scores": {
-          "entry": 3.72,
+          "entry": 4.95,
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
           "reasoning": 2,
-          "total": 77.1,
+          "total": 83.25,
           "letter": "B",
           "evidence": [
             "entry: price was 0.54 percent from the last regular close",
             "entry: spread was 4.7 bps against a usual 4.7 bps, 1.00 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: the stop at 679.42 was honoured",
             "cost: 0.4502 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
@@ -496,7 +495,7 @@
           "msToNextOpenAtEntry": 187481393,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0005980605552894871,
-          "usualSpreadBps": 0.4557781272072608,
+          "usualSpreadBps": 0.4558300724709762,
           "stop": {
             "existed": true,
             "price": 223.67610600000003,
@@ -669,6 +668,22 @@
       {
         "ts": 1789208187607,
         "equity": 9996.005994205258
+      },
+      {
+        "ts": 1789209198134,
+        "equity": 9996.094170205257
+      },
+      {
+        "ts": 1789210156605,
+        "equity": 9995.910706205259
+      },
+      {
+        "ts": 1789211129444,
+        "equity": 9995.917390205259
+      },
+      {
+        "ts": 1789212090651,
+        "equity": 9996.015298205259
       }
     ]
   },
@@ -678,24 +693,7 @@
       "judgeReason": "no note"
     },
     "ledger:9>open": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789105500000,
-          "title": "VOO vs . QQQ : Which Popular ETF Is Right for Your Portfolio in 2026 ? (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789105500000,
-          "title": "How to Research Any ETF in Five Minutes (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789109100000,
-          "title": "History Says the Stock Market Has a 95 % Chance of Gains Over the Next Year : 3 Top Index ETFs to Buy Before November (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789118100000,
-          "title": "What History Reveals When the S & P 500 Sends Its Rarest Warning Signal (gdelt/finance.yahoo.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "no note"
     },
     "ledger:12>ledger:28": {
