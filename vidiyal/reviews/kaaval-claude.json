@@ -1,18 +1,18 @@
 {
-  "generatedAt": 1789201381331,
+  "generatedAt": 1789202712482,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
-  "publicKeyPath": "D:\\Projects\\Bitget\\kaaval\\data\\secrets\\ledger-key.pub.hex",
+  "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 5,
-    "decisions": 22,
-    "marks": 22
+    "decisions": 24,
+    "marks": 24
   },
   "bundle": {
     "source": {
       "kind": "ledger",
-      "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+      "dir": "../kaaval/data/state/ledger",
       "brain": "claude"
     },
     "range": {
@@ -554,6 +554,14 @@
       {
         "ts": 1789200135767,
         "equity": 9996.40176132386
+      },
+      {
+        "ts": 1789201195146,
+        "equity": 9996.06183732386
+      },
+      {
+        "ts": 1789202214615,
+        "equity": 9996.17514532386
       }
     ]
   },
@@ -575,7 +583,20 @@
       "judgeReason": "no note"
     },
     "ledger:15>open": {
-      "eventsNearEntry": [],
+      "eventsNearEntry": [
+        {
+          "ts": 1789094700000,
+          "title": "Apple Is Raising Streaming Prices and the Next iPhone Could Cost You $500 More (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789105500000,
+          "title": "VOO vs . QQQ : Which Popular ETF Is Right for Your Portfolio in 2026 ? (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789105500000,
+          "title": "How to Research Any ETF in Five Minutes (gdelt/finance.yahoo.com)"
+        }
+      ],
       "judgeReason": "no note"
     }
   },
