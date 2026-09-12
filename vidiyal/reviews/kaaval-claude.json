@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789204558964,
+  "generatedAt": 1789208475835,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 5,
-    "decisions": 26,
-    "marks": 26
+    "fills": 6,
+    "decisions": 30,
+    "marks": 30
   },
   "bundle": {
     "source": {
@@ -17,7 +17,7 @@
     },
     "range": {
       "fromTs": 1789114889143,
-      "toTs": 1789115151618
+      "toTs": 1789205118607
     },
     "graded": [
       {
@@ -72,9 +72,9 @@
           "spreadAtEntryBps": 1.819174094960526,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 18510857,
-          "nextEventMinutes": 54,
+          "nextEventMinutes": null,
           "bookShareAtEntry": 0.00035242617923211106,
-          "usualSpreadBps": 1.819174094960526,
+          "usualSpreadBps": 26.284194215298392,
           "stop": {
             "existed": true,
             "price": 213.40965150000002,
@@ -82,18 +82,17 @@
           }
         },
         "scores": {
-          "entry": 3.54,
+          "entry": 4.72,
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
           "reasoning": 2,
-          "total": 76.2,
+          "total": 82.1,
           "letter": "B",
           "evidence": [
             "entry: price was 0.76 percent from the last regular close",
-            "entry: spread was 1.8 bps against a usual 1.8 bps, 1.00 times",
+            "entry: spread was 1.8 bps against a usual 26.3 bps, 0.07 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 213.41 was honoured",
             "cost: 0.5753 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
@@ -442,6 +441,87 @@
             "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
+      },
+      {
+        "trade": {
+          "id": "ledger:166>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "claude"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "NVDAUSDT",
+          "side": "short",
+          "entryTs": 1789205118607,
+          "exitTs": null,
+          "entryPrice": 219.29030000000003,
+          "exitPrice": null,
+          "qty": 0.77,
+          "grossPnl": null,
+          "feesUsdt": 0.10131211860000001,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.08442676549998097,
+          "fills": [
+            {
+              "id": "ledger:166",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789205118607,
+              "category": "USDT-FUTURES",
+              "symbol": "NVDAUSDT",
+              "side": "sell",
+              "qty": 0.77,
+              "price": 219.29030000000003,
+              "notionalUsdt": 168.85353100000003,
+              "feeUsdt": 0.10131211860000001,
+              "slippageBps": 4.999999999998873,
+              "bookHash": "c00e2817023b59316604b2ef2d87a00b390b5db7ea419cbd0ed77725007e91ec",
+              "decisionId": "decision-153",
+              "rationale": "Weekend, NYSE closed with no news; rToken spreads are wide (16-30bps) so no new entries. Holding existing NVDA rToken position unchanged since it's under the 5% hedge trigger and divergence is inside tolerance.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Weekend, NYSE closed with no news; rToken spreads are wide (16-30bps) so no new entries. Holding existing NVDA rToken position unchanged since it's under the 5% hedge trigger and divergence is inside tolerance.",
+          "equityAtEntry": 9996.58479732386
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.3662867865806313,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 0.4557781272072608,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 187481393,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.0005980605552894871,
+          "usualSpreadBps": 0.4557781272072608,
+          "stop": {
+            "existed": true,
+            "price": 223.67610600000003,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 83.5,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.37 percent from the last regular close",
+            "entry: spread was 0.5 bps against a usual 0.5 bps, 1.00 times",
+            "entry: 05:25 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 168.85 USDT is 1.69 percent of 9996.58 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 223.68 was honoured",
+            "cost: 0.1857 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
       }
     ],
     "patterns": [
@@ -453,10 +533,11 @@
           "ledger:9>open",
           "ledger:12>ledger:28",
           "ledger:12>open",
-          "ledger:15>open"
+          "ledger:15>open",
+          "ledger:166>open"
         ],
         "evidence": [
-          "1.9765 USDT of fees, slippage and funding against 0.0491 USDT of gross, 4025.9 percent"
+          "2.1622 USDT of fees, slippage and funding against 0.0491 USDT of gross, 4404.2 percent"
         ]
       }
     ],
@@ -572,21 +653,28 @@
       {
         "ts": 1789204217478,
         "equity": 9996.58479732386
+      },
+      {
+        "ts": 1789205206099,
+        "equity": 9995.863490205258
+      },
+      {
+        "ts": 1789206178793,
+        "equity": 9995.947602205259
+      },
+      {
+        "ts": 1789207161479,
+        "equity": 9996.008614205259
+      },
+      {
+        "ts": 1789208187607,
+        "equity": 9996.005994205258
       }
     ]
   },
   "tradeNotes": {
     "ledger:6>open": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789112700000,
-          "title": "Nvidia Chinese Rival Enflame Soars Over 220 % in Shanghai Debut As Investors Bet on Domestic AI Chips (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789118100000,
-          "title": "Nvidia CEO Signals Strong Momentum for Shareholders (gdelt/fool.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "no note"
     },
     "ledger:9>open": {
@@ -619,21 +707,25 @@
       "judgeReason": "no note"
     },
     "ledger:15>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "no note"
+    },
+    "ledger:166>open": {
       "eventsNearEntry": [
         {
-          "ts": 1789094700000,
-          "title": "Apple Is Raising Streaming Prices and the Next iPhone Could Cost You $500 More (gdelt/finance.yahoo.com)"
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
         },
         {
-          "ts": 1789105500000,
-          "title": "VOO vs . QQQ : Which Popular ETF Is Right for Your Portfolio in 2026 ? (gdelt/finance.yahoo.com)"
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
         },
         {
-          "ts": 1789105500000,
-          "title": "How to Research Any ETF in Five Minutes (gdelt/finance.yahoo.com)"
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "no note"
+      "judgeReason": "judge reply invalid"
     }
   },
   "detectorsRun": [

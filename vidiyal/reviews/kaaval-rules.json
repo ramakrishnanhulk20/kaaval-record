@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789204619922,
+  "generatedAt": 1789208604301,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 2,
-    "decisions": 26,
-    "marks": 26
+    "fills": 9,
+    "decisions": 30,
+    "marks": 30
   },
   "bundle": {
     "source": {
@@ -17,12 +17,12 @@
     },
     "range": {
       "fromTs": 1789204114109,
-      "toTs": 1789204114206
+      "toTs": 1789208062344
     },
     "graded": [
       {
         "trade": {
-          "id": "ledger:161>open",
+          "id": "ledger:161>ledger:177",
           "source": {
             "kind": "ledger",
             "dir": "../kaaval/data/state/ledger",
@@ -32,14 +32,14 @@
           "symbol": "GOOGLUSDT",
           "side": "short",
           "entryTs": 1789204114109,
-          "exitTs": null,
+          "exitTs": 1789205119462,
           "entryPrice": 339.3345213675214,
-          "exitPrice": null,
+          "exitPrice": 339.87805923076917,
           "qty": 1.17,
-          "grossPnl": null,
-          "feesUsdt": 0.23821283399999998,
+          "grossPnl": -0.6359392999998834,
+          "feesUsdt": 0.47680723157999994,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.20520388377941062,
+          "slippageUsdt": 0.4136423829400939,
           "fills": [
             {
               "id": "ledger:161",
@@ -61,6 +61,27 @@
               "decisionId": "decision-155",
               "rationale": "the NYSE stays shut for 52.36 hours, over the 24 hour line, so carry 0.5 of the RGOOGLUSDT delta short in GOOGLUSDT, 400.00 USDT",
               "note": "order source: brain"
+            },
+            {
+              "id": "ledger:177",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789205119462,
+              "category": "USDT-FUTURES",
+              "symbol": "GOOGLUSDT",
+              "side": "buy",
+              "qty": 1.17,
+              "price": 339.87805923076917,
+              "notionalUsdt": 397.6573292999999,
+              "feeUsdt": 0.23859439757999992,
+              "slippageBps": 5.241661194264912,
+              "bookHash": "697c07bcfa565059d96ee54a092f0caa4f8a0cb4a9dcf56c3031d64a8a626c92",
+              "decisionId": "decision-168",
+              "rationale": "no basis signal and no hedge to carry for GOOGLUSDT, so close the 397.43 USDT short",
+              "note": "order source: brain"
             }
           ],
           "rationale": "the NYSE stays shut for 52.36 hours, over the 24 hour line, so carry 0.5 of the RGOOGLUSDT delta short in GOOGLUSDT, 400.00 USDT",
@@ -68,13 +89,13 @@
         },
         "context": {
           "divergenceAtEntryPct": 0.16663853573853124,
-          "divergenceAtExitPct": null,
+          "divergenceAtExitPct": 0.3270830447705481,
           "spreadAtEntryBps": 0.8835873647015554,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 188485891,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00135860646792756,
-          "usualSpreadBps": 0.8835873647015554,
+          "usualSpreadBps": 0.8833792689968278,
           "stop": {
             "existed": true,
             "price": 346.12121179487184,
@@ -85,10 +106,10 @@
           "entry": 5,
           "sizing": 5,
           "exit": 2.5,
-          "cost": 2.5,
+          "cost": 0,
           "reasoning": 2,
-          "total": 71,
-          "letter": "B",
+          "total": 63.5,
+          "letter": "C",
           "evidence": [
             "entry: price was 0.17 percent from the last regular close",
             "entry: spread was 0.9 bps against a usual 0.9 bps, 1.00 times",
@@ -96,14 +117,14 @@
             "sizing: 397.02 USDT is 3.97 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
-            "cost: 0.4434 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "cost: 0.8904 USDT of friction against a gross of 0.6359 USDT, so friction was the whole trade",
             "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
       {
         "trade": {
-          "id": "ledger:158>open",
+          "id": "ledger:158>ledger:174",
           "source": {
             "kind": "ledger",
             "dir": "../kaaval/data/state/ledger",
@@ -113,14 +134,14 @@
           "symbol": "RGOOGLUSDT",
           "side": "long",
           "entryTs": 1789204114206,
-          "exitTs": null,
+          "exitTs": 1789205119446,
           "entryPrice": 339.02943,
-          "exitPrice": null,
-          "qty": 0.1491,
-          "grossPnl": null,
-          "feesUsdt": 0.050549288013,
+          "exitPrice": 337.99091999999996,
+          "qty": 0.05310000000000001,
+          "grossPnl": -0.05514488100000164,
+          "feesUsdt": 0.03594978058500001,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.02527464400649658,
+          "slippageUsdt": 0.01797489029250223,
           "fills": [
             {
               "id": "ledger:158",
@@ -142,6 +163,27 @@
               "decisionId": "decision-155",
               "rationale": "RGOOGLUSDT at 338.15 against GOOGLUSDT at 339.53 is -40.64 basis points below, past the 40 basis point band, so hold 800.00 USDT, 8 percent of 10000.00 USDT equity",
               "note": "order source: brain"
+            },
+            {
+              "id": "ledger:174",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789205119446,
+              "category": "SPOT",
+              "symbol": "RGOOGLUSDT",
+              "side": "sell",
+              "qty": 0.05310000000000001,
+              "price": 337.99091999999996,
+              "notionalUsdt": 17.947317852,
+              "feeUsdt": 0.017947317852000003,
+              "slippageBps": 5.00000000000192,
+              "bookHash": "a197576666984035b8eddfc379fd9876122f81d949d3d753f5dc63719ecb2117",
+              "decisionId": "decision-168",
+              "rationale": "RGOOGLUSDT at 338.84 against GOOGLUSDT at 339.66 is -24.14 basis points below, inside or above the 40 basis point band, so the reason for holding 50.47 USDT is gone",
+              "note": "order source: brain"
             }
           ],
           "rationale": "RGOOGLUSDT at 338.15 against GOOGLUSDT at 339.53 is -40.64 basis points below, past the 40 basis point band, so hold 800.00 USDT, 8 percent of 10000.00 USDT equity",
@@ -149,12 +191,12 @@
         },
         "context": {
           "divergenceAtEntryPct": 0.1564047267355955,
-          "divergenceAtExitPct": null,
+          "divergenceAtExitPct": -0.15039290989661444,
           "spreadAtEntryBps": 20.678857345425207,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 188485794,
           "nextEventMinutes": null,
-          "bookShareAtEntry": 0.00011008471978190858,
+          "bookShareAtEntry": 0.00003920522213560929,
           "usualSpreadBps": 20.678857345425207,
           "stop": {
             "existed": true,
@@ -166,18 +208,444 @@
           "entry": 5,
           "sizing": 5,
           "exit": 2.5,
-          "cost": 2.5,
+          "cost": 0,
           "reasoning": 2,
-          "total": 71,
+          "total": 63.5,
+          "letter": "C",
+          "evidence": [
+            "entry: price was 0.16 percent from the last regular close",
+            "entry: spread was 20.7 bps against a usual 20.7 bps, 1.00 times",
+            "entry: 05:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 18.00 USDT is 0.18 percent of 10000.00 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: nothing in the record measures this, so it scores a neutral 2.5",
+            "cost: 0.0539 USDT of friction is 97.8 percent of the 0.0551 USDT gross",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:158>ledger:187",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "SPOT",
+          "symbol": "RGOOGLUSDT",
+          "side": "long",
+          "entryTs": 1789204114206,
+          "exitTs": 1789206107758,
+          "entryPrice": 339.02943,
+          "exitPrice": 338.69057000000004,
+          "qty": 0.096,
+          "grossPnl": -0.0325305599999956,
+          "feesUsdt": 0.06506112,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.0325305599999956,
+          "fills": [
+            {
+              "id": "ledger:158",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789204114206,
+              "category": "SPOT",
+              "symbol": "RGOOGLUSDT",
+              "side": "buy",
+              "qty": 0.1491,
+              "price": 339.02943,
+              "notionalUsdt": 50.549288013,
+              "feeUsdt": 0.050549288013,
+              "slippageBps": 4.999999999999323,
+              "bookHash": "6d52d197c543398a890dcab0e9e8ad9f4dfee819db96f5b0d46377d2f973f240",
+              "decisionId": "decision-155",
+              "rationale": "RGOOGLUSDT at 338.15 against GOOGLUSDT at 339.53 is -40.64 basis points below, past the 40 basis point band, so hold 800.00 USDT, 8 percent of 10000.00 USDT equity",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:187",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789206107758,
+              "category": "SPOT",
+              "symbol": "RGOOGLUSDT",
+              "side": "sell",
+              "qty": 0.096,
+              "price": 338.69057000000004,
+              "notionalUsdt": 32.51429472,
+              "feeUsdt": 0.03251429472,
+              "slippageBps": 4.999999999999323,
+              "bookHash": "e92c88b48c368fb59fd0a9ff3d71f65e2a8a6c6668cc942cf0d202e3bac3ea8e",
+              "decisionId": "decision-181",
+              "rationale": "RGOOGLUSDT at 338.99 against GOOGLUSDT at 339.69 is -20.61 basis points below, inside or above the 40 basis point band, so the reason for holding 32.54 USDT is gone",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "RGOOGLUSDT at 338.15 against GOOGLUSDT at 339.53 is -40.64 basis points below, past the 40 basis point band, so hold 800.00 USDT, 8 percent of 10000.00 USDT equity",
+          "equityAtEntry": 10000
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.1564047267355955,
+          "divergenceAtExitPct": 0.0562983751846489,
+          "spreadAtEntryBps": 20.678857345425207,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 188485794,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00007087949764629929,
+          "usualSpreadBps": 20.678857345425207,
+          "stop": {
+            "existed": true,
+            "price": 328.8585471,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 0,
+          "reasoning": 2,
+          "total": 76,
           "letter": "B",
           "evidence": [
             "entry: price was 0.16 percent from the last regular close",
             "entry: spread was 20.7 bps against a usual 20.7 bps, 1.00 times",
             "entry: 05:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "sizing: 50.55 USDT is 0.51 percent of 10000.00 USDT equity against a 10 percent cap",
+            "sizing: 32.55 USDT is 0.33 percent of 10000.00 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 328.86 was honoured",
+            "cost: 0.0976 USDT of friction against a gross of 0.0325 USDT, so friction was the whole trade",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:171>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "NVDAUSDT",
+          "side": "short",
+          "entryTs": 1789205118607,
+          "exitTs": null,
+          "entryPrice": 219.29030000000003,
+          "exitPrice": null,
+          "qty": 1.82,
+          "grossPnl": null,
+          "feesUsdt": 0.23946500760000003,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.19955417299995504,
+          "fills": [
+            {
+              "id": "ledger:171",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789205118607,
+              "category": "USDT-FUTURES",
+              "symbol": "NVDAUSDT",
+              "side": "sell",
+              "qty": 1.82,
+              "price": 219.29030000000003,
+              "notionalUsdt": 399.1083460000001,
+              "feeUsdt": 0.23946500760000003,
+              "slippageBps": 4.999999999998873,
+              "bookHash": "c00e2817023b59316604b2ef2d87a00b390b5db7ea419cbd0ed77725007e91ec",
+              "decisionId": "decision-168",
+              "rationale": "the NYSE stays shut for 52.08 hours, over the 24 hour line, so carry 0.5 of the RNVDAUSDT delta short in NVDAUSDT, 399.97 USDT",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "the NYSE stays shut for 52.08 hours, over the 24 hour line, so carry 0.5 of the RNVDAUSDT delta short in NVDAUSDT, 399.97 USDT",
+          "equityAtEntry": 9999.410930864988
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.3662867865806313,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 0.4557781272072608,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 187481393,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.001413597676138788,
+          "usualSpreadBps": 0.4557781272072608,
+          "stop": {
+            "existed": true,
+            "price": 223.67610600000003,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 83.5,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.37 percent from the last regular close",
+            "entry: spread was 0.5 bps against a usual 0.5 bps, 1.00 times",
+            "entry: 05:25 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 399.11 USDT is 3.99 percent of 9999.41 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 223.68 was honoured",
+            "cost: 0.4390 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:184>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "SPOT",
+          "symbol": "RNVDAUSDT",
+          "side": "long",
+          "entryTs": 1789206106931,
+          "exitTs": null,
+          "entryPrice": 219.139515,
+          "exitPrice": null,
+          "qty": 0.2277,
+          "grossPnl": null,
+          "feesUsdt": 0.0498980675655,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.02494903378274717,
+          "fills": [
+            {
+              "id": "ledger:184",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789206106931,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "buy",
+              "qty": 0.2277,
+              "price": 219.139515,
+              "notionalUsdt": 49.8980675655,
+              "feeUsdt": 0.0498980675655,
+              "slippageBps": 4.999999999999433,
+              "bookHash": "e9b96e16b50fef285c8857a57ec5a381087d22db66a58f585d86c5dde9f2f2ae",
+              "decisionId": "decision-181",
+              "rationale": "RNVDAUSDT at 218.46 against NVDAUSDT at 219.34 is -40.12 basis points below, past the 40 basis point band, so hold 799.87 USDT, 8 percent of 9998.36 USDT equity",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "RNVDAUSDT at 218.46 against NVDAUSDT at 219.34 is -40.12 basis points below, past the 40 basis point band, so hold 799.87 USDT, 8 percent of 9998.36 USDT equity",
+          "equityAtEntry": 9998.266007693954
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.38916807916074797,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 26.057738462593118,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 186493069,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.000051619981981669226,
+          "usualSpreadBps": 26.284194215298392,
+          "stop": {
+            "existed": true,
+            "price": 212.56532954999997,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 83.5,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.39 percent from the last regular close",
+            "entry: spread was 26.1 bps against a usual 26.3 bps, 0.99 times",
+            "entry: 05:41 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 49.90 USDT is 0.50 percent of 9998.27 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 212.57 was honoured",
+            "cost: 0.0748 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:196>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "SPOT",
+          "symbol": "RNVDAUSDT",
+          "side": "long",
+          "entryTs": 1789207079633,
+          "exitTs": null,
+          "entryPrice": 219.179535,
+          "exitPrice": null,
+          "qty": 0.9614,
+          "grossPnl": null,
+          "feesUsdt": 0.21071920494899998,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.10535960247449418,
+          "fills": [
+            {
+              "id": "ledger:196",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789207079633,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "buy",
+              "qty": 0.9614,
+              "price": 219.179535,
+              "notionalUsdt": 210.719204949,
+              "feeUsdt": 0.21071920494899998,
+              "slippageBps": 4.999999999999724,
+              "bookHash": "caf0a9cfea69c0c13a5ad65b511a1e0b08d14a1a08d1cc9d7e73df16eab9ea24",
+              "decisionId": "decision-193",
+              "rationale": "RNVDAUSDT at 218.49 against NVDAUSDT at 219.37 is -40.11 basis points below, past the 40 basis point band, so hold 799.85 USDT, 8 percent of 9998.17 USDT equity",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "RNVDAUSDT at 218.49 against NVDAUSDT at 219.37 is -40.11 basis points below, past the 40 basis point band, so hold 799.85 USDT, 8 percent of 9998.17 USDT equity",
+          "equityAtEntry": 9998.165218986167
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.4075014888451121,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 26.510649968003662,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 185520367,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00021499338030150583,
+          "usualSpreadBps": 26.284194215298392,
+          "stop": {
+            "existed": true,
+            "price": 212.60414895,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.99,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 83.45,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.41 percent from the last regular close",
+            "entry: spread was 26.5 bps against a usual 26.3 bps, 1.01 times",
+            "entry: 05:57 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 210.72 USDT is 2.11 percent of 9998.17 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 212.60 was honoured",
+            "cost: 0.3161 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:205>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "SPOT",
+          "symbol": "RNVDAUSDT",
+          "side": "long",
+          "entryTs": 1789208062344,
+          "exitTs": null,
+          "entryPrice": 219.22956,
+          "exitPrice": null,
+          "qty": 1.4885,
+          "grossPnl": null,
+          "feesUsdt": 0.32632320006,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.16316160002998162,
+          "fills": [
+            {
+              "id": "ledger:205",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789208062344,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "buy",
+              "qty": 1.4885,
+              "price": 219.22956,
+              "notionalUsdt": 326.32320006,
+              "feeUsdt": 0.32632320006,
+              "slippageBps": 4.999999999999438,
+              "bookHash": "6fcdb00e020e7580e7789748c427a3d5ddbec883c13c5cd6d614fb4170415afb",
+              "decisionId": "decision-202",
+              "rationale": "RNVDAUSDT at 218.49 against NVDAUSDT at 219.43 is -42.84 basis points below, past the 40 basis point band, so hold 799.80 USDT, 8 percent of 9997.50 USDT equity",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "RNVDAUSDT at 218.49 against NVDAUSDT at 219.43 is -42.84 basis points below, past the 40 basis point band, so hold 799.80 USDT, 8 percent of 9997.50 USDT equity",
+          "equityAtEntry": 9997.57835633222
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.4304182509505704,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 28.79276067731521,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 184537656,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.0003286253326411287,
+          "usualSpreadBps": 26.284194215298392,
+          "stop": {
+            "existed": true,
+            "price": 212.65267319999998,
+            "honoured": null
+          }
+        },
+        "scores": {
+          "entry": 4.92,
+          "sizing": 5,
+          "exit": 2.5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 70.6,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.43 percent from the last regular close",
+            "entry: spread was 28.8 bps against a usual 26.3 bps, 1.10 times",
+            "entry: 06:14 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 326.32 USDT is 3.26 percent of 9997.58 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
-            "cost: 0.0758 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "cost: 0.4895 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
             "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
@@ -188,11 +656,16 @@
         "pattern": "fee-bleed",
         "description": "Friction took more than a fifth of everything the period moved",
         "trades": [
-          "ledger:161>open",
-          "ledger:158>open"
+          "ledger:161>ledger:177",
+          "ledger:158>ledger:174",
+          "ledger:158>ledger:187",
+          "ledger:171>open",
+          "ledger:184>open",
+          "ledger:196>open",
+          "ledger:205>open"
         ],
         "evidence": [
-          "0.5192 USDT of fees, slippage and funding with no closed gross to set against it"
+          "2.3614 USDT of fees, slippage and funding against 0.7236 USDT of gross, 326.3 percent"
         ]
       }
     ],
@@ -308,17 +781,92 @@
       {
         "ts": 1789204217489,
         "equity": 9999.410930864988
+      },
+      {
+        "ts": 1789205206109,
+        "equity": 9998.266007693954
+      },
+      {
+        "ts": 1789206178800,
+        "equity": 9998.165218986167
+      },
+      {
+        "ts": 1789207161483,
+        "equity": 9997.57835633222
+      },
+      {
+        "ts": 1789208187612,
+        "equity": 9996.540603072159
       }
     ]
   },
   "tradeNotes": {
-    "ledger:161>open": {
+    "ledger:161>ledger:177": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (weekend NYSE closure creating a stale reference-price divergence to carry a delta hedge), which was observable at entry, but since the trade is still open with no exit, the horizon match (criterion 3) and any outcome-skill claim (criterion 4) cannot be assessed, so it's capped in the middle."
+      "judgeReason": "judge reply invalid"
     },
-    "ledger:158>open": {
+    "ledger:158>ledger:174": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a concrete cause (mispricing vs GOOGLUSDT beyond a 40bp band) that was observable at entry, but since the trade is still open with no exit, criteria 3 and 4 (matching exit horizon and not overclaiming skill) cannot be assessed as satisfied."
+      "judgeReason": "judge reply invalid"
+    },
+    "ledger:158>ledger:187": {
+      "eventsNearEntry": [],
+      "judgeReason": "judge reply invalid"
+    },
+    "ledger:171>open": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
+      "judgeReason": "judge reply invalid"
+    },
+    "ledger:184>open": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
+      "judgeReason": "judge reply invalid"
+    },
+    "ledger:196>open": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
+      "judgeReason": "The note names a concrete observable cause (basis divergence at entry beyond a 40bp band) satisfying criteria 1 and 2, but with the trade still open and no exit recorded, the horizon-matching exit (criterion 3) and any skill claim (criterion 4) cannot be assessed, so it is scored low for incompleteness rather than a demonstrated match."
+    },
+    "ledger:205>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "judge reply invalid"
     }
   },
   "detectorsRun": [
