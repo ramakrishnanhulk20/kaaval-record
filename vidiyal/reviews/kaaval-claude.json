@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789202712482,
+  "generatedAt": 1789202953845,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
@@ -25,7 +25,7 @@
           "id": "ledger:6>open",
           "source": {
             "kind": "ledger",
-            "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+            "dir": "../kaaval/data/state/ledger",
             "brain": "claude"
           },
           "category": "SPOT",
@@ -45,7 +45,7 @@
               "id": "ledger:6",
               "source": {
                 "kind": "ledger",
-                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "dir": "../kaaval/data/state/ledger",
                 "brain": "claude"
               },
               "ts": 1789114889143,
@@ -72,7 +72,7 @@
           "spreadAtEntryBps": 1.819174094960526,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 18510857,
-          "nextEventMinutes": null,
+          "nextEventMinutes": 54,
           "bookShareAtEntry": 0.00035242617923211106,
           "usualSpreadBps": 1.819174094960526,
           "stop": {
@@ -82,17 +82,18 @@
           }
         },
         "scores": {
-          "entry": 4.72,
+          "entry": 3.54,
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
           "reasoning": 2,
-          "total": 82.1,
+          "total": 76.2,
           "letter": "B",
           "evidence": [
             "entry: price was 0.76 percent from the last regular close",
             "entry: spread was 1.8 bps against a usual 1.8 bps, 1.00 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 213.41 was honoured",
             "cost: 0.5753 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
@@ -105,7 +106,7 @@
           "id": "ledger:9>open",
           "source": {
             "kind": "ledger",
-            "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+            "dir": "../kaaval/data/state/ledger",
             "brain": "claude"
           },
           "category": "SPOT",
@@ -125,7 +126,7 @@
               "id": "ledger:9",
               "source": {
                 "kind": "ledger",
-                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "dir": "../kaaval/data/state/ledger",
                 "brain": "claude"
               },
               "ts": 1789114889767,
@@ -152,7 +153,7 @@
           "spreadAtEntryBps": 4.7148582327859945,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 18510233,
-          "nextEventMinutes": null,
+          "nextEventMinutes": 54,
           "bookShareAtEntry": 0.00125023803859338,
           "usualSpreadBps": 4.7148582327859945,
           "stop": {
@@ -162,17 +163,18 @@
           }
         },
         "scores": {
-          "entry": 4.95,
+          "entry": 3.72,
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
           "reasoning": 2,
-          "total": 83.25,
+          "total": 77.1,
           "letter": "B",
           "evidence": [
             "entry: price was 0.54 percent from the last regular close",
             "entry: spread was 4.7 bps against a usual 4.7 bps, 1.00 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: the stop at 679.42 was honoured",
             "cost: 0.4502 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
@@ -185,7 +187,7 @@
           "id": "ledger:12>ledger:28",
           "source": {
             "kind": "ledger",
-            "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+            "dir": "../kaaval/data/state/ledger",
             "brain": "claude"
           },
           "category": "SPOT",
@@ -205,7 +207,7 @@
               "id": "ledger:12",
               "source": {
                 "kind": "ledger",
-                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "dir": "../kaaval/data/state/ledger",
                 "brain": "claude"
               },
               "ts": 1789114890299,
@@ -226,7 +228,7 @@
               "id": "ledger:28",
               "source": {
                 "kind": "ledger",
-                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "dir": "../kaaval/data/state/ledger",
                 "brain": "claude"
               },
               "ts": 1789115151618,
@@ -286,7 +288,7 @@
           "id": "ledger:12>open",
           "source": {
             "kind": "ledger",
-            "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+            "dir": "../kaaval/data/state/ledger",
             "brain": "claude"
           },
           "category": "SPOT",
@@ -306,7 +308,7 @@
               "id": "ledger:12",
               "source": {
                 "kind": "ledger",
-                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "dir": "../kaaval/data/state/ledger",
                 "brain": "claude"
               },
               "ts": 1789114890299,
@@ -366,7 +368,7 @@
           "id": "ledger:15>open",
           "source": {
             "kind": "ledger",
-            "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+            "dir": "../kaaval/data/state/ledger",
             "brain": "claude"
           },
           "category": "SPOT",
@@ -386,7 +388,7 @@
               "id": "ledger:15",
               "source": {
                 "kind": "ledger",
-                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "dir": "../kaaval/data/state/ledger",
                 "brain": "claude"
               },
               "ts": 1789114890713,
@@ -567,11 +569,37 @@
   },
   "tradeNotes": {
     "ledger:6>open": {
-      "eventsNearEntry": [],
+      "eventsNearEntry": [
+        {
+          "ts": 1789112700000,
+          "title": "Nvidia Chinese Rival Enflame Soars Over 220 % in Shanghai Debut As Investors Bet on Domestic AI Chips (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789118100000,
+          "title": "Nvidia CEO Signals Strong Momentum for Shareholders (gdelt/fool.com)"
+        }
+      ],
       "judgeReason": "no note"
     },
     "ledger:9>open": {
-      "eventsNearEntry": [],
+      "eventsNearEntry": [
+        {
+          "ts": 1789105500000,
+          "title": "VOO vs . QQQ : Which Popular ETF Is Right for Your Portfolio in 2026 ? (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789105500000,
+          "title": "How to Research Any ETF in Five Minutes (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789109100000,
+          "title": "History Says the Stock Market Has a 95 % Chance of Gains Over the Next Year : 3 Top Index ETFs to Buy Before November (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789118100000,
+          "title": "What History Reveals When the S & P 500 Sends Its Rarest Warning Signal (gdelt/finance.yahoo.com)"
+        }
+      ],
       "judgeReason": "no note"
     },
     "ledger:12>ledger:28": {
