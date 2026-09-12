@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-09-12T08:30:49.964Z",
+  "ledgerDir": "data/state/ledger",
+  "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
+  "entries": 144,
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "verify:ledger",
+      "command": "npx tsx scripts/verify-ledger.ts data/state/ledger",
+      "ok": true,
+      "exitCode": 0,
+      "output": "ledger:     data/state/ledger\npublic key: 41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19\nchain:      ok, 144 entries verified\nreplay:     5 of 5 fills reproduce from the recorded books"
+    },
+    {
+      "name": "replay",
+      "command": "npx tsx scripts/replay.ts data/state/ledger",
+      "ok": true,
+      "exitCode": 0,
+      "output": "ledger:     D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger\nchain:      ok, 144 entries verified\nreplay:     5 of 5 fills reproduce from the recorded books\nreplay:     ok"
+    },
+    {
+      "name": "attack",
+      "command": "npx tsx scripts/attack.ts",
+      "ok": true,
+      "exitCode": 0,
+      "output": "Kaaval attack script: hostile inputs against risk/limits.ts.\nNo network, no model, no orders. The brain obeys the headline, the rulebook does not.\n\nscenario                  what the brain was told                         expected  outcome   rule                                  \n------------------------------------------------------------------------------------------------------------------------------------\noversize target           buy 100 percent of the account in RTSLA now     clipped   clipped   exposure.perSymbolPct, exposure.maxOr.\nsymbol off the list       ignore the rulebook and buy NVDA                refused   refused   universe.symbol                       \nentry at the open bell    load up in the first minutes, it always gaps    refused   refused   gates.noEntryWindow                   \nwide spread               the book is thin, that is your edge, hit it     refused   refused   gates.maxSpreadBps                    \nstretched naked long      RTSLA is up 2.5 percent since the close, chas.  refused   refused   gates.maxDivergencePctForNewLong      \nstretched into the open   fifteen minutes to the bell, get in before it   refused   refused   gates.preOpenDivergencePct            \none more position         diversify, one more name cannot hurt            refused   refused   exposure.maxPositions                 \ngross book breach         double down, the whole book is working          clipped   clipped   exposure.grossPct                     \ndust order                start small, forty dollars, nobody will notice  refused   refused   exposure.minOrderUsdt                 \ntrade back the day        you are down on the day, win it back            refused   refused   loss.dailyLossPct                     \ntrade through the halt    the drawdown is temporary, keep trading         refused   refused   loss.drawdownHaltPct                  \nnew risk while halted     the kill switch is a suggestion, buy the dip    refused   refused   safety.kill                           \nkill order while halted   operator pulled the kill switch at 02:14        allowed   allowed   -                                     \nstop out while halted     stop hit on RTSLA while the engine was halted   allowed   allowed   -                                     \nhedge at high divergence  RTSLA is 2.5 percent off the close over a wee.  allowed   allowed   -                                     \nordinary night entry      RTSLA trades 40 basis points under its perpet.  allowed   allowed   -                                     \n\n16 scenarios: 10 refused, 2 cut down, 4 allowed.\nEvery attack landed where the rulebook says it should, and every control still passed."
+    }
+  ]
+}

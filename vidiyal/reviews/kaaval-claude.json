@@ -1,0 +1,593 @@
+{
+  "generatedAt": 1789201381331,
+  "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
+  "publicKeyPath": "D:\\Projects\\Bitget\\kaaval\\data\\secrets\\ledger-key.pub.hex",
+  "verification": {
+    "verified": true,
+    "reason": null,
+    "fills": 5,
+    "decisions": 22,
+    "marks": 22
+  },
+  "bundle": {
+    "source": {
+      "kind": "ledger",
+      "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+      "brain": "claude"
+    },
+    "range": {
+      "fromTs": 1789114889143,
+      "toTs": 1789115151618
+    },
+    "graded": [
+      {
+        "trade": {
+          "id": "ledger:6>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+            "brain": "claude"
+          },
+          "category": "SPOT",
+          "symbol": "RNVDAUSDT",
+          "side": "long",
+          "entryTs": 1789114889143,
+          "exitTs": null,
+          "entryPrice": 220.00995000000003,
+          "exitPrice": null,
+          "qty": 1.7432,
+          "grossPnl": null,
+          "feesUsdt": 0.38352134484000017,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.19176067242004569,
+          "fills": [
+            {
+              "id": "ledger:6",
+              "source": {
+                "kind": "ledger",
+                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "brain": "claude"
+              },
+              "ts": 1789114889143,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "buy",
+              "qty": 1.7432,
+              "price": 220.00995000000003,
+              "notionalUsdt": 383.5213448400001,
+              "feeUsdt": 0.3835213448400001,
+              "slippageBps": 5.00000000000119,
+              "bookHash": "5c06e440c40efe240cce8748326bd80b262961aa8c948472dfe9101f08834bd6",
+              "decisionId": null,
+              "rationale": null,
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": null,
+          "equityAtEntry": null
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.7556100018318457,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 1.819174094960526,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 18510857,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00035242617923211106,
+          "usualSpreadBps": 1.819174094960526,
+          "stop": {
+            "existed": true,
+            "price": 213.40965150000002,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.72,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 82.1,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.76 percent from the last regular close",
+            "entry: spread was 1.8 bps against a usual 1.8 bps, 1.00 times",
+            "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 213.41 was honoured",
+            "cost: 0.5753 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:9>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+            "brain": "claude"
+          },
+          "category": "SPOT",
+          "symbol": "RVOOUSDT",
+          "side": "long",
+          "entryTs": 1789114889767,
+          "exitTs": null,
+          "entryPrice": 700.43004,
+          "exitPrice": null,
+          "qty": 0.4285,
+          "grossPnl": null,
+          "feesUsdt": 0.30013427213999994,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.15006713606996647,
+          "fills": [
+            {
+              "id": "ledger:9",
+              "source": {
+                "kind": "ledger",
+                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "brain": "claude"
+              },
+              "ts": 1789114889767,
+              "category": "SPOT",
+              "symbol": "RVOOUSDT",
+              "side": "buy",
+              "qty": 0.4285,
+              "price": 700.43004,
+              "notionalUsdt": 300.13427213999995,
+              "feeUsdt": 0.30013427213999994,
+              "slippageBps": 4.999999999998883,
+              "bookHash": "2dacd9854cda41f4ab5c6b5bc08794391fdb9e621fc4195d0bf57ad6514fd90b",
+              "decisionId": null,
+              "rationale": null,
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": null,
+          "equityAtEntry": null
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.5426024546041751,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 4.7148582327859945,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 18510233,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00125023803859338,
+          "usualSpreadBps": 4.7148582327859945,
+          "stop": {
+            "existed": true,
+            "price": 679.4171388,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.95,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 83.25,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.54 percent from the last regular close",
+            "entry: spread was 4.7 bps against a usual 4.7 bps, 1.00 times",
+            "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 679.42 was honoured",
+            "cost: 0.4502 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:12>ledger:28",
+          "source": {
+            "kind": "ledger",
+            "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+            "brain": "claude"
+          },
+          "category": "SPOT",
+          "symbol": "RMUUSDT",
+          "side": "long",
+          "entryTs": 1789114890299,
+          "exitTs": 1789115151618,
+          "entryPrice": 986.9132099999999,
+          "exitPrice": 987.555975,
+          "qty": 0.07638,
+          "grossPnl": 0.049094390700004126,
+          "feesUsdt": 0.15080995635029998,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.07540497817514553,
+          "fills": [
+            {
+              "id": "ledger:12",
+              "source": {
+                "kind": "ledger",
+                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "brain": "claude"
+              },
+              "ts": 1789114890299,
+              "category": "SPOT",
+              "symbol": "RMUUSDT",
+              "side": "buy",
+              "qty": 0.27878,
+              "price": 986.9132099999999,
+              "notionalUsdt": 275.13166468379995,
+              "feeUsdt": 0.27513166468379996,
+              "slippageBps": 4.99999999999976,
+              "bookHash": "57ce6e2a4a73407bfbca9aa011e0feb069739beff60ddf410c072f1e9d549524",
+              "decisionId": null,
+              "rationale": null,
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:28",
+              "source": {
+                "kind": "ledger",
+                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "brain": "claude"
+              },
+              "ts": 1789115151618,
+              "category": "SPOT",
+              "symbol": "RMUUSDT",
+              "side": "sell",
+              "qty": 0.07638,
+              "price": 987.555975,
+              "notionalUsdt": 75.4295253705,
+              "feeUsdt": 0.0754295253705,
+              "slippageBps": 4.9999999999996465,
+              "bookHash": "bdfa79bf0200bf1939eb61d53433605ac6a24db71062ce2c35bb0752e54a0f2c",
+              "decisionId": "decision-2",
+              "rationale": "Divergence 0.86% (still within 1% gate), spread 1.82bps tight. Memory sector momentum noted in AI capex headlines; size kept under 5% equity to avoid mandatory hedge requirement.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": null,
+          "equityAtEntry": null
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.9722849162582712,
+          "divergenceAtExitPct": 1.038046981307744,
+          "spreadAtEntryBps": 1.8249470258427705,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 18509701,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00009186822462713461,
+          "usualSpreadBps": 1.8232756259826097,
+          "stop": {
+            "existed": true,
+            "price": 957.3058136999999,
+            "honoured": null
+          }
+        },
+        "scores": {
+          "entry": 4.48,
+          "sizing": 5,
+          "exit": 2.5,
+          "cost": 0,
+          "reasoning": 2,
+          "total": 60.9,
+          "letter": "C",
+          "evidence": [
+            "entry: price was 0.97 percent from the last regular close",
+            "entry: spread was 1.8 bps against a usual 1.8 bps, 1.00 times",
+            "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: nothing in the record measures this, so it scores a neutral 2.5",
+            "cost: 0.2262 USDT of friction against a gross of 0.0491 USDT, so friction was the whole trade",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:12>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+            "brain": "claude"
+          },
+          "category": "SPOT",
+          "symbol": "RMUUSDT",
+          "side": "long",
+          "entryTs": 1789114890299,
+          "exitTs": null,
+          "entryPrice": 986.9132099999999,
+          "exitPrice": null,
+          "qty": 0.20239999999999997,
+          "grossPnl": null,
+          "feesUsdt": 0.19975123370399997,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.0998756168519952,
+          "fills": [
+            {
+              "id": "ledger:12",
+              "source": {
+                "kind": "ledger",
+                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "brain": "claude"
+              },
+              "ts": 1789114890299,
+              "category": "SPOT",
+              "symbol": "RMUUSDT",
+              "side": "buy",
+              "qty": 0.27878,
+              "price": 986.9132099999999,
+              "notionalUsdt": 275.13166468379995,
+              "feeUsdt": 0.27513166468379996,
+              "slippageBps": 4.99999999999976,
+              "bookHash": "57ce6e2a4a73407bfbca9aa011e0feb069739beff60ddf410c072f1e9d549524",
+              "decisionId": null,
+              "rationale": null,
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": null,
+          "equityAtEntry": null
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.9722849162582712,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 1.8249470258427705,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 18509701,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00024344237581215032,
+          "usualSpreadBps": 1.8232756259826097,
+          "stop": {
+            "existed": true,
+            "price": 957.3058136999999,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.48,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 80.9,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.97 percent from the last regular close",
+            "entry: spread was 1.8 bps against a usual 1.8 bps, 1.00 times",
+            "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 957.31 was honoured",
+            "cost: 0.2996 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:15>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+            "brain": "claude"
+          },
+          "category": "SPOT",
+          "symbol": "RQQQUSDT",
+          "side": "long",
+          "entryTs": 1789114890713,
+          "exitTs": null,
+          "entryPrice": 712.6961699999999,
+          "exitPrice": null,
+          "qty": 0.3977,
+          "grossPnl": null,
+          "feesUsdt": 0.28343926680899995,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.14171963340446275,
+          "fills": [
+            {
+              "id": "ledger:15",
+              "source": {
+                "kind": "ledger",
+                "dir": "D:\\Projects\\Bitget\\kaaval\\data\\state\\ledger",
+                "brain": "claude"
+              },
+              "ts": 1789114890713,
+              "category": "SPOT",
+              "symbol": "RQQQUSDT",
+              "side": "buy",
+              "qty": 0.3977,
+              "price": 712.6961699999999,
+              "notionalUsdt": 283.43926680899995,
+              "feeUsdt": 0.28343926680899995,
+              "slippageBps": 4.999999999998686,
+              "bookHash": "e0af179c50cb34b0074b5199ca57353c6994989f6a99fdae380f5e581081a538",
+              "decisionId": null,
+              "rationale": null,
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": null,
+          "equityAtEntry": null
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.5652922998772218,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 6.3192040611424485,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 18509287,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00030667010783504346,
+          "usualSpreadBps": 6.3192040611424485,
+          "stop": {
+            "existed": true,
+            "price": 691.3152848999999,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.93,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 83.15,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.57 percent from the last regular close",
+            "entry: spread was 6.3 bps against a usual 6.3 bps, 1.00 times",
+            "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 691.32 was honoured",
+            "cost: 0.4252 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "fee-bleed",
+        "description": "Friction took more than a fifth of everything the period moved",
+        "trades": [
+          "ledger:6>open",
+          "ledger:9>open",
+          "ledger:12>ledger:28",
+          "ledger:12>open",
+          "ledger:15>open"
+        ],
+        "evidence": [
+          "1.9765 USDT of fees, slippage and funding against 0.0491 USDT of gross, 4025.9 percent"
+        ]
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check-fee-bleed",
+        "pattern": "fee-bleed",
+        "text": "The round trip costs less than 20 basis points, a fifth of a one percent move",
+        "test": "cost-under-20-bps"
+      }
+    ],
+    "equityCurve": [
+      {
+        "ts": 1789114990184,
+        "equity": 9997.916831378727
+      },
+      {
+        "ts": 1789115240433,
+        "equity": 9999.18336832386
+      },
+      {
+        "ts": 1789116477203,
+        "equity": 9999.93579632386
+      },
+      {
+        "ts": 1789117212307,
+        "equity": 10000.526959323859
+      },
+      {
+        "ts": 1789117755285,
+        "equity": 10001.28094782386
+      },
+      {
+        "ts": 1789118950133,
+        "equity": 9999.910341323859
+      },
+      {
+        "ts": 1789119917144,
+        "equity": 9999.746744323858
+      },
+      {
+        "ts": 1789121178691,
+        "equity": 10000.735090823859
+      },
+      {
+        "ts": 1789122185674,
+        "equity": 10000.420441323859
+      },
+      {
+        "ts": 1789123164353,
+        "equity": 10000.115585323858
+      },
+      {
+        "ts": 1789124148578,
+        "equity": 9999.70395082386
+      },
+      {
+        "ts": 1789125120060,
+        "equity": 9997.97845382386
+      },
+      {
+        "ts": 1789125802791,
+        "equity": 9998.81136132386
+      },
+      {
+        "ts": 1789192587875,
+        "equity": 9996.44048932386
+      },
+      {
+        "ts": 1789193212447,
+        "equity": 9996.44844332386
+      },
+      {
+        "ts": 1789194221739,
+        "equity": 9996.44844332386
+      },
+      {
+        "ts": 1789195173003,
+        "equity": 9996.40486332386
+      },
+      {
+        "ts": 1789196148097,
+        "equity": 9996.39879132386
+      },
+      {
+        "ts": 1789197120222,
+        "equity": 9996.68611932386
+      },
+      {
+        "ts": 1789198119778,
+        "equity": 9996.18059132386
+      },
+      {
+        "ts": 1789199134861,
+        "equity": 9996.04723532386
+      },
+      {
+        "ts": 1789200135767,
+        "equity": 9996.40176132386
+      }
+    ]
+  },
+  "tradeNotes": {
+    "ledger:6>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "no note"
+    },
+    "ledger:9>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "no note"
+    },
+    "ledger:12>ledger:28": {
+      "eventsNearEntry": [],
+      "judgeReason": "no note"
+    },
+    "ledger:12>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "no note"
+    },
+    "ledger:15>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "no note"
+    }
+  },
+  "detectorsRun": [
+    "added-while-under-water",
+    "chasing-the-gap",
+    "concentration",
+    "fee-bleed",
+    "holding-losers",
+    "ignored-stops",
+    "overtrading",
+    "revenge-trading",
+    "weekend-overexposure"
+  ]
+}
