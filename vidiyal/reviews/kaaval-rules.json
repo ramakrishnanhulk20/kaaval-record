@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789202953858,
+  "generatedAt": 1789204619922,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 0,
-    "decisions": 24,
-    "marks": 24
+    "fills": 2,
+    "decisions": 26,
+    "marks": 26
   },
   "bundle": {
     "source": {
@@ -16,12 +16,194 @@
       "brain": "rules"
     },
     "range": {
-      "fromTs": 0,
-      "toTs": 0
+      "fromTs": 1789204114109,
+      "toTs": 1789204114206
     },
-    "graded": [],
-    "patterns": [],
-    "checklist": [],
+    "graded": [
+      {
+        "trade": {
+          "id": "ledger:161>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "GOOGLUSDT",
+          "side": "short",
+          "entryTs": 1789204114109,
+          "exitTs": null,
+          "entryPrice": 339.3345213675214,
+          "exitPrice": null,
+          "qty": 1.17,
+          "grossPnl": null,
+          "feesUsdt": 0.23821283399999998,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.20520388377941062,
+          "fills": [
+            {
+              "id": "ledger:161",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789204114109,
+              "category": "USDT-FUTURES",
+              "symbol": "GOOGLUSDT",
+              "side": "sell",
+              "qty": 1.17,
+              "price": 339.3345213675214,
+              "notionalUsdt": 397.02139,
+              "feeUsdt": 0.23821283399999998,
+              "slippageBps": 5.168585092591878,
+              "bookHash": "ca3e3f7cd442bf81e1f3309f68587156b58a61309544ccee3adcef8d65633370",
+              "decisionId": "decision-155",
+              "rationale": "the NYSE stays shut for 52.36 hours, over the 24 hour line, so carry 0.5 of the RGOOGLUSDT delta short in GOOGLUSDT, 400.00 USDT",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "the NYSE stays shut for 52.36 hours, over the 24 hour line, so carry 0.5 of the RGOOGLUSDT delta short in GOOGLUSDT, 400.00 USDT",
+          "equityAtEntry": 10000
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.16663853573853124,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 0.8835873647015554,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 188485891,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00135860646792756,
+          "usualSpreadBps": 0.8835873647015554,
+          "stop": {
+            "existed": true,
+            "price": 346.12121179487184,
+            "honoured": null
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 2.5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 71,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.17 percent from the last regular close",
+            "entry: spread was 0.9 bps against a usual 0.9 bps, 1.00 times",
+            "entry: 05:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 397.02 USDT is 3.97 percent of 10000.00 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
+            "exit: nothing in the record measures this, so it scores a neutral 2.5",
+            "cost: 0.4434 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:158>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "SPOT",
+          "symbol": "RGOOGLUSDT",
+          "side": "long",
+          "entryTs": 1789204114206,
+          "exitTs": null,
+          "entryPrice": 339.02943,
+          "exitPrice": null,
+          "qty": 0.1491,
+          "grossPnl": null,
+          "feesUsdt": 0.050549288013,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.02527464400649658,
+          "fills": [
+            {
+              "id": "ledger:158",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789204114206,
+              "category": "SPOT",
+              "symbol": "RGOOGLUSDT",
+              "side": "buy",
+              "qty": 0.1491,
+              "price": 339.02943,
+              "notionalUsdt": 50.549288013,
+              "feeUsdt": 0.050549288013,
+              "slippageBps": 4.999999999999323,
+              "bookHash": "6d52d197c543398a890dcab0e9e8ad9f4dfee819db96f5b0d46377d2f973f240",
+              "decisionId": "decision-155",
+              "rationale": "RGOOGLUSDT at 338.15 against GOOGLUSDT at 339.53 is -40.64 basis points below, past the 40 basis point band, so hold 800.00 USDT, 8 percent of 10000.00 USDT equity",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "RGOOGLUSDT at 338.15 against GOOGLUSDT at 339.53 is -40.64 basis points below, past the 40 basis point band, so hold 800.00 USDT, 8 percent of 10000.00 USDT equity",
+          "equityAtEntry": 10000
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.1564047267355955,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 20.678857345425207,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 188485794,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00011008471978190858,
+          "usualSpreadBps": 20.678857345425207,
+          "stop": {
+            "existed": true,
+            "price": 328.8585471,
+            "honoured": null
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 2.5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 71,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.16 percent from the last regular close",
+            "entry: spread was 20.7 bps against a usual 20.7 bps, 1.00 times",
+            "entry: 05:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 50.55 USDT is 0.51 percent of 10000.00 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: nothing in the record measures this, so it scores a neutral 2.5",
+            "cost: 0.0758 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "fee-bleed",
+        "description": "Friction took more than a fifth of everything the period moved",
+        "trades": [
+          "ledger:161>open",
+          "ledger:158>open"
+        ],
+        "evidence": [
+          "0.5192 USDT of fees, slippage and funding with no closed gross to set against it"
+        ]
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check-fee-bleed",
+        "pattern": "fee-bleed",
+        "text": "The round trip costs less than 20 basis points, a fifth of a one percent move",
+        "test": "cost-under-20-bps"
+      }
+    ],
     "equityCurve": [
       {
         "ts": 1789114990185,
@@ -118,10 +300,27 @@
       {
         "ts": 1789202214617,
         "equity": 10000
+      },
+      {
+        "ts": 1789203212245,
+        "equity": 10000
+      },
+      {
+        "ts": 1789204217489,
+        "equity": 9999.410930864988
       }
     ]
   },
-  "tradeNotes": {},
+  "tradeNotes": {
+    "ledger:161>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names a cause (weekend NYSE closure creating a stale reference-price divergence to carry a delta hedge), which was observable at entry, but since the trade is still open with no exit, the horizon match (criterion 3) and any outcome-skill claim (criterion 4) cannot be assessed, so it's capped in the middle."
+    },
+    "ledger:158>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names a concrete cause (mispricing vs GOOGLUSDT beyond a 40bp band) that was observable at entry, but since the trade is still open with no exit, criteria 3 and 4 (matching exit horizon and not overclaiming skill) cannot be assessed as satisfied."
+    }
+  },
   "detectorsRun": [
     "added-while-under-water",
     "chasing-the-gap",
