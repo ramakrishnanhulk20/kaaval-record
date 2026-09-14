@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789376038980,
+  "generatedAt": 1789380032611,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 17,
-    "decisions": 51,
-    "marks": 51
+    "decisions": 55,
+    "marks": 55
   },
   "bundle": {
     "source": {
@@ -107,8 +107,8 @@
           "sizing": 5,
           "exit": 2.5,
           "cost": 0,
-          "reasoning": 2,
-          "total": 63.5,
+          "reasoning": 1,
+          "total": 60.5,
           "letter": "C",
           "evidence": [
             "entry: price was 0.17 percent from the last regular close",
@@ -119,7 +119,7 @@
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
             "cost: 0.8904 USDT of friction against a gross of 0.6359 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 2 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -404,7 +404,7 @@
           "msToNextOpenAtEntry": 187481393,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.001413597676138788,
-          "usualSpreadBps": 0.4558300724709762,
+          "usualSpreadBps": 0.45588201773469156,
           "stop": {
             "existed": true,
             "price": 223.67610600000003,
@@ -620,9 +620,9 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 1,
-          "total": 72.95,
-          "letter": "B",
+          "reasoning": 0,
+          "total": 69.95,
+          "letter": "C",
           "evidence": [
             "entry: price was 0.41 percent from the last regular close",
             "entry: spread was 26.5 bps against a usual 26.1 bps, 1.02 times",
@@ -631,7 +631,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 212.60 was honoured",
             "cost: 0.6312 USDT of friction is 96.7 percent of the 0.6526 USDT gross",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 0 out of 5"
           ]
         }
       },
@@ -914,7 +914,7 @@
           "msToNextOpenAtEntry": 182500838,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.000719189343498978,
-          "usualSpreadBps": 0.4558300724709762,
+          "usualSpreadBps": 0.45588201773469156,
           "stop": {
             "existed": true,
             "price": 223.62244273516487,
@@ -926,8 +926,8 @@
           "sizing": 5,
           "exit": 2.5,
           "cost": 0,
-          "reasoning": 1,
-          "total": 60.5,
+          "reasoning": 2,
+          "total": 63.5,
           "letter": "C",
           "evidence": [
             "entry: price was 0.34 percent from the last regular close",
@@ -937,7 +937,7 @@
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
             "cost: 0.8830 USDT of friction against a gross of 0.3858 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -1028,8 +1028,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 1,
-          "total": 73,
+          "reasoning": 2,
+          "total": 76,
           "letter": "B",
           "evidence": [
             "entry: price was 0.02 percent from the last regular close",
@@ -1039,7 +1039,7 @@
             "sizing: the order was 0.6 percent of the visible book against a 25 percent cap",
             "exit: the stop at 373.01 was honoured",
             "cost: 0.9214 USDT of friction against a gross of 0.2031 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       }
@@ -1294,6 +1294,22 @@
       {
         "ts": 1789375131071,
         "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789376171224,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789377229103,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789378303595,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789379361884,
+        "equity": 9991.903508118943
       }
     ]
   },
@@ -1309,7 +1325,7 @@
           "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
         }
       ],
-      "judgeReason": "judge reply invalid"
+      "judgeReason": "The note gives a mechanical carry-delta rationale (weekend NYSE closure hedge) that is observable at entry, but a 16.8-minute exit contradicts the stated 52-hour weekend-carry horizon, and the trade lost money without any acknowledgment that the thesis was abandoned or wrong, so criteria 3 and 4 fail."
     },
     "ledger:158>ledger:174": {
       "eventsNearEntry": [
@@ -1338,55 +1354,16 @@
       "judgeReason": "judge reply invalid"
     },
     "ledger:171>ledger:215": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     },
     "ledger:184>ledger:212": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     },
     "ledger:196>ledger:212": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        }
-      ],
-      "judgeReason": "The note only cites a mechanical basis-point divergence rule with no causal explanation, and the exit at a shrunken 0.10% divergence after just 33.5 minutes shows the mean-reversion thesis barely played out yet was closed for a loss anyway, mismatching the stated setup."
+      "eventsNearEntry": [],
+      "judgeReason": "The note cites a mean-reversion divergence rationale but the trade was closed at a small loss right as divergence shrank toward zero rather than the band being exploited or invalidated, so criteria 1-3 are muddled and there's no acknowledgment that the thesis simply didn't play out (criterion 4)."
     },
     "ledger:205>ledger:212": {
       "eventsNearEntry": [],
@@ -1398,11 +1375,11 @@
     },
     "ledger:226>ledger:237": {
       "eventsNearEntry": [],
-      "judgeReason": "The note names a cause (weekend closure/carry hedge) observable at entry, but the 16-minute exit contradicts the 50.69-hour horizon implied by the thesis, and the loss is properly not framed as skill, though criterion 3's mismatch dominates the failure."
+      "judgeReason": "judge reply invalid"
     },
     "ledger:250>ledger:268": {
       "eventsNearEntry": [],
-      "judgeReason": "The note names a cause (weekend NYSE closure requiring delta-hedge carry) that was observable at entry, but the exit after only 35.5 minutes doesn't match the implied multi-day carry horizon, and the trade lost money with no acknowledgment that the thesis (or its execution) failed, so skill/process alignment is poorly claimed."
+      "judgeReason": "judge reply invalid"
     }
   },
   "detectorsRun": [
