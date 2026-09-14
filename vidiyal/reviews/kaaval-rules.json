@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789214442588,
+  "generatedAt": 1789364125988,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 16,
-    "decisions": 37,
-    "marks": 37
+    "fills": 17,
+    "decisions": 40,
+    "marks": 40
   },
   "bundle": {
     "source": {
@@ -17,7 +17,7 @@
     },
     "range": {
       "fromTs": 1789204114109,
-      "toTs": 1789212992185
+      "toTs": 1789215124558
     },
     "graded": [
       {
@@ -93,7 +93,7 @@
           "spreadAtEntryBps": 0.8835873647015554,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 188485891,
-          "nextEventMinutes": 6,
+          "nextEventMinutes": null,
           "bookShareAtEntry": 0.00135860646792756,
           "usualSpreadBps": 0.8833792689968278,
           "stop": {
@@ -114,7 +114,6 @@
             "entry: price was 0.17 percent from the last regular close",
             "entry: spread was 0.9 bps against a usual 0.9 bps, 1.00 times",
             "entry: 05:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 6 minutes away and the rationale was written",
             "sizing: 397.02 USDT is 3.97 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
@@ -196,7 +195,7 @@
           "spreadAtEntryBps": 20.678857345425207,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 188485794,
-          "nextEventMinutes": 6,
+          "nextEventMinutes": null,
           "bookShareAtEntry": 0.00003920522213560929,
           "usualSpreadBps": 20.678857345425207,
           "stop": {
@@ -217,7 +216,6 @@
             "entry: price was 0.16 percent from the last regular close",
             "entry: spread was 20.7 bps against a usual 20.7 bps, 1.00 times",
             "entry: 05:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 6 minutes away and the rationale was written",
             "sizing: 18.00 USDT is 0.18 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
@@ -299,7 +297,7 @@
           "spreadAtEntryBps": 20.678857345425207,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 188485794,
-          "nextEventMinutes": 6,
+          "nextEventMinutes": null,
           "bookShareAtEntry": 0.00007087949764629929,
           "usualSpreadBps": 20.678857345425207,
           "stop": {
@@ -320,7 +318,6 @@
             "entry: price was 0.16 percent from the last regular close",
             "entry: spread was 20.7 bps against a usual 20.7 bps, 1.00 times",
             "entry: 05:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 6 minutes away and the rationale was written",
             "sizing: 32.55 USDT is 0.33 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 328.86 was honoured",
@@ -943,7 +940,7 @@
       },
       {
         "trade": {
-          "id": "ledger:250>open",
+          "id": "ledger:250>ledger:268",
           "source": {
             "kind": "ledger",
             "dir": "../kaaval/data/state/ledger",
@@ -953,14 +950,14 @@
           "symbol": "TSLAUSDT",
           "side": "short",
           "entryTs": 1789212992185,
-          "exitTs": null,
+          "exitTs": 1789215124558,
           "entryPrice": 365.697701880734,
-          "exitPrice": null,
+          "exitPrice": 365.8840432568807,
           "qty": 1.09,
-          "grossPnl": null,
-          "feesUsdt": 0.23916629703,
+          "grossPnl": -0.20311209999994959,
+          "feesUsdt": 0.47845446131999997,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.220383037628603,
+          "slippageUsdt": 0.4429142870576931,
           "fills": [
             {
               "id": "ledger:250",
@@ -982,6 +979,27 @@
               "decisionId": "decision-246",
               "rationale": "the NYSE stays shut for 49.89 hours, over the 24 hour line, so carry 0.5 of the RTSLAUSDT delta short in TSLAUSDT, 399.70 USDT",
               "note": "order source: brain"
+            },
+            {
+              "id": "ledger:268",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789215124558,
+              "category": "USDT-FUTURES",
+              "symbol": "TSLAUSDT",
+              "side": "buy",
+              "qty": 1.09,
+              "price": 365.8840432568807,
+              "notionalUsdt": 398.81360715,
+              "feeUsdt": 0.23928816428999997,
+              "slippageBps": 5.579830914480122,
+              "bookHash": "a39611a3a0a7b5afa475ea929b64c33de1f1face66c64a8d1b51406a795f4139",
+              "decisionId": "decision-265",
+              "rationale": "no basis signal and no hedge to carry for TSLAUSDT, so close the 398.57 USDT short",
+              "note": "order source: brain"
             }
           ],
           "rationale": "the NYSE stays shut for 49.89 hours, over the 24 hour line, so carry 0.5 of the RTSLAUSDT delta short in TSLAUSDT, 399.70 USDT",
@@ -989,13 +1007,13 @@
         },
         "context": {
           "divergenceAtEntryPct": 0.021252087066891488,
-          "divergenceAtExitPct": null,
+          "divergenceAtExitPct": 0.07221794674271413,
           "spreadAtEntryBps": 1.0931351115003407,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 179607815,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.005539251202559438,
-          "usualSpreadBps": 1.0931351115003407,
+          "usualSpreadBps": 1.0935237445597266,
           "stop": {
             "existed": true,
             "price": 373.01165591834865,
@@ -1006,10 +1024,10 @@
           "entry": 5,
           "sizing": 5,
           "exit": 5,
-          "cost": 2.5,
-          "reasoning": 3,
-          "total": 86.5,
-          "letter": "A",
+          "cost": 0,
+          "reasoning": 2,
+          "total": 76,
+          "letter": "B",
           "evidence": [
             "entry: price was 0.02 percent from the last regular close",
             "entry: spread was 1.1 bps against a usual 1.1 bps, 1.00 times",
@@ -1017,8 +1035,8 @@
             "sizing: 398.61 USDT is 3.99 percent of 9992.59 USDT equity against a 10 percent cap",
             "sizing: the order was 0.6 percent of the visible book against a 25 percent cap",
             "exit: the stop at 373.01 was honoured",
-            "cost: 0.4595 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
-            "reasoning: the judge scored the stated thesis 3 out of 5"
+            "cost: 0.9214 USDT of friction against a gross of 0.2031 USDT, so friction was the whole trade",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       }
@@ -1048,10 +1066,10 @@
           "ledger:205>ledger:212",
           "ledger:223>ledger:234",
           "ledger:226>ledger:237",
-          "ledger:250>open"
+          "ledger:250>ledger:268"
         ],
         "evidence": [
-          "5.6456 USDT of fees, slippage and funding against 4.2905 USDT of gross, 131.6 percent"
+          "6.1074 USDT of fees, slippage and funding against 4.4936 USDT of gross, 135.9 percent"
         ]
       }
     ],
@@ -1217,154 +1235,70 @@
       {
         "ts": 1789214223063,
         "equity": 9992.043653433233
+      },
+      {
+        "ts": 1789215202794,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789216194183,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789363822014,
+        "equity": 9991.903508118943
       }
     ]
   },
   "tradeNotes": {
     "ledger:161>ledger:177": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789204500000,
-          "title": "Meta May Overtake Google Search in Ad Revenue This Year , Bernstein Says (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     },
     "ledger:158>ledger:174": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789204500000,
-          "title": "Meta May Overtake Google Search in Ad Revenue This Year , Bernstein Says (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     },
     "ledger:158>ledger:187": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789204500000,
-          "title": "Meta May Overtake Google Search in Ad Revenue This Year , Bernstein Says (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     },
     "ledger:171>ledger:215": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     },
     "ledger:184>ledger:212": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     },
     "ledger:196>ledger:212": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     },
     "ledger:205>ledger:212": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     },
     "ledger:223>ledger:234": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     },
     "ledger:226>ledger:237": {
+      "eventsNearEntry": [],
+      "judgeReason": "judge reply invalid"
+    },
+    "ledger:250>ledger:268": {
       "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
         {
           "ts": 1789194600000,
           "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
         },
         {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+          "ts": 1789196400000,
+          "title": "Roundhill TSLA WeeklyPay ETF ( BATS : TSLW ) Sees Significant Increase in Short Interest (gdelt/tickerreport.com)"
         }
       ],
       "judgeReason": "judge reply invalid"
-    },
-    "ledger:250>open": {
-      "eventsNearEntry": [],
-      "judgeReason": "The thesis names a specific observable cause (weekend NYSE closure requiring proxy delta hedge) that was present at entry, but since the trade is still open with no exit, criteria 3 and 4 cannot be assessed as matched or mismatched, capping the score."
     }
   },
   "detectorsRun": [
