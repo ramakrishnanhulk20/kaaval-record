@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789367951750,
+  "generatedAt": 1789371890772,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 7,
-    "decisions": 43,
-    "marks": 43
+    "decisions": 47,
+    "marks": 47
   },
   "bundle": {
     "source": {
@@ -72,29 +72,30 @@
           "spreadAtEntryBps": 1.819174094960526,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 18510857,
-          "nextEventMinutes": null,
+          "nextEventMinutes": 54,
           "bookShareAtEntry": 0.00035242617923211106,
           "usualSpreadBps": 26.510649968003662,
           "stop": {
             "existed": true,
             "price": 213.40965150000002,
-            "honoured": true
+            "honoured": false
           }
         },
         "scores": {
-          "entry": 4.72,
+          "entry": 3.54,
           "sizing": 5,
-          "exit": 5,
+          "exit": 0,
           "cost": 2.5,
           "reasoning": 2,
-          "total": 82.1,
-          "letter": "B",
+          "total": 51.2,
+          "letter": "D",
           "evidence": [
             "entry: price was 0.76 percent from the last regular close",
             "entry: spread was 1.8 bps against a usual 26.5 bps, 0.07 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
-            "exit: the stop at 213.41 was honoured",
+            "exit: the stop at 213.41 was crossed and the position stayed open",
             "cost: 0.5753 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
             "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
@@ -152,7 +153,7 @@
           "spreadAtEntryBps": 4.7148582327859945,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 18510233,
-          "nextEventMinutes": null,
+          "nextEventMinutes": 54,
           "bookShareAtEntry": 0.00125023803859338,
           "usualSpreadBps": 4.7148582327859945,
           "stop": {
@@ -162,17 +163,18 @@
           }
         },
         "scores": {
-          "entry": 4.95,
+          "entry": 3.72,
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
           "reasoning": 2,
-          "total": 83.25,
+          "total": 77.1,
           "letter": "B",
           "evidence": [
             "entry: price was 0.54 percent from the last regular close",
             "entry: spread was 4.7 bps against a usual 4.7 bps, 1.00 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: the stop at 679.42 was honoured",
             "cost: 0.4502 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
@@ -609,8 +611,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
-          "reasoning": 2,
-          "total": 83.5,
+          "reasoning": 1,
+          "total": 80.5,
           "letter": "B",
           "evidence": [
             "entry: price was 0.37 percent from the last regular close",
@@ -620,7 +622,7 @@
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: the stop at 223.68 was honoured",
             "cost: 0.1857 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
-            "reasoning: the judge scored the stated thesis 2 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       }
@@ -656,10 +658,12 @@
         "pattern": "ignored-stops",
         "description": "A position crossed its stop price and stayed open past the next tick",
         "trades": [
+          "ledger:6>open",
           "ledger:12>ledger:279",
           "ledger:12>open"
         ],
         "evidence": [
+          "ledger:6>open had a stop at 213.41 and the price went through it",
           "ledger:12>ledger:279 had a stop at 957.31 and the price went through it",
           "ledger:12>open had a stop at 957.31 and the price went through it"
         ]
@@ -857,16 +861,58 @@
       {
         "ts": 1789366970065,
         "equity": 9981.430685709951
+      },
+      {
+        "ts": 1789368010304,
+        "equity": 9981.13598570995
+      },
+      {
+        "ts": 1789369024101,
+        "equity": 9980.97147070995
+      },
+      {
+        "ts": 1789370020684,
+        "equity": 9979.812907459947
+      },
+      {
+        "ts": 1789371047271,
+        "equity": 9979.990717959949
       }
     ]
   },
   "tradeNotes": {
     "ledger:6>open": {
-      "eventsNearEntry": [],
+      "eventsNearEntry": [
+        {
+          "ts": 1789112700000,
+          "title": "Nvidia Chinese Rival Enflame Soars Over 220 % in Shanghai Debut As Investors Bet on Domestic AI Chips (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789118100000,
+          "title": "Nvidia CEO Signals Strong Momentum for Shareholders (gdelt/fool.com)"
+        }
+      ],
       "judgeReason": "no note"
     },
     "ledger:9>open": {
-      "eventsNearEntry": [],
+      "eventsNearEntry": [
+        {
+          "ts": 1789105500000,
+          "title": "VOO vs . QQQ : Which Popular ETF Is Right for Your Portfolio in 2026 ? (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789105500000,
+          "title": "How to Research Any ETF in Five Minutes (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789109100000,
+          "title": "History Says the Stock Market Has a 95 % Chance of Gains Over the Next Year : 3 Top Index ETFs to Buy Before November (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789118100000,
+          "title": "What History Reveals When the S & P 500 Sends Its Rarest Warning Signal (gdelt/finance.yahoo.com)"
+        }
+      ],
       "judgeReason": "no note"
     },
     "ledger:12>ledger:28": {
@@ -886,8 +932,21 @@
       "judgeReason": "no note"
     },
     "ledger:166>open": {
-      "eventsNearEntry": [],
-      "judgeReason": "judge reply invalid"
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
+      "judgeReason": "The note gives no causal thesis for the short—only a risk-management rationale for holding a hedge—so criterion 1 (naming a cause) fails and the still-open trade means horizon-matching and skill-claim criteria can't be assessed either way."
     }
   },
   "detectorsRun": [
