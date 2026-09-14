@@ -1,0 +1,363 @@
+{
+  "generatedAt": 1789366697204,
+  "source": {
+    "kind": "account",
+    "accountId": "fixture-account"
+  },
+  "publicKeyHex": "",
+  "publicKeyPath": null,
+  "verification": {
+    "verified": true,
+    "reason": "read-only account, fills read from Bitget",
+    "fills": 5,
+    "decisions": 0,
+    "marks": 3
+  },
+  "bundle": {
+    "source": {
+      "kind": "account",
+      "accountId": "fixture-account"
+    },
+    "range": {
+      "fromTs": 1788400000000,
+      "toTs": 1788600000000
+    },
+    "graded": [
+      {
+        "trade": {
+          "id": "fixture-account:1201000001>fixture-account:1201000002",
+          "source": {
+            "kind": "account",
+            "accountId": "fixture-account"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "TSLAUSDT",
+          "side": "long",
+          "entryTs": 1788469200000,
+          "exitTs": 1788498000000,
+          "entryPrice": 381.21,
+          "exitPrice": 374.55,
+          "qty": 2,
+          "grossPnl": -13.319999999999936,
+          "feesUsdt": 0.9068,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0,
+          "fills": [
+            {
+              "id": "fixture-account:1201000001",
+              "source": {
+                "kind": "account",
+                "accountId": "fixture-account"
+              },
+              "ts": 1788469200000,
+              "category": "USDT-FUTURES",
+              "symbol": "TSLAUSDT",
+              "side": "buy",
+              "qty": 2,
+              "price": 381.21,
+              "notionalUsdt": 762.42,
+              "feeUsdt": 0.4574,
+              "slippageBps": null,
+              "bookHash": null,
+              "decisionId": "9001000001",
+              "rationale": null,
+              "note": null
+            },
+            {
+              "id": "fixture-account:1201000002",
+              "source": {
+                "kind": "account",
+                "accountId": "fixture-account"
+              },
+              "ts": 1788498000000,
+              "category": "USDT-FUTURES",
+              "symbol": "TSLAUSDT",
+              "side": "sell",
+              "qty": 2,
+              "price": 374.55,
+              "notionalUsdt": 749.1,
+              "feeUsdt": 0.4494,
+              "slippageBps": null,
+              "bookHash": null,
+              "decisionId": "9001000002",
+              "rationale": null,
+              "note": null
+            }
+          ],
+          "rationale": null,
+          "equityAtEntry": 6747.679999999999
+        },
+        "context": {
+          "divergenceAtEntryPct": 1.2375514539901655,
+          "divergenceAtExitPct": -0.5311379630859115,
+          "spreadAtEntryBps": null,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 59400000,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": null,
+          "usualSpreadBps": null,
+          "stop": {
+            "existed": false,
+            "price": null,
+            "honoured": null
+          }
+        },
+        "scores": {
+          "entry": 3.77,
+          "sizing": 5,
+          "exit": 2.5,
+          "cost": 5,
+          "reasoning": 2,
+          "total": 72.35,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 1.24 percent from the last regular close",
+            "entry: 17:00 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 762.42 USDT is 1.00 times the 762.42 USDT median size over the period",
+            "exit: nothing in the record measures this, so it scores a neutral 2.5",
+            "cost: 0.9068 USDT of friction is 6.8 percent of the 13.3200 USDT gross",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "fixture-account:1201000003>fixture-account:1201000004",
+          "source": {
+            "kind": "account",
+            "accountId": "fixture-account"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "TSLAUSDT",
+          "side": "long",
+          "entryTs": 1788499800000,
+          "exitTs": 1788526800000,
+          "entryPrice": 372.8,
+          "exitPrice": 367.1,
+          "qty": 3,
+          "grossPnl": -17.099999999999966,
+          "feesUsdt": 1.3316999999999999,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0,
+          "fills": [
+            {
+              "id": "fixture-account:1201000003",
+              "source": {
+                "kind": "account",
+                "accountId": "fixture-account"
+              },
+              "ts": 1788499800000,
+              "category": "USDT-FUTURES",
+              "symbol": "TSLAUSDT",
+              "side": "buy",
+              "qty": 3,
+              "price": 372.8,
+              "notionalUsdt": 1118.4,
+              "feeUsdt": 0.671,
+              "slippageBps": null,
+              "bookHash": null,
+              "decisionId": "9001000003",
+              "rationale": null,
+              "note": null
+            },
+            {
+              "id": "fixture-account:1201000004",
+              "source": {
+                "kind": "account",
+                "accountId": "fixture-account"
+              },
+              "ts": 1788526800000,
+              "category": "USDT-FUTURES",
+              "symbol": "TSLAUSDT",
+              "side": "sell",
+              "qty": 3,
+              "price": 367.1,
+              "notionalUsdt": 1101.3,
+              "feeUsdt": 0.6607,
+              "slippageBps": null,
+              "bookHash": null,
+              "decisionId": "9001000004",
+              "rationale": null,
+              "note": null
+            }
+          ],
+          "rationale": null,
+          "equityAtEntry": 6747.679999999999
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.9958836807860841,
+          "divergenceAtExitPct": -2.509626875580929,
+          "spreadAtEntryBps": null,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 28800000,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": null,
+          "usualSpreadBps": null,
+          "stop": {
+            "existed": false,
+            "price": null,
+            "honoured": null
+          }
+        },
+        "scores": {
+          "entry": 4.18,
+          "sizing": 3.83,
+          "exit": 2.5,
+          "cost": 5,
+          "reasoning": 2,
+          "total": 69.72,
+          "letter": "C",
+          "evidence": [
+            "entry: price was -1.00 percent from the last regular close",
+            "entry: 01:30 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 1118.40 USDT is 1.47 times the 762.42 USDT median size over the period",
+            "exit: nothing in the record measures this, so it scores a neutral 2.5",
+            "cost: 1.3317 USDT of friction is 7.8 percent of the 17.1000 USDT gross",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "fixture-account:1201000005>open",
+          "source": {
+            "kind": "account",
+            "accountId": "fixture-account"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "TSLAUSDT",
+          "side": "long",
+          "entryTs": 1788544800000,
+          "exitTs": null,
+          "entryPrice": 355,
+          "exitPrice": null,
+          "qty": 1,
+          "grossPnl": null,
+          "feesUsdt": 0.213,
+          "fundingUsdt": -0.35003,
+          "slippageUsdt": 0,
+          "fills": [
+            {
+              "id": "fixture-account:1201000005",
+              "source": {
+                "kind": "account",
+                "accountId": "fixture-account"
+              },
+              "ts": 1788544800000,
+              "category": "USDT-FUTURES",
+              "symbol": "TSLAUSDT",
+              "side": "buy",
+              "qty": 1,
+              "price": 355,
+              "notionalUsdt": 355,
+              "feeUsdt": 0.213,
+              "slippageBps": null,
+              "bookHash": null,
+              "decisionId": "9001000005",
+              "rationale": null,
+              "note": null
+            }
+          ],
+          "rationale": null,
+          "equityAtEntry": 7247.679999999999
+        },
+        "context": {
+          "divergenceAtEntryPct": -5.7230115522507,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": null,
+          "sessionAtEntry": "regular",
+          "msToNextOpenAtEntry": 329400000,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": null,
+          "usualSpreadBps": null,
+          "stop": {
+            "existed": false,
+            "price": null,
+            "honoured": null
+          }
+        },
+        "scores": {
+          "entry": 2.5,
+          "sizing": 5,
+          "exit": 2.5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 58.5,
+          "letter": "C",
+          "evidence": [
+            "entry: price was -5.72 percent from the last regular close",
+            "entry: 14:00 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 355.00 USDT is 0.47 times the 762.42 USDT median size over the period",
+            "exit: nothing in the record measures this, so it scores a neutral 2.5",
+            "cost: 0.5630 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "revenge-trading",
+        "description": "A loss was followed within 30 minutes by a larger position in the same instrument",
+        "trades": [
+          "fixture-account:1201000001>fixture-account:1201000002",
+          "fixture-account:1201000003>fixture-account:1201000004"
+        ],
+        "evidence": [
+          "fixture-account:1201000003>fixture-account:1201000004 opened 30.0 minutes after fixture-account:1201000001>fixture-account:1201000002 lost 13.32 USDT, at 1118.40 USDT against 762.42 USDT"
+        ]
+      },
+      {
+        "pattern": "chasing-the-gap",
+        "description": "More than one entry was made while the price was more than one percent from the last regular close",
+        "trades": [
+          "fixture-account:1201000001>fixture-account:1201000002",
+          "fixture-account:1201000005>open"
+        ],
+        "evidence": [
+          "fixture-account:1201000001>fixture-account:1201000002 entered at 1.24 percent from the last regular close",
+          "fixture-account:1201000005>open entered at -5.72 percent from the last regular close"
+        ]
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check-revenge-trading",
+        "pattern": "revenge-trading",
+        "text": "No re-entry within 30 minutes of a loss in the same name",
+        "test": "no-reentry-after-loss"
+      },
+      {
+        "id": "check-chasing-the-gap",
+        "pattern": "chasing-the-gap",
+        "text": "No entries while the price is more than 1 percent from the last regular close",
+        "test": "divergence-under-1pct"
+      }
+    ],
+    "equityCurve": [
+      {
+        "ts": 1788400000000,
+        "equity": 6747.679999999999
+      },
+      {
+        "ts": 1788505200000,
+        "equity": 7247.679999999999
+      },
+      {
+        "ts": 1788600000000,
+        "equity": 7246.44
+      }
+    ]
+  },
+  "detectorsRun": [
+    "added-while-under-water",
+    "chasing-the-gap",
+    "concentration",
+    "fee-bleed",
+    "holding-losers",
+    "ignored-stops",
+    "overtrading",
+    "revenge-trading",
+    "weekend-overexposure"
+  ]
+}
