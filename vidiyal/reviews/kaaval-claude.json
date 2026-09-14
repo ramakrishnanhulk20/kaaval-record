@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789371890772,
+  "generatedAt": 1789375842836,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 7,
-    "decisions": 47,
-    "marks": 47
+    "fills": 9,
+    "decisions": 51,
+    "marks": 51
   },
   "bundle": {
     "source": {
@@ -17,12 +17,12 @@
     },
     "range": {
       "fromTs": 1789114889143,
-      "toTs": 1789363667825
+      "toTs": 1789375018268
     },
     "graded": [
       {
         "trade": {
-          "id": "ledger:6>open",
+          "id": "ledger:6>ledger:334",
           "source": {
             "kind": "ledger",
             "dir": "../kaaval/data/state/ledger",
@@ -32,14 +32,14 @@
           "symbol": "RNVDAUSDT",
           "side": "long",
           "entryTs": 1789114889143,
-          "exitTs": null,
+          "exitTs": 1789374022053,
           "entryPrice": 220.00995000000003,
-          "exitPrice": null,
-          "qty": 1.7432,
-          "grossPnl": null,
-          "feesUsdt": 0.38352134484000017,
+          "exitPrice": 213.29330000000002,
+          "qty": 0.7142,
+          "grossPnl": -4.79703143000001,
+          "feesUsdt": 0.30946518115000005,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.19176067242004569,
+          "slippageUsdt": 0.15473259057501113,
           "fills": [
             {
               "id": "ledger:6",
@@ -61,6 +61,27 @@
               "decisionId": null,
               "rationale": null,
               "note": "order source: brain"
+            },
+            {
+              "id": "ledger:334",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789374022053,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "sell",
+              "qty": 0.7142,
+              "price": 213.29330000000002,
+              "notionalUsdt": 152.33407486,
+              "feeUsdt": 0.15233407486,
+              "slippageBps": 4.999999999999502,
+              "bookHash": "3d36e9b935ed92145da79606142740e7c3b65fb1baf14478aded9a9b9ca98115",
+              "decisionId": "decision-328",
+              "rationale": "Maintaining existing long; divergence -2.06% vs last close, no news this tick, position already partially hedged via NVDAUSDT short. No fresh evidence to add or trim.",
+              "note": "order source: stop"
             }
           ],
           "rationale": null,
@@ -68,13 +89,13 @@
         },
         "context": {
           "divergenceAtEntryPct": 0.7556100018318457,
-          "divergenceAtExitPct": null,
+          "divergenceAtExitPct": -2.289019194649309,
           "spreadAtEntryBps": 1.819174094960526,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 18510857,
-          "nextEventMinutes": 54,
-          "bookShareAtEntry": 0.00035242617923211106,
-          "usualSpreadBps": 26.510649968003662,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00014439122143619418,
+          "usualSpreadBps": 26.057738462593118,
           "stop": {
             "existed": true,
             "price": 213.40965150000002,
@@ -82,21 +103,123 @@
           }
         },
         "scores": {
-          "entry": 3.54,
+          "entry": 4.72,
           "sizing": 5,
           "exit": 0,
-          "cost": 2.5,
+          "cost": 5,
           "reasoning": 2,
-          "total": 51.2,
-          "letter": "D",
+          "total": 64.6,
+          "letter": "C",
           "evidence": [
             "entry: price was 0.76 percent from the last regular close",
-            "entry: spread was 1.8 bps against a usual 26.5 bps, 0.07 times",
+            "entry: spread was 1.8 bps against a usual 26.1 bps, 0.07 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 213.41 was crossed and the position stayed open",
-            "cost: 0.5753 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "exit: the loser was held 4318.9 minutes against a winners median of 4.4 minutes, 991.63 times",
+            "cost: 0.4642 USDT of friction is 9.7 percent of the 4.7970 USDT gross",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:6>ledger:342",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "claude"
+          },
+          "category": "SPOT",
+          "symbol": "RNVDAUSDT",
+          "side": "long",
+          "entryTs": 1789114889143,
+          "exitTs": 1789375018268,
+          "entryPrice": 220.00995000000003,
+          "exitPrice": 212.963465,
+          "qty": 1.0290000000000001,
+          "grossPnl": -7.25083306500002,
+          "feesUsdt": 0.4455296440350001,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.22276482201750605,
+          "fills": [
+            {
+              "id": "ledger:6",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789114889143,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "buy",
+              "qty": 1.7432,
+              "price": 220.00995000000003,
+              "notionalUsdt": 383.5213448400001,
+              "feeUsdt": 0.3835213448400001,
+              "slippageBps": 5.00000000000119,
+              "bookHash": "5c06e440c40efe240cce8748326bd80b262961aa8c948472dfe9101f08834bd6",
+              "decisionId": null,
+              "rationale": null,
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:342",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789375018268,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "sell",
+              "qty": 1.0290000000000001,
+              "price": 212.963465,
+              "notionalUsdt": 219.13940548500005,
+              "feeUsdt": 0.21913940548500005,
+              "slippageBps": 4.999999999999043,
+              "bookHash": "a2667f7648cc0937285b771a052b3ae6bd66bc0988712c7ec83e36c10e843526",
+              "decisionId": "decision-336",
+              "rationale": "Quiet pre-open window, NYSE closed until 04:20 ET, no news or calendar catalysts, all existing positions sit within exposure and drawdown limits; holding current book without new orders and waiting for the regular-session open in ~5 hours before repositioning.",
+              "note": "order source: stop"
+            }
+          ],
+          "rationale": null,
+          "equityAtEntry": null
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.7556100018318457,
+          "divergenceAtExitPct": -2.4401186495029448,
+          "spreadAtEntryBps": 1.819174094960526,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 18510857,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00020803495779591686,
+          "usualSpreadBps": 26.057738462593118,
+          "stop": {
+            "existed": true,
+            "price": 213.40965150000002,
+            "honoured": false
+          }
+        },
+        "scores": {
+          "entry": 4.72,
+          "sizing": 5,
+          "exit": 0,
+          "cost": 5,
+          "reasoning": 2,
+          "total": 64.6,
+          "letter": "C",
+          "evidence": [
+            "entry: price was 0.76 percent from the last regular close",
+            "entry: spread was 1.8 bps against a usual 26.1 bps, 0.07 times",
+            "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 213.41 was crossed and the position stayed open",
+            "exit: the loser was held 4335.5 minutes against a winners median of 4.4 minutes, 995.45 times",
+            "cost: 0.6683 USDT of friction is 9.2 percent of the 7.2508 USDT gross",
             "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
@@ -632,38 +755,26 @@
         "pattern": "holding-losers",
         "description": "Losing trades were held more than twice as long as winning ones",
         "trades": [
+          "ledger:6>ledger:334",
+          "ledger:6>ledger:342",
           "ledger:12>ledger:279"
         ],
         "evidence": [
-          "median hold was 4146.3 minutes on 1 losers against 4.4 minutes on 1 winners, 952.0 times"
-        ]
-      },
-      {
-        "pattern": "fee-bleed",
-        "description": "Friction took more than a fifth of everything the period moved",
-        "trades": [
-          "ledger:6>open",
-          "ledger:9>open",
-          "ledger:12>ledger:28",
-          "ledger:12>ledger:279",
-          "ledger:12>open",
-          "ledger:15>open",
-          "ledger:166>open"
-        ],
-        "evidence": [
-          "2.4443 USDT of fees, slippage and funding against 9.8235 USDT of gross, 24.9 percent"
+          "median hold was 4318.9 minutes on 3 losers against 4.4 minutes on 1 winners, 991.6 times"
         ]
       },
       {
         "pattern": "ignored-stops",
         "description": "A position crossed its stop price and stayed open past the next tick",
         "trades": [
-          "ledger:6>open",
+          "ledger:6>ledger:334",
+          "ledger:6>ledger:342",
           "ledger:12>ledger:279",
           "ledger:12>open"
         ],
         "evidence": [
-          "ledger:6>open had a stop at 213.41 and the price went through it",
+          "ledger:6>ledger:334 had a stop at 213.41 and the price went through it",
+          "ledger:6>ledger:342 had a stop at 213.41 and the price went through it",
           "ledger:12>ledger:279 had a stop at 957.31 and the price went through it",
           "ledger:12>open had a stop at 957.31 and the price went through it"
         ]
@@ -675,12 +786,6 @@
         "pattern": "holding-losers",
         "text": "No adding to a name that is already a day old and under water",
         "test": "no-stale-loser-open"
-      },
-      {
-        "id": "check-fee-bleed",
-        "pattern": "fee-bleed",
-        "text": "The round trip costs less than 20 basis points, a fifth of a one percent move",
-        "test": "cost-under-20-bps"
       },
       {
         "id": "check-ignored-stops",
@@ -877,21 +982,32 @@
       {
         "ts": 1789371047271,
         "equity": 9979.990717959949
+      },
+      {
+        "ts": 1789372044584,
+        "equity": 9979.35868245995
+      },
+      {
+        "ts": 1789373120998,
+        "equity": 9979.74600795995
+      },
+      {
+        "ts": 1789374117402,
+        "equity": 9978.818684995089
+      },
+      {
+        "ts": 1789375131069,
+        "equity": 9978.270702574602
       }
     ]
   },
   "tradeNotes": {
-    "ledger:6>open": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789112700000,
-          "title": "Nvidia Chinese Rival Enflame Soars Over 220 % in Shanghai Debut As Investors Bet on Domestic AI Chips (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789118100000,
-          "title": "Nvidia CEO Signals Strong Momentum for Shareholders (gdelt/fool.com)"
-        }
-      ],
+    "ledger:6>ledger:334": {
+      "eventsNearEntry": [],
+      "judgeReason": "no note"
+    },
+    "ledger:6>ledger:342": {
+      "eventsNearEntry": [],
       "judgeReason": "no note"
     },
     "ledger:9>open": {
@@ -932,21 +1048,8 @@
       "judgeReason": "no note"
     },
     "ledger:166>open": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        }
-      ],
-      "judgeReason": "The note gives no causal thesis for the short—only a risk-management rationale for holding a hedge—so criterion 1 (naming a cause) fails and the still-open trade means horizon-matching and skill-claim criteria can't be assessed either way."
+      "eventsNearEntry": [],
+      "judgeReason": "The note gives no causal thesis for the short itself—only a rationale for holding steady during weekend illiquidity—so criteria 1 and 2 fail and the exit/outcome (still open) can't be judged against an implied horizon."
     }
   },
   "detectorsRun": [
