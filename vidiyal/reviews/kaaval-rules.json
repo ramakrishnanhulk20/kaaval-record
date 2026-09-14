@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789364125988,
+  "generatedAt": 1789368179977,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 17,
-    "decisions": 40,
-    "marks": 40
+    "decisions": 43,
+    "marks": 43
   },
   "bundle": {
     "source": {
@@ -413,8 +413,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 2,
-          "total": 76,
+          "reasoning": 1,
+          "total": 73,
           "letter": "B",
           "evidence": [
             "entry: price was 0.37 percent from the last regular close",
@@ -424,7 +424,7 @@
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: the stop at 223.68 was honoured",
             "cost: 0.8786 USDT of friction against a gross of 0.4904 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 2 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -923,8 +923,8 @@
           "sizing": 5,
           "exit": 2.5,
           "cost": 0,
-          "reasoning": 2,
-          "total": 63.5,
+          "reasoning": 1,
+          "total": 60.5,
           "letter": "C",
           "evidence": [
             "entry: price was 0.34 percent from the last regular close",
@@ -934,7 +934,7 @@
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
             "cost: 0.8830 USDT of friction against a gross of 0.3858 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 2 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -1247,6 +1247,18 @@
       {
         "ts": 1789363822014,
         "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789364866048,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789365923566,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789366970072,
+        "equity": 9991.903508118943
       }
     ]
   },
@@ -1264,15 +1276,54 @@
       "judgeReason": "judge reply invalid"
     },
     "ledger:171>ledger:215": {
-      "eventsNearEntry": [],
-      "judgeReason": "judge reply invalid"
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
+      "judgeReason": "The note names a cause (weekend closure/carry hedge rationale) that was observable at entry, but the exit after only 66 minutes doesn't match the ~52-hour carry horizon implied, and the loss is not falsely claimed as skill, though the mismatch between stated horizon and actual holding period drags the score down."
     },
     "ledger:184>ledger:212": {
-      "eventsNearEntry": [],
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
       "judgeReason": "judge reply invalid"
     },
     "ledger:196>ledger:212": {
-      "eventsNearEntry": [],
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
       "judgeReason": "judge reply invalid"
     },
     "ledger:205>ledger:212": {
@@ -1285,19 +1336,10 @@
     },
     "ledger:226>ledger:237": {
       "eventsNearEntry": [],
-      "judgeReason": "judge reply invalid"
+      "judgeReason": "The note names a cause (weekend closure/carry hedge) observable at entry, but a 16-minute exit contradicts the implied 50-hour holding horizon, and the small loss is properly not framed as skill, though the mismatched exit and lack of clarity on whether thesis was validated drag the score down."
     },
     "ledger:250>ledger:268": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789196400000,
-          "title": "Roundhill TSLA WeeklyPay ETF ( BATS : TSLW ) Sees Significant Increase in Short Interest (gdelt/tickerreport.com)"
-        }
-      ],
+      "eventsNearEntry": [],
       "judgeReason": "judge reply invalid"
     }
   },
