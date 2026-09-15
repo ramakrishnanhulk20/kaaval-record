@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789489663887,
+  "generatedAt": 1789495119709,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 2,
-    "decisions": 44,
-    "marks": 44
+    "decisions": 49,
+    "marks": 49
   },
   "bundle": {
     "source": {
@@ -380,17 +380,37 @@
       {
         "ts": 1789488934066,
         "equity": 9999.75950612125
+      },
+      {
+        "ts": 1789490031471,
+        "equity": 9999.781816621251
+      },
+      {
+        "ts": 1789491173283,
+        "equity": 9999.72892712125
+      },
+      {
+        "ts": 1789492320559,
+        "equity": 9999.975706121251
+      },
+      {
+        "ts": 1789493451911,
+        "equity": 10000.046206121251
+      },
+      {
+        "ts": 1789494592699,
+        "equity": 9999.92635612125
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The trade has no stated thesis at all; the note indicates a timeout in decision-making rather than any analysis of cause, making all four criteria impossible to assess."
+      "judgeReason": "The thesis names no cause at all—the note documents a processing delay, not market reasoning; no observable market condition justifies the entry; the trade remains open with no stated horizon; and the stop honor provides no skill signal when no thesis was articulated."
     },
     "ledger:440>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The trade has no stated thesis at all—the note indicates an algorithmic delay rather than reasoned entry, so criteria 1 (naming a cause) and 2 (observability at entry) are both absent."
+      "judgeReason": "Criterion 1 fails: the note records a system delay, not a trading thesis naming any cause for directional conviction; no reasoning about why NVDA should decline is documented."
     }
   },
   "detectorsRun": [
