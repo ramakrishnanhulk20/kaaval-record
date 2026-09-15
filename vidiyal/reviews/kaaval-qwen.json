@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789500400701,
+  "generatedAt": 1789502171833,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 2,
-    "decisions": 54,
-    "marks": 54
+    "decisions": 55,
+    "marks": 55
   },
   "bundle": {
     "source": {
@@ -74,7 +74,7 @@
           "msToNextOpenAtEntry": 28012995,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00014312500398047822,
-          "usualSpreadBps": 1.850940714052607,
+          "usualSpreadBps": 1.819174094960526,
           "stop": {
             "existed": true,
             "price": 205.91750729999998,
@@ -91,7 +91,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.63 percent from the last regular close",
-            "entry: spread was 1.4 bps against a usual 1.9 bps, 0.76 times",
+            "entry: spread was 1.4 bps against a usual 1.8 bps, 0.78 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 149.05 USDT is 1.49 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -420,17 +420,21 @@
       {
         "ts": 1789500243094,
         "equity": 9999.69602712125
+      },
+      {
+        "ts": 1789501341443,
+        "equity": 9999.79713512125
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all; the note documents a processing delay, not market reasoning, so criteria 1 and 2 both fail entirely."
+      "judgeReason": "Criterion 1 fails: the note contains no thesis naming a cause for the trade, only a technical observation about processing delay that does not explain why the position was opened."
     },
     "ledger:440>open": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note states no decision was made ('qwen took longer than 180 seconds'), so no thesis naming a cause exists for this trade."
+      "judgeReason": "The thesis names no cause at all—the note documents a processing delay, not market reasoning; no observable market condition is cited as motivation for the short entry; the trade remains open with no exit horizon stated; and the outcome cannot be evaluated against skill or process when no decision was actually made."
     }
   },
   "detectorsRun": [
