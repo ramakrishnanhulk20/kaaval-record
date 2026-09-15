@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789474413954,
+  "generatedAt": 1789479059798,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 2,
-    "decisions": 22,
-    "marks": 22
+    "decisions": 29,
+    "marks": 29
   },
   "bundle": {
     "source": {
@@ -155,7 +155,7 @@
           "msToNextOpenAtEntry": 28012794,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0003088470092001248,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.47009049345886106,
           "stop": {
             "existed": true,
             "price": 216.58045560000002,
@@ -292,17 +292,45 @@
       {
         "ts": 1789473396633,
         "equity": 9999.70977912125
+      },
+      {
+        "ts": 1789474504764,
+        "equity": 9999.59007412125
+      },
+      {
+        "ts": 1789475678919,
+        "equity": 9999.709721121251
+      },
+      {
+        "ts": 1789476833562,
+        "equity": 9999.77584062125
+      },
+      {
+        "ts": 1789477974107,
+        "equity": 9999.76626662125
+      },
+      {
+        "ts": 1789478290304,
+        "equity": 9999.79406062125
+      },
+      {
+        "ts": 1789478642493,
+        "equity": 9999.79321912125
+      },
+      {
+        "ts": 1789478973178,
+        "equity": 9999.84999662125
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note indicates an automated system timed out rather than a trading decision being made, so criterion 1 fails and the trade lacks any observable reasoning to grade."
+      "judgeReason": "The trade has no stated thesis at all—the note indicates an automated system timed out rather than a reasoned entry, so all four criteria fail: no named cause, no observable reasoning at entry, no exit horizon defined, and no framework to evaluate skill versus chance."
     },
     "ledger:440>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note states only a system delay, not a market observation or reasoning for the short position, failing criteria 1 and 2 entirely."
+      "judgeReason": "The thesis names no cause at all; the note indicates the trade entry was triggered by a timeout in an automated system rather than by observable market analysis or reasoning, and the exit criterion (stop) is mechanical rather than derived from any stated thesis about price direction."
     }
   },
   "detectorsRun": [

@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789474409637,
+  "generatedAt": 1789478994214,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 38,
-    "decisions": 84,
-    "marks": 84
+    "fills": 45,
+    "decisions": 90,
+    "marks": 90
   },
   "bundle": {
     "source": {
@@ -17,7 +17,7 @@
     },
     "range": {
       "fromTs": 1789114889143,
-      "toTs": 1789473195466
+      "toTs": 1789478094668
     },
     "graded": [
       {
@@ -95,7 +95,7 @@
           "msToNextOpenAtEntry": 18510857,
           "nextEventMinutes": 54,
           "bookShareAtEntry": 0.00014439122143619418,
-          "usualSpreadBps": 1.819174094960526,
+          "usualSpreadBps": 1.6200329707047672,
           "stop": {
             "existed": true,
             "price": 213.40965150000002,
@@ -103,16 +103,16 @@
           }
         },
         "scores": {
-          "entry": 3.54,
+          "entry": 3.46,
           "sizing": 5,
           "exit": 0,
           "cost": 5,
           "reasoning": 2,
-          "total": 58.7,
+          "total": 58.3,
           "letter": "C",
           "evidence": [
             "entry: price was 0.76 percent from the last regular close",
-            "entry: spread was 1.8 bps against a usual 1.8 bps, 1.00 times",
+            "entry: spread was 1.8 bps against a usual 1.6 bps, 1.12 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -198,7 +198,7 @@
           "msToNextOpenAtEntry": 18510857,
           "nextEventMinutes": 54,
           "bookShareAtEntry": 0.00020803495779591686,
-          "usualSpreadBps": 1.819174094960526,
+          "usualSpreadBps": 1.6200329707047672,
           "stop": {
             "existed": true,
             "price": 213.40965150000002,
@@ -206,16 +206,16 @@
           }
         },
         "scores": {
-          "entry": 3.54,
+          "entry": 3.46,
           "sizing": 5,
           "exit": 0,
           "cost": 5,
           "reasoning": 2,
-          "total": 58.7,
+          "total": 58.3,
           "letter": "C",
           "evidence": [
             "entry: price was 0.76 percent from the last regular close",
-            "entry: spread was 1.8 bps against a usual 1.8 bps, 1.00 times",
+            "entry: spread was 1.8 bps against a usual 1.6 bps, 1.12 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -278,7 +278,7 @@
           "spreadAtEntryBps": 4.7148582327859945,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 18510233,
-          "nextEventMinutes": null,
+          "nextEventMinutes": 54,
           "bookShareAtEntry": 0.00125023803859338,
           "usualSpreadBps": 4.7148582327859945,
           "stop": {
@@ -288,17 +288,18 @@
           }
         },
         "scores": {
-          "entry": 4.95,
+          "entry": 3.72,
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
           "reasoning": 2,
-          "total": 83.25,
+          "total": 77.1,
           "letter": "B",
           "evidence": [
             "entry: price was 0.54 percent from the last regular close",
             "entry: spread was 4.7 bps against a usual 4.7 bps, 1.00 times",
             "entry: 04:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 54 minutes away and the rationale said nothing",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: the stop at 679.42 was honoured",
             "cost: 0.4502 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
@@ -970,7 +971,7 @@
           "msToNextOpenAtEntry": 187481393,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0002951467675454612,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.4701125919653482,
           "stop": {
             "existed": true,
             "price": 223.67610600000003,
@@ -982,8 +983,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 5,
-          "reasoning": 1,
-          "total": 88,
+          "reasoning": 2,
+          "total": 91,
           "letter": "A",
           "evidence": [
             "entry: price was 0.37 percent from the last regular close",
@@ -993,7 +994,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 223.68 was honoured",
             "cost: 0.1806 USDT of friction is 7.2 percent of the 2.5133 USDT gross",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -1072,7 +1073,7 @@
           "msToNextOpenAtEntry": 187481393,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00009320424238277722,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.4701125919653482,
           "stop": {
             "existed": true,
             "price": 223.67610600000003,
@@ -1174,7 +1175,7 @@
           "msToNextOpenAtEntry": 187481393,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00020970954536124874,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.4701125919653482,
           "stop": {
             "existed": true,
             "price": 223.67610600000003,
@@ -1186,8 +1187,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 5,
-          "reasoning": 2,
-          "total": 91,
+          "reasoning": 1,
+          "total": 88,
           "letter": "A",
           "evidence": [
             "entry: price was 0.37 percent from the last regular close",
@@ -1197,7 +1198,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 223.68 was honoured",
             "cost: 0.1647 USDT of friction is 9.3 percent of the 1.7804 USDT gross",
-            "reasoning: the judge scored the stated thesis 2 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -1276,7 +1277,7 @@
           "msToNextOpenAtEntry": 28013212,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00005584110723984129,
-          "usualSpreadBps": 6.469031163567592,
+          "usualSpreadBps": 5.477200471364755,
           "stop": {
             "existed": true,
             "price": 737.0251284,
@@ -1284,16 +1285,16 @@
           }
         },
         "scores": {
-          "entry": 4.53,
+          "entry": 4.29,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
           "reasoning": 0,
-          "total": 67.65,
+          "total": 66.45,
           "letter": "C",
           "evidence": [
             "entry: price was -0.14 percent from the last regular close",
-            "entry: spread was 10.1 bps against a usual 6.5 bps, 1.57 times",
+            "entry: spread was 10.1 bps against a usual 5.5 bps, 1.85 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 50.00 USDT is 0.50 percent of 9980.04 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -1379,7 +1380,7 @@
           "msToNextOpenAtEntry": 28013212,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0000835919310505223,
-          "usualSpreadBps": 6.469031163567592,
+          "usualSpreadBps": 5.477200471364755,
           "stop": {
             "existed": true,
             "price": 737.0251284,
@@ -1387,16 +1388,16 @@
           }
         },
         "scores": {
-          "entry": 4.53,
+          "entry": 4.29,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
           "reasoning": 1,
-          "total": 70.65,
-          "letter": "B",
+          "total": 69.45,
+          "letter": "C",
           "evidence": [
             "entry: price was -0.14 percent from the last regular close",
-            "entry: spread was 10.1 bps against a usual 6.5 bps, 1.57 times",
+            "entry: spread was 10.1 bps against a usual 5.5 bps, 1.85 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 74.84 USDT is 0.75 percent of 9980.04 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -1482,7 +1483,7 @@
           "msToNextOpenAtEntry": 28013212,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0000420081277868107,
-          "usualSpreadBps": 6.469031163567592,
+          "usualSpreadBps": 5.477200471364755,
           "stop": {
             "existed": true,
             "price": 737.0251284,
@@ -1490,16 +1491,16 @@
           }
         },
         "scores": {
-          "entry": 4.53,
+          "entry": 4.29,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
           "reasoning": 0,
-          "total": 67.65,
+          "total": 66.45,
           "letter": "C",
           "evidence": [
             "entry: price was -0.14 percent from the last regular close",
-            "entry: spread was 10.1 bps against a usual 6.5 bps, 1.57 times",
+            "entry: spread was 10.1 bps against a usual 5.5 bps, 1.85 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 37.61 USDT is 0.38 percent of 9980.04 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -1585,7 +1586,7 @@
           "msToNextOpenAtEntry": 28013212,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.000042008127786810676,
-          "usualSpreadBps": 6.469031163567592,
+          "usualSpreadBps": 5.477200471364755,
           "stop": {
             "existed": true,
             "price": 737.0251284,
@@ -1593,23 +1594,23 @@
           }
         },
         "scores": {
-          "entry": 4.53,
+          "entry": 4.29,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 1,
-          "total": 70.65,
-          "letter": "B",
+          "reasoning": 0,
+          "total": 66.45,
+          "letter": "C",
           "evidence": [
             "entry: price was -0.14 percent from the last regular close",
-            "entry: spread was 10.1 bps against a usual 6.5 bps, 1.57 times",
+            "entry: spread was 10.1 bps against a usual 5.5 bps, 1.85 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 37.61 USDT is 0.38 percent of 9980.04 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 737.03 was honoured",
             "exit: the loser was held 130.9 minutes against a winners median of 140.0 minutes, 0.93 times",
             "cost: 0.1126 USDT of friction is 76.1 percent of the 0.1479 USDT gross",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 0 out of 5"
           ]
         }
       },
@@ -1688,7 +1689,7 @@
           "msToNextOpenAtEntry": 25822814,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00009346405235530852,
-          "usualSpreadBps": 1.819174094960526,
+          "usualSpreadBps": 1.6200329707047672,
           "stop": {
             "existed": true,
             "price": 206.20865279999998,
@@ -1696,16 +1697,16 @@
           }
         },
         "scores": {
-          "entry": 4.67,
+          "entry": 4.56,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
           "reasoning": 2,
-          "total": 74.35,
+          "total": 73.8,
           "letter": "B",
           "evidence": [
             "entry: price was 0.77 percent from the last regular close",
-            "entry: spread was 1.9 bps against a usual 1.8 bps, 1.03 times",
+            "entry: spread was 1.9 bps against a usual 1.6 bps, 1.16 times",
             "entry: 02:19 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 99.85 USDT is 1.00 percent of 9979.37 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -1791,7 +1792,7 @@
           "msToNextOpenAtEntry": 25822814,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.000023361038421360913,
-          "usualSpreadBps": 1.819174094960526,
+          "usualSpreadBps": 1.6200329707047672,
           "stop": {
             "existed": true,
             "price": 206.20865279999998,
@@ -1799,23 +1800,23 @@
           }
         },
         "scores": {
-          "entry": 4.67,
+          "entry": 4.56,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 2,
-          "total": 74.35,
+          "reasoning": 1,
+          "total": 70.8,
           "letter": "B",
           "evidence": [
             "entry: price was 0.77 percent from the last regular close",
-            "entry: spread was 1.9 bps against a usual 1.8 bps, 1.03 times",
+            "entry: spread was 1.9 bps against a usual 1.6 bps, 1.16 times",
             "entry: 02:19 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 24.96 USDT is 0.25 percent of 9979.37 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 206.21 was honoured",
             "exit: the loser was held 57.6 minutes against a winners median of 140.0 minutes, 0.41 times",
             "cost: 0.0747 USDT of friction is 73.8 percent of the 0.1012 USDT gross",
-            "reasoning: the judge scored the stated thesis 2 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -1894,7 +1895,7 @@
           "msToNextOpenAtEntry": 25822814,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00003512115231150086,
-          "usualSpreadBps": 1.819174094960526,
+          "usualSpreadBps": 1.6200329707047672,
           "stop": {
             "existed": true,
             "price": 206.20865279999998,
@@ -1902,23 +1903,23 @@
           }
         },
         "scores": {
-          "entry": 4.67,
+          "entry": 4.56,
           "sizing": 5,
           "exit": 5,
           "cost": 1.2,
-          "reasoning": 1,
-          "total": 74.95,
+          "reasoning": 2,
+          "total": 77.4,
           "letter": "B",
           "evidence": [
             "entry: price was 0.77 percent from the last regular close",
-            "entry: spread was 1.9 bps against a usual 1.8 bps, 1.03 times",
+            "entry: spread was 1.9 bps against a usual 1.6 bps, 1.16 times",
             "entry: 02:19 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 37.52 USDT is 0.38 percent of 9979.37 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 206.21 was honoured",
             "exit: the loser was held 112.7 minutes against a winners median of 140.0 minutes, 0.80 times",
             "cost: 0.1121 USDT of friction is 40.4 percent of the 0.2774 USDT gross",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -1997,7 +1998,7 @@
           "msToNextOpenAtEntry": 25822814,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.000035340037680014474,
-          "usualSpreadBps": 1.819174094960526,
+          "usualSpreadBps": 1.6200329707047672,
           "stop": {
             "existed": true,
             "price": 206.20865279999998,
@@ -2005,16 +2006,16 @@
           }
         },
         "scores": {
-          "entry": 4.67,
+          "entry": 4.56,
           "sizing": 5,
           "exit": 4.17,
           "cost": 0,
           "reasoning": 2,
-          "total": 70.2,
-          "letter": "B",
+          "total": 69.65,
+          "letter": "C",
           "evidence": [
             "entry: price was 0.77 percent from the last regular close",
-            "entry: spread was 1.9 bps against a usual 1.8 bps, 1.03 times",
+            "entry: spread was 1.9 bps against a usual 1.6 bps, 1.16 times",
             "entry: 02:19 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 37.76 USDT is 0.38 percent of 9979.37 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -2100,7 +2101,7 @@
           "msToNextOpenAtEntry": 25822593,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0001397200439263395,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.4701125919653482,
           "stop": {
             "existed": true,
             "price": 216.85571790000003,
@@ -2202,7 +2203,7 @@
           "msToNextOpenAtEntry": 25822593,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0000911217677780475,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.4701125919653482,
           "stop": {
             "existed": true,
             "price": 216.85571790000003,
@@ -2304,7 +2305,7 @@
           "msToNextOpenAtEntry": 25822593,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00005467306066682849,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.4701125919653482,
           "stop": {
             "existed": true,
             "price": 216.85571790000003,
@@ -2406,7 +2407,7 @@
           "msToNextOpenAtEntry": 12360578,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00013384588643612644,
-          "usualSpreadBps": 1.819174094960526,
+          "usualSpreadBps": 1.6200329707047672,
           "stop": {
             "existed": true,
             "price": 206.0727849,
@@ -2423,7 +2424,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.70 percent from the last regular close",
-            "entry: spread was 1.4 bps against a usual 1.8 bps, 0.78 times",
+            "entry: spread was 1.4 bps against a usual 1.6 bps, 0.87 times",
             "entry: 06:03 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 145.87 USDT is 1.46 percent of 9977.70 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -2509,7 +2510,7 @@
           "msToNextOpenAtEntry": 12360164,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0005506177010048788,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.4701125919653482,
           "stop": {
             "existed": true,
             "price": 216.7129893,
@@ -2612,7 +2613,7 @@
           "msToNextOpenAtEntry": 10284423,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.000004874153910021903,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.4701125919653482,
           "stop": {
             "existed": true,
             "price": 208.6580769,
@@ -2624,9 +2625,9 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 0,
-          "total": 68.1,
-          "letter": "C",
+          "reasoning": 1,
+          "total": 71.1,
+          "letter": "B",
           "evidence": [
             "entry: price was 0.85 percent from the last regular close",
             "entry: spread was 0.5 bps against a usual 0.5 bps, 1.00 times",
@@ -2635,7 +2636,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the loser was held 18.3 minutes against a winners median of 140.0 minutes, 0.13 times",
             "cost: 0.0234 USDT of friction against a gross of 0.0146 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 0 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -2714,7 +2715,7 @@
           "msToNextOpenAtEntry": 8083104,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00003643819887173632,
-          "usualSpreadBps": 1.819174094960526,
+          "usualSpreadBps": 1.6200329707047672,
           "stop": {
             "existed": true,
             "price": 206.31540615,
@@ -2731,7 +2732,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.82 percent from the last regular close",
-            "entry: spread was 1.4 bps against a usual 1.8 bps, 0.78 times",
+            "entry: spread was 1.4 bps against a usual 1.6 bps, 0.87 times",
             "entry: 07:15 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 39.77 USDT is 0.40 percent of 9976.88 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -2744,7 +2745,7 @@
       },
       {
         "trade": {
-          "id": "ledger:639>open",
+          "id": "ledger:639>ledger:676",
           "source": {
             "kind": "ledger",
             "dir": "../kaaval/data/state/ledger",
@@ -2754,14 +2755,14 @@
           "symbol": "RNVDAUSDT",
           "side": "long",
           "entryTs": 1789470916896,
-          "exitTs": null,
+          "exitTs": 1789474297993,
           "entryPrice": 212.69629500000002,
-          "exitPrice": null,
-          "qty": 0.7537,
-          "grossPnl": null,
-          "feesUsdt": 0.16030919754150003,
+          "exitPrice": 212.143875,
+          "qty": 0.1412,
+          "grossPnl": -0.07800170400000171,
+          "feesUsdt": 0.059987432003999995,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.08015459877076292,
+          "slippageUsdt": 0.029993716002001233,
           "fills": [
             {
               "id": "ledger:639",
@@ -2783,6 +2784,27 @@
               "decisionId": "decision-622",
               "rationale": "Existing long 145.86 USDT notional (1.46% of equity) is below 5% hedge threshold. Divergence 0.6921% high but position is already hedged by 0.0500 contracts NVDAUSDT perpetual (10.64 USDT, 0.07x hedge ratio). Maintain as is pending market open.",
               "note": "order source: brain"
+            },
+            {
+              "id": "ledger:676",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789474297993,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "sell",
+              "qty": 0.1412,
+              "price": 212.143875,
+              "notionalUsdt": 29.95471515,
+              "feeUsdt": 0.02995471515,
+              "slippageBps": 4.999999999999603,
+              "bookHash": "a023e465b5fbc2ee3f967716ee9d942a613c55900f2e90e7f16fc237fccac7f6",
+              "decisionId": "decision-658",
+              "rationale": "NVDA spot at 212.26 with 0.62% divergence above regular close. Existing 199.72 USDT long position is hedged 0.49 ratio with short NVDA perpetual (97.77). Divergence exceeds 0.5% and NYSE closes in 487 min, hedge requirement met. Hold near current level.",
+              "note": "order source: brain"
             }
           ],
           "rationale": "Existing long 145.86 USDT notional (1.46% of equity) is below 5% hedge threshold. Divergence 0.6921% high but position is already hedged by 0.0500 contracts NVDAUSDT perpetual (10.64 USDT, 0.07x hedge ratio). Maintain as is pending market open.",
@@ -2790,13 +2812,13 @@
         },
         "context": {
           "divergenceAtEntryPct": 0.8230446530147953,
-          "divergenceAtExitPct": null,
+          "divergenceAtExitPct": 0.5611845847554041,
           "spreadAtEntryBps": 1.4112666117841297,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 8083104,
           "nextEventMinutes": null,
-          "bookShareAtEntry": 0.00014686347855415863,
-          "usualSpreadBps": 1.819174094960526,
+          "bookShareAtEntry": 0.000027513762998337792,
+          "usualSpreadBps": 1.6200329707047672,
           "stop": {
             "existed": true,
             "price": 206.31540615,
@@ -2807,18 +2829,225 @@
           "entry": 4.64,
           "sizing": 5,
           "exit": 5,
-          "cost": 2.5,
+          "cost": 0,
           "reasoning": 2,
-          "total": 81.7,
+          "total": 74.2,
           "letter": "B",
           "evidence": [
             "entry: price was 0.82 percent from the last regular close",
-            "entry: spread was 1.4 bps against a usual 1.8 bps, 0.78 times",
+            "entry: spread was 1.4 bps against a usual 1.6 bps, 0.87 times",
             "entry: 07:15 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "sizing: 160.31 USDT is 1.61 percent of 9976.88 USDT equity against a 10 percent cap",
+            "sizing: 30.03 USDT is 0.30 percent of 9976.88 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 206.32 was honoured",
-            "cost: 0.2405 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "exit: the loser was held 56.4 minutes against a winners median of 140.0 minutes, 0.40 times",
+            "cost: 0.0900 USDT of friction against a gross of 0.0780 USDT, so friction was the whole trade",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:639>ledger:690",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "claude"
+          },
+          "category": "SPOT",
+          "symbol": "RNVDAUSDT",
+          "side": "long",
+          "entryTs": 1789470916896,
+          "exitTs": 1789475406206,
+          "entryPrice": 212.69629500000002,
+          "exitPrice": 212.203845,
+          "qty": 0.3299,
+          "grossPnl": -0.1624592550000064,
+          "feesUsdt": 0.14017455618600003,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.07008727809300602,
+          "fills": [
+            {
+              "id": "ledger:639",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789470916896,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "buy",
+              "qty": 0.9407,
+              "price": 212.69629500000002,
+              "notionalUsdt": 200.0834047065,
+              "feeUsdt": 0.20008340470650002,
+              "slippageBps": 5.000000000000806,
+              "bookHash": "3cb41a548fcf274ae8bb589e156be44356a585c6f71ad3539199d6a28787e0a5",
+              "decisionId": "decision-622",
+              "rationale": "Existing long 145.86 USDT notional (1.46% of equity) is below 5% hedge threshold. Divergence 0.6921% high but position is already hedged by 0.0500 contracts NVDAUSDT perpetual (10.64 USDT, 0.07x hedge ratio). Maintain as is pending market open.",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:690",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789475406206,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "sell",
+              "qty": 0.3299,
+              "price": 212.203845,
+              "notionalUsdt": 70.0060484655,
+              "feeUsdt": 0.0700060484655,
+              "slippageBps": 5.000000000000052,
+              "bookHash": "052a0afbb41108562ca154c01c046ed30383a9998a07d27e5e52988f0f92c3f6",
+              "decisionId": "decision-672",
+              "rationale": "Currently long 159.98 USDT notional. Divergence is 0.6968%, exceeding 0.5% threshold. Hedge rule requires 0.5 delta hedge. Reduce position slightly to prepare for mandatory hedge entry within cross-asset rule when divergence exceeds 0.5% and NYSE closed >24h.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Existing long 145.86 USDT notional (1.46% of equity) is below 5% hedge threshold. Divergence 0.6921% high but position is already hedged by 0.0500 contracts NVDAUSDT perpetual (10.64 USDT, 0.07x hedge ratio). Maintain as is pending market open.",
+          "equityAtEntry": 9976.877383093064
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.8230446530147953,
+          "divergenceAtExitPct": 0.5896117747440242,
+          "spreadAtEntryBps": 1.4112666117841297,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 8083104,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00006428321822345354,
+          "usualSpreadBps": 1.6200329707047672,
+          "stop": {
+            "existed": true,
+            "price": 206.31540615,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.64,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 0,
+          "reasoning": 2,
+          "total": 74.2,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.82 percent from the last regular close",
+            "entry: spread was 1.4 bps against a usual 1.6 bps, 0.87 times",
+            "entry: 07:15 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 70.17 USDT is 0.70 percent of 9976.88 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 206.32 was honoured",
+            "exit: the loser was held 74.8 minutes against a winners median of 140.0 minutes, 0.53 times",
+            "cost: 0.2103 USDT of friction against a gross of 0.1625 USDT, so friction was the whole trade",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:639>ledger:703",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "claude"
+          },
+          "category": "SPOT",
+          "symbol": "RNVDAUSDT",
+          "side": "long",
+          "entryTs": 1789470916896,
+          "exitTs": 1789476579206,
+          "entryPrice": 212.69629500000002,
+          "exitPrice": 212.43373,
+          "qty": 0.2826,
+          "grossPnl": -0.07420086900000664,
+          "feesUsdt": 0.12014174506500001,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.06007087253250343,
+          "fills": [
+            {
+              "id": "ledger:639",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789470916896,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "buy",
+              "qty": 0.9407,
+              "price": 212.69629500000002,
+              "notionalUsdt": 200.0834047065,
+              "feeUsdt": 0.20008340470650002,
+              "slippageBps": 5.000000000000806,
+              "bookHash": "3cb41a548fcf274ae8bb589e156be44356a585c6f71ad3539199d6a28787e0a5",
+              "decisionId": "decision-622",
+              "rationale": "Existing long 145.86 USDT notional (1.46% of equity) is below 5% hedge threshold. Divergence 0.6921% high but position is already hedged by 0.0500 contracts NVDAUSDT perpetual (10.64 USDT, 0.07x hedge ratio). Maintain as is pending market open.",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:703",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789476579206,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "sell",
+              "qty": 0.2826,
+              "price": 212.43373,
+              "notionalUsdt": 60.033772098,
+              "feeUsdt": 0.060033772098,
+              "slippageBps": 4.999999999999764,
+              "bookHash": "71ef198109b3d17aa43ff8cbffa5826afa427f889f6cd676035a8ac1ba03d1cf",
+              "decisionId": "decision-684",
+              "rationale": "Position 130 USDT (1.3% of equity) with 0.63% divergence and 60 minutes to open. Divergence exceeds 0.5%, triggering hedge requirement. Reduce to flat before entry gate closes at 09:40 ET.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Existing long 145.86 USDT notional (1.46% of equity) is below 5% hedge threshold. Divergence 0.6921% high but position is already hedged by 0.0500 contracts NVDAUSDT perpetual (10.64 USDT, 0.07x hedge ratio). Maintain as is pending market open.",
+          "equityAtEntry": 9976.877383093064
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.8230446530147953,
+          "divergenceAtExitPct": 0.6985826697004119,
+          "spreadAtEntryBps": 1.4112666117841297,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 8083104,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00005506649733236729,
+          "usualSpreadBps": 1.6200329707047672,
+          "stop": {
+            "existed": true,
+            "price": 206.31540615,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.64,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 0,
+          "reasoning": 2,
+          "total": 74.2,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.82 percent from the last regular close",
+            "entry: spread was 1.4 bps against a usual 1.6 bps, 0.87 times",
+            "entry: 07:15 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 60.11 USDT is 0.60 percent of 9976.88 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 206.32 was honoured",
+            "exit: the loser was held 94.4 minutes against a winners median of 140.0 minutes, 0.67 times",
+            "cost: 0.1802 USDT of friction against a gross of 0.0742 USDT, so friction was the whole trade",
             "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
@@ -2898,7 +3127,7 @@
           "msToNextOpenAtEntry": 8082956,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0002089692289407068,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.4701125919653482,
           "stop": {
             "existed": true,
             "price": 217.00864140000002,
@@ -2927,7 +3156,7 @@
       },
       {
         "trade": {
-          "id": "ledger:642>open",
+          "id": "ledger:642>ledger:718",
           "source": {
             "kind": "ledger",
             "dir": "../kaaval/data/state/ledger",
@@ -2937,14 +3166,14 @@
           "symbol": "NVDAUSDT",
           "side": "short",
           "entryTs": 1789470917044,
-          "exitTs": null,
+          "exitTs": 1789477734432,
           "entryPrice": 212.75357000000002,
-          "exitPrice": null,
+          "exitPrice": 213.08648999999997,
           "qty": 0.15000000000000002,
-          "grossPnl": null,
-          "feesUsdt": 0.0191478213,
+          "grossPnl": -0.0499379999999917,
+          "feesUsdt": 0.0383256054,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.015956517749998345,
+          "slippageUsdt": 0.03193800449999527,
           "fills": [
             {
               "id": "ledger:642",
@@ -2966,6 +3195,27 @@
               "decisionId": "decision-622",
               "rationale": "10.64 USDT notional perpetual hedge against RNVDAUSDT spot. Adequate given spot position under 5% equity threshold. Maintain through pre-open volatility window.",
               "note": "order source: brain"
+            },
+            {
+              "id": "ledger:718",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789477734432,
+              "category": "USDT-FUTURES",
+              "symbol": "NVDAUSDT",
+              "side": "buy",
+              "qty": 0.15000000000000002,
+              "price": 213.08648999999997,
+              "notionalUsdt": 31.9629735,
+              "feeUsdt": 0.019177784099999998,
+              "slippageBps": 4.99999999999904,
+              "bookHash": "a610297c9a3d1b15c4e8ee2a9aaefd23e8135d4d8cba1757c60286683a510b74",
+              "decisionId": "decision-699",
+              "rationale": "RNVDAUSDT 0.76% divergence exceeds 0.5% threshold and triggers hedge requirement. Current short NVDAUSDT (31.93 USDT notional) is insufficient. Add 60 USDT short (total ~92 USDT) to achieve 0.5+ delta hedge on 60 USDT RNVDAUSDT spot position. Protects against gap moves before open.",
+              "note": "order source: brain"
             }
           ],
           "rationale": "10.64 USDT notional perpetual hedge against RNVDAUSDT spot. Adequate given spot position under 5% equity threshold. Maintain through pre-open volatility window.",
@@ -2973,13 +3223,13 @@
         },
         "context": {
           "divergenceAtEntryPct": 0.7689906692559226,
-          "divergenceAtExitPct": null,
+          "divergenceAtExitPct": 0.9266755079808526,
           "spreadAtEntryBps": 0.4697813167966037,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 8082956,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00010111414303582588,
-          "usualSpreadBps": 0.4704000752635842,
+          "usualSpreadBps": 0.4701125919653482,
           "stop": {
             "existed": true,
             "price": 217.00864140000002,
@@ -2990,10 +3240,10 @@
           "entry": 4.7,
           "sizing": 5,
           "exit": 5,
-          "cost": 2.5,
+          "cost": 0,
           "reasoning": 4,
-          "total": 88,
-          "letter": "A",
+          "total": 80.5,
+          "letter": "B",
           "evidence": [
             "entry: price was 0.77 percent from the last regular close",
             "entry: spread was 0.5 bps against a usual 0.5 bps, 1.00 times",
@@ -3001,8 +3251,252 @@
             "sizing: 31.91 USDT is 0.32 percent of 9976.88 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 217.01 was honoured",
-            "cost: 0.0351 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "exit: the loser was held 113.6 minutes against a winners median of 140.0 minutes, 0.81 times",
+            "cost: 0.0703 USDT of friction against a gross of 0.0499 USDT, so friction was the whole trade",
             "reasoning: the judge scored the stated thesis 4 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:687>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "claude"
+          },
+          "category": "SPOT",
+          "symbol": "RSPYUSDT",
+          "side": "long",
+          "entryTs": 1789475406209,
+          "exitTs": null,
+          "entryPrice": 760.76019,
+          "exitPrice": null,
+          "qty": 0.1972,
+          "grossPnl": null,
+          "feesUsdt": 0.15002190946799998,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.07501095473399416,
+          "fills": [
+            {
+              "id": "ledger:687",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789475406209,
+              "category": "SPOT",
+              "symbol": "RSPYUSDT",
+              "side": "buy",
+              "qty": 0.1972,
+              "price": 760.76019,
+              "notionalUsdt": 150.021909468,
+              "feeUsdt": 0.15002190946799998,
+              "slippageBps": 4.999999999999612,
+              "bookHash": "7b4326da0ed08f27cff061215e209be007466abf8a05f33495aad60aa5cc476a",
+              "decisionId": "decision-672",
+              "rationale": "Pre-market positioning: reduce RNVDAUSDT via hedge adjustment as divergence exceeds 0.5%, rebalance RMUUSDT, hold micro long positions into open.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Pre-market positioning: reduce RNVDAUSDT via hedge adjustment as divergence exceeds 0.5%, rebalance RMUUSDT, hold micro long positions into open.",
+          "equityAtEntry": 9976.111097979281
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.015746241194410353,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 4.340877251830613,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 3593791,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.0001729745146100072,
+          "usualSpreadBps": 5.477200471364755,
+          "stop": {
+            "existed": true,
+            "price": 737.9373843,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 1,
+          "total": 80.5,
+          "letter": "B",
+          "evidence": [
+            "entry: price was -0.02 percent from the last regular close",
+            "entry: spread was 4.3 bps against a usual 5.5 bps, 0.79 times",
+            "entry: 08:30 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 150.02 USDT is 1.50 percent of 9976.11 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 737.94 was honoured",
+            "cost: 0.2250 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 1 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:715>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "claude"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "SPYUSDT",
+          "side": "short",
+          "entryTs": 1789477734199,
+          "exitTs": null,
+          "entryPrice": 761.0592800000001,
+          "exitPrice": null,
+          "qty": 0.16,
+          "grossPnl": null,
+          "feesUsdt": 0.07306169088,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.06088474239999947,
+          "fills": [
+            {
+              "id": "ledger:715",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789477734199,
+              "category": "USDT-FUTURES",
+              "symbol": "SPYUSDT",
+              "side": "sell",
+              "qty": 0.16,
+              "price": 761.0592800000001,
+              "notionalUsdt": 121.76948480000001,
+              "feeUsdt": 0.07306169088,
+              "slippageBps": 4.999999999999956,
+              "bookHash": "32ec0b85f834acbb12efc02657679d85ce8f75093def3cfad6c640346607a9af",
+              "decisionId": "decision-699",
+              "rationale": "Market is 40 minutes from open with negligible drawdown and daily loss. RNVDAUSDT shows 75 bps divergence requiring hedge; RMUUSDT shows 124 bps divergence requiring either hedge or reduction. Flat most exposure pre-open given lack of directional conviction.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Market is 40 minutes from open with negligible drawdown and daily loss. RNVDAUSDT shows 75 bps divergence requiring hedge; RMUUSDT shows 124 bps divergence requiring either hedge or reduction. Flat most exposure pre-open given lack of directional conviction.",
+          "equityAtEntry": 9975.960119094749
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.06443700347973168,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 0.13132924899357018,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 1265801,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00022733241376954904,
+          "usualSpreadBps": 0.13132924899357018,
+          "stop": {
+            "existed": true,
+            "price": 776.2804656000001,
+            "honoured": null
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 2.5,
+          "cost": 2.5,
+          "reasoning": 1,
+          "total": 68,
+          "letter": "C",
+          "evidence": [
+            "entry: price was -0.06 percent from the last regular close",
+            "entry: spread was 0.1 bps against a usual 0.1 bps, 1.00 times",
+            "entry: 09:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 121.77 USDT is 1.22 percent of 9975.96 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: nothing in the record measures this, so it scores a neutral 2.5",
+            "cost: 0.1339 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 1 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:730>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "claude"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "NVDAUSDT",
+          "side": "short",
+          "entryTs": 1789478094668,
+          "exitTs": null,
+          "entryPrice": 213.01344,
+          "exitPrice": null,
+          "qty": 0.52,
+          "grossPnl": null,
+          "feesUsdt": 0.06646019328,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.05538349440000092,
+          "fills": [
+            {
+              "id": "ledger:730",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "claude"
+              },
+              "ts": 1789478094668,
+              "category": "USDT-FUTURES",
+              "symbol": "NVDAUSDT",
+              "side": "sell",
+              "qty": 0.52,
+              "price": 213.01344,
+              "notionalUsdt": 110.76698880000001,
+              "feeUsdt": 0.06646019328,
+              "slippageBps": 5.000000000000083,
+              "bookHash": "30b0f9b5de347c5777957b2a4ee65e6ca27074fba92090b027ed684b5bda96eb",
+              "decisionId": "decision-711",
+              "rationale": "Current 0.15 short notional 31.95 USDT is negligible (0.32% of equity). Closing to simplify portfolio ahead of open. No catalyst to maintain micro short.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Current 0.15 short notional 31.95 USDT is negligible (0.32% of equity). Closing to simplify portfolio ahead of open. No catalyst to maintain micro short.",
+          "equityAtEntry": 9975.725837169768
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.8920759721498637,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 0.4692082111432683,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 905332,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.0002906965005138325,
+          "usualSpreadBps": 0.4701125919653482,
+          "stop": {
+            "existed": true,
+            "price": 217.2737088,
+            "honoured": null
+          }
+        },
+        "scores": {
+          "entry": 4.56,
+          "sizing": 5,
+          "exit": 2.5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 68.8,
+          "letter": "C",
+          "evidence": [
+            "entry: price was 0.89 percent from the last regular close",
+            "entry: spread was 0.5 bps against a usual 0.5 bps, 1.00 times",
+            "entry: 09:14 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 110.77 USDT is 1.11 percent of 9975.73 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: nothing in the record measures this, so it scores a neutral 2.5",
+            "cost: 0.1218 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       }
@@ -3012,16 +3506,15 @@
         "pattern": "revenge-trading",
         "description": "A loss was followed within 30 minutes by a larger position in the same instrument",
         "trades": [
-          "ledger:595>ledger:625",
-          "ledger:639>open",
           "ledger:615>ledger:628",
           "ledger:642>ledger:664",
-          "ledger:642>open"
+          "ledger:642>ledger:718",
+          "ledger:730>open"
         ],
         "evidence": [
-          "ledger:639>open opened 18.4 minutes after ledger:595>ledger:625 lost 0.10 USDT, at 160.31 USDT against 145.87 USDT",
           "ledger:642>ledger:664 opened 18.4 minutes after ledger:615>ledger:628 lost 0.01 USDT, at 65.95 USDT against 10.65 USDT",
-          "ledger:642>open opened 18.4 minutes after ledger:615>ledger:628 lost 0.01 USDT, at 31.91 USDT against 10.65 USDT"
+          "ledger:642>ledger:718 opened 18.4 minutes after ledger:615>ledger:628 lost 0.01 USDT, at 31.91 USDT against 10.65 USDT",
+          "ledger:730>open opened 6.0 minutes after ledger:642>ledger:718 lost 0.05 USDT, at 110.77 USDT against 31.91 USDT"
         ]
       },
       {
@@ -3055,12 +3548,17 @@
           "ledger:598>ledger:615",
           "ledger:615>ledger:628",
           "ledger:639>ledger:661",
-          "ledger:639>open",
+          "ledger:639>ledger:676",
+          "ledger:639>ledger:690",
+          "ledger:639>ledger:703",
           "ledger:642>ledger:664",
-          "ledger:642>open"
+          "ledger:642>ledger:718",
+          "ledger:687>open",
+          "ledger:715>open",
+          "ledger:730>open"
         ],
         "evidence": [
-          "6.3295 USDT of fees, slippage and funding against 31.5688 USDT of gross, 20.0 percent"
+          "7.0855 USDT of fees, slippage and funding against 31.9334 USDT of gross, 22.2 percent"
         ]
       },
       {
@@ -3436,6 +3934,30 @@
       {
         "ts": 1789473216622,
         "equity": 9976.221028794433
+      },
+      {
+        "ts": 1789474324744,
+        "equity": 9976.111097979281
+      },
+      {
+        "ts": 1789475497792,
+        "equity": 9975.805844518847
+      },
+      {
+        "ts": 1789476653552,
+        "equity": 9975.960119094749
+      },
+      {
+        "ts": 1789477794080,
+        "equity": 9975.725837169768
+      },
+      {
+        "ts": 1789478110284,
+        "equity": 9975.580579276488
+      },
+      {
+        "ts": 1789478462488,
+        "equity": 9975.667591526488
       }
     ]
   },
@@ -3467,7 +3989,24 @@
       "judgeReason": "no note"
     },
     "ledger:9>open": {
-      "eventsNearEntry": [],
+      "eventsNearEntry": [
+        {
+          "ts": 1789105500000,
+          "title": "VOO vs . QQQ : Which Popular ETF Is Right for Your Portfolio in 2026 ? (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789105500000,
+          "title": "How to Research Any ETF in Five Minutes (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789109100000,
+          "title": "History Says the Stock Market Has a 95 % Chance of Gains Over the Next Year : 3 Top Index ETFs to Buy Before November (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789118100000,
+          "title": "What History Reveals When the S & P 500 Sends Its Rarest Warning Signal (gdelt/finance.yahoo.com)"
+        }
+      ],
       "judgeReason": "no note"
     },
     "ledger:12>ledger:28": {
@@ -3534,88 +4073,147 @@
       "judgeReason": "no note"
     },
     "ledger:166>ledger:353": {
-      "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note describes a holding decision (no entry) rather than naming a causal mechanism for the short position; the entry appears to contradict the stated policy of not making new entries when spreads are wide, making the reasoning unobservable at entry time."
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
+      "judgeReason": "The thesis names a cause (rToken spread width and hedge trigger mechanics) observable at entry, but the exit timing does not match the stated horizon—the trader was managing a hedge condition, not trading a directional view, yet held through a weekend with no triggering event, suggesting passive drift rather than thesis-driven exit."
     },
     "ledger:166>ledger:396": {
-      "eventsNearEntry": [],
-      "judgeReason": "The thesis names only a direction (hold existing hedge) with no stated cause; the note describes a decision rule (5% hedge trigger, divergence tolerance) but never articulates why NVDA should move down, making criterion 1 fail decisively and preventing evaluation of the other three."
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
+      "judgeReason": "The thesis names only a direction (hold existing hedge) and references a mechanical trigger (5% hedge, divergence tolerance) rather than a cause; the exit does not match the stated horizon of holding unchanged; and the trade's profitable outcome (0.82 USDT net) is presented as passive position management when the stop was honored, obscuring whether the exit was intentional or reactive."
     },
     "ledger:166>ledger:451": {
-      "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note names a condition (weekend, wide spreads, low divergence) but not a causal thesis for why NVDA should fall; criterion 2 passes (conditions were observable); criterion 3 fails: holding an existing position 'under hedge trigger' implies a passive stance unmatched by active shorting; criterion 4 passes (no skill claim)."
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
+      "judgeReason": "The thesis names no cause (only mentions a hedge trigger and divergence tolerance, not why the short would work), and the exit horizon is unclear—the note describes holding an existing position, not opening a new short, making criterion 1 and 3 fail; criterion 4 also fails because the trader claims the position was held under a mechanical rule rather than traded on reasoned prediction."
     },
     "ledger:428>ledger:448": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note explicitly states no model output was produced, so no cause was named; the trader entered despite having no thesis, making this a non-trade from a process standpoint."
+      "judgeReason": "Criterion 1 fails: the note states no thesis at all, only that models were invalid; there is no named cause, only the absence of one, making this a trade taken without stated reasoning."
     },
     "ledger:428>ledger:495": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis fails criterion 1: no cause is named, only that models returned invalid results, which is a process failure rather than a market observation; criterion 2 is also unmet because an absence of signal is not an observable cause; the exit honored the stop (criterion 3 partial credit) but the trade should not have been entered at all given the stated reasoning."
+      "judgeReason": "Criterion 1 fails: the thesis explicitly states no model output exists ('every model run came back invalid'), so no cause is named; criterion 2 is moot; criterion 3 fails: a 94-minute hold contradicts the 'this tick' horizon; criterion 4 fails: the trader entered without a thesis and then honors a stop, implying the loss is treated as mechanical rather than as evidence of a flawed process."
     },
     "ledger:428>ledger:509": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the trader explicitly states the model produced nothing and thus had no reasoning for entry, failing criteria 1 and 2 entirely."
+      "judgeReason": "The thesis names no cause at all—the trader explicitly states their model produced no signal—making criterion 1 fail; the trade appears to be a discretionary entry without stated reasoning observable at entry time, and the exit at stop-loss does not reflect skill but rather risk management of an invalid thesis."
     },
     "ledger:428>ledger:524": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis fails criterion 1: the note provides no cause, only a statement that models were invalid, which names an absence rather than a reason to trade; the trade itself appears to lack a stated thesis entirely, making it difficult to assess whether entry, exit, and outcome align with any coherent reasoning."
+      "judgeReason": "Criterion 1 fails: the note states no cause at all, only that models returned invalid results, which is an absence of reasoning rather than a named cause for the trade direction."
     },
     "ledger:464>ledger:485": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (short covering as a hedge reversal) observable at entry (1), but the exit at -38.5 minutes matches neither the intraday reversal horizon implied (2—exit should have waited for regular open momentum) nor the stop honor suggests discipline (3); the trade lost money on a thesis about upward pressure, yet no reflection addresses whether short covering actually occurred or if the directional bet failed (4)."
+      "judgeReason": "Thesis names a cause (short covering/hedge reversal) observable at entry (overnight divergence), but exit after 38.5 minutes contradicts the multi-day horizon implied by 'hold core positions ahead of regular open,' and the loss is attributed to mean reversion when the stated cause (short covering demand) was never tested."
     },
     "ledger:464>ledger:498": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note names direction (short covering) and hedge intent but no observable cause for *this* entry; criterion 2 partially fails: the note describes market conditions (divergence reversals) but doesn't connect them to buying NVDA at 212.59 in after-hours; criterion 3 passes: 57.6 minutes is consistent with overnight-to-regular-open horizon implied by \"ahead of regular open\"; criterion 4 fails: the loss is attributed implicitly to being a hedge trim rather than acknowledged as wrong thesis."
+      "judgeReason": "The thesis names a cause (short covering as a hedge reversal) observable at entry, but the exit at 57.6 minutes contradicts the implied longer-term horizon of 'hold core positions ahead of regular open'—a gap of several hours—and the stop was honored at loss, suggesting no active management matched the stated strategy."
     },
     "ledger:464>ledger:535": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note names a direction (trim longs) and market context (divergence reversals, short covering) but does not name a cause for entering this specific long position; criteria 2-4 cannot rescue a trade with no stated thesis for why it was opened."
+      "judgeReason": "The thesis names a cause (short covering as hedge reversal) and was observable at entry (after-hours divergence), but the exit at 112.7 minutes mid-session contradicts the implied horizon of holding through regular market open, and the loss is not acknowledged as thesis failure."
     },
     "ledger:464>ledger:577": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note names direction (short covering, trim longs) and market structure (divergence reversals) but not a specific cause for *this* long entry; criterion 2 partly satisfied (divergence was observable); criterion 3 fails: a 186-minute hold contradicts the 'trim unprofitable' thesis which implied near-term exit; criterion 4 fails: the loss is attributed to market conditions rather than thesis invalidation."
+      "judgeReason": "The thesis names a cause (short covering) and was observable at entry (after-hours divergence reversal), but the exit at 186 minutes occurred mid-session rather than at the regular open implied by the horizon ('ahead of regular open'), and the loss is presented as hedge management rather than acknowledged as a failed thesis about short covering."
     },
     "ledger:467>ledger:512": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (RNVDA divergence threshold breach) observable at entry (0.64% > 0.5%), but criterion 4 fails decisively: the trade lost money net of costs (0.0753 gross minus 0.1075 in fees and slippage = -0.0322 USDT), yet the note frames it as a successful hedge unwind justified by the divergence signal, conflating a thesis that was right in direction with an execution that destroyed value."
+      "judgeReason": "Criterion 1 passes (names a cause: RNVDA divergence exceeding threshold), criterion 2 partially fails (divergence was 0.70% at entry, above the 0.5% threshold stated, but the note references 0.64% which is unclear timing), criterion 3 fails (exit after 75.9 minutes appears arbitrary relative to a thesis about spot-futures divergence reversion, with no stated divergence target), and criterion 4 fails (the trade lost 0.0242 USDT net yet is framed as a deliberate hedge unwind, not acknowledged as a loss)."
     },
     "ledger:467>ledger:538": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 passes: the thesis names a cause (RNVDA divergence exceeding threshold). Criterion 2 fails: the 0.64% divergence is observable at entry, but the claim that this 'supports spot directly' and justifies unwinding is not grounded in a causal mechanism stated at entry. Criterion 3 fails: the exit after 112.7 minutes does not match the horizon implied by a hedge thesis tied to spot divergence behavior. Criterion 4 fails: the trade lost 0.026 USDT net, yet the note frames it as a rational hedge unwind, not acknowledging the thesis (divergence supporting spot) did not materialize as expected."
+      "judgeReason": "The thesis names a cause (RNVDA divergence threshold breach) and it was observable at entry, but the exit timing appears arbitrary relative to the stated hedge rationale, and the outcome (0.1557 USDT gross profit after 112.7 minutes) is presented as validation of the divergence thesis rather than acknowledged as a lucky fill during after-hours volatility when the thesis itself may not have been properly testable."
     },
     "ledger:467>ledger:566": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (RNVDA spot divergence threshold breach supporting hedging logic) and it was observable at entry, but the exit horizon is unclear—the trader exits after 167 minutes with minimal profit, suggesting reactive unwinding rather than thesis-driven exit, and the outcome conflates unrealised P&L from another position with the reasoning for this trade."
+      "judgeReason": "The thesis names a cause (RNVDA divergence exceeding 0.5% threshold) and it was observable at entry (0.70% divergence noted), but the exit was premature relative to the stated horizon of a hedge unwind (exited after 167 minutes with only 0.04% price move, suggesting emotional/unrealised P&L-driven exit rather than threshold-based), and the trade outcome (small profit despite correct directional thesis) obscures whether the reasoning was sound or lucky."
     },
     "ledger:595>ledger:625": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names only direction (holding existing positions) with no causal mechanism; the note describes a passive monitoring stance rather than an observable trigger for entry; and the exit (stop hit at 206.07) contradicts the stated horizon of waiting 225 minutes for regular market open, suggesting reaction to price rather than thesis completion."
+      "judgeReason": "The thesis names only direction (hold stable positions) not a cause; the note describes portfolio state rather than a reason for entry; no observable catalyst is identified; and the exit via stop-loss suggests the trade was managed by risk rule, not thesis validation."
     },
     "ledger:598>ledger:615": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names only direction (short) and market condition (stable, no catalyst) without identifying a cause for the trade; the note describes portfolio state and monitoring rather than entry reasoning, failing criteria 1 and 2."
+      "judgeReason": "The thesis names only a direction (short) and passive monitoring with no identifiable cause for entry; no observable catalyst or technical reason is stated; the 34.6-minute hold contradicts the 225-minute horizon implied by 'ahead of regular open'; and the loss is not acknowledged as inconsistent with a 'stable market' thesis."
     },
     "ledger:615>ledger:628": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the trader explicitly states the model produced no signal and a connection error occurred—so criteria 1 and 2 cannot be met; the trade appears to be a entry without reasoned methodology."
+      "judgeReason": "Criterion 1 fails: the note names no cause, only a technical failure; criterion 2 fails: the trader entered during a model outage with no observable thesis; criterion 3 fails: an 18-minute hold implies no coherent horizon; criterion 4 fails: the trader did not acknowledge that entering without a valid model output means no skill claim is possible."
     },
     "ledger:639>ledger:661": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note names a condition (existing position below hedge threshold) not a cause for this new entry; criterion 2 partially met (hedge ratio observable); criterion 3 fails: 38-minute hold contradicts the 'pending market open' horizon implying overnight hold; criterion 4 fails: the trade is presented as risk management but the small loss suggests the thesis (hedge maintenance) was not validated by the outcome."
+      "judgeReason": "The thesis names a cause (hedge threshold management and existing position maintenance) observable at entry, but the exit does not match the implied horizon—the trader stated 'pending market open' (implying overnight hold into regular session) yet exited after 38 minutes in after-hours, suggesting the stop was hit rather than the thesis playing out, and the trader does not acknowledge this mismatch between intended duration and actual outcome."
     },
-    "ledger:639>open": {
+    "ledger:639>ledger:676": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note states a condition (position size below threshold, existing hedge in place) but names no causal mechanism for why this particular entry at this moment should work; criteria 2 and 3 partially met (observable hedge ratio and after-hours context noted, but exit horizon undefined for an open trade); criterion 4 fails because the trade remains open with no outcome to evaluate."
+      "judgeReason": "The thesis names a cause (hedge ratio management below threshold) and was observable at entry, but the exit via stop-loss at 206.32 did not match the stated horizon of 'pending market open' (56 minutes later), and the loss is attributed to a mechanical stop rather than thesis invalidation."
+    },
+    "ledger:639>ledger:690": {
+      "eventsNearEntry": [],
+      "judgeReason": "Criterion 1 fails: the note names a condition (existing position below hedge threshold, already partially hedged) but no causal mechanism for entry; criterion 2 partially met (hedging ratio observable); criterion 3 fails: exit was stop-loss at 206.32, not a time or hedge-ratio-based horizon matching the stated maintenance posture; criterion 4 fails: the trader attributes the position to a hedging framework but the stop loss and loss suggest no active management of that thesis."
+    },
+    "ledger:639>ledger:703": {
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names a cause (existing position below hedge threshold, maintain pending market open) and was observable at entry (0.69% divergence, existing long noted), but the exit via stop-loss at 206.32 contradicts the stated horizon of waiting for market open, and the outcome (stopped out during after-hours) is not acknowledged as falsifying the thesis that maintenance was appropriate."
     },
     "ledger:642>ledger:664": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 passes: the thesis names a cause (hedge against spot position volatility during pre-open). Criterion 2 fails: the note does not establish that the spot position size or volatility risk was observable at entry, only that a hedge was deemed adequate. Criterion 3 fails: the exit after 38 minutes does not match the stated horizon of 'maintain through pre-open volatility window'—either pre-open closed or the trader abandoned the thesis early. Criterion 4 fails: the trade lost money net of costs (0.0333 gross minus 0.155 in fees and slippage = -0.1217 USDT), yet the note frames it as a defensive hedge without addressing whether the thesis held or was invalidated."
+      "judgeReason": "Criterion 1 passes (cause named: hedge against spot position volatility), criterion 2 passes (spot position observable at entry), but criterion 3 fails decisively (exit after 38 minutes contradicts the stated horizon of 'maintain through pre-open volatility window', which implies holding to market open, not intraday closure), and criterion 4 is unclear since the trade lost money net of costs despite the hedge thesis being sound in principle."
     },
-    "ledger:642>open": {
+    "ledger:642>ledger:718": {
       "eventsNearEntry": [],
-      "judgeReason": "Thesis names a cause (hedge against spot position volatility), was observable at entry (spot position known, pre-open window identified), exit horizon matches (maintain through pre-open, appropriate for short-term volatility hedge), but criterion 4 cannot be fully evaluated since trade remains open with no outcome to assess for skill vs. chance."
+      "judgeReason": "Thesis names a clear cause (hedge against spot position volatility in pre-open window) and was observable at entry (after-hours, pre-open timing known); exit matched the implied short-term horizon; loss attributed to adverse price movement rather than claimed as process failure, but the vague equity threshold reference and lack of explicit exit trigger rationale prevent a perfect score."
+    },
+    "ledger:687>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names a direction (long) and implies a rebalancing/hedging context, but fails criteria 2 and 3: the stated cause (divergence >0.5%) contradicts the observed entry condition (divergence -0.02%), and the trade remains open with no exit matching any stated horizon, making process evaluation impossible."
+    },
+    "ledger:715>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names a cause (divergence in RNVDA and RMU requiring hedges) but criterion 2 fails critically: the trader was flat pre-open lacking directional conviction, yet entered a directional short 40 minutes after market open with no observable new cause stated, making the entry rationale disconnected from the stated thesis."
+    },
+    "ledger:730>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names no cause (criterion 1 fails: 'simplify portfolio' and 'no catalyst' are absence-of-reasons, not causes), the trade remains open contradicting the stated intent to close, and the note itself is evidence the trader is not grading this trade but rather documenting a decision to exit—making process evaluation impossible."
     }
   },
   "detectorsRun": [
