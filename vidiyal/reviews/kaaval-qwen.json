@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789455823782,
+  "generatedAt": 1789459940000,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 2,
-    "decisions": 6,
-    "marks": 6
+    "decisions": 9,
+    "marks": 9
   },
   "bundle": {
     "source": {
@@ -74,7 +74,7 @@
           "msToNextOpenAtEntry": 28012995,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00014312500398047822,
-          "usualSpreadBps": 12.364181044805003,
+          "usualSpreadBps": 1.8827073331446882,
           "stop": {
             "existed": true,
             "price": 205.91750729999998,
@@ -91,7 +91,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.63 percent from the last regular close",
-            "entry: spread was 1.4 bps against a usual 12.4 bps, 0.11 times",
+            "entry: spread was 1.4 bps against a usual 1.9 bps, 0.75 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 149.05 USDT is 1.49 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -155,7 +155,7 @@
           "msToNextOpenAtEntry": 28012794,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0003088470092001248,
-          "usualSpreadBps": 0.4701125919653482,
+          "usualSpreadBps": 0.47025633361446617,
           "stop": {
             "existed": true,
             "price": 216.58045560000002,
@@ -228,17 +228,29 @@
       {
         "ts": 1789455729614,
         "equity": 9999.637538121251
+      },
+      {
+        "ts": 1789456832560,
+        "equity": 9999.58421312125
+      },
+      {
+        "ts": 1789457936668,
+        "equity": 9999.63092312125
+      },
+      {
+        "ts": 1789459037409,
+        "equity": 9999.573797621251
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all; the note documents a technical delay in decision-making rather than a market observation, so criteria 1 and 2 both fail—there is no stated reasoning about why the position should move in any direction."
+      "judgeReason": "Criterion 1 fails: the note records a system delay, not a thesis naming a cause for the trade; no observable reasoning connecting entry price, position size, or stop level to any market condition or expectation."
     },
     "ledger:440>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note states only a system delay, not a market observation or reasoning for the short position, failing criteria 1 and 2 fundamentally."
+      "judgeReason": "Criterion 1 fails: the note records a system malfunction (timeout) rather than naming any cause for the trade direction, making the thesis absent entirely."
     }
   },
   "detectorsRun": [
