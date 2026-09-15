@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789455986626,
+  "generatedAt": 1789460134174,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 17,
-    "decisions": 67,
-    "marks": 67
+    "decisions": 70,
+    "marks": 70
   },
   "bundle": {
     "source": {
@@ -93,7 +93,7 @@
           "spreadAtEntryBps": 0.8835873647015554,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 188485891,
-          "nextEventMinutes": 6,
+          "nextEventMinutes": null,
           "bookShareAtEntry": 0.00135860646792756,
           "usualSpreadBps": 0.8833792689968278,
           "stop": {
@@ -114,7 +114,6 @@
             "entry: price was 0.17 percent from the last regular close",
             "entry: spread was 0.9 bps against a usual 0.9 bps, 1.00 times",
             "entry: 05:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 6 minutes away and the rationale was written",
             "sizing: 397.02 USDT is 3.97 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
@@ -196,7 +195,7 @@
           "spreadAtEntryBps": 20.678857345425207,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 188485794,
-          "nextEventMinutes": 6,
+          "nextEventMinutes": null,
           "bookShareAtEntry": 0.00003920522213560929,
           "usualSpreadBps": 20.678857345425207,
           "stop": {
@@ -210,19 +209,18 @@
           "sizing": 5,
           "exit": 2.5,
           "cost": 0,
-          "reasoning": 1,
-          "total": 60.5,
+          "reasoning": 2,
+          "total": 63.5,
           "letter": "C",
           "evidence": [
             "entry: price was 0.16 percent from the last regular close",
             "entry: spread was 20.7 bps against a usual 20.7 bps, 1.00 times",
             "entry: 05:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 6 minutes away and the rationale was written",
             "sizing: 18.00 USDT is 0.18 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
             "cost: 0.0539 USDT of friction is 97.8 percent of the 0.0551 USDT gross",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -299,7 +297,7 @@
           "spreadAtEntryBps": 20.678857345425207,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 188485794,
-          "nextEventMinutes": 6,
+          "nextEventMinutes": null,
           "bookShareAtEntry": 0.00007087949764629929,
           "usualSpreadBps": 20.678857345425207,
           "stop": {
@@ -313,19 +311,18 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 1,
-          "total": 73,
+          "reasoning": 2,
+          "total": 76,
           "letter": "B",
           "evidence": [
             "entry: price was 0.16 percent from the last regular close",
             "entry: spread was 20.7 bps against a usual 20.7 bps, 1.00 times",
             "entry: 05:08 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 6 minutes away and the rationale was written",
             "sizing: 32.55 USDT is 0.33 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 328.86 was honoured",
             "cost: 0.0976 USDT of friction against a gross of 0.0325 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -404,7 +401,7 @@
           "msToNextOpenAtEntry": 187481393,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.001413597676138788,
-          "usualSpreadBps": 0.4701125919653482,
+          "usualSpreadBps": 0.47025633361446617,
           "stop": {
             "existed": true,
             "price": 223.67610600000003,
@@ -506,7 +503,7 @@
           "msToNextOpenAtEntry": 186493069,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.000051619981981669226,
-          "usualSpreadBps": 12.364181044805003,
+          "usualSpreadBps": 1.8827073331446882,
           "stop": {
             "existed": true,
             "price": 212.56532954999997,
@@ -514,16 +511,16 @@
           }
         },
         "scores": {
-          "entry": 4.08,
+          "entry": 3.33,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
           "reasoning": 2,
-          "total": 71.4,
-          "letter": "B",
+          "total": 67.65,
+          "letter": "C",
           "evidence": [
             "entry: price was 0.39 percent from the last regular close",
-            "entry: spread was 26.1 bps against a usual 12.4 bps, 2.11 times",
+            "entry: spread was 26.1 bps against a usual 1.9 bps, 13.84 times",
             "entry: 05:41 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 49.90 USDT is 0.50 percent of 9998.27 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -608,7 +605,7 @@
           "msToNextOpenAtEntry": 185520367,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00021499338030150583,
-          "usualSpreadBps": 12.364181044805003,
+          "usualSpreadBps": 1.8827073331446882,
           "stop": {
             "existed": true,
             "price": 212.60414895,
@@ -616,16 +613,16 @@
           }
         },
         "scores": {
-          "entry": 4.05,
+          "entry": 3.33,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
           "reasoning": 1,
-          "total": 68.25,
+          "total": 64.65,
           "letter": "C",
           "evidence": [
             "entry: price was 0.41 percent from the last regular close",
-            "entry: spread was 26.5 bps against a usual 12.4 bps, 2.14 times",
+            "entry: spread was 26.5 bps against a usual 1.9 bps, 14.08 times",
             "entry: 05:57 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 210.72 USDT is 2.11 percent of 9998.17 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -710,7 +707,7 @@
           "msToNextOpenAtEntry": 184537656,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0003286253326411287,
-          "usualSpreadBps": 12.364181044805003,
+          "usualSpreadBps": 1.8827073331446882,
           "stop": {
             "existed": true,
             "price": 212.65267319999998,
@@ -718,16 +715,16 @@
           }
         },
         "scores": {
-          "entry": 3.89,
+          "entry": 3.33,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
           "reasoning": 2,
-          "total": 70.45,
-          "letter": "B",
+          "total": 67.65,
+          "letter": "C",
           "evidence": [
             "entry: price was 0.43 percent from the last regular close",
-            "entry: spread was 28.8 bps against a usual 12.4 bps, 2.33 times",
+            "entry: spread was 28.8 bps against a usual 1.9 bps, 15.29 times",
             "entry: 06:14 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 326.32 USDT is 3.26 percent of 9997.58 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -810,9 +807,9 @@
           "spreadAtEntryBps": 29.719040760807705,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 182501001,
-          "nextEventMinutes": 27,
+          "nextEventMinutes": null,
           "bookShareAtEntry": 0.0002124087844648997,
-          "usualSpreadBps": 12.364181044805003,
+          "usualSpreadBps": 1.8827073331446882,
           "stop": {
             "existed": true,
             "price": 212.57503439999996,
@@ -820,23 +817,22 @@
           }
         },
         "scores": {
-          "entry": 4.12,
+          "entry": 3.33,
           "sizing": 5,
           "exit": 2.5,
           "cost": 0,
-          "reasoning": 1,
-          "total": 56.1,
+          "reasoning": 2,
+          "total": 55.15,
           "letter": "C",
           "evidence": [
             "entry: price was 0.39 percent from the last regular close",
-            "entry: spread was 29.7 bps against a usual 12.4 bps, 2.40 times",
+            "entry: spread was 29.7 bps against a usual 1.9 bps, 15.79 times",
             "entry: 06:48 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 27 minutes away and the rationale was written",
             "sizing: 208.56 USDT is 2.09 percent of 9994.67 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
             "cost: 0.6245 USDT of friction is 77.3 percent of the 0.8077 USDT gross",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -913,9 +909,9 @@
           "spreadAtEntryBps": 0.45588201773469156,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 182500838,
-          "nextEventMinutes": 27,
+          "nextEventMinutes": null,
           "bookShareAtEntry": 0.000719189343498978,
-          "usualSpreadBps": 0.4701125919653482,
+          "usualSpreadBps": 0.47025633361446617,
           "stop": {
             "existed": true,
             "price": 223.62244273516487,
@@ -934,7 +930,6 @@
             "entry: price was 0.34 percent from the last regular close",
             "entry: spread was 0.5 bps against a usual 0.5 bps, 0.97 times",
             "entry: 06:48 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "entry: a scheduled event was 27 minutes away and the rationale was written",
             "sizing: 399.01 USDT is 3.99 percent of 9994.67 USDT equity against a 10 percent cap",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
@@ -1360,48 +1355,33 @@
       {
         "ts": 1789455729619,
         "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789456832563,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789457936670,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789459037411,
+        "equity": 9991.903508118943
       }
     ]
   },
   "tradeNotes": {
     "ledger:161>ledger:177": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789204500000,
-          "title": "Meta May Overtake Google Search in Ad Revenue This Year , Bernstein Says (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
-        }
-      ],
-      "judgeReason": "The thesis names a cause (NYSE closure creating a carry opportunity in the GOOG delta) and it was observable at entry (weekend timing), but the 16.8-minute exit horizon contradicts the multi-day carry thesis, and the loss is not acknowledged as a mismatch between the stated reasoning and the outcome."
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names a cause (NYSE closure leading to reduced delta hedging demand) and was observable at entry (weekend timing), but the 16.8-minute holding period fatally mismatches the multi-day horizon the thesis implies, and the loss is attributed to slippage/fees rather than acknowledging the thesis was wrong about directional movement."
     },
     "ledger:158>ledger:174": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789204500000,
-          "title": "Meta May Overtake Google Search in Ad Revenue This Year , Bernstein Says (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
-        }
-      ],
-      "judgeReason": "The thesis names a cause (basis point divergence exceeding a band), observable at entry (criterion 1-2 met), but the 16.8-minute exit contradicts a thesis implying a convergence trade requiring much longer horizon (criterion 3 failed), and the loss is presented as a data point rather than examined against whether the stated basis divergence actually resolved or was merely noise (criterion 4 unclear but exit timing suggests the thesis was abandoned, not tested)."
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names a cause (basis point divergence exceeding a band), and it was observable at entry, but the 16.8-minute exit horizon contradicts the thesis of a mean-reversion trade that should resolve over longer timeframes, and the loss is not acknowledged as falsifying the directional premise rather than the trade structure itself."
     },
     "ledger:158>ledger:187": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789204500000,
-          "title": "Meta May Overtake Google Search in Ad Revenue This Year , Bernstein Says (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
-        }
-      ],
-      "judgeReason": "The thesis names a cause (basis point divergence exceeding a band threshold) and was observable at entry, but the exit after 33 minutes during a weekend session contradicts the implied longer horizon of a mean-reversion trade, and the loss is attributed to fees/slippage rather than acknowledging the thesis failed."
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names a cause (basis point divergence exceeding a threshold) and was observable at entry, but the exit at 33 minutes contradicts the implied horizon of a mean-reversion trade (which requires time for convergence), and the loss is not acknowledged as suggesting the thesis was wrong."
     },
     "ledger:171>ledger:215": {
       "eventsNearEntry": [
@@ -1418,7 +1398,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (NYSE closure duration implying carry of RNVDAUSDT delta), but criterion 2 fails critically: the trader entered on a weekend when NYSE was already closed, making the thesis about a future closure non-observable at entry; criterion 3 also fails as the 66-minute hold contradicts the multi-day carry thesis implied by a 52-hour NYSE closure."
+      "judgeReason": "The thesis names a cause (NYSE closure duration implying carry trade opportunity) and was observable at entry (weekend session, scheduled closure known), but the 66-minute hold grossly mismatches the multi-day horizon the thesis implies, and the loss is attributed to slippage/fees rather than acknowledging the thesis was wrong."
     },
     "ledger:184>ledger:212": {
       "eventsNearEntry": [
@@ -1435,7 +1415,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis names a specific cause (basis point divergence exceeding a 40bp band) and was observable at entry, but the exit did not match the implied horizon—a mean-reversion trade on a basis anomaly should exit when the spread normalizes, yet the trader held through 49.7 minutes on a weekend with no scheduled events, exiting only after hitting the stop loss, suggesting either poor execution discipline or that the thesis was abandoned."
+      "judgeReason": "The thesis names a cause (basis point divergence exceeding a 40bp band) and was observable at entry, but the exit does not match the horizon implied by a relative-value trade (exited after 50 minutes when the thesis concerns a structural basis relationship), and the loss is attributed to the trade idea rather than acknowledged as a failure of the stated mechanism."
     },
     "ledger:196>ledger:212": {
       "eventsNearEntry": [
@@ -1452,78 +1432,23 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (basis point divergence exceeding a band), observable at entry (0.41% divergence from last close), but the exit matched neither the horizon implied by a mean-reversion thesis (33.5 minutes is far too short) nor the stop placement, and the trader does not acknowledge that the basis remained wide at exit (0.10% divergence), suggesting the thesis was wrong but not graded as such."
+      "judgeReason": "The thesis names a cause (basis point divergence exceeding a 40bp band) and was observable at entry, but the exit did not match the implied horizon—the trader held only 33.5 minutes when the thesis was about a statistical band that should have required much longer to resolve, and the outcome (a small loss) is not attributed to thesis failure but treated as a normal trade cost."
     },
     "ledger:205>ledger:212": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        }
-      ],
-      "judgeReason": "The thesis names a cause (basis point divergence exceeding a 40bp band) and was observable at entry, but the exit did not match the implied horizon (a basis convergence trade should exit on convergence, not on a stop loss after 17 minutes), and the loss is not acknowledged as a failure of the thesis rather than execution."
+      "eventsNearEntry": [],
+      "judgeReason": "Criterion 1 fails: the note names a direction (hold) and a statistical signal (basis point divergence) but not a causal mechanism for why this divergence should close; criterion 2 passes: the divergence was observable at entry; criterion 3 fails: the 17-minute exit does not match the mean-reversion horizon implied by a basis-point band trade; criterion 4 fails: the loss is framed as following process, yet the basis-point signal produced the opposite outcome, making the reasoning and result belong to different worlds."
     },
     "ledger:223>ledger:234": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        },
-        {
-          "ts": 1789211700000,
-          "title": "Jim Cramer Discussed The Contradictions Surrounding NVIDIA Corporation ( NASDAQ : NVDA ) Shares (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789212600000,
-          "title": "GraniteShares YieldBOOST NVDA ETF ( NVYY ) To Go Ex - Dividend on September 11th (gdelt/tickerreport.com)"
-        }
-      ],
-      "judgeReason": "Criterion 1 fails: the thesis names a relative basis-point divergence (a direction and a band) but not a cause—why should this spread mean-revert or which force would close it—and criterion 3 fails: the 16-minute hold does not match the horizon implied by a statistical bands trade, which typically assumes multiple bars or a session to resolve."
+      "eventsNearEntry": [],
+      "judgeReason": "Criterion 1 passes: the thesis names a cause (basis point divergence exceeding a band). Criterion 2 fails: the trader entered at 219.15 but the note references prices at 218.43 vs 219.36, suggesting the thesis was observed at different prices or the entry price does not match the documented observation. Criterion 3 fails: a 16-minute hold contradicts the thesis of a basis-point mean reversion trade which should have a horizon measured in minutes or seconds and needs exit logic tied to basis convergence, not clock time. Criterion 4 fails: the trade lost money and the note contains no reflection on whether the basis-point premise held at exit."
     },
     "ledger:226>ledger:237": {
-      "eventsNearEntry": [
-        {
-          "ts": 1789194600000,
-          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
-        },
-        {
-          "ts": 1789194600000,
-          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
-        },
-        {
-          "ts": 1789204500000,
-          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
-        },
-        {
-          "ts": 1789211700000,
-          "title": "Jim Cramer Discussed The Contradictions Surrounding NVIDIA Corporation ( NASDAQ : NVDA ) Shares (gdelt/finance.yahoo.com)"
-        },
-        {
-          "ts": 1789212600000,
-          "title": "GraniteShares YieldBOOST NVDA ETF ( NVYY ) To Go Ex - Dividend on September 11th (gdelt/tickerreport.com)"
-        }
-      ],
-      "judgeReason": "The thesis names a cause (NYSE closure duration affecting NVDA futures) and was observable at entry (weekend timing, scheduled closure), but the 16-minute hold drastically mismatches the multi-day horizon implied by carrying a position through a 50-hour gap, and the loss is attributed to market mechanics rather than acknowledging the thesis was wrong."
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names a cause (NYSE closure duration affecting NVDA futures) and was observable at entry (weekend timing), but the 16-minute exit horizon contradicts a thesis implying a multi-day carry trade, and the loss is attributed to market slippage/fees rather than thesis failure, obscuring whether the causal reasoning was sound."
     },
     "ledger:250>ledger:268": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (NYSE closure duration affecting RTSLAUSDT delta), was observable at entry (weekend timing confirmed), but the exit after 35.5 minutes contradicts a thesis implying a multi-day carry position, and the loss is attributed to fees/slippage rather than thesis failure, suggesting the trader does not acknowledge the mismatch between stated horizon and actual holding period."
+      "judgeReason": "The thesis names a cause (NYSE closure duration affecting RTSLAUSDT/TSLAUSDT correlation), and it was observable at entry (weekend timing confirmed), but the exit after 35.5 minutes contradicts the multi-day horizon the thesis implied, and the loss is not examined against whether the stated cause actually drove the price move."
     }
   },
   "detectorsRun": [
