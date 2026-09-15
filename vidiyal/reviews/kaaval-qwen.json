@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789479502329,
+  "generatedAt": 1789489255134,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 2,
-    "decisions": 30,
-    "marks": 30
+    "decisions": 44,
+    "marks": 44
   },
   "bundle": {
     "source": {
@@ -74,7 +74,7 @@
           "msToNextOpenAtEntry": 28012995,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00014312500398047822,
-          "usualSpreadBps": 1.6200329707047672,
+          "usualSpreadBps": 1.850940714052607,
           "stop": {
             "existed": true,
             "price": 205.91750729999998,
@@ -91,7 +91,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.63 percent from the last regular close",
-            "entry: spread was 1.4 bps against a usual 1.6 bps, 0.87 times",
+            "entry: spread was 1.4 bps against a usual 1.9 bps, 0.76 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 149.05 USDT is 1.49 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -119,7 +119,7 @@
           "qty": 0.47,
           "grossPnl": null,
           "feesUsdt": 0.05987812596,
-          "fundingUsdt": 0,
+          "fundingUsdt": 0.0250490160266,
           "slippageUsdt": 0.04989843829999019,
           "fills": [
             {
@@ -155,7 +155,7 @@
           "msToNextOpenAtEntry": 28012794,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0003088470092001248,
-          "usualSpreadBps": 0.47009049345886106,
+          "usualSpreadBps": 0.4700683949523739,
           "stop": {
             "existed": true,
             "price": 216.58045560000002,
@@ -177,7 +177,7 @@
             "sizing: 99.80 USDT is 1.00 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 216.58 was honoured",
-            "cost: 0.1098 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "cost: 0.1348 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
             "reasoning: the judge scored the stated thesis 0 out of 5"
           ]
         }
@@ -192,7 +192,7 @@
           "ledger:440>open"
         ],
         "evidence": [
-          "0.3333 USDT of fees, slippage and funding with no closed gross to set against it"
+          "0.3584 USDT of fees, slippage and funding with no closed gross to set against it"
         ]
       }
     ],
@@ -324,17 +324,73 @@
       {
         "ts": 1789479288604,
         "equity": 9999.81875012125
+      },
+      {
+        "ts": 1789479549972,
+        "equity": 9999.923253121251
+      },
+      {
+        "ts": 1789479805947,
+        "equity": 9999.94324262125
+      },
+      {
+        "ts": 1789480108392,
+        "equity": 10000.08029762125
+      },
+      {
+        "ts": 1789480238202,
+        "equity": 10000.04655612125
+      },
+      {
+        "ts": 1789480512009,
+        "equity": 10000.033703621251
+      },
+      {
+        "ts": 1789480813033,
+        "equity": 9999.95931562125
+      },
+      {
+        "ts": 1789481100090,
+        "equity": 9999.76519312125
+      },
+      {
+        "ts": 1789482199532,
+        "equity": 9999.83189262125
+      },
+      {
+        "ts": 1789483350680,
+        "equity": 9999.86569212125
+      },
+      {
+        "ts": 1789484470638,
+        "equity": 9999.63843762125
+      },
+      {
+        "ts": 1789485619499,
+        "equity": 9999.64194812125
+      },
+      {
+        "ts": 1789486737181,
+        "equity": 9999.67252712125
+      },
+      {
+        "ts": 1789487834317,
+        "equity": 9999.680737621251
+      },
+      {
+        "ts": 1789488934066,
+        "equity": 9999.75950612125
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The trade record shows no thesis at all—only a note that a decision was delayed by an AI system timeout; without a stated cause, observable condition, matching exit horizon, or outcome claim to evaluate, none of the four criteria can be met."
+      "judgeReason": "The thesis names no cause at all; the note documents a system delay rather than a market observation, so criteria 1 and 2 both fail, and no reasoning process is present to evaluate against the exit or outcome."
     },
     "ledger:440>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note states only that a decision-making process took longer than expected, which is a procedural observation, not a market thesis; criterion 1 fails completely."
+      "judgeReason": "The thesis names no cause at all—the note states only that a decision-making process timed out, which is a technical event, not a market thesis; without a stated reason for the short position itself, criteria 1 and 2 cannot be met."
     }
   },
   "detectorsRun": [
