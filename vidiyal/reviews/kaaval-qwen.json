@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789464181459,
+  "generatedAt": 1789464810568,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 2,
-    "decisions": 13,
-    "marks": 13
+    "decisions": 14,
+    "marks": 14
   },
   "bundle": {
     "source": {
@@ -74,7 +74,7 @@
           "msToNextOpenAtEntry": 28012995,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00014312500398047822,
-          "usualSpreadBps": 1.850940714052607,
+          "usualSpreadBps": 1.8827073331446882,
           "stop": {
             "existed": true,
             "price": 205.91750729999998,
@@ -91,7 +91,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.63 percent from the last regular close",
-            "entry: spread was 1.4 bps against a usual 1.9 bps, 0.76 times",
+            "entry: spread was 1.4 bps against a usual 1.9 bps, 0.75 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 149.05 USDT is 1.49 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -256,17 +256,21 @@
       {
         "ts": 1789463460905,
         "equity": 9999.51333562125
+      },
+      {
+        "ts": 1789464590882,
+        "equity": 9999.52505662125
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note records only a timeout in an AI system, not a market observation or trading rationale; criterion 1 fails completely."
+      "judgeReason": "The trade has no stated thesis at all—the note indicates an automated system timeout rather than any named cause, observable condition, or decision-making process, making all four criteria unmeetable."
     },
     "ledger:440>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note states only a technical delay ('qwen took longer than 180 seconds'), not a market reason, observation, or conviction about price direction."
+      "judgeReason": "The trade lacks a thesis entirely: the note states no decision was made, only that a system (qwen) timed out, so none of the four criteria can be satisfied—no cause is named, no observable condition is cited, no horizon is implied, and no outcome reasoning is possible."
     }
   },
   "detectorsRun": [

@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789460134174,
+  "generatedAt": 1789464974564,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 17,
-    "decisions": 70,
-    "marks": 70
+    "decisions": 75,
+    "marks": 75
   },
   "bundle": {
     "source": {
@@ -401,7 +401,7 @@
           "msToNextOpenAtEntry": 187481393,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.001413597676138788,
-          "usualSpreadBps": 0.47025633361446617,
+          "usualSpreadBps": 0.47042220496862797,
           "stop": {
             "existed": true,
             "price": 223.67610600000003,
@@ -807,7 +807,7 @@
           "spreadAtEntryBps": 29.719040760807705,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 182501001,
-          "nextEventMinutes": null,
+          "nextEventMinutes": 27,
           "bookShareAtEntry": 0.0002124087844648997,
           "usualSpreadBps": 1.8827073331446882,
           "stop": {
@@ -817,17 +817,18 @@
           }
         },
         "scores": {
-          "entry": 3.33,
+          "entry": 3.75,
           "sizing": 5,
           "exit": 2.5,
           "cost": 0,
           "reasoning": 2,
-          "total": 55.15,
+          "total": 57.25,
           "letter": "C",
           "evidence": [
             "entry: price was 0.39 percent from the last regular close",
             "entry: spread was 29.7 bps against a usual 1.9 bps, 15.79 times",
             "entry: 06:48 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 27 minutes away and the rationale was written",
             "sizing: 208.56 USDT is 2.09 percent of 9994.67 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
@@ -909,9 +910,9 @@
           "spreadAtEntryBps": 0.45588201773469156,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 182500838,
-          "nextEventMinutes": null,
+          "nextEventMinutes": 27,
           "bookShareAtEntry": 0.000719189343498978,
-          "usualSpreadBps": 0.47025633361446617,
+          "usualSpreadBps": 0.47042220496862797,
           "stop": {
             "existed": true,
             "price": 223.62244273516487,
@@ -930,6 +931,7 @@
             "entry: price was 0.34 percent from the last regular close",
             "entry: spread was 0.5 bps against a usual 0.5 bps, 0.97 times",
             "entry: 06:48 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 27 minutes away and the rationale was written",
             "sizing: 399.01 USDT is 3.99 percent of 9994.67 USDT equity against a 10 percent cap",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
@@ -1367,21 +1369,41 @@
       {
         "ts": 1789459037411,
         "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789460173972,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789461341802,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789462319813,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789463460908,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789464590884,
+        "equity": 9991.903508118943
       }
     ]
   },
   "tradeNotes": {
     "ledger:161>ledger:177": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (NYSE closure leading to reduced delta hedging demand) and was observable at entry (weekend timing), but the 16.8-minute holding period fatally mismatches the multi-day horizon the thesis implies, and the loss is attributed to slippage/fees rather than acknowledging the thesis was wrong about directional movement."
+      "judgeReason": "The thesis names a cause (NYSE closure creating a carry opportunity in the delta between instruments) and it was observable at entry (weekend timing), but the exit after 16.8 minutes contradicts the multi-day horizon implied by 'carry' strategy, and the -0.6359 USDT loss is not acknowledged as falsifying the thesis rather than merely being a cost of execution."
     },
     "ledger:158>ledger:174": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (basis point divergence exceeding a band), and it was observable at entry, but the 16.8-minute exit horizon contradicts the thesis of a mean-reversion trade that should resolve over longer timeframes, and the loss is not acknowledged as falsifying the directional premise rather than the trade structure itself."
+      "judgeReason": "Criterion 1 passes: the thesis names a cause (relative basis point divergence exceeding a band). Criterion 2 fails: the entry price 339.029 contradicts the stated entry reference of 338.15, undermining observability verification. Criterion 3 fails: the 16.8-minute hold contradicts the 'hold' instruction implying longer duration. Criterion 4 fails: the loss is not acknowledged as falsifying the basis-band thesis."
     },
     "ledger:158>ledger:187": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (basis point divergence exceeding a threshold) and was observable at entry, but the exit at 33 minutes contradicts the implied horizon of a mean-reversion trade (which requires time for convergence), and the loss is not acknowledged as suggesting the thesis was wrong."
+      "judgeReason": "Criterion 1 passes: the thesis names a specific cause (basis point divergence exceeding a 40bp band). Criterion 2 fails: the trader notes RGOOGLUSDT at 338.15 versus GOOGLUSDT at 339.53, but entered at 339.02943, which contradicts the observable state and suggests the note may describe a different moment. Criterion 3 fails: a 33-minute hold does not match the horizon implied by a structural basis-point thesis, which typically implies mean reversion over longer periods. Criterion 4 passes: the trader does not claim skill despite the loss."
     },
     "ledger:171>ledger:215": {
       "eventsNearEntry": [
@@ -1398,7 +1420,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (NYSE closure duration implying carry trade opportunity) and was observable at entry (weekend session, scheduled closure known), but the 66-minute hold grossly mismatches the multi-day horizon the thesis implies, and the loss is attributed to slippage/fees rather than acknowledging the thesis was wrong."
+      "judgeReason": "The thesis names a cause (NYSE closure duration creating a carry opportunity in the futures-spot spread) and it was observable at entry, but the exit happened after only 66 minutes during the same weekend session, far shorter than the 52-hour thesis horizon implied, and the loss is attributed to fees and slippage rather than examining whether the spread thesis itself was wrong."
     },
     "ledger:184>ledger:212": {
       "eventsNearEntry": [
@@ -1415,7 +1437,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (basis point divergence exceeding a 40bp band) and was observable at entry, but the exit does not match the horizon implied by a relative-value trade (exited after 50 minutes when the thesis concerns a structural basis relationship), and the loss is attributed to the trade idea rather than acknowledged as a failure of the stated mechanism."
+      "judgeReason": "The thesis names a specific cause (basis point divergence exceeding a band threshold), observable at entry, but the exit did not match the thesis—the trader held through a 49-minute drift that violated the stated band, suggesting either the horizon was misunderstood or the rule was abandoned mid-trade, and the loss is attributed to execution friction rather than thesis failure."
     },
     "ledger:196>ledger:212": {
       "eventsNearEntry": [
@@ -1432,23 +1454,78 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (basis point divergence exceeding a 40bp band) and was observable at entry, but the exit did not match the implied horizon—the trader held only 33.5 minutes when the thesis was about a statistical band that should have required much longer to resolve, and the outcome (a small loss) is not attributed to thesis failure but treated as a normal trade cost."
+      "judgeReason": "The thesis names a cause (basis point divergence from a 40bp band), and it was observable at entry, but the exit does not match the stated horizon (the note describes a holding decision against a band, implying a mean-reversion trade that should exit on convergence, yet the trader exited after 33.5 minutes on a weekend at a loss without noting whether the basis had converged or diverged further)."
     },
     "ledger:205>ledger:212": {
-      "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note names a direction (hold) and a statistical signal (basis point divergence) but not a causal mechanism for why this divergence should close; criterion 2 passes: the divergence was observable at entry; criterion 3 fails: the 17-minute exit does not match the mean-reversion horizon implied by a basis-point band trade; criterion 4 fails: the loss is framed as following process, yet the basis-point signal produced the opposite outcome, making the reasoning and result belong to different worlds."
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        }
+      ],
+      "judgeReason": "Criterion 1 passes (thesis names a cause: basis point divergence outside a band), criterion 2 passes (observable at entry), but criterion 3 fails decisively (exit matched neither the reversion horizon implied by a band trade nor the stop; the basis collapsed to normal during the hold, yet position was held through it), and criterion 4 fails (the loss is attributed to fees and slippage rather than to thesis failure, masking that the basis mean-reversion bet itself was wrong)."
     },
     "ledger:223>ledger:234": {
-      "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 passes: the thesis names a cause (basis point divergence exceeding a band). Criterion 2 fails: the trader entered at 219.15 but the note references prices at 218.43 vs 219.36, suggesting the thesis was observed at different prices or the entry price does not match the documented observation. Criterion 3 fails: a 16-minute hold contradicts the thesis of a basis-point mean reversion trade which should have a horizon measured in minutes or seconds and needs exit logic tied to basis convergence, not clock time. Criterion 4 fails: the trade lost money and the note contains no reflection on whether the basis-point premise held at exit."
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        },
+        {
+          "ts": 1789211700000,
+          "title": "Jim Cramer Discussed The Contradictions Surrounding NVIDIA Corporation ( NASDAQ : NVDA ) Shares (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789212600000,
+          "title": "GraniteShares YieldBOOST NVDA ETF ( NVYY ) To Go Ex - Dividend on September 11th (gdelt/tickerreport.com)"
+        }
+      ],
+      "judgeReason": "Criterion 1 passes: the thesis names a specific cause (basis point divergence exceeding a 40bp band). Criterion 2 fails: the trader entered at 219.15 when the note references 218.43/219.36 pricing, making it unclear if the observed condition existed at entry. Criterion 3 fails: a 16-minute hold contradicts the thesis of a statistical mean-reversion trade that should persist until basis normalization. Criterion 4 fails: the trade lost money while the stated thesis predicted convergence, yet no reflection addresses whether the divergence thesis was wrong or merely mistimed."
     },
     "ledger:226>ledger:237": {
-      "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (NYSE closure duration affecting NVDA futures) and was observable at entry (weekend timing), but the 16-minute exit horizon contradicts a thesis implying a multi-day carry trade, and the loss is attributed to market slippage/fees rather than thesis failure, obscuring whether the causal reasoning was sound."
+      "eventsNearEntry": [
+        {
+          "ts": 1789194600000,
+          "title": "Nvidia in talks to invest in Anthropic mega IPO , sources say (gdelt/dunyanews.tv)"
+        },
+        {
+          "ts": 1789194600000,
+          "title": "Michael Burry Is Staying Short Nvidia , Palantir , and Tesla , Warning of a Possible 1987 - Type Fall for AI Stocks . Should Investors Take the Bet Seriously ? (gdelt/aol.com)"
+        },
+        {
+          "ts": 1789204500000,
+          "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
+        },
+        {
+          "ts": 1789211700000,
+          "title": "Jim Cramer Discussed The Contradictions Surrounding NVIDIA Corporation ( NASDAQ : NVDA ) Shares (gdelt/finance.yahoo.com)"
+        },
+        {
+          "ts": 1789212600000,
+          "title": "GraniteShares YieldBOOST NVDA ETF ( NVYY ) To Go Ex - Dividend on September 11th (gdelt/tickerreport.com)"
+        }
+      ],
+      "judgeReason": "The thesis names a cause (NYSE closure duration affecting carry dynamics) and was observable at entry (weekend timing confirmed), but the 16-minute exit contradicts a carry trade thesis implying multi-day horizon, and the loss is attributed to execution costs rather than thesis failure, obscuring whether the directional premise was sound."
     },
     "ledger:250>ledger:268": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (NYSE closure duration affecting RTSLAUSDT/TSLAUSDT correlation), and it was observable at entry (weekend timing confirmed), but the exit after 35.5 minutes contradicts the multi-day horizon the thesis implied, and the loss is not examined against whether the stated cause actually drove the price move."
+      "judgeReason": "Criterion 1 fails: the note names a duration (market closure) and a mechanic (carry delta) but not a causal mechanism for why TSLA would move in a particular direction during that closure; criterion 2 fails: weekend market closure and NYSE shutdown timing were known at entry but cannot cause price movement in a closed market; criterion 3 fails: 35.5-minute hold contradicts the multi-day thesis; criterion 4 holds: the loss is not claimed as skill."
     }
   },
   "detectorsRun": [
