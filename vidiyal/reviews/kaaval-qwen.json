@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789479059798,
+  "generatedAt": 1789479502329,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 2,
-    "decisions": 29,
-    "marks": 29
+    "decisions": 30,
+    "marks": 30
   },
   "bundle": {
     "source": {
@@ -320,17 +320,21 @@
       {
         "ts": 1789478973178,
         "equity": 9999.84999662125
+      },
+      {
+        "ts": 1789479288604,
+        "equity": 9999.81875012125
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The trade has no stated thesis at all—the note indicates an automated system timed out rather than a reasoned entry, so all four criteria fail: no named cause, no observable reasoning at entry, no exit horizon defined, and no framework to evaluate skill versus chance."
+      "judgeReason": "The trade record shows no thesis at all—only a note that a decision was delayed by an AI system timeout; without a stated cause, observable condition, matching exit horizon, or outcome claim to evaluate, none of the four criteria can be met."
     },
     "ledger:440>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all; the note indicates the trade entry was triggered by a timeout in an automated system rather than by observable market analysis or reasoning, and the exit criterion (stop) is mechanical rather than derived from any stated thesis about price direction."
+      "judgeReason": "The thesis names no cause at all—the note states only that a decision-making process took longer than expected, which is a procedural observation, not a market thesis; criterion 1 fails completely."
     }
   },
   "detectorsRun": [
