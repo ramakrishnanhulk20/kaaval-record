@@ -1,0 +1,255 @@
+{
+  "generatedAt": 1789455823782,
+  "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
+  "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
+  "verification": {
+    "verified": true,
+    "reason": null,
+    "fills": 2,
+    "decisions": 6,
+    "marks": 6
+  },
+  "bundle": {
+    "source": {
+      "kind": "ledger",
+      "dir": "../kaaval/data/state/ledger",
+      "brain": "qwen"
+    },
+    "range": {
+      "fromTs": 1789450987005,
+      "toTs": 1789450987206
+    },
+    "graded": [
+      {
+        "trade": {
+          "id": "ledger:437>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "SPOT",
+          "symbol": "RNVDAUSDT",
+          "side": "long",
+          "entryTs": 1789450987005,
+          "exitTs": null,
+          "entryPrice": 212.28609,
+          "exitPrice": null,
+          "qty": 0.7021,
+          "grossPnl": null,
+          "feesUsdt": 0.14904606378899998,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.07452303189449627,
+          "fills": [
+            {
+              "id": "ledger:437",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789450987005,
+              "category": "SPOT",
+              "symbol": "RNVDAUSDT",
+              "side": "buy",
+              "qty": 0.7021,
+              "price": 212.28609,
+              "notionalUsdt": 149.046063789,
+              "feeUsdt": 0.14904606378899998,
+              "slippageBps": 4.9999999999997495,
+              "bookHash": "60958e51d96944b48a030609e539d8a8abf57f642e0969a7d62170e8702f5792",
+              "decisionId": "decision-419",
+              "rationale": "no decision this tick: qwen took longer than 180 seconds",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "no decision this tick: qwen took longer than 180 seconds",
+          "equityAtEntry": 10000
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.6285978384527842,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 1.4139938255603484,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 28012995,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00014312500398047822,
+          "usualSpreadBps": 12.364181044805003,
+          "stop": {
+            "existed": true,
+            "price": 205.91750729999998,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.86,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 0,
+          "total": 76.8,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.63 percent from the last regular close",
+            "entry: spread was 1.4 bps against a usual 12.4 bps, 0.11 times",
+            "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 149.05 USDT is 1.49 percent of 10000.00 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 205.92 was honoured",
+            "cost: 0.2236 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 0 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:440>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "NVDAUSDT",
+          "side": "short",
+          "entryTs": 1789450987206,
+          "exitTs": null,
+          "entryPrice": 212.33378000000002,
+          "exitPrice": null,
+          "qty": 0.47,
+          "grossPnl": null,
+          "feesUsdt": 0.05987812596,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.04989843829999019,
+          "fills": [
+            {
+              "id": "ledger:440",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789450987206,
+              "category": "USDT-FUTURES",
+              "symbol": "NVDAUSDT",
+              "side": "sell",
+              "qty": 0.47,
+              "price": 212.33378000000002,
+              "notionalUsdt": 99.7968766,
+              "feeUsdt": 0.05987812596,
+              "slippageBps": 4.999999999999017,
+              "bookHash": "3ea226c6aef677809e831f986fcdd86a88ba6a627d943633bcfa6546dd6db8df",
+              "decisionId": "decision-419",
+              "rationale": "no decision this tick: qwen took longer than 180 seconds",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "no decision this tick: qwen took longer than 180 seconds",
+          "equityAtEntry": 10000
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.5701605645810748,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 0.4707100661343362,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 28012794,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.0003088470092001248,
+          "usualSpreadBps": 0.4701125919653482,
+          "stop": {
+            "existed": true,
+            "price": 216.58045560000002,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.92,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 0,
+          "total": 77.1,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.57 percent from the last regular close",
+            "entry: spread was 0.5 bps against a usual 0.5 bps, 1.00 times",
+            "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 99.80 USDT is 1.00 percent of 10000.00 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 216.58 was honoured",
+            "cost: 0.1098 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 0 out of 5"
+          ]
+        }
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "fee-bleed",
+        "description": "Friction took more than a fifth of everything the period moved",
+        "trades": [
+          "ledger:437>open",
+          "ledger:440>open"
+        ],
+        "evidence": [
+          "0.3333 USDT of fees, slippage and funding with no closed gross to set against it"
+        ]
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check-fee-bleed",
+        "pattern": "fee-bleed",
+        "text": "The round trip costs less than 20 basis points, a fifth of a one percent move",
+        "test": "cost-under-20-bps"
+      }
+    ],
+    "equityCurve": [
+      {
+        "ts": 1789450864260,
+        "equity": 10000
+      },
+      {
+        "ts": 1789451148552,
+        "equity": 9999.65378512125
+      },
+      {
+        "ts": 1789452275668,
+        "equity": 9999.672237121249
+      },
+      {
+        "ts": 1789453444930,
+        "equity": 9999.73400462125
+      },
+      {
+        "ts": 1789454584216,
+        "equity": 9999.791768121251
+      },
+      {
+        "ts": 1789455729614,
+        "equity": 9999.637538121251
+      }
+    ]
+  },
+  "tradeNotes": {
+    "ledger:437>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names no cause at all; the note documents a technical delay in decision-making rather than a market observation, so criteria 1 and 2 both fail—there is no stated reasoning about why the position should move in any direction."
+    },
+    "ledger:440>open": {
+      "eventsNearEntry": [],
+      "judgeReason": "The thesis names no cause at all—the note states only a system delay, not a market observation or reasoning for the short position, failing criteria 1 and 2 fundamentally."
+    }
+  },
+  "detectorsRun": [
+    "added-while-under-water",
+    "chasing-the-gap",
+    "concentration",
+    "fee-bleed",
+    "holding-losers",
+    "ignored-stops",
+    "overtrading",
+    "revenge-trading",
+    "weekend-overexposure"
+  ]
+}
