@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789495119709,
+  "generatedAt": 1789500400701,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 2,
-    "decisions": 49,
-    "marks": 49
+    "decisions": 54,
+    "marks": 54
   },
   "bundle": {
     "source": {
@@ -400,17 +400,37 @@
       {
         "ts": 1789494592699,
         "equity": 9999.92635612125
+      },
+      {
+        "ts": 1789495755791,
+        "equity": 9999.71482712125
+      },
+      {
+        "ts": 1789496893187,
+        "equity": 9999.743056121251
+      },
+      {
+        "ts": 1789498027694,
+        "equity": 9999.68192712125
+      },
+      {
+        "ts": 1789499148961,
+        "equity": 9999.71012712125
+      },
+      {
+        "ts": 1789500243094,
+        "equity": 9999.69602712125
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note documents a processing delay, not market reasoning; no observable market condition justifies the entry; the trade remains open with no stated horizon; and the stop honor provides no skill signal when no thesis was articulated."
+      "judgeReason": "The thesis names no cause at all; the note documents a processing delay, not market reasoning, so criteria 1 and 2 both fail entirely."
     },
     "ledger:440>open": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note records a system delay, not a trading thesis naming any cause for directional conviction; no reasoning about why NVDA should decline is documented."
+      "judgeReason": "Criterion 1 fails: the note states no decision was made ('qwen took longer than 180 seconds'), so no thesis naming a cause exists for this trade."
     }
   },
   "detectorsRun": [
