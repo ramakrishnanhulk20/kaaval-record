@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789760562071,
+  "generatedAt": 1789764759152,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 111,
-    "marks": 111
+    "decisions": 115,
+    "marks": 115
   },
   "bundle": {
     "source": {
@@ -765,21 +765,37 @@
       {
         "ts": 1789760253570,
         "equity": 10001.082971756341
+      },
+      {
+        "ts": 1789761229488,
+        "equity": 10000.959771756341
+      },
+      {
+        "ts": 1789762178245,
+        "equity": 10001.62084825634
+      },
+      {
+        "ts": 1789763116610,
+        "equity": 10001.513860256342
+      },
+      {
+        "ts": 1789764052098,
+        "equity": 10001.43997175634
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all; the note documents a technical delay in decision-making, not a market observation or trading rationale, making all four criteria fail."
+      "judgeReason": "The thesis names no cause at all—the note documents only a processing delay, not a market observation or reasoning for entry, violating criterion 1 and 2 entirely."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The note indicates no decision was made by the trader (an AI system took too long), so no thesis was stated, observable, or matched to an exit—the trade appears to have been executed without deliberate reasoning."
+      "judgeReason": "No thesis was stated; the note indicates a non-decision (model timeout) rather than a reasoned trade entry, violating criterion 1 and making all other criteria impossible to evaluate."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note documents only a technical delay ('qwen took longer than 180 seconds'), not market reasoning or an observable condition that motivated the short entry."
+      "judgeReason": "The thesis names no cause at all—the note describes a process failure (AI response delay) rather than any market reasoning, so criteria 1 and 2 are both unmet, and the trade cannot be evaluated as a reasoned position."
     }
   },
   "detectorsRun": [
