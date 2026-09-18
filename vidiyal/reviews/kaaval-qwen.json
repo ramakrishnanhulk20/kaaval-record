@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789756378592,
+  "generatedAt": 1789760562071,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 106,
-    "marks": 106
+    "decisions": 111,
+    "marks": 111
   },
   "bundle": {
     "source": {
@@ -74,7 +74,7 @@
           "msToNextOpenAtEntry": 28012995,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00014312500398047822,
-          "usualSpreadBps": 1.819174094960526,
+          "usualSpreadBps": 1.8187605147088637,
           "stop": {
             "existed": true,
             "price": 205.91750729999998,
@@ -745,21 +745,41 @@
       {
         "ts": 1789755461424,
         "equity": 10001.116571756342
+      },
+      {
+        "ts": 1789756459239,
+        "equity": 10001.163461256341
+      },
+      {
+        "ts": 1789757394412,
+        "equity": 10001.04937175634
+      },
+      {
+        "ts": 1789758338863,
+        "equity": 10001.10888225634
+      },
+      {
+        "ts": 1789759280174,
+        "equity": 10001.00808225634
+      },
+      {
+        "ts": 1789760253570,
+        "equity": 10001.082971756341
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The trade has no stated thesis at all; the note indicates an automated decision-making process timed out, leaving no observable cause named, no entry reasoning documented, and no basis to grade alignment between thesis and outcome."
+      "judgeReason": "The thesis names no cause at all; the note documents a technical delay in decision-making, not a market observation or trading rationale, making all four criteria fail."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note indicates no decision was made at entry—the system timeout (qwen taking >180s) prevented deliberate reasoning, so criterion 1 (thesis names a cause) cannot be met; additionally, the stop was crossed while the position remained open, indicating the exit did not match any coherent horizon."
+      "judgeReason": "The note indicates no decision was made by the trader (an AI system took too long), so no thesis was stated, observable, or matched to an exit—the trade appears to have been executed without deliberate reasoning."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The note indicates no decision was made—a timeout occurred—so there is no thesis naming a cause, no observable reasoning at entry, and no process to evaluate against the four criteria."
+      "judgeReason": "The thesis names no cause at all—the note documents only a technical delay ('qwen took longer than 180 seconds'), not market reasoning or an observable condition that motivated the short entry."
     }
   },
   "detectorsRun": [
