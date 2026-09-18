@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789731606693,
+  "generatedAt": 1789735315648,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 65,
-    "marks": 65
+    "decisions": 68,
+    "marks": 68
   },
   "bundle": {
     "source": {
@@ -581,21 +581,33 @@
       {
         "ts": 1789731508803,
         "equity": 10001.261261756339
+      },
+      {
+        "ts": 1789732451955,
+        "equity": 10001.18076875634
+      },
+      {
+        "ts": 1789733397742,
+        "equity": 10001.09692975634
+      },
+      {
+        "ts": 1789734377064,
+        "equity": 10001.125430256341
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note only explains a processing delay, not a market reason for entry; criterion 1 fails entirely."
+      "judgeReason": "The thesis names no cause at all—the note documents a processing delay, not a market observation or reasoning for entry, making criteria 1 and 2 both unmet."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The note indicates no decision was made within the time constraint, meaning criterion 1 (thesis names a cause) cannot be met; the trade appears to lack a stated reasoning basis entirely."
+      "judgeReason": "The thesis names no cause at all—the note documents a processing delay, not a market reason; the stop was crossed while held open, indicating the exit did not match any coherent horizon; and the loss is attributed to a system timeout rather than skill or lack thereof."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "No thesis is stated; the note indicates a decision was not made ('no decision this tick'), so criterion 1 (naming a cause) and criterion 2 (observable at entry) cannot be met, and the trade lacks reasoned entry logic to evaluate."
+      "judgeReason": "The thesis names no cause at all; the note indicates an automated system timeout rather than a market observation, failing criteria 1 and 2, and the trade remains open with no exit logic stated, failing criterion 3."
     }
   },
   "detectorsRun": [
