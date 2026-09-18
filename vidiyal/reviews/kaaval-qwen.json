@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789747920897,
+  "generatedAt": 1789752156256,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 98,
-    "marks": 98
+    "decisions": 102,
+    "marks": 102
   },
   "bundle": {
     "source": {
@@ -713,21 +713,37 @@
       {
         "ts": 1789747761930,
         "equity": 10001.08506125634
+      },
+      {
+        "ts": 1789748719935,
+        "equity": 10001.15226125634
+      },
+      {
+        "ts": 1789749657835,
+        "equity": 10001.04728225634
+      },
+      {
+        "ts": 1789750595050,
+        "equity": 10000.98568225634
+      },
+      {
+        "ts": 1789751533799,
+        "equity": 10001.00808225634
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all; the note documents a system delay rather than any market observation, directional reasoning, or trading logic, making all four criteria unmet."
+      "judgeReason": "No thesis stated at all; the note documents a system delay rather than naming any cause, observable condition, or intended horizon for the trade."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note names no cause for the short, only a system delay; criterion 2 fails: no observable market condition is cited; criterion 3 fails: no exit horizon was stated; criterion 4 fails: the stop was crossed mid-hold, yet the loss is not attributed to that breach or acknowledged as a process failure."
+      "judgeReason": "The thesis names no cause at all—the note records only a technical delay, not a market observation or trading reason—and the stop was crossed during the hold, indicating the exit did not match any coherent horizon."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The trade lacks a stated thesis entirely—the note reveals a delay in decision-making rather than naming a cause, making all four criteria unsatisfiable."
+      "judgeReason": "The thesis names no cause at all; the note indicates a delay in decision-making rather than any observable market condition, thesis, or reasoning for the short position."
     }
   },
   "detectorsRun": [
