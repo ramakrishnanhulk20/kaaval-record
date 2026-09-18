@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789743769966,
+  "generatedAt": 1789747920897,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 93,
-    "marks": 93
+    "decisions": 98,
+    "marks": 98
   },
   "bundle": {
     "source": {
@@ -74,7 +74,7 @@
           "msToNextOpenAtEntry": 28012995,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00014312500398047822,
-          "usualSpreadBps": 1.850940714052607,
+          "usualSpreadBps": 1.819174094960526,
           "stop": {
             "existed": true,
             "price": 205.91750729999998,
@@ -91,7 +91,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.63 percent from the last regular close",
-            "entry: spread was 1.4 bps against a usual 1.9 bps, 0.76 times",
+            "entry: spread was 1.4 bps against a usual 1.8 bps, 0.78 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 149.05 USDT is 1.49 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -188,8 +188,8 @@
           "sizing": 5,
           "exit": 0,
           "cost": 5,
-          "reasoning": 0,
-          "total": 59.6,
+          "reasoning": 1,
+          "total": 62.6,
           "letter": "C",
           "evidence": [
             "entry: price was 0.57 percent from the last regular close",
@@ -199,7 +199,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 216.58 was crossed and the position stayed open",
             "cost: 0.3384 USDT of friction is 8.0 percent of the 4.2144 USDT gross",
-            "reasoning: the judge scored the stated thesis 0 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -221,7 +221,7 @@
           "qty": 0.56,
           "grossPnl": null,
           "feesUsdt": 0.07418864711999999,
-          "fundingUsdt": 0,
+          "fundingUsdt": 0.032643004732800004,
           "slippageUsdt": 0.06182387260000098,
           "fills": [
             {
@@ -279,7 +279,7 @@
             "sizing: 123.65 USDT is 1.24 percent of 10001.65 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 225.22 was honoured",
-            "cost: 0.1360 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "cost: 0.1687 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
             "reasoning: the judge scored the stated thesis 0 out of 5"
           ]
         }
@@ -693,21 +693,41 @@
       {
         "ts": 1789742977539,
         "equity": 10001.15852975634
+      },
+      {
+        "ts": 1789743965604,
+        "equity": 10001.15610425634
+      },
+      {
+        "ts": 1789744902435,
+        "equity": 10000.97866125634
+      },
+      {
+        "ts": 1789745844115,
+        "equity": 10000.94088225634
+      },
+      {
+        "ts": 1789746774959,
+        "equity": 10001.08648225634
+      },
+      {
+        "ts": 1789747761930,
+        "equity": 10001.08506125634
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "No thesis stated at all; the note indicates a non-decision (automated system timeout) rather than named cause, observable reasoning, or intentional entry logic."
+      "judgeReason": "The thesis names no cause at all; the note documents a system delay rather than any market observation, directional reasoning, or trading logic, making all four criteria unmet."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note indicates no decision was made ('qwen took longer than 180 seconds'), so there is no stated cause for the trade, only a direction (short); the entry appears to be automated/default rather than thesis-driven."
+      "judgeReason": "Criterion 1 fails: the note names no cause for the short, only a system delay; criterion 2 fails: no observable market condition is cited; criterion 3 fails: no exit horizon was stated; criterion 4 fails: the stop was crossed mid-hold, yet the loss is not attributed to that breach or acknowledged as a process failure."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note indicates a timeout in an automated system rather than a reasoned market observation, failing criteria 1 and 2 entirely."
+      "judgeReason": "The trade lacks a stated thesis entirely—the note reveals a delay in decision-making rather than naming a cause, making all four criteria unsatisfiable."
     }
   },
   "detectorsRun": [
