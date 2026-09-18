@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789739534581,
+  "generatedAt": 1789743769966,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 85,
-    "marks": 85
+    "decisions": 93,
+    "marks": 93
   },
   "bundle": {
     "source": {
@@ -74,7 +74,7 @@
           "msToNextOpenAtEntry": 28012995,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00014312500398047822,
-          "usualSpreadBps": 1.8827073331446882,
+          "usualSpreadBps": 1.850940714052607,
           "stop": {
             "existed": true,
             "price": 205.91750729999998,
@@ -91,7 +91,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.63 percent from the last regular close",
-            "entry: spread was 1.4 bps against a usual 1.9 bps, 0.75 times",
+            "entry: spread was 1.4 bps against a usual 1.9 bps, 0.76 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 149.05 USDT is 1.49 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -176,7 +176,7 @@
           "msToNextOpenAtEntry": 28012794,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0003088470092001248,
-          "usualSpreadBps": 0.4699137708226266,
+          "usualSpreadBps": 0.4697813167966037,
           "stop": {
             "existed": true,
             "price": 216.58045560000002,
@@ -257,7 +257,7 @@
           "msToNextOpenAtEntry": 8622038,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00029425997842038595,
-          "usualSpreadBps": 0.4699137708226266,
+          "usualSpreadBps": 0.4697813167966037,
           "stop": {
             "existed": true,
             "price": 225.2155359,
@@ -661,21 +661,53 @@
       {
         "ts": 1789739450482,
         "equity": 10001.22448025634
+      },
+      {
+        "ts": 1789739595501,
+        "equity": 10001.32528025634
+      },
+      {
+        "ts": 1789739734890,
+        "equity": 10001.38061175634
+      },
+      {
+        "ts": 1789739877588,
+        "equity": 10001.375011756341
+      },
+      {
+        "ts": 1789740014286,
+        "equity": 10001.45341175634
+      },
+      {
+        "ts": 1789740164235,
+        "equity": 10001.43661175634
+      },
+      {
+        "ts": 1789741103157,
+        "equity": 10001.27262975634
+      },
+      {
+        "ts": 1789742045488,
+        "equity": 10001.176250256342
+      },
+      {
+        "ts": 1789742977539,
+        "equity": 10001.15852975634
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis is absent entirely; the note documents a procedural failure (an AI model exceeding latency), not a trading cause, making all four criteria unscoreable, with criterion 1 (naming a cause) being the decisive failure."
+      "judgeReason": "No thesis stated at all; the note indicates a non-decision (automated system timeout) rather than named cause, observable reasoning, or intentional entry logic."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The trade lacks a stated thesis entirely; the note indicates no decision was made (an AI response timeout), so criteria 1 and 2 cannot be met, and the trade appears to be a mechanical entry without reasoned cause."
+      "judgeReason": "Criterion 1 fails: the note indicates no decision was made ('qwen took longer than 180 seconds'), so there is no stated cause for the trade, only a direction (short); the entry appears to be automated/default rather than thesis-driven."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note records only a processing delay, not market reasoning; no observable cause for the short entry is documented; the exit criterion is absent; and the trade remains open with no outcome to evaluate."
+      "judgeReason": "The thesis names no cause at all—the note indicates a timeout in an automated system rather than a reasoned market observation, failing criteria 1 and 2 entirely."
     }
   },
   "detectorsRun": [
