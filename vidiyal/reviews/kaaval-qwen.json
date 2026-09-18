@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789735315648,
+  "generatedAt": 1789739534581,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 68,
-    "marks": 68
+    "decisions": 85,
+    "marks": 85
   },
   "bundle": {
     "source": {
@@ -593,21 +593,89 @@
       {
         "ts": 1789734377064,
         "equity": 10001.125430256341
+      },
+      {
+        "ts": 1789735350843,
+        "equity": 10001.155687756342
+      },
+      {
+        "ts": 1789736324800,
+        "equity": 10001.121751756342
+      },
+      {
+        "ts": 1789737302073,
+        "equity": 10001.18293525634
+      },
+      {
+        "ts": 1789737445283,
+        "equity": 10001.12693525634
+      },
+      {
+        "ts": 1789737588203,
+        "equity": 10001.13253525634
+      },
+      {
+        "ts": 1789737732723,
+        "equity": 10001.126098756342
+      },
+      {
+        "ts": 1789737878703,
+        "equity": 10001.10837825634
+      },
+      {
+        "ts": 1789738026899,
+        "equity": 10001.06859025634
+      },
+      {
+        "ts": 1789738169484,
+        "equity": 10001.19388675634
+      },
+      {
+        "ts": 1789738379915,
+        "equity": 10000.991859756341
+      },
+      {
+        "ts": 1789738524110,
+        "equity": 10001.157938256341
+      },
+      {
+        "ts": 1789738668043,
+        "equity": 10001.09826325634
+      },
+      {
+        "ts": 1789738813788,
+        "equity": 10000.90101025634
+      },
+      {
+        "ts": 1789738957449,
+        "equity": 10000.789010256341
+      },
+      {
+        "ts": 1789739100536,
+        "equity": 10000.70501025634
+      },
+      {
+        "ts": 1789739238991,
+        "equity": 10001.15034325634
+      },
+      {
+        "ts": 1789739450482,
+        "equity": 10001.22448025634
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note documents a processing delay, not a market observation or reasoning for entry, making criteria 1 and 2 both unmet."
+      "judgeReason": "The thesis is absent entirely; the note documents a procedural failure (an AI model exceeding latency), not a trading cause, making all four criteria unscoreable, with criterion 1 (naming a cause) being the decisive failure."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note documents a processing delay, not a market reason; the stop was crossed while held open, indicating the exit did not match any coherent horizon; and the loss is attributed to a system timeout rather than skill or lack thereof."
+      "judgeReason": "The trade lacks a stated thesis entirely; the note indicates no decision was made (an AI response timeout), so criteria 1 and 2 cannot be met, and the trade appears to be a mechanical entry without reasoned cause."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all; the note indicates an automated system timeout rather than a market observation, failing criteria 1 and 2, and the trade remains open with no exit logic stated, failing criterion 3."
+      "judgeReason": "The thesis names no cause at all—the note records only a processing delay, not market reasoning; no observable cause for the short entry is documented; the exit criterion is absent; and the trade remains open with no outcome to evaluate."
     }
   },
   "detectorsRun": [
