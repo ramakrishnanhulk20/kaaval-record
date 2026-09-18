@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789502171833,
+  "generatedAt": 1789726604079,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 2,
-    "decisions": 55,
-    "marks": 55
+    "fills": 3,
+    "decisions": 59,
+    "marks": 59
   },
   "bundle": {
     "source": {
@@ -17,7 +17,7 @@
     },
     "range": {
       "fromTs": 1789450987005,
-      "toTs": 1789450987206
+      "toTs": 1789725003802
     },
     "graded": [
       {
@@ -103,7 +103,7 @@
       },
       {
         "trade": {
-          "id": "ledger:440>open",
+          "id": "ledger:440>ledger:999",
           "source": {
             "kind": "ledger",
             "dir": "../kaaval/data/state/ledger",
@@ -113,14 +113,14 @@
           "symbol": "NVDAUSDT",
           "side": "short",
           "entryTs": 1789450987206,
-          "exitTs": null,
+          "exitTs": 1789725003802,
           "entryPrice": 212.33378000000002,
-          "exitPrice": null,
+          "exitPrice": 221.300595,
           "qty": 0.47,
-          "grossPnl": null,
-          "feesUsdt": 0.05987812596,
-          "fundingUsdt": 0.0250490160266,
-          "slippageUsdt": 0.04989843829999019,
+          "grossPnl": -4.2144030499999845,
+          "feesUsdt": 0.12228489374999998,
+          "fundingUsdt": 0.1141676268304,
+          "slippageUsdt": 0.10190407812498517,
           "fills": [
             {
               "id": "ledger:440",
@@ -142,6 +142,27 @@
               "decisionId": "decision-419",
               "rationale": "no decision this tick: qwen took longer than 180 seconds",
               "note": "order source: brain"
+            },
+            {
+              "id": "ledger:999",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789725003802,
+              "category": "USDT-FUTURES",
+              "symbol": "NVDAUSDT",
+              "side": "buy",
+              "qty": 0.47,
+              "price": 221.300595,
+              "notionalUsdt": 104.01127964999999,
+              "feeUsdt": 0.06240676778999999,
+              "slippageBps": 4.999999999999518,
+              "bookHash": "3d00fef9a8f3087816f711079c15c863e78317c1536ed1f27ef5e588714ba681",
+              "decisionId": "decision-984",
+              "rationale": "no decision this tick: qwen took longer than 180 seconds",
+              "note": "order source: stop"
             }
           ],
           "rationale": "no decision this tick: qwen took longer than 180 seconds",
@@ -149,59 +170,74 @@
         },
         "context": {
           "divergenceAtEntryPct": 0.5701605645810748,
-          "divergenceAtExitPct": null,
+          "divergenceAtExitPct": 0.7514659685863789,
           "spreadAtEntryBps": 0.4707100661343362,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 28012794,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0003088470092001248,
-          "usualSpreadBps": 0.4700683949523739,
+          "usualSpreadBps": 0.46999108288750024,
           "stop": {
             "existed": true,
             "price": 216.58045560000002,
-            "honoured": true
+            "honoured": false
           }
         },
         "scores": {
           "entry": 4.92,
           "sizing": 5,
-          "exit": 5,
-          "cost": 2.5,
-          "reasoning": 0,
-          "total": 77.1,
-          "letter": "B",
+          "exit": 0,
+          "cost": 5,
+          "reasoning": 1,
+          "total": 62.6,
+          "letter": "C",
           "evidence": [
             "entry: price was 0.57 percent from the last regular close",
             "entry: spread was 0.5 bps against a usual 0.5 bps, 1.00 times",
             "entry: 01:43 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 99.80 USDT is 1.00 percent of 10000.00 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
-            "exit: the stop at 216.58 was honoured",
-            "cost: 0.1348 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
-            "reasoning: the judge scored the stated thesis 0 out of 5"
+            "exit: the stop at 216.58 was crossed and the position stayed open",
+            "cost: 0.3384 USDT of friction is 8.0 percent of the 4.2144 USDT gross",
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       }
     ],
     "patterns": [
       {
-        "pattern": "fee-bleed",
-        "description": "Friction took more than a fifth of everything the period moved",
+        "pattern": "concentration",
+        "description": "One instrument held more than half of open exposure for more than a day",
         "trades": [
-          "ledger:437>open",
-          "ledger:440>open"
+          "ledger:437>open"
         ],
         "evidence": [
-          "0.3584 USDT of fees, slippage and funding with no closed gross to set against it"
+          "RNVDAUSDT held 59.9 percent of open exposure for 3.2 days"
+        ]
+      },
+      {
+        "pattern": "ignored-stops",
+        "description": "A position crossed its stop price and stayed open past the next tick",
+        "trades": [
+          "ledger:440>ledger:999"
+        ],
+        "evidence": [
+          "ledger:440>ledger:999 had a stop at 216.58 and the price went through it"
         ]
       }
     ],
     "checklist": [
       {
-        "id": "check-fee-bleed",
-        "pattern": "fee-bleed",
-        "text": "The round trip costs less than 20 basis points, a fifth of a one percent move",
-        "test": "cost-under-20-bps"
+        "id": "check-concentration",
+        "pattern": "concentration",
+        "text": "No instrument holds more than half of open exposure",
+        "test": "symbol-under-half-exposure"
+      },
+      {
+        "id": "check-ignored-stops",
+        "pattern": "ignored-stops",
+        "text": "No open position in this name is already past its stop",
+        "test": "stop-not-already-crossed"
       }
     ],
     "equityCurve": [
@@ -424,17 +460,33 @@
       {
         "ts": 1789501341443,
         "equity": 9999.79713512125
+      },
+      {
+        "ts": 1789502439703,
+        "equity": 9999.686221121252
+      },
+      {
+        "ts": 1789503896514,
+        "equity": 9999.745725621251
+      },
+      {
+        "ts": 1789725259531,
+        "equity": 10001.625281203462
+      },
+      {
+        "ts": 1789726376079,
+        "equity": 10001.663896703461
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note contains no thesis naming a cause for the trade, only a technical observation about processing delay that does not explain why the position was opened."
+      "judgeReason": "The thesis names no cause at all—the note indicates a non-decision due to processing delay, so criteria 1 and 2 cannot be met; the trade appears to lack any stated reasoning whatsoever."
     },
-    "ledger:440>open": {
+    "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note documents a processing delay, not market reasoning; no observable market condition is cited as motivation for the short entry; the trade remains open with no exit horizon stated; and the outcome cannot be evaluated against skill or process when no decision was actually made."
+      "judgeReason": "The thesis names no cause at all—the note only describes a computational delay, not a market reason—and the exit occurred after the stop was crossed, indicating the trade was held past its stated risk limit rather than managed by the implied thesis horizon."
     }
   },
   "detectorsRun": [
