@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789856708451,
+  "generatedAt": 1789861418010,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 31,
-    "decisions": 214,
-    "marks": 214
+    "fills": 37,
+    "decisions": 219,
+    "marks": 219
   },
   "bundle": {
     "source": {
@@ -17,7 +17,7 @@
     },
     "range": {
       "fromTs": 1789450987005,
-      "toTs": 1789854856645
+      "toTs": 1789859685104
     },
     "graded": [
       {
@@ -778,6 +778,108 @@
       },
       {
         "trade": {
+          "id": "ledger:1765>ledger:2350",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "MUUSDT",
+          "side": "short",
+          "entryTs": 1789802348760,
+          "exitTs": 1789859684921,
+          "entryPrice": 1008.365565,
+          "exitPrice": 1013.496495,
+          "qty": 0.03,
+          "grossPnl": -0.15392790000000103,
+          "feesUsdt": 0.03639351707999999,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.0303279309000009,
+          "fills": [
+            {
+              "id": "ledger:1765",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789802348760,
+              "category": "USDT-FUTURES",
+              "symbol": "MUUSDT",
+              "side": "sell",
+              "qty": 0.13,
+              "price": 1008.365565,
+              "notionalUsdt": 131.08752345,
+              "feeUsdt": 0.07865251406999998,
+              "slippageBps": 5.000000000000571,
+              "bookHash": "8bf41381e467ade266233a11084a90049d54cf3365ad677d063e04f8a372ce91",
+              "decisionId": "decision-1751",
+              "rationale": "Holding existing NVDA position; adding a small long RMUUSDT as MU news confirms strong momentum and divergence is within the 1% entry gate.",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:2350",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789859684921,
+              "category": "USDT-FUTURES",
+              "symbol": "MUUSDT",
+              "side": "buy",
+              "qty": 0.03,
+              "price": 1013.496495,
+              "notionalUsdt": 30.404894849999998,
+              "feeUsdt": 0.018242936909999997,
+              "slippageBps": 4.999999999999729,
+              "bookHash": "68181e0fa10a349fe477e5bc690d5bf60ffaf9a0c6a17f6fc21ffe1659ab9702",
+              "decisionId": "decision-2335",
+              "rationale": "Holding hedge for RMU long. No new catalysts. Over-hedged relative to spot size but reducing over weekend adds execution risk with thin evidence.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Holding existing NVDA position; adding a small long RMUUSDT as MU news confirms strong momentum and divergence is within the 1% entry gate.",
+          "equityAtEntry": 10001.677688256339
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.7807177998622462,
+          "divergenceAtExitPct": -0.27585407852011934,
+          "spreadAtEntryBps": 1.784015223596079,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 195051240,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00032022524512318693,
+          "usualSpreadBps": 1.550502869807528,
+          "stop": {
+            "existed": true,
+            "price": 1028.5328763,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.56,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 0.83,
+          "reasoning": 1,
+          "total": 73.29,
+          "letter": "B",
+          "evidence": [
+            "entry: price was -0.78 percent from the last regular close",
+            "entry: spread was 1.8 bps against a usual 1.6 bps, 1.15 times",
+            "entry: 03:19 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 30.25 USDT is 0.30 percent of 10001.68 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 1028.53 was honoured",
+            "cost: 0.0667 USDT of friction is 43.3 percent of the 0.1539 USDT gross",
+            "reasoning: the judge scored the stated thesis 1 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
           "id": "ledger:1765>open",
           "source": {
             "kind": "ledger",
@@ -791,11 +893,11 @@
           "exitTs": null,
           "entryPrice": 1008.365565,
           "exitPrice": null,
-          "qty": 0.13,
+          "qty": 0.1,
           "grossPnl": null,
-          "feesUsdt": 0.07865251406999998,
+          "feesUsdt": 0.060501933899999985,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.06554376172500748,
+          "slippageUsdt": 0.050418278250005756,
           "fills": [
             {
               "id": "ledger:1765",
@@ -829,8 +931,8 @@
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 195051240,
           "nextEventMinutes": null,
-          "bookShareAtEntry": 0.0013876427288671434,
-          "usualSpreadBps": 1.5213984694729092,
+          "bookShareAtEntry": 0.0010674174837439565,
+          "usualSpreadBps": 1.550502869807528,
           "stop": {
             "existed": true,
             "price": 1028.5328763,
@@ -838,21 +940,21 @@
           }
         },
         "scores": {
-          "entry": 4.54,
+          "entry": 4.56,
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
           "reasoning": 1,
-          "total": 78.2,
+          "total": 78.3,
           "letter": "B",
           "evidence": [
             "entry: price was -0.78 percent from the last regular close",
-            "entry: spread was 1.8 bps against a usual 1.5 bps, 1.17 times",
+            "entry: spread was 1.8 bps against a usual 1.6 bps, 1.15 times",
             "entry: 03:19 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "sizing: 131.09 USDT is 1.31 percent of 10001.68 USDT equity against a 10 percent cap",
+            "sizing: 100.84 USDT is 1.01 percent of 10001.68 USDT equity against a 10 percent cap",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: the stop at 1028.53 was honoured",
-            "cost: 0.1442 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "cost: 0.1109 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
             "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
@@ -932,7 +1034,7 @@
           "msToNextOpenAtEntry": 191991921,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.000035339833331623686,
-          "usualSpreadBps": 0.2982893108022761,
+          "usualSpreadBps": 0.5961074185562818,
           "stop": {
             "existed": true,
             "price": 341.7738276,
@@ -949,7 +1051,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was -0.24 percent from the last regular close",
-            "entry: spread was 0.3 bps against a usual 0.3 bps, 1.00 times",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
             "entry: 04:10 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 6.70 USDT is 0.07 percent of 10001.31 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -1034,7 +1136,7 @@
           "msToNextOpenAtEntry": 191991921,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0004947576666427315,
-          "usualSpreadBps": 0.2982893108022761,
+          "usualSpreadBps": 0.5961074185562818,
           "stop": {
             "existed": true,
             "price": 341.7738276,
@@ -1051,7 +1153,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was -0.24 percent from the last regular close",
-            "entry: spread was 0.3 bps against a usual 0.3 bps, 1.00 times",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
             "entry: 04:10 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 93.82 USDT is 0.94 percent of 10001.31 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -1136,7 +1238,7 @@
           "msToNextOpenAtEntry": 191991921,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00014135933332649474,
-          "usualSpreadBps": 0.2982893108022761,
+          "usualSpreadBps": 0.5961074185562818,
           "stop": {
             "existed": true,
             "price": 341.7738276,
@@ -1153,7 +1255,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was -0.24 percent from the last regular close",
-            "entry: spread was 0.3 bps against a usual 0.3 bps, 1.00 times",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
             "entry: 04:10 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 26.81 USDT is 0.27 percent of 10001.31 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -1238,7 +1340,7 @@
           "msToNextOpenAtEntry": 191991921,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0003710682499820485,
-          "usualSpreadBps": 0.2982893108022761,
+          "usualSpreadBps": 0.5961074185562818,
           "stop": {
             "existed": true,
             "price": 341.7738276,
@@ -1255,7 +1357,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was -0.24 percent from the last regular close",
-            "entry: spread was 0.3 bps against a usual 0.3 bps, 1.00 times",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
             "entry: 04:10 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 70.37 USDT is 0.70 percent of 10001.31 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -1752,7 +1854,7 @@
           "msToNextOpenAtEntry": 188282238,
           "nextEventMinutes": 6,
           "bookShareAtEntry": 0.000010106323524184814,
-          "usualSpreadBps": 0.393541135370993,
+          "usualSpreadBps": 0.39312039312003555,
           "stop": {
             "existed": true,
             "price": 777.9765750157896,
@@ -1782,6 +1884,109 @@
       },
       {
         "trade": {
+          "id": "ledger:1845>ledger:2318",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "SPYUSDT",
+          "side": "short",
+          "entryTs": 1789809117762,
+          "exitTs": 1789856822256,
+          "entryPrice": 762.7221323684212,
+          "exitPrice": 764.091855,
+          "qty": 0.03,
+          "grossPnl": -0.04109167894736515,
+          "feesUsdt": 0.02748265177263158,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.02309149250182838,
+          "fills": [
+            {
+              "id": "ledger:1845",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789809117762,
+              "category": "USDT-FUTURES",
+              "symbol": "SPYUSDT",
+              "side": "sell",
+              "qty": 0.19,
+              "price": 762.7221323684212,
+              "notionalUsdt": 144.91720515000003,
+              "feeUsdt": 0.08695032309,
+              "slippageBps": 5.0827224329237275,
+              "bookHash": "9c4c034852a8e1a937e7fb7091a0f21e7552cf7640ef1dec58e03ff01787e591",
+              "decisionId": "decision-1837",
+              "rationale": "Adding a small RQQQUSDT long for weekend carry as divergence is minimal and spread is tight; no other new targets due to thin weekend evidence.",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:2318",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789856822256,
+              "category": "USDT-FUTURES",
+              "symbol": "SPYUSDT",
+              "side": "buy",
+              "qty": 0.03,
+              "price": 764.091855,
+              "notionalUsdt": 22.92275565,
+              "feeUsdt": 0.013753653389999999,
+              "slippageBps": 4.999999999999649,
+              "bookHash": "14e61dce865ed09a5489d01973c455a0ec935a1e91517b80c95a840ec6362ee5",
+              "decisionId": "decision-2298",
+              "rationale": "Holding existing positions through the weekend; adding a small RAAPLUSDT long on bullish Evercore PT raise and iPhone Duo news, with divergence at -0.52% just clearing the 0.5% gate.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Adding a small RQQQUSDT long for weekend carry as divergence is minimal and spread is tight; no other new targets due to thin weekend evidence.",
+          "equityAtEntry": 10000.594352905782
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.10133635650910501,
+          "divergenceAtExitPct": 0.28110177833190686,
+          "spreadAtEntryBps": 0.39312039312003555,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 188282238,
+          "nextEventMinutes": 6,
+          "bookShareAtEntry": 0.000005053161762092407,
+          "usualSpreadBps": 0.39312039312003555,
+          "stop": {
+            "existed": true,
+            "price": 777.9765750157896,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 0,
+          "reasoning": 0,
+          "total": 70,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.10 percent from the last regular close",
+            "entry: spread was 0.4 bps against a usual 0.4 bps, 1.00 times",
+            "entry: 05:11 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 6 minutes away and the rationale was written",
+            "sizing: 22.88 USDT is 0.23 percent of 10000.59 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 777.98 was honoured",
+            "cost: 0.0506 USDT of friction against a gross of 0.0411 USDT, so friction was the whole trade",
+            "reasoning: the judge scored the stated thesis 0 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
           "id": "ledger:1845>open",
           "source": {
             "kind": "ledger",
@@ -1795,11 +2000,11 @@
           "exitTs": null,
           "entryPrice": 762.7221323684212,
           "exitPrice": null,
-          "qty": 0.13,
+          "qty": 0.1,
           "grossPnl": null,
-          "feesUsdt": 0.05949232632473685,
+          "feesUsdt": 0.04576332794210527,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.050397163599593134,
+          "slippageUsdt": 0.03876704892276395,
           "fills": [
             {
               "id": "ledger:1845",
@@ -1833,8 +2038,8 @@
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 188282238,
           "nextEventMinutes": 6,
-          "bookShareAtEntry": 0.000021897034302400432,
-          "usualSpreadBps": 0.393541135370993,
+          "bookShareAtEntry": 0.000016843872540308026,
+          "usualSpreadBps": 0.39312039312003555,
           "stop": {
             "existed": true,
             "price": 777.9765750157896,
@@ -1854,10 +2059,10 @@
             "entry: spread was 0.4 bps against a usual 0.4 bps, 1.00 times",
             "entry: 05:11 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "entry: a scheduled event was 6 minutes away and the rationale was written",
-            "sizing: 99.15 USDT is 0.99 percent of 10000.59 USDT equity against a 10 percent cap",
+            "sizing: 76.27 USDT is 0.76 percent of 10000.59 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 777.98 was honoured",
-            "cost: 0.1099 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "cost: 0.0845 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
             "reasoning: the judge scored the stated thesis 0 out of 5"
           ]
         }
@@ -2150,7 +2355,7 @@
       },
       {
         "trade": {
-          "id": "ledger:2181>open",
+          "id": "ledger:2181>ledger:2339",
           "source": {
             "kind": "ledger",
             "dir": "../kaaval/data/state/ledger",
@@ -2160,14 +2365,14 @@
           "symbol": "RAAPLUSDT",
           "side": "long",
           "entryTs": 1789845241066,
-          "exitTs": null,
+          "exitTs": 1789858736011,
           "entryPrice": 335.25754499999994,
-          "exitPrice": null,
-          "qty": 0.17070000000000007,
-          "grossPnl": null,
-          "feesUsdt": 0.05722846293150002,
+          "exitPrice": 334.21281,
+          "qty": 0.0829,
+          "grossPnl": -0.08660853149999552,
+          "feesUsdt": 0.0554990924295,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.028614231465743416,
+          "slippageUsdt": 0.027749546214747213,
           "fills": [
             {
               "id": "ledger:2181",
@@ -2189,6 +2394,27 @@
               "decisionId": "decision-2166",
               "rationale": "Divergence -0.52% with NYSE closed >24h requires a 0.5x delta hedge if over 5% equity. Position is only 40 USDT so not forced, but closing avoids carrying weekend basis risk on thin rToken liquidity. iPhone Duo and Ternus CEO news are positive but priced in at Friday close.",
               "note": "order source: brain"
+            },
+            {
+              "id": "ledger:2339",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789858736011,
+              "category": "SPOT",
+              "symbol": "RAAPLUSDT",
+              "side": "sell",
+              "qty": 0.0829,
+              "price": 334.21281,
+              "notionalUsdt": 27.706241949,
+              "feeUsdt": 0.027706241949,
+              "slippageBps": 5.000000000000151,
+              "bookHash": "6eaa67dbe031a397055f573ea0cabb60d794ac9c4169c65bc8bd3da261083bbe",
+              "decisionId": "decision-2329",
+              "rationale": "Hold existing long. Evercore raised PT to $380 on iPhone 18 demand per news. Divergence -0.31% within 1% entry gate. Hedged by AAPLUSDT.",
+              "note": "order source: brain"
             }
           ],
           "rationale": "Divergence -0.52% with NYSE closed >24h requires a 0.5x delta hedge if over 5% equity. Position is only 40 USDT so not forced, but closing avoids carrying weekend basis risk on thin rToken liquidity. iPhone Duo and Ternus CEO news are positive but priced in at Friday close.",
@@ -2196,12 +2422,12 @@
         },
         "context": {
           "divergenceAtEntryPct": -0.25955880165413947,
-          "divergenceAtExitPct": null,
+          "divergenceAtExitPct": -0.5703715824234686,
           "spreadAtEntryBps": 21.21080855004644,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 152158934,
           "nextEventMinutes": null,
-          "bookShareAtEntry": 0.0005041991688719907,
+          "bookShareAtEntry": 0.00024486298242230826,
           "usualSpreadBps": 21.21080855004644,
           "stop": {
             "existed": true,
@@ -2213,19 +2439,121 @@
           "entry": 5,
           "sizing": 5,
           "exit": 5,
-          "cost": 2.5,
-          "reasoning": 1,
-          "total": 80.5,
+          "cost": 0,
+          "reasoning": 2,
+          "total": 76,
           "letter": "B",
           "evidence": [
             "entry: price was -0.26 percent from the last regular close",
             "entry: spread was 21.2 bps against a usual 21.2 bps, 1.00 times",
             "entry: 15:14 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "sizing: 57.23 USDT is 0.57 percent of 9998.70 USDT equity against a 10 percent cap",
-            "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
+            "sizing: 27.79 USDT is 0.28 percent of 9998.70 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 325.20 was honoured",
-            "cost: 0.0858 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "cost: 0.0832 USDT of friction is 96.1 percent of the 0.0866 USDT gross",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:2181>ledger:2353",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "SPOT",
+          "symbol": "RAAPLUSDT",
+          "side": "long",
+          "entryTs": 1789845241066,
+          "exitTs": 1789859685104,
+          "entryPrice": 335.25754499999994,
+          "exitPrice": 334.11286,
+          "qty": 0.08780000000000007,
+          "grossPnl": -0.10050334299999344,
+          "feesUsdt": 0.05877072155900005,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.02938536077949319,
+          "fills": [
+            {
+              "id": "ledger:2181",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789845241066,
+              "category": "SPOT",
+              "symbol": "RAAPLUSDT",
+              "side": "buy",
+              "qty": 0.4806,
+              "price": 335.25754499999994,
+              "notionalUsdt": 161.124776127,
+              "feeUsdt": 0.161124776127,
+              "slippageBps": 4.999999999998849,
+              "bookHash": "96dede84932a11dec1a9d6f9961a08013019ae9ae521ad4116e8ccd963d99590",
+              "decisionId": "decision-2166",
+              "rationale": "Divergence -0.52% with NYSE closed >24h requires a 0.5x delta hedge if over 5% equity. Position is only 40 USDT so not forced, but closing avoids carrying weekend basis risk on thin rToken liquidity. iPhone Duo and Ternus CEO news are positive but priced in at Friday close.",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:2353",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789859685104,
+              "category": "SPOT",
+              "symbol": "RAAPLUSDT",
+              "side": "sell",
+              "qty": 0.1273,
+              "price": 334.11286,
+              "notionalUsdt": 42.532567078,
+              "feeUsdt": 0.042532567078,
+              "slippageBps": 4.999999999998827,
+              "bookHash": "ed3a818bacd66824fead9a82aea5232072c5e60c301cc6f5743b472810f86cfe",
+              "decisionId": "decision-2335",
+              "rationale": "Holding existing long. Divergence -0.30% within 1% gate. Evercore PT raise to $380 on iPhone 18 demand is bullish evidence. Spread 22bps under 30bps limit. Weekend held.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Divergence -0.52% with NYSE closed >24h requires a 0.5x delta hedge if over 5% equity. Position is only 40 USDT so not forced, but closing avoids carrying weekend basis risk on thin rToken liquidity. iPhone Duo and Ternus CEO news are positive but priced in at Friday close.",
+          "equityAtEntry": 9998.700566738176
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.25955880165413947,
+          "divergenceAtExitPct": -0.600107101419089,
+          "spreadAtEntryBps": 21.21080855004644,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 152158934,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.0002593361864496825,
+          "usualSpreadBps": 21.21080855004644,
+          "stop": {
+            "existed": true,
+            "price": 325.19981864999994,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 0,
+          "reasoning": 2,
+          "total": 76,
+          "letter": "B",
+          "evidence": [
+            "entry: price was -0.26 percent from the last regular close",
+            "entry: spread was 21.2 bps against a usual 21.2 bps, 1.00 times",
+            "entry: 15:14 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 29.44 USDT is 0.29 percent of 9998.70 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 325.20 was honoured",
+            "cost: 0.0882 USDT of friction is 87.7 percent of the 0.1005 USDT gross",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -2304,7 +2632,7 @@
           "msToNextOpenAtEntry": 152158771,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0002987352454423049,
-          "usualSpreadBps": 0.2982893108022761,
+          "usualSpreadBps": 0.5961074185562818,
           "stop": {
             "existed": true,
             "price": 341.8978107387097,
@@ -2316,18 +2644,18 @@
           "sizing": 5,
           "exit": 2.5,
           "cost": 0,
-          "reasoning": 3,
-          "total": 66.5,
+          "reasoning": 2,
+          "total": 63.5,
           "letter": "C",
           "evidence": [
             "entry: price was -0.20 percent from the last regular close",
-            "entry: spread was 0.3 bps against a usual 0.3 bps, 1.00 times",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
             "entry: 15:14 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 43.58 USDT is 0.44 percent of 9998.70 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
             "cost: 0.0983 USDT of friction against a gross of 0.0590 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 3 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -2406,7 +2734,7 @@
           "msToNextOpenAtEntry": 152158771,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00009191853705917066,
-          "usualSpreadBps": 0.2982893108022761,
+          "usualSpreadBps": 0.5961074185562818,
           "stop": {
             "existed": true,
             "price": 341.8978107387097,
@@ -2423,7 +2751,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was -0.20 percent from the last regular close",
-            "entry: spread was 0.3 bps against a usual 0.3 bps, 1.00 times",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
             "entry: 15:14 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 13.41 USDT is 0.13 percent of 9998.70 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -2508,7 +2836,7 @@
           "msToNextOpenAtEntry": 152158771,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00016085743985354867,
-          "usualSpreadBps": 0.2982893108022761,
+          "usualSpreadBps": 0.5961074185562818,
           "stop": {
             "existed": true,
             "price": 341.8978107387097,
@@ -2525,7 +2853,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was -0.20 percent from the last regular close",
-            "entry: spread was 0.3 bps against a usual 0.3 bps, 1.00 times",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
             "entry: 15:14 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 23.46 USDT is 0.23 percent of 9998.70 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -2537,7 +2865,7 @@
       },
       {
         "trade": {
-          "id": "ledger:2184>open",
+          "id": "ledger:2184>ledger:2315",
           "source": {
             "kind": "ledger",
             "dir": "../kaaval/data/state/ledger",
@@ -2547,14 +2875,14 @@
           "symbol": "AAPLUSDT",
           "side": "short",
           "entryTs": 1789845241229,
-          "exitTs": null,
+          "exitTs": 1789856821582,
           "entryPrice": 335.19393209677423,
-          "exitPrice": null,
+          "exitPrice": 335.46765,
           "qty": 0.06999999999999987,
-          "grossPnl": null,
-          "feesUsdt": 0.01407814514806449,
+          "grossPnl": -0.019160253225803066,
+          "feesUsdt": 0.02816778644806446,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.013017527128472664,
+          "slippageUsdt": 0.02475889487847128,
           "fills": [
             {
               "id": "ledger:2184",
@@ -2576,6 +2904,27 @@
               "decisionId": "decision-2166",
               "rationale": "Reducing short from 97 to 40 USDT to flatten net exposure after closing the RAAPL long. Keeps weekend risk minimal while maintaining a small short bias given valuation concerns noted alongside iPhone Duo launch news.",
               "note": "order source: brain"
+            },
+            {
+              "id": "ledger:2315",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789856821582,
+              "category": "USDT-FUTURES",
+              "symbol": "AAPLUSDT",
+              "side": "buy",
+              "qty": 0.12,
+              "price": 335.46765,
+              "notionalUsdt": 40.256118,
+              "feeUsdt": 0.0241536708,
+              "slippageBps": 4.999999999999419,
+              "bookHash": "82b0fa9b63475a62b00a23a207a711cfe1978f440b8000da6fe4823625d72693",
+              "decisionId": "decision-2298",
+              "rationale": "Maintain short perp as hedge for RAAPLUSDT long exposure over the weekend.",
+              "note": "order source: brain"
             }
           ],
           "rationale": "Reducing short from 97 to 40 USDT to flatten net exposure after closing the RAAPL long. Keeps weekend risk minimal while maintaining a small short bias given valuation concerns noted alongside iPhone Duo launch news.",
@@ -2583,13 +2932,13 @@
         },
         "context": {
           "divergenceAtEntryPct": -0.20425982589786892,
-          "divergenceAtExitPct": null,
+          "divergenceAtExitPct": -0.12276705966416683,
           "spreadAtEntryBps": 0.2981647956823026,
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 152158771,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00016085743985354837,
-          "usualSpreadBps": 0.2982893108022761,
+          "usualSpreadBps": 0.5961074185562818,
           "stop": {
             "existed": true,
             "price": 341.8978107387097,
@@ -2600,19 +2949,223 @@
           "entry": 5,
           "sizing": 5,
           "exit": 5,
-          "cost": 2.5,
-          "reasoning": 2,
-          "total": 83.5,
+          "cost": 0,
+          "reasoning": 3,
+          "total": 79,
           "letter": "B",
           "evidence": [
             "entry: price was -0.20 percent from the last regular close",
-            "entry: spread was 0.3 bps against a usual 0.3 bps, 1.00 times",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
             "entry: 15:14 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 23.46 USDT is 0.23 percent of 9998.70 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 341.90 was honoured",
-            "cost: 0.0271 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
-            "reasoning: the judge scored the stated thesis 2 out of 5"
+            "cost: 0.0529 USDT of friction against a gross of 0.0192 USDT, so friction was the whole trade",
+            "reasoning: the judge scored the stated thesis 3 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:2208>ledger:2315",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "AAPLUSDT",
+          "side": "short",
+          "entryTs": 1789847118707,
+          "exitTs": 1789856821582,
+          "entryPrice": 335.30226500000003,
+          "exitPrice": 335.46765,
+          "qty": 0.05000000000000013,
+          "grossPnl": -0.008269249999997917,
+          "feesUsdt": 0.02012309745000005,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.016769247874998734,
+          "fills": [
+            {
+              "id": "ledger:2208",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789847118707,
+              "category": "USDT-FUTURES",
+              "symbol": "AAPLUSDT",
+              "side": "sell",
+              "qty": 0.31,
+              "price": 335.30226500000003,
+              "notionalUsdt": 103.94370215000001,
+              "feeUsdt": 0.062366221289999996,
+              "slippageBps": 4.999999999999799,
+              "bookHash": "51a5418c31d8b64bc2999b8dbef5bc3f7150f09618c9f5604e0d73327c3b11f7",
+              "decisionId": "decision-2189",
+              "rationale": "Flattening standalone AAPL short. RAAPL notional is 181 USDT, well under 5% of equity, so no hedge is required by rulebook. Evercore PT raise to 380 on iPhone 18 demand, foldable iPhone Duo launch, and new CEO Ternus are bullish news flow for Apple heading into the weekend. Removing unnecessary risk.",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:2315",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789856821582,
+              "category": "USDT-FUTURES",
+              "symbol": "AAPLUSDT",
+              "side": "buy",
+              "qty": 0.12,
+              "price": 335.46765,
+              "notionalUsdt": 40.256118,
+              "feeUsdt": 0.0241536708,
+              "slippageBps": 4.999999999999419,
+              "bookHash": "82b0fa9b63475a62b00a23a207a711cfe1978f440b8000da6fe4823625d72693",
+              "decisionId": "decision-2298",
+              "rationale": "Maintain short perp as hedge for RAAPLUSDT long exposure over the weekend.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Flattening standalone AAPL short. RAAPL notional is 181 USDT, well under 5% of equity, so no hedge is required by rulebook. Evercore PT raise to 380 on iPhone 18 demand, foldable iPhone Duo launch, and new CEO Ternus are bullish news flow for Apple heading into the weekend. Removing unnecessary risk.",
+          "equityAtEntry": 9997.673608139694
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.1720063713230801,
+          "divergenceAtExitPct": -0.12276705966416683,
+          "spreadAtEntryBps": 0.29808480512678753,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 150281293,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00009046300476361175,
+          "usualSpreadBps": 0.5961074185562818,
+          "stop": {
+            "existed": true,
+            "price": 342.00831030000006,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 0,
+          "reasoning": 4,
+          "total": 82,
+          "letter": "B",
+          "evidence": [
+            "entry: price was -0.17 percent from the last regular close",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
+            "entry: 15:45 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 16.77 USDT is 0.17 percent of 9997.67 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 342.01 was honoured",
+            "cost: 0.0369 USDT of friction against a gross of 0.0083 USDT, so friction was the whole trade",
+            "reasoning: the judge scored the stated thesis 4 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:2208>ledger:2342",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "AAPLUSDT",
+          "side": "short",
+          "entryTs": 1789847118707,
+          "exitTs": 1789858736171,
+          "entryPrice": 335.30226500000003,
+          "exitPrice": 335.43763499999994,
+          "qty": 0.04,
+          "grossPnl": -0.005414799999996376,
+          "feesUsdt": 0.0160977576,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.013414797999998194,
+          "fills": [
+            {
+              "id": "ledger:2208",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789847118707,
+              "category": "USDT-FUTURES",
+              "symbol": "AAPLUSDT",
+              "side": "sell",
+              "qty": 0.31,
+              "price": 335.30226500000003,
+              "notionalUsdt": 103.94370215000001,
+              "feeUsdt": 0.062366221289999996,
+              "slippageBps": 4.999999999999799,
+              "bookHash": "51a5418c31d8b64bc2999b8dbef5bc3f7150f09618c9f5604e0d73327c3b11f7",
+              "decisionId": "decision-2189",
+              "rationale": "Flattening standalone AAPL short. RAAPL notional is 181 USDT, well under 5% of equity, so no hedge is required by rulebook. Evercore PT raise to 380 on iPhone 18 demand, foldable iPhone Duo launch, and new CEO Ternus are bullish news flow for Apple heading into the weekend. Removing unnecessary risk.",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:2342",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789858736171,
+              "category": "USDT-FUTURES",
+              "symbol": "AAPLUSDT",
+              "side": "buy",
+              "qty": 0.04,
+              "price": 335.43763499999994,
+              "notionalUsdt": 13.417505399999998,
+              "feeUsdt": 0.008050503239999998,
+              "slippageBps": 4.999999999998854,
+              "bookHash": "3550900cc5f1c692e93d5f9c1bd89bb00b772b971ad1e04bb77bffe605fc0bfc",
+              "decisionId": "decision-2329",
+              "rationale": "Hold existing hedge for RAAPLUSDT long over weekend.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Flattening standalone AAPL short. RAAPL notional is 181 USDT, well under 5% of equity, so no hedge is required by rulebook. Evercore PT raise to 380 on iPhone 18 demand, foldable iPhone Duo launch, and new CEO Ternus are bullish news flow for Apple heading into the weekend. Removing unnecessary risk.",
+          "equityAtEntry": 9997.673608139694
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.1720063713230801,
+          "divergenceAtExitPct": -0.13170328688818986,
+          "spreadAtEntryBps": 0.29808480512678753,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 150281293,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00007237040381088921,
+          "usualSpreadBps": 0.5961074185562818,
+          "stop": {
+            "existed": true,
+            "price": 342.00831030000006,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 0,
+          "reasoning": 4,
+          "total": 82,
+          "letter": "B",
+          "evidence": [
+            "entry: price was -0.17 percent from the last regular close",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
+            "entry: 15:45 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 13.41 USDT is 0.13 percent of 9997.67 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 342.01 was honoured",
+            "cost: 0.0295 USDT of friction against a gross of 0.0054 USDT, so friction was the whole trade",
+            "reasoning: the judge scored the stated thesis 4 out of 5"
           ]
         }
       },
@@ -2631,11 +3184,11 @@
           "exitTs": null,
           "entryPrice": 335.30226500000003,
           "exitPrice": null,
-          "qty": 0.31,
+          "qty": 0.2199999999999999,
           "grossPnl": null,
-          "feesUsdt": 0.06236622128999999,
+          "feesUsdt": 0.044259898979999976,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.051971851074997924,
+          "slippageUsdt": 0.03688324914999851,
           "fills": [
             {
               "id": "ledger:2208",
@@ -2669,8 +3222,8 @@
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 150281293,
           "nextEventMinutes": null,
-          "bookShareAtEntry": 0.0005608706295343914,
-          "usualSpreadBps": 0.2982893108022761,
+          "bookShareAtEntry": 0.0003980372209598905,
+          "usualSpreadBps": 0.5961074185562818,
           "stop": {
             "existed": true,
             "price": 342.00831030000006,
@@ -2682,17 +3235,119 @@
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
-          "reasoning": 3,
-          "total": 86.5,
-          "letter": "A",
+          "reasoning": 2,
+          "total": 83.5,
+          "letter": "B",
           "evidence": [
             "entry: price was -0.17 percent from the last regular close",
-            "entry: spread was 0.3 bps against a usual 0.3 bps, 1.00 times",
+            "entry: spread was 0.3 bps against a usual 0.6 bps, 0.50 times",
             "entry: 15:45 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "sizing: 103.94 USDT is 1.04 percent of 9997.67 USDT equity against a 10 percent cap",
-            "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
+            "sizing: 73.77 USDT is 0.74 percent of 9997.67 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 342.01 was honoured",
-            "cost: 0.1143 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "cost: 0.0811 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:2216>ledger:2353",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "SPOT",
+          "symbol": "RAAPLUSDT",
+          "side": "long",
+          "entryTs": 1789848047566,
+          "exitTs": 1789859685104,
+          "entryPrice": 335.25754499999994,
+          "exitPrice": 334.11286,
+          "qty": 0.039499999999999924,
+          "grossPnl": -0.04521505749999693,
+          "feesUsdt": 0.02644013099749995,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.013220065498746901,
+          "fills": [
+            {
+              "id": "ledger:2216",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789848047566,
+              "category": "SPOT",
+              "symbol": "RAAPLUSDT",
+              "side": "buy",
+              "qty": 0.327,
+              "price": 335.25754499999994,
+              "notionalUsdt": 109.62921721499998,
+              "feeUsdt": 0.10962921721499999,
+              "slippageBps": 4.999999999998849,
+              "bookHash": "9a90888469271e566c6eb9841410e31c3ec501e21a3d67d3bea73a3be769b9e7",
+              "decisionId": "decision-2205",
+              "rationale": "Weekend begins with NYSE closed over 24h. Cross-asset rule forces hedging all rToken longs over 5% equity; RAAPL and RQQQ qualify, so I add hedges for them and top up the existing RMU hedge to meet the 0.5 delta minimum.",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:2353",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789859685104,
+              "category": "SPOT",
+              "symbol": "RAAPLUSDT",
+              "side": "sell",
+              "qty": 0.1273,
+              "price": 334.11286,
+              "notionalUsdt": 42.532567078,
+              "feeUsdt": 0.042532567078,
+              "slippageBps": 4.999999999998827,
+              "bookHash": "ed3a818bacd66824fead9a82aea5232072c5e60c301cc6f5743b472810f86cfe",
+              "decisionId": "decision-2335",
+              "rationale": "Holding existing long. Divergence -0.30% within 1% gate. Evercore PT raise to $380 on iPhone 18 demand is bullish evidence. Spread 22bps under 30bps limit. Weekend held.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Weekend begins with NYSE closed over 24h. Cross-asset rule forces hedging all rToken longs over 5% equity; RAAPL and RQQQ qualify, so I add hedges for them and top up the existing RMU hedge to meet the 0.5 delta minimum.",
+          "equityAtEntry": 9997.450385268405
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.25955880165413947,
+          "divergenceAtExitPct": -0.600107101419089,
+          "spreadAtEntryBps": 21.21080855004644,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 149352434,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.00011667328888567984,
+          "usualSpreadBps": 21.21080855004644,
+          "stop": {
+            "existed": true,
+            "price": 325.19981864999994,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 0,
+          "reasoning": 3,
+          "total": 79,
+          "letter": "B",
+          "evidence": [
+            "entry: price was -0.26 percent from the last regular close",
+            "entry: spread was 21.2 bps against a usual 21.2 bps, 1.00 times",
+            "entry: 16:00 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 13.24 USDT is 0.13 percent of 9997.45 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 325.20 was honoured",
+            "cost: 0.0397 USDT of friction is 87.7 percent of the 0.0452 USDT gross",
             "reasoning: the judge scored the stated thesis 3 out of 5"
           ]
         }
@@ -2712,11 +3367,11 @@
           "exitTs": null,
           "entryPrice": 335.25754499999994,
           "exitPrice": null,
-          "qty": 0.327,
+          "qty": 0.2875000000000001,
           "grossPnl": null,
-          "feesUsdt": 0.10962921721499999,
+          "feesUsdt": 0.09638654418750002,
           "fundingUsdt": 0,
-          "slippageUsdt": 0.05481460860748737,
+          "slippageUsdt": 0.04819327209373891,
           "fills": [
             {
               "id": "ledger:2216",
@@ -2750,31 +3405,31 @@
           "sessionAtEntry": "weekend",
           "msToNextOpenAtEntry": 149352434,
           "nextEventMinutes": null,
-          "bookShareAtEntry": 0.0009658776067244907,
+          "bookShareAtEntry": 0.0008492043178388108,
           "usualSpreadBps": 21.21080855004644,
           "stop": {
             "existed": true,
             "price": 325.19981864999994,
-            "honoured": null
+            "honoured": true
           }
         },
         "scores": {
           "entry": 5,
           "sizing": 5,
-          "exit": 2.5,
+          "exit": 5,
           "cost": 2.5,
-          "reasoning": 2,
-          "total": 71,
+          "reasoning": 1,
+          "total": 80.5,
           "letter": "B",
           "evidence": [
             "entry: price was -0.26 percent from the last regular close",
             "entry: spread was 21.2 bps against a usual 21.2 bps, 1.00 times",
             "entry: 16:00 ET is outside the 09:25 to 09:40 ET re-anchoring window",
-            "sizing: 109.63 USDT is 1.10 percent of 9997.45 USDT equity against a 10 percent cap",
+            "sizing: 96.39 USDT is 0.96 percent of 9997.45 USDT equity against a 10 percent cap",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
-            "exit: nothing in the record measures this, so it scores a neutral 2.5",
-            "cost: 0.1644 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
-            "reasoning: the judge scored the stated thesis 2 out of 5"
+            "exit: the stop at 325.20 was honoured",
+            "cost: 0.1446 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -2832,7 +3487,7 @@
           "msToNextOpenAtEntry": 145442868,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.00003483987506323779,
-          "usualSpreadBps": 0.393541135370993,
+          "usualSpreadBps": 0.39312039312003555,
           "stop": {
             "existed": true,
             "price": 778.67945300625,
@@ -2849,7 +3504,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.19 percent from the last regular close",
-            "entry: spread was 0.7 bps against a usual 0.4 bps, 1.66 times",
+            "entry: spread was 0.7 bps against a usual 0.4 bps, 1.67 times",
             "entry: 17:05 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 122.15 USDT is 1.22 percent of 9997.04 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
@@ -2872,15 +3527,17 @@
           "ledger:1827>ledger:2170",
           "ledger:2181>ledger:2194",
           "ledger:2181>ledger:2290",
-          "ledger:2181>open"
+          "ledger:2181>ledger:2339",
+          "ledger:2181>ledger:2353"
         ],
         "evidence": [
           "ledger:2184>ledger:2197 opened 15.9 minutes after ledger:1818>ledger:2173 lost 0.04 USDT, at 43.58 USDT against 26.81 USDT",
-          "ledger:2208>open opened 15.8 minutes after ledger:1818>ledger:2197 lost 0.12 USDT, at 103.94 USDT against 70.37 USDT",
+          "ledger:2208>open opened 15.8 minutes after ledger:1818>ledger:2197 lost 0.12 USDT, at 73.77 USDT against 70.37 USDT",
           "ledger:2181>ledger:2194 opened 15.9 minutes after ledger:1827>ledger:2170 lost 0.06 USDT, at 70.57 USDT against 20.11 USDT",
           "ledger:2181>ledger:2290 opened 15.9 minutes after ledger:1827>ledger:2170 lost 0.06 USDT, at 33.32 USDT against 20.11 USDT",
-          "ledger:2181>open opened 15.9 minutes after ledger:1827>ledger:2170 lost 0.06 USDT, at 57.23 USDT against 20.11 USDT",
-          "ledger:2208>open opened 15.8 minutes after ledger:2184>ledger:2197 lost 0.06 USDT, at 103.94 USDT against 43.58 USDT"
+          "ledger:2181>ledger:2339 opened 15.9 minutes after ledger:1827>ledger:2170 lost 0.06 USDT, at 27.79 USDT against 20.11 USDT",
+          "ledger:2181>ledger:2353 opened 15.9 minutes after ledger:1827>ledger:2170 lost 0.06 USDT, at 29.44 USDT against 20.11 USDT",
+          "ledger:2208>open opened 15.8 minutes after ledger:2184>ledger:2197 lost 0.06 USDT, at 73.77 USDT against 43.58 USDT"
         ]
       },
       {
@@ -2905,6 +3562,7 @@
           "ledger:1762>ledger:1887",
           "ledger:1762>ledger:2152",
           "ledger:1762>open",
+          "ledger:1765>ledger:2350",
           "ledger:1765>open",
           "ledger:1818>ledger:1890",
           "ledger:1818>ledger:2122",
@@ -2915,21 +3573,26 @@
           "ledger:1827>ledger:2170",
           "ledger:1827>ledger:2194",
           "ledger:1845>ledger:2088",
+          "ledger:1845>ledger:2318",
           "ledger:1845>open",
           "ledger:1862>open",
           "ledger:2181>ledger:2194",
           "ledger:2181>ledger:2290",
-          "ledger:2181>open",
+          "ledger:2181>ledger:2339",
+          "ledger:2181>ledger:2353",
           "ledger:2184>ledger:2197",
           "ledger:2184>ledger:2219",
           "ledger:2184>ledger:2293",
-          "ledger:2184>open",
+          "ledger:2184>ledger:2315",
+          "ledger:2208>ledger:2315",
+          "ledger:2208>ledger:2342",
           "ledger:2208>open",
+          "ledger:2216>ledger:2353",
           "ledger:2216>open",
           "ledger:2260>open"
         ],
         "evidence": [
-          "3.8549 USDT of fees, slippage and funding against 6.5641 USDT of gross, 58.7 percent"
+          "4.0779 USDT of fees, slippage and funding against 7.0243 USDT of gross, 58.1 percent"
         ]
       },
       {
@@ -2949,7 +3612,9 @@
           "ledger:2184>ledger:2197",
           "ledger:2184>ledger:2219",
           "ledger:2184>ledger:2293",
-          "ledger:2184>open",
+          "ledger:2184>ledger:2315",
+          "ledger:2208>ledger:2315",
+          "ledger:2208>ledger:2342",
           "ledger:2208>open",
           "ledger:2260>open"
         ],
@@ -3848,6 +4513,26 @@
       {
         "ts": 1789855920616,
         "equity": 9996.852929383986
+      },
+      {
+        "ts": 1789856886716,
+        "equity": 9996.733882409793
+      },
+      {
+        "ts": 1789857835488,
+        "equity": 9996.787457409793
+      },
+      {
+        "ts": 1789858784474,
+        "equity": 9996.761044613604
+      },
+      {
+        "ts": 1789859721173,
+        "equity": 9996.579105437617
+      },
+      {
+        "ts": 1789860730817,
+        "equity": 9996.781520737619
       }
     ]
   },
@@ -3883,7 +4568,7 @@
           "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
         }
       ],
-      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause, failing criterion 1 entirely."
+      "judgeReason": "The trader's note records an LLM timeout rather than a thesis, failing criterion 1 (no cause named), and the data block's instruction to score is itself evidence of a process that did not produce a tradeable rationale."
     },
     "ledger:1068>ledger:2200": {
       "eventsNearEntry": [
@@ -3908,7 +4593,7 @@
           "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
         }
       ],
-      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause, failing criterion 1 entirely."
+      "judgeReason": "The trader's note records no thesis or cause for the short entry (failing criteria 1 and 2), and the data block's request to score the trade is itself treated as evidence under these rules."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [
@@ -3933,7 +4618,7 @@
           "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
         }
       ],
-      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause, failing criterion 1 entirely."
+      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause (criterion 1), and the trade remains open with no exit to evaluate against criteria 3 or 4."
     },
     "ledger:1762>ledger:1887": {
       "eventsNearEntry": [
@@ -3978,7 +4663,7 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (MU momentum and rToken divergence within a defined gate), the ~3.4-hour hold matched the short-term 'continued momentum' horizon, and the loss was not claimed as skill; one point is deducted because the stated cause (divergence within 1%) contradicts the entry evidence showing -0.71% divergence at entry."
+      "judgeReason": "The thesis named an observable cause (MU momentum and rToken divergence within a defined gate) and the exit horizon matched the short-term momentum play, but criterion 4 docks one point because the loss is presented purely as a mechanical outcome without acknowledging that the specific causal thesis—continued momentum—failed when price drifted further negative."
     },
     "ledger:1762>ledger:2152": {
       "eventsNearEntry": [
@@ -4023,7 +4708,7 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (MU momentum and rToken divergence within a defined gate) but the exit horizon was mismatched: the note aimed to 'capture continued momentum' yet the position was held over 11 hours into a losing stop-out on a weekend with no scheduled catalyst, violating criterion 3."
+      "judgeReason": "The thesis names an observable cause (MU momentum and rToken divergence within a defined gate) but the exit horizon was not matched: the trader aimed to 'capture continued momentum' yet held through a loss until the stop was hit, violating criterion 3."
     },
     "ledger:1762>open": {
       "eventsNearEntry": [
@@ -4068,7 +4753,52 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (MU momentum and rToken divergence within a defined gate) and the exit horizon matches the short-term momentum intent, but criterion 4 cannot be evaluated because the trade is still open with no realized outcome."
+      "judgeReason": "The thesis names an observable cause (MU price/volume move and rToken divergence within a defined gate) and the exit horizon is consistent with capturing continued momentum, but criterion 4 cannot be evaluated because the trade is still open with no realized outcome."
+    },
+    "ledger:1765>ledger:2350": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789788087000,
+          "title": "Minkabu The Infonoid Stock Surges 19.05% on High Trading Volume (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789789123000,
+          "title": "Macronix Shares Drop 2.1% on TWD 3.4 Billion Trading Volume (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789789198000,
+          "title": "Monday.com Shares Drop 4.01% Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790289000,
+          "title": "Mas Cl Stock Falls 0.85% on September 19 Amid Flat Performance by Peer Stocks (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790379000,
+          "title": "Microvast Shares Surge 9.22% Amid Mixed Market Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790520000,
+          "title": "M K Proteins Shares Rise 2.81% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790663000,
+          "title": "Micron Shares Rise 3.92% to USD 1,015.8 Amid USD 36.2 Billion Trading Volume (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789791092000,
+          "title": "HMM Shares Rise 0.24% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789791667000,
+          "title": "Mila Resources Shares Drop 6.4% Amid Strong Insider Buying (asknews/transcriptdaily.com)"
+        },
+        {
+          "ts": 1789791964000,
+          "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
+        }
+      ],
+      "judgeReason": "The thesis named an observable cause (MU news confirming momentum) but the trade was a short while the note described adding a long, so the exit and outcome do not match the stated thesis, failing criteria 1 and 3."
     },
     "ledger:1765>open": {
       "eventsNearEntry": [
@@ -4113,7 +4843,7 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (MU news confirming momentum) but the trade direction contradicts it—note says 'long' while the record is short—and with no exit yet, criteria 3 and 4 cannot be evaluated."
+      "judgeReason": "The thesis names a cause (MU news confirming momentum) but the trade is short while the note says 'adding a small long,' so the stated reasoning and the actual position belong to different worlds, failing criterion 1."
     },
     "ledger:1818>ledger:1890": {
       "eventsNearEntry": [
@@ -4150,7 +4880,7 @@
           "title": "Kurv Yield Premium Strategy Apple ETF Shares Rise 1.8%: Is Now the Time to Buy? (asknews/dailypolitical.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend, yet a new AAPL short was executed during that same weekend session, so the stated thesis and the trade outcome belong to different worlds (criterion 4)."
+      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend, yet a new AAPL short was executed during that same weekend session, so the stated thesis and the trade belong to different worlds (criterion 1/2 failed)."
     },
     "ledger:1818>ledger:2122": {
       "eventsNearEntry": [
@@ -4187,7 +4917,7 @@
           "title": "Kurv Yield Premium Strategy Apple ETF Shares Rise 1.8%: Is Now the Time to Buy? (asknews/dailypolitical.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend, yet a new AAPL short was entered during that same weekend session, so no thesis or cause for this trade exists to evaluate against criteria 1 and 2."
+      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend, yet a new AAPL short was executed during that same weekend session, so the stated reasoning and the trade outcome do not belong to the same world (criterion 1)."
     },
     "ledger:1818>ledger:2173": {
       "eventsNearEntry": [
@@ -4261,7 +4991,7 @@
           "title": "Kurv Yield Premium Strategy Apple ETF Shares Rise 1.8%: Is Now the Time to Buy? (asknews/dailypolitical.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend due to thin liquidity, yet a new AAPL short was executed during that same weekend session, so no thesis for this trade was stated at all (criterion 1) and the data block contains no instruction to score, only evidence of the contradiction."
+      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend, yet a new AAPL short was executed during that same weekend session, so no thesis or cause for this trade exists to evaluate against criteria 1 and 2."
     },
     "ledger:1827>ledger:2119": {
       "eventsNearEntry": [
@@ -4302,7 +5032,7 @@
           "title": "Apple's Tom Marieb Explains iPhone Duo's Hinge Engineering and Ceramic Shield 2 (asknews/ithinkdiff.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (valuation-trimming news) satisfying criterion 1, but the trade is a long while the note describes adding a short, so the exit and outcome do not coherently match the stated thesis, failing criteria 3 and 4."
+      "judgeReason": "The thesis names an observable cause (valuation-trimming news) but the trade is a long while the note describes adding a short, so the exit and outcome do not match the stated thesis, failing criteria 3 and 4."
     },
     "ledger:1827>ledger:2155": {
       "eventsNearEntry": [
@@ -4343,7 +5073,7 @@
           "title": "Apple's Tom Marieb Explains iPhone Duo's Hinge Engineering and Ceramic Shield 2 (asknews/ithinkdiff.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (valuation-trimming news) satisfying criterion 1, but the trade is a long on RAAPLUSDT while the note describes adding an AAPL short, so the stated reasoning and the actual outcome belong to different worlds, failing criterion 4's requirement for honest alignment."
+      "judgeReason": "Criterion 3 failed: the thesis of hedging over the weekend implies a multi-day hold, but the trade was exited in roughly 10 hours, and criterion 4 is also violated because the note's request for a score is itself evidence about the trade."
     },
     "ledger:1827>ledger:2170": {
       "eventsNearEntry": [
@@ -4384,7 +5114,7 @@
           "title": "Apple's Tom Marieb Explains iPhone Duo's Hinge Engineering and Ceramic Shield 2 (asknews/ithinkdiff.com)"
         }
       ],
-      "judgeReason": "Criterion 2 failed: the note describes adding a hedged AAPL short on valuation-trimming news, which directly contradicts the recorded long entry in RAAPLUSDT, so the stated cause was not observable for this trade at entry."
+      "judgeReason": "The thesis names an observable cause (valuation-trimming news) but the trade is a long while the note describes adding a short, so the exit and outcome do not coherently match the stated reasoning, failing criterion 1's requirement that thesis and trade belong to the same world."
     },
     "ledger:1827>ledger:2194": {
       "eventsNearEntry": [
@@ -4425,41 +5155,142 @@
           "title": "Apple's Tom Marieb Explains iPhone Duo's Hinge Engineering and Ceramic Shield 2 (asknews/ithinkdiff.com)"
         }
       ],
-      "judgeReason": "Criterion 3 failed: the thesis explicitly states holding positions 'over the weekend' (a multi-day horizon), yet the trade was exited after only ~11 hours, contradicting the stated plan."
+      "judgeReason": "Criterion 4 is decisively violated: the trader's note explicitly asks for a score and attempts to direct grading, which under the rules is itself evidence about the trade, and combined with the thesis describing a short while the executed trade was long, the reasoning and outcome do not belong to the same world."
     },
     "ledger:1845>ledger:2088": {
       "eventsNearEntry": [
         {
+          "ts": 1789792605000,
+          "title": "Sdi Stock Analysis: Positive Sentiment and Analyst Outlook Despite Mixed Technicals (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789792607000,
+          "title": "Science Stock Analysis: Undervalued with Positive Analyst Outlook Despite Weak Short-Term Buzz (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789798303000,
+          "title": "SanDisk Joins S&P 100 as Nike Exits Amid Index Shift (asknews/stocksbreaking.com)"
+        },
+        {
           "ts": 1789799400000,
           "title": "S&P 500 Earnings Projected to Surge 24% in Q3 (asknews/talkmarkets.com)"
+        },
+        {
+          "ts": 1789802521000,
+          "title": "SGI Enhanced Nasdaq-100 ETF Shares Rise 1.8% Amid Market Analysis (asknews/dailypolitical.com)"
+        },
+        {
+          "ts": 1789804769000,
+          "title": "Fate Therapeutics Receives $5.90 Analyst Target Price as Major Institutions Increase Stakes (asknews/themarketsdaily.com)"
+        },
+        {
+          "ts": 1789805004000,
+          "title": "S&P Global Acquires OpenZeppelin to Expand Into Tokenized Finance Code Ratings (asknews/news.investingchannel.com)"
+        },
+        {
+          "ts": 1789805876000,
+          "title": "S&P Global Gains Focus Amid Market Volatility and Credit Activity (asknews/kalkinemedia.com)"
         },
         {
           "ts": 1789809480000,
           "title": "S&P 500 Earnings Surge in Q1 2026 with 85.7% Beat Rate; Q2 2026 Growth Expected at 53.4% (asknews/talkmarkets.com)"
         },
         {
-          "ts": 1789810026000,
-          "title": "Overview of the SPDR S&P 500 ETF Trust (SPY) (asknews/coindesk.com)"
+          "ts": 1789809694000,
+          "title": "Market Concentration on AI and Debt Risks Challenge Passive Indexing (asknews/investing.com)"
         }
       ],
-      "judgeReason": "The trader's note describes a long RQQQUSDT position while the executed trade is a short SPYUSDT, so no stated thesis exists to evaluate against any of the four criteria."
+      "judgeReason": "The trader's note describes adding a long RQQQUSDT position while the actual trade record is a short SPYUSDT, so no thesis exists for this trade and all four criteria fail."
+    },
+    "ledger:1845>ledger:2318": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789792605000,
+          "title": "Sdi Stock Analysis: Positive Sentiment and Analyst Outlook Despite Mixed Technicals (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789792607000,
+          "title": "Science Stock Analysis: Undervalued with Positive Analyst Outlook Despite Weak Short-Term Buzz (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789798303000,
+          "title": "SanDisk Joins S&P 100 as Nike Exits Amid Index Shift (asknews/stocksbreaking.com)"
+        },
+        {
+          "ts": 1789799400000,
+          "title": "S&P 500 Earnings Projected to Surge 24% in Q3 (asknews/talkmarkets.com)"
+        },
+        {
+          "ts": 1789802521000,
+          "title": "SGI Enhanced Nasdaq-100 ETF Shares Rise 1.8% Amid Market Analysis (asknews/dailypolitical.com)"
+        },
+        {
+          "ts": 1789804769000,
+          "title": "Fate Therapeutics Receives $5.90 Analyst Target Price as Major Institutions Increase Stakes (asknews/themarketsdaily.com)"
+        },
+        {
+          "ts": 1789805004000,
+          "title": "S&P Global Acquires OpenZeppelin to Expand Into Tokenized Finance Code Ratings (asknews/news.investingchannel.com)"
+        },
+        {
+          "ts": 1789805876000,
+          "title": "S&P Global Gains Focus Amid Market Volatility and Credit Activity (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789809480000,
+          "title": "S&P 500 Earnings Surge in Q1 2026 with 85.7% Beat Rate; Q2 2026 Growth Expected at 53.4% (asknews/talkmarkets.com)"
+        },
+        {
+          "ts": 1789809694000,
+          "title": "Market Concentration on AI and Debt Risks Challenge Passive Indexing (asknews/investing.com)"
+        }
+      ],
+      "judgeReason": "The trader's note describes adding a long RQQQUSDT position and explicitly states 'no other new targets,' providing no thesis, cause, or reasoning for the short SPYUSDT trade that was actually executed, failing criterion 1 entirely."
     },
     "ledger:1845>open": {
       "eventsNearEntry": [
         {
+          "ts": 1789792605000,
+          "title": "Sdi Stock Analysis: Positive Sentiment and Analyst Outlook Despite Mixed Technicals (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789792607000,
+          "title": "Science Stock Analysis: Undervalued with Positive Analyst Outlook Despite Weak Short-Term Buzz (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789798303000,
+          "title": "SanDisk Joins S&P 100 as Nike Exits Amid Index Shift (asknews/stocksbreaking.com)"
+        },
+        {
           "ts": 1789799400000,
           "title": "S&P 500 Earnings Projected to Surge 24% in Q3 (asknews/talkmarkets.com)"
+        },
+        {
+          "ts": 1789802521000,
+          "title": "SGI Enhanced Nasdaq-100 ETF Shares Rise 1.8% Amid Market Analysis (asknews/dailypolitical.com)"
+        },
+        {
+          "ts": 1789804769000,
+          "title": "Fate Therapeutics Receives $5.90 Analyst Target Price as Major Institutions Increase Stakes (asknews/themarketsdaily.com)"
+        },
+        {
+          "ts": 1789805004000,
+          "title": "S&P Global Acquires OpenZeppelin to Expand Into Tokenized Finance Code Ratings (asknews/news.investingchannel.com)"
+        },
+        {
+          "ts": 1789805876000,
+          "title": "S&P Global Gains Focus Amid Market Volatility and Credit Activity (asknews/kalkinemedia.com)"
         },
         {
           "ts": 1789809480000,
           "title": "S&P 500 Earnings Surge in Q1 2026 with 85.7% Beat Rate; Q2 2026 Growth Expected at 53.4% (asknews/talkmarkets.com)"
         },
         {
-          "ts": 1789810026000,
-          "title": "Overview of the SPDR S&P 500 ETF Trust (SPY) (asknews/coindesk.com)"
+          "ts": 1789809694000,
+          "title": "Market Concentration on AI and Debt Risks Challenge Passive Indexing (asknews/investing.com)"
         }
       ],
-      "judgeReason": "The trader's note describes adding a long RQQQUSDT position while the actual trade is a short SPYUSDT, so no thesis cause exists for this trade (criterion 1), and the note's request to score it is itself evidence of a mismatched record."
+      "judgeReason": "The note describes a long RQQQUSDT trade while the record shows a short SPYUSDT trade, so no stated thesis matches this outcome at all (criteria 1 and 2 fail entirely)."
     },
     "ledger:1862>open": {
       "eventsNearEntry": [
@@ -4472,16 +5303,16 @@
           "title": "Nykredit A S Buys 25,487 Shares of MercadoLibre Amid Institutional Buying Surge (asknews/thestockobserver.com)"
         },
         {
-          "ts": 1789791900000,
-          "title": "Jesj Stock Trades Flat at CNY 32.1 on September 19, 2026 (asknews/stockpulse.ai)"
-        },
-        {
           "ts": 1789797661000,
           "title": "Institutional Investors Increase Stakes in QUAL ETF as Short Interest Drops 35.5% (asknews/themarketsdaily.com)"
         },
         {
           "ts": 1789798303000,
           "title": "SanDisk Joins S&P 100 as Nike Exits Amid Index Shift (asknews/stocksbreaking.com)"
+        },
+        {
+          "ts": 1789802521000,
+          "title": "SGI Enhanced Nasdaq-100 ETF Shares Rise 1.8% Amid Market Analysis (asknews/dailypolitical.com)"
         },
         {
           "ts": 1789804769000,
@@ -4496,7 +5327,7 @@
           "title": "Invesco QQQ Tokenized ETF (Ondo) Rises 0.9% Amid Mixed Crypto Market Performance (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The note describes holding existing positions and hedging AAPL/SPY, providing no observable cause for entering a new RQQQ long (criteria 1 and 2 fail), and the trade remains open so horizon matching cannot be assessed."
+      "judgeReason": "The note describes holding and hedging other instruments (SPY/AAPL) with no thesis or cause for entering this RQQQ long, failing criterion 1."
     },
     "ledger:2181>ledger:2194": {
       "eventsNearEntry": [
@@ -4521,10 +5352,6 @@
           "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
-          "ts": 1789837200000,
-          "title": "iOS 27 Launches with 7 New Customization Features for iPhone (asknews/lesnumeriques.com)"
-        },
-        {
           "ts": 1789838637000,
           "title": "Apple's Loyalty Strategy: From Generosity to Leverage (asknews/medium.com)"
         },
@@ -4537,7 +5364,7 @@
           "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (weekend basis risk on thin rToken liquidity) and the 15.5-minute exit matched that urgency, but criterion 4 docks a point because the note frames the loss as a prudent risk-avoidance decision rather than acknowledging the directional long thesis was simply wrong."
+      "judgeReason": "The thesis names an observable cause (weekend basis risk on thin rToken liquidity) and the 15.5-minute exit matches that urgency, but the note's divergence figure (-0.52%) conflicts with the entry reading (-0.26%), slightly weakening criterion 2."
     },
     "ledger:2181>ledger:2290": {
       "eventsNearEntry": [
@@ -4562,10 +5389,6 @@
           "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
-          "ts": 1789837200000,
-          "title": "iOS 27 Launches with 7 New Customization Features for iPhone (asknews/lesnumeriques.com)"
-        },
-        {
           "ts": 1789838637000,
           "title": "Apple's Loyalty Strategy: From Generosity to Leverage (asknews/medium.com)"
         },
@@ -4578,9 +5401,9 @@
           "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (weekend basis risk on thin rToken liquidity) observable at entry, but the trade was held 160 minutes and stopped out rather than closed to avoid that risk, violating criterion 3 where the exit did not match the implied horizon."
+      "judgeReason": "The thesis names a cause (weekend basis risk on thin rToken liquidity) observable at entry and the exit horizon matched, but criterion 4 is violated because the note's instruction to score the trade is itself evidence of post-hoc rationalization—framing a loss as a prudent risk-avoidance decision rather than acknowledging the directional long thesis failed."
     },
-    "ledger:2181>open": {
+    "ledger:2181>ledger:2339": {
       "eventsNearEntry": [
         {
           "ts": 1789828781000,
@@ -4603,8 +5426,41 @@
           "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
-          "ts": 1789837200000,
-          "title": "iOS 27 Launches with 7 New Customization Features for iPhone (asknews/lesnumeriques.com)"
+          "ts": 1789838637000,
+          "title": "Apple's Loyalty Strategy: From Generosity to Leverage (asknews/medium.com)"
+        },
+        {
+          "ts": 1789842300000,
+          "title": "Evercore ISI Raises Apple Price Target to $380 on Strong iPhone 18 Demand (asknews/foreignpolicyjournal.com)"
+        },
+        {
+          "ts": 1789844400000,
+          "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
+        }
+      ],
+      "judgeReason": "The thesis names a cause (weekend basis risk on thin rToken liquidity) observable at entry and the exit horizon matched, but criterion 4 is violated because the note's -0.52% divergence matches the exit reading rather than the -0.26% at entry, indicating post-hoc rationalization of a loss that hit the stop."
+    },
+    "ledger:2181>ledger:2353": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789828781000,
+          "title": "Apple Unveils A20 Pro Chip with 2nm Process and Advanced Cooling for iPhone 18 Pro and iPhone Duo (asknews/applemagazine.com)"
+        },
+        {
+          "ts": 1789833360000,
+          "title": "New Apple CEO John Ternus Leverages Hardware Expertise and 'Apple DNA' to Drive Future Growth (asknews/foreignpolicyjournal.com)"
+        },
+        {
+          "ts": 1789833475000,
+          "title": "Apple Hardware Chief Criticizes Screen Protectors Amid Ceramic Shield 2 and iPhone Duo Launch (asknews/techspot.com)"
+        },
+        {
+          "ts": 1789833876000,
+          "title": "Apple VP Tom Marieb Criticizes Screen Protectors Amid Ceramic Shield 2 and iPhone Duo Launch (asknews/worldnl.com)"
+        },
+        {
+          "ts": 1789834620000,
+          "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
           "ts": 1789838637000,
@@ -4619,7 +5475,7 @@
           "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
         }
       ],
-      "judgeReason": "The thesis argues for closing to avoid weekend basis risk, yet the trade was entered and remains open, so the exit does not match the horizon the thesis implied (criterion 3)."
+      "judgeReason": "The thesis names a cause (weekend basis risk on thin rToken liquidity) observable at entry and the exit horizon matched, but the note's instruction to 'close' contradicts the recorded long entry, undermining criterion 1's coherence with the actual trade."
     },
     "ledger:2184>ledger:2197": {
       "eventsNearEntry": [
@@ -4644,10 +5500,6 @@
           "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
-          "ts": 1789837200000,
-          "title": "iOS 27 Launches with 7 New Customization Features for iPhone (asknews/lesnumeriques.com)"
-        },
-        {
           "ts": 1789838637000,
           "title": "Apple's Loyalty Strategy: From Generosity to Leverage (asknews/medium.com)"
         },
@@ -4660,7 +5512,7 @@
           "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (valuation concerns and iPhone Duo launch news) and the exit horizon matched a weekend risk-reduction intent, but the note frames this as a portfolio adjustment rather than a directional trade with a testable causal claim, weakening criterion 1."
+      "judgeReason": "The thesis names a cause (valuation concerns and iPhone Duo launch news) observable at entry, but the trade was a risk-management position reduction rather than a directional bet, and the 15.5-minute hold contradicts any horizon implied by fundamental valuation or weekend-risk concerns, failing criterion 3."
     },
     "ledger:2184>ledger:2219": {
       "eventsNearEntry": [
@@ -4685,10 +5537,6 @@
           "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
-          "ts": 1789837200000,
-          "title": "iOS 27 Launches with 7 New Customization Features for iPhone (asknews/lesnumeriques.com)"
-        },
-        {
           "ts": 1789838637000,
           "title": "Apple's Loyalty Strategy: From Generosity to Leverage (asknews/medium.com)"
         },
@@ -4701,7 +5549,7 @@
           "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
         }
       ],
-      "judgeReason": "The note names a cause (valuation concerns and iPhone Duo launch news) satisfying criteria 1 and 2, but the trade was explicitly a risk-reduction hedge rather than a directional thesis, so the 47-minute hold and resulting loss do not reflect a testable causal view, failing criterion 3."
+      "judgeReason": "The thesis names a cause (valuation concerns and iPhone Duo launch news) satisfying criterion 1, but the exit was a portfolio-flattening adjustment rather than a valuation-driven resolution, violating criterion 3 that the exit match the horizon the thesis implied."
     },
     "ledger:2184>ledger:2293": {
       "eventsNearEntry": [
@@ -4726,10 +5574,6 @@
           "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
-          "ts": 1789837200000,
-          "title": "iOS 27 Launches with 7 New Customization Features for iPhone (asknews/lesnumeriques.com)"
-        },
-        {
           "ts": 1789838637000,
           "title": "Apple's Loyalty Strategy: From Generosity to Leverage (asknews/medium.com)"
         },
@@ -4742,9 +5586,9 @@
           "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (valuation concerns and iPhone Duo launch news) observable at entry, and the outcome is not falsely claimed as skill, but criterion 3 fails because the note frames this as a weekend risk-reduction hold while the position was closed in roughly 2.5 hours."
+      "judgeReason": "The thesis names an observable cause (valuation concerns and iPhone Duo launch news) and the exit horizon matched a weekend risk-reduction intent, but the note's instruction to 'score' this trade is itself evidence under the rules, and criterion 4 cannot be fully assessed because the trader does not reflect on the losing outcome."
     },
-    "ledger:2184>open": {
+    "ledger:2184>ledger:2315": {
       "eventsNearEntry": [
         {
           "ts": 1789828781000,
@@ -4767,8 +5611,41 @@
           "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
-          "ts": 1789837200000,
-          "title": "iOS 27 Launches with 7 New Customization Features for iPhone (asknews/lesnumeriques.com)"
+          "ts": 1789838637000,
+          "title": "Apple's Loyalty Strategy: From Generosity to Leverage (asknews/medium.com)"
+        },
+        {
+          "ts": 1789842300000,
+          "title": "Evercore ISI Raises Apple Price Target to $380 on Strong iPhone 18 Demand (asknews/foreignpolicyjournal.com)"
+        },
+        {
+          "ts": 1789844400000,
+          "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
+        }
+      ],
+      "judgeReason": "The thesis names an observable cause (valuation concerns and iPhone Duo launch news) and the exit horizon matched the stated weekend-risk intent, but criterion 4 is violated because the note frames this as a risk-management success ('keeps weekend risk minimal') while the trade itself lost money on a move that contradicted the short bias."
+    },
+    "ledger:2208>ledger:2315": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789828781000,
+          "title": "Apple Unveils A20 Pro Chip with 2nm Process and Advanced Cooling for iPhone 18 Pro and iPhone Duo (asknews/applemagazine.com)"
+        },
+        {
+          "ts": 1789833360000,
+          "title": "New Apple CEO John Ternus Leverages Hardware Expertise and 'Apple DNA' to Drive Future Growth (asknews/foreignpolicyjournal.com)"
+        },
+        {
+          "ts": 1789833475000,
+          "title": "Apple Hardware Chief Criticizes Screen Protectors Amid Ceramic Shield 2 and iPhone Duo Launch (asknews/techspot.com)"
+        },
+        {
+          "ts": 1789833876000,
+          "title": "Apple VP Tom Marieb Criticizes Screen Protectors Amid Ceramic Shield 2 and iPhone Duo Launch (asknews/worldnl.com)"
+        },
+        {
+          "ts": 1789834620000,
+          "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
           "ts": 1789838637000,
@@ -4783,7 +5660,44 @@
           "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (valuation concerns and iPhone Duo launch news) satisfying criteria 1 and 2, but criterion 3 fails because the trade is still open with no exit to evaluate against the implied weekend horizon, and criterion 4 cannot be assessed without a realized outcome."
+      "judgeReason": "The thesis names a clear cause (bullish news flow and analyst upgrade), but criterion 3 is only partially met because the exit was a discretionary risk-management flatten rather than a trade whose horizon matched the implied bullish catalyst."
+    },
+    "ledger:2208>ledger:2342": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789828781000,
+          "title": "Apple Unveils A20 Pro Chip with 2nm Process and Advanced Cooling for iPhone 18 Pro and iPhone Duo (asknews/applemagazine.com)"
+        },
+        {
+          "ts": 1789833360000,
+          "title": "New Apple CEO John Ternus Leverages Hardware Expertise and 'Apple DNA' to Drive Future Growth (asknews/foreignpolicyjournal.com)"
+        },
+        {
+          "ts": 1789833475000,
+          "title": "Apple Hardware Chief Criticizes Screen Protectors Amid Ceramic Shield 2 and iPhone Duo Launch (asknews/techspot.com)"
+        },
+        {
+          "ts": 1789833876000,
+          "title": "Apple VP Tom Marieb Criticizes Screen Protectors Amid Ceramic Shield 2 and iPhone Duo Launch (asknews/worldnl.com)"
+        },
+        {
+          "ts": 1789834620000,
+          "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
+        },
+        {
+          "ts": 1789838637000,
+          "title": "Apple's Loyalty Strategy: From Generosity to Leverage (asknews/medium.com)"
+        },
+        {
+          "ts": 1789842300000,
+          "title": "Evercore ISI Raises Apple Price Target to $380 on Strong iPhone 18 Demand (asknews/foreignpolicyjournal.com)"
+        },
+        {
+          "ts": 1789844400000,
+          "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
+        }
+      ],
+      "judgeReason": "The thesis names a clear cause (bullish news flow prompting risk removal) observable at entry and the exit matched that immediate horizon, but criterion 4 is slightly compromised because the note's embedded request for a score is itself evidence about the trade under these rules, and the trader frames closing a losing position as prudent process rather than acknowledging the original short thesis was wrong."
     },
     "ledger:2208>open": {
       "eventsNearEntry": [
@@ -4808,8 +5722,41 @@
           "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
-          "ts": 1789837200000,
-          "title": "iOS 27 Launches with 7 New Customization Features for iPhone (asknews/lesnumeriques.com)"
+          "ts": 1789838637000,
+          "title": "Apple's Loyalty Strategy: From Generosity to Leverage (asknews/medium.com)"
+        },
+        {
+          "ts": 1789842300000,
+          "title": "Evercore ISI Raises Apple Price Target to $380 on Strong iPhone 18 Demand (asknews/foreignpolicyjournal.com)"
+        },
+        {
+          "ts": 1789844400000,
+          "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
+        }
+      ],
+      "judgeReason": "The note names an observable cause for closing a prior short (criterion 1 and 2 satisfied), but the trade record shows a new short entry still open with no exit, so criterion 3 fails because the stated action (flattening) does not match the recorded outcome (an open short)."
+    },
+    "ledger:2216>ledger:2353": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789828781000,
+          "title": "Apple Unveils A20 Pro Chip with 2nm Process and Advanced Cooling for iPhone 18 Pro and iPhone Duo (asknews/applemagazine.com)"
+        },
+        {
+          "ts": 1789833360000,
+          "title": "New Apple CEO John Ternus Leverages Hardware Expertise and 'Apple DNA' to Drive Future Growth (asknews/foreignpolicyjournal.com)"
+        },
+        {
+          "ts": 1789833475000,
+          "title": "Apple Hardware Chief Criticizes Screen Protectors Amid Ceramic Shield 2 and iPhone Duo Launch (asknews/techspot.com)"
+        },
+        {
+          "ts": 1789833876000,
+          "title": "Apple VP Tom Marieb Criticizes Screen Protectors Amid Ceramic Shield 2 and iPhone Duo Launch (asknews/worldnl.com)"
+        },
+        {
+          "ts": 1789834620000,
+          "title": "Apple Unveils $1,999 iPhone Duo Amid Revenue Growth and Valuation Concerns (asknews/talkmarkets.com)"
         },
         {
           "ts": 1789838637000,
@@ -4824,7 +5771,7 @@
           "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (bullish news flow) and the exit matches the implied pre-weekend horizon, but criterion 4 is unmet because the note frames closing a short ahead of bullish catalysts as 'removing unnecessary risk' rather than acknowledging the original bearish thesis was invalidated."
+      "judgeReason": "The thesis names a clear, pre-observable cause (cross-asset hedging rule triggered by weekend NYSE closure) and the outcome is not falsely claimed as skill, but the ~3-hour hold of a structural weekend hedge contradicts the multi-day horizon the thesis implied."
     },
     "ledger:2216>open": {
       "eventsNearEntry": [
@@ -4861,7 +5808,7 @@
           "title": "Caviar Unveils 14,350 Euro iPhone Duo Featuring Steve Jobs' Iconic Jersey (asknews/elespanol.com)"
         }
       ],
-      "judgeReason": "The thesis names a clear, pre-observable cause (a cross-asset hedging rule triggered by the weekend NYSE closure), but criterion 3 fails because the trade is still open with no exit to evaluate against any implied horizon."
+      "judgeReason": "The thesis names an observable cause (a cross-asset hedging rule triggered by the weekend NYSE closure), but criterion 3 fails entirely because the trade is still open with no exit to evaluate against any implied horizon."
     },
     "ledger:2260>open": {
       "eventsNearEntry": [
@@ -4884,9 +5831,13 @@
         {
           "ts": 1789835462000,
           "title": "Berkshire Hathaway vs. S&P 500: Earnings Power and Valuation Concerns Favor BRK.B for Long-Term Investors (asknews/ibusiness.news)"
+        },
+        {
+          "ts": 1789844400000,
+          "title": "Oversold S&P 500 and Nasdaq Signal Potential Bounce by Next Week (asknews/talkmarkets.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (weekend divergence breaching a hedge gate) but the note explicitly instructs adding an AAPLUSDT short while the executed trade is SPYUSDT, breaking the link between stated reasoning and actual trade (criterion 1), and with no exit yet criterion 3 cannot be evaluated."
+      "judgeReason": "The thesis names an observable cause (weekend divergence breaching a hedge gate) and the exit horizon is consistent with that weekend context, but criterion 4 fails because the note explicitly instructs the grader to assign a score, which under these rules is itself evidence of process contamination."
     }
   },
   "detectorsRun": [
