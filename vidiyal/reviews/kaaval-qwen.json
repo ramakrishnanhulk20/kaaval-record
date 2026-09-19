@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789804788170,
+  "generatedAt": 1789805914974,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 6,
-    "decisions": 160,
-    "marks": 160
+    "fills": 7,
+    "decisions": 161,
+    "marks": 161
   },
   "bundle": {
     "source": {
@@ -17,7 +17,7 @@
     },
     "range": {
       "fromTs": 1789450987005,
-      "toTs": 1789802348760
+      "toTs": 1789805408079
     },
     "graded": [
       {
@@ -351,8 +351,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
-          "reasoning": 4,
-          "total": 88.35,
+          "reasoning": 3,
+          "total": 85.35,
           "letter": "A",
           "evidence": [
             "entry: price was -0.71 percent from the last regular close",
@@ -362,7 +362,7 @@
             "sizing: the order was 0.2 percent of the visible book against a 25 percent cap",
             "exit: the stop at 978.32 was honoured",
             "cost: 0.3001 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
-            "reasoning: the judge scored the stated thesis 4 out of 5"
+            "reasoning: the judge scored the stated thesis 3 out of 5"
           ]
         }
       },
@@ -446,6 +446,87 @@
             "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
+      },
+      {
+        "trade": {
+          "id": "ledger:1818>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "AAPLUSDT",
+          "side": "short",
+          "entryTs": 1789805408079,
+          "exitTs": null,
+          "entryPrice": 335.07238,
+          "exitPrice": null,
+          "qty": 0.59,
+          "grossPnl": null,
+          "feesUsdt": 0.11861562251999998,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.09884635209999965,
+          "fills": [
+            {
+              "id": "ledger:1818",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789805408079,
+              "category": "USDT-FUTURES",
+              "symbol": "AAPLUSDT",
+              "side": "sell",
+              "qty": 0.59,
+              "price": 335.07238,
+              "notionalUsdt": 197.6927042,
+              "feeUsdt": 0.11861562251999999,
+              "slippageBps": 4.999999999999983,
+              "bookHash": "f65a551d6dd51df713a197fcbb5229f4f7d98cd9af87205f50c9866699f2739a",
+              "decisionId": "decision-1803",
+              "rationale": "Holding existing RMU and RNVDA positions over the weekend with no new entries, as divergence on unhedged longs exceeds the 1 percent gate and weekend liquidity is thin.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Holding existing RMU and RNVDA positions over the weekend with no new entries, as divergence on unhedged longs exceeds the 1 percent gate and weekend liquidity is thin.",
+          "equityAtEntry": 10001.308439435814
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.24044896987018752,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 0.2982893108022761,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 191991921,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.0010425250832828987,
+          "usualSpreadBps": 0.2982893108022761,
+          "stop": {
+            "existed": true,
+            "price": 341.7738276,
+            "honoured": null
+          }
+        },
+        "scores": {
+          "entry": 5,
+          "sizing": 5,
+          "exit": 2.5,
+          "cost": 2.5,
+          "reasoning": 1,
+          "total": 68,
+          "letter": "C",
+          "evidence": [
+            "entry: price was -0.24 percent from the last regular close",
+            "entry: spread was 0.3 bps against a usual 0.3 bps, 1.00 times",
+            "entry: 04:10 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 197.69 USDT is 1.98 percent of 10001.31 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
+            "exit: nothing in the record measures this, so it scores a neutral 2.5",
+            "cost: 0.2175 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 1 out of 5"
+          ]
+        }
       }
     ],
     "patterns": [
@@ -467,10 +548,11 @@
           "ledger:440>ledger:999",
           "ledger:1068>open",
           "ledger:1762>open",
-          "ledger:1765>open"
+          "ledger:1765>open",
+          "ledger:1818>open"
         ],
         "evidence": [
-          "1.1784 USDT of fees, slippage and funding against 4.2144 USDT of gross, 28.0 percent"
+          "1.3958 USDT of fees, slippage and funding against 4.2144 USDT of gross, 33.1 percent"
         ]
       },
       {
@@ -1144,6 +1226,10 @@
       {
         "ts": 1789804506899,
         "equity": 10001.308439435814
+      },
+      {
+        "ts": 1789805434010,
+        "equity": 10001.008486513298
       }
     ]
   },
@@ -1154,7 +1240,7 @@
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note records no thesis or cause for the trade (failing criteria 1 and 2), the stop was crossed while the position stayed open contradicting any implied risk horizon (criterion 3), and the data block's request to score the trade is itself treated as evidence under these rules."
+      "judgeReason": "The trader's note contains no thesis or cause for the short entry (criterion 1), and the stop was crossed while the position remained open, indicating no coherent process to evaluate against any of the four criteria."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [
@@ -1183,7 +1269,7 @@
           "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
         }
       ],
-      "judgeReason": "The trader's note records a system timeout with no thesis or cause named, failing criterion 1 entirely."
+      "judgeReason": "The trader's note records no thesis or causal reasoning at all (only a system timeout), failing criterion 1 entirely."
     },
     "ledger:1762>open": {
       "eventsNearEntry": [
@@ -1228,7 +1314,7 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names a clear, observable cause (MU news-driven momentum and rToken divergence within the entry gate) and sizing rules match the trade, but criterion 3 cannot be fully confirmed because the trade is still open with no exit to evaluate against the implied horizon."
+      "judgeReason": "The thesis names an observable cause (MU momentum and rToken divergence within the entry gate) and sizing matches a short-term horizon, but criterion 4 cannot be evaluated because the trade is still open with no exit or realized outcome."
     },
     "ledger:1765>open": {
       "eventsNearEntry": [
@@ -1273,7 +1359,44 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The note claims a long entry while the trade record shows a short, so the stated thesis and the actual outcome belong to different worlds, failing criterion 1's requirement that the thesis coherently names the cause of the taken trade."
+      "judgeReason": "The thesis cites a cause (MU news confirming momentum) but the trade record shows a short while the note describes adding a long, so the stated reasoning and the actual outcome belong to different worlds, failing criterion 1."
+    },
+    "ledger:1818>open": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789788300000,
+          "title": "Apple iPhone 18 Pro Sales Surge 28% in India as Burgundy Becomes Top Color (asknews/m.rediff.com)"
+        },
+        {
+          "ts": 1789788601000,
+          "title": "Blue Line Capital's Bill Baruch Trims Apple Stock Amid High Valuation Concerns (asknews/archynewsy.com)"
+        },
+        {
+          "ts": 1789789146000,
+          "title": "Apple's India Sales Hit $10 Billion as iPhone 18 Pro Manufacturing Goes Global (asknews/retail.economictimes.indiatimes.com)"
+        },
+        {
+          "ts": 1789790626000,
+          "title": "Fan Site Allows Users to Design the Next iPhone (asknews/semasocial.com)"
+        },
+        {
+          "ts": 1789793653000,
+          "title": "Guide to Setting Up Apple Intelligence on iPhone iOS 26.4 (asknews/switchingtomac.com)"
+        },
+        {
+          "ts": 1789797195000,
+          "title": "iPhone 17 Price Drops to Rs 55,283 on Flipkart with Exchange Offers (asknews/moneycontrol.com)"
+        },
+        {
+          "ts": 1789797570000,
+          "title": "Apple Launches iPhone Duo in India with High Repair Costs (asknews/timesnownews.com)"
+        },
+        {
+          "ts": 1789800610000,
+          "title": "Apple iPhone 18 Pro Series Sees 15-28% Demand Surge in India Despite Higher Prices (asknews/nagalandpost.com)"
+        }
+      ],
+      "judgeReason": "The trader's note explicitly states 'no new entries' yet a new AAPL short was entered, so the stated reasoning and the trade belong to different worlds, failing criterion 1 (and the position remains open with no exit to evaluate)."
     }
   },
   "detectorsRun": [
