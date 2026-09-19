@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789777509283,
+  "generatedAt": 1789781823570,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 128,
-    "marks": 128
+    "decisions": 133,
+    "marks": 133
   },
   "bundle": {
     "source": {
@@ -833,21 +833,41 @@
       {
         "ts": 1789776532618,
         "equity": 10001.547635256342
+      },
+      {
+        "ts": 1789777481613,
+        "equity": 10001.514703756342
+      },
+      {
+        "ts": 1789778418667,
+        "equity": 10001.542703756342
+      },
+      {
+        "ts": 1789779361848,
+        "equity": 10001.47972475634
+      },
+      {
+        "ts": 1789780297156,
+        "equity": 10001.605640756341
+      },
+      {
+        "ts": 1789781274015,
+        "equity": 10001.61750925634
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note documents a system delay, not a market observation or reasoning for entry, so criterion 1 fails completely."
+      "judgeReason": "The thesis names no cause at all; the note records only a processing delay, not market reasoning, so criterion 1 fails completely and the trade cannot be graded as a reasoned trade."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis is absent entirely—the trader's note indicates no decision was made ('qwen took longer than 180 seconds'), so criteria 1 (cause named) and 2 (observable at entry) both fail; the trade appears to be either automatic/default or executed without stated reasoning."
+      "judgeReason": "The thesis names no cause at all—the note indicates no decision was made, only that a system took longer than expected to respond, which is a meta-comment about execution timing rather than a market thesis; criterion 1 fails completely."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note states only that a decision-making process (qwen) exceeded a time limit, which is a meta-failure, not a market thesis; criterion 1 fails completely."
+      "judgeReason": "The thesis names no cause at all—the note only states that a decision-making process timed out, which describes a technical malfunction rather than a market observation or reasoning for the short position."
     }
   },
   "detectorsRun": [
