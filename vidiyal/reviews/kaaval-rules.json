@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789790341023,
+  "generatedAt": 1789794673043,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 17,
-    "decisions": 203,
-    "marks": 203
+    "decisions": 207,
+    "marks": 207
   },
   "bundle": {
     "source": {
@@ -313,8 +313,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 1,
-          "total": 73,
+          "reasoning": 2,
+          "total": 76,
           "letter": "B",
           "evidence": [
             "entry: price was 0.16 percent from the last regular close",
@@ -325,7 +325,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 328.86 was honoured",
             "cost: 0.0976 USDT of friction against a gross of 0.0325 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -1904,6 +1904,22 @@
       {
         "ts": 1789789965386,
         "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789790970023,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789791909693,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789792850906,
+        "equity": 9991.903508118943
+      },
+      {
+        "ts": 1789793794480,
+        "equity": 9991.903508118943
       }
     ]
   },
@@ -1919,7 +1935,7 @@
           "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
         }
       ],
-      "judgeReason": "Criterion 1 fails: the thesis names a market condition (NYSE closure) but not a causal mechanism for why GOOGLUSDT should fall; criteria 2-4 are undermined because the 16.8-minute hold contradicts the multi-day horizon implied by a 52-hour NYSE closure thesis, and the loss is attributed to slippage and fees rather than thesis invalidation, obscuring whether the process was sound."
+      "judgeReason": "The thesis names a cause (NYSE closure creating a delta hedge opportunity) and it was observable at entry, but the 16.8-minute hold contradicts the multi-day horizon the thesis implied, and the loss is not attributed to thesis failure."
     },
     "ledger:158>ledger:174": {
       "eventsNearEntry": [
@@ -1932,7 +1948,7 @@
           "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (basis point divergence exceeding a band) and was observable at entry, but the 17-minute hold contradicts a mean-reversion thesis requiring tighter horizons, and the loss is attributed to execution friction rather than thesis failure."
+      "judgeReason": "Criterion 1 passes: the thesis names a cause (basis point divergence exceeding a band threshold). Criterion 2 fails: the trader notes the spread was already past the band at entry, making this reactive rather than predictive of mean reversion. Criterion 3 fails: a 16.8-minute hold contradicts the thesis of a statistical arbitrage that should resolve within the band width, suggesting no coherent exit horizon. Criterion 4 fails: the loss is attributed implicitly to the band failing to work, but the trade violated its own entry condition by chasing a signal already triggered."
     },
     "ledger:158>ledger:187": {
       "eventsNearEntry": [
@@ -1945,7 +1961,7 @@
           "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (basis point arbitrage spread exceeding a threshold), and it was observable at entry, but the exit occurred after 33 minutes on a weekend with a scheduled event 6 minutes after entry—contradicting the mean-reversion horizon implied by a statistical band trade—and the loss is attributed to fees and slippage rather than acknowledging the thesis (the spread relationship) was never verified to have reverted."
+      "judgeReason": "Criterion 1 passes: thesis names a cause (basis point divergence outside a 40bp band). Criterion 2 fails: the noted basis spread (-40.64bp) was observable, but the trade was entered on a weekend with a scheduled event 6 minutes away, creating execution risk not mentioned in the thesis. Criterion 3 fails: a 33-minute hold contradicts the thesis of a mean-reversion trade on a basis anomaly, which should close much faster or not at all if the spread didn't snap. Criterion 4 fails: the loss is attributed to the thesis (basis trade) when the actual context (weekend, imminent event, quick exit under stop discipline) suggests execution defeated the idea before it could work."
     },
     "ledger:171>ledger:215": {
       "eventsNearEntry": [
@@ -1962,7 +1978,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "Criterion 1 passes: the thesis names a cause (NYSE closure leading to reduced delta hedging capacity). Criterion 2 fails: a weekend session with no scheduled events and 52-hour closure is entirely foreseeable, not an observable market condition at entry that justified immediate action. Criterion 3 fails: the 66-minute hold contradicts the multi-day horizon implied by a 52-hour NYSE closure thesis. Criterion 4 fails: the trade lost money (-0.4904 USDT net) yet the note presents the setup as a deliberate carry trade, not acknowledging that the thesis (opportunity from extended closure) did not materialize as a profitable trade."
+      "judgeReason": "The thesis names a cause (NYSE closure duration affecting carry) and was observable at entry (weekend timing confirmed), but the exit after 66 minutes contradicts the multi-day carry horizon implied by the thesis, and the loss is not attributed to thesis failure."
     },
     "ledger:184>ledger:212": {
       "eventsNearEntry": [
@@ -1979,7 +1995,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "Criterion 1 passes (basis point divergence is a named cause), criterion 2 passes (divergence was observable at entry), but criterion 3 fails (49.7-minute exit does not match the hold thesis), and criterion 4 fails (the trade lost money while the stated basis-point thesis never reversed into the loss rationale)."
+      "judgeReason": "Criterion 1 passes: the thesis names a cause (basis point spread exceeding a 40bp band). Criterion 2 fails: the note references prices (218.46 vs 219.34) that do not match the entry price (219.139515), making observability at entry unclear. Criterion 3 fails: a 49.7-minute hold contradicts the static, threshold-based thesis which implies a reversion trade with no time horizon stated. Criterion 4 fails: the loss is attributed implicitly to a thesis (the spread), but the spread mechanism and entry price are misaligned in the record, obscuring whether the thesis was actually wrong or merely recorded incorrectly."
     },
     "ledger:196>ledger:212": {
       "eventsNearEntry": [
@@ -1996,7 +2012,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "Criterion 1 fails: the thesis names a statistical condition (basis points below a band) but not a causal mechanism for why this mispricing should close; criterion 2 passes: the divergence was observable at entry; criterion 3 fails: the 33.5-minute exit does not match the mean-reversion horizon a basis-point thesis implies; criterion 4 passes: the trader does not claim skill despite the loss."
+      "judgeReason": "Criterion 1 fails: the note names a relative price divergence (basis points) as the signal, not a cause—it describes a statistical pattern, not why that pattern should reverse or mean-revert; criteria 2 and 3 partially met (the divergence was observable at entry and the 33.5-minute hold suggests a short-term tactical horizon), but criterion 4 fails because a -40.11 bp divergence *past* a 40 bp band implies mean reversion skill when the exit at near the entry price with a stop honored suggests the thesis was simply wrong about direction or timing."
     },
     "ledger:205>ledger:212": {
       "eventsNearEntry": [
@@ -2013,7 +2029,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis names a quantifiable cause (basis point divergence exceeding a 40bp band), and this was observable at entry, but the 17-minute hold contradicts a relative-value thesis that should persist across a session, and the stop was hit suggesting either poor position sizing or misalignment between the stated band logic and actual risk management."
+      "judgeReason": "Criterion 1 passes: the thesis names a cause (basis point divergence exceeding a 40bp band). Criterion 2 fails: the note references prices at entry (218.49 vs 219.43) but the actual entry was 219.22956, making it unclear whether the observable condition existed at the moment of entry. Criterion 3 fails: the 17-minute hold contradicts a thesis about a persistent mispricing band, which implies a longer horizon. Criterion 4 fails: the loss is attributed implicitly to bad luck (basis compression from -42.84bp to -10.2bp) rather than acknowledging the thesis was wrong about when the divergence would revert."
     },
     "ledger:223>ledger:234": {
       "eventsNearEntry": [
@@ -2038,7 +2054,7 @@
           "title": "GraniteShares YieldBOOST NVDA ETF ( NVYY ) To Go Ex - Dividend on September 11th (gdelt/tickerreport.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (basis point divergence exceeding a 40bp band) and was observable at entry, but the exit occurred after only 16 minutes during a weekend session before the scheduled event 27 minutes later, contradicting the thesis's implied horizon for mean reversion, and the loss is attributed to price movement rather than to the thesis being wrong."
+      "judgeReason": "The thesis names a cause (basis point divergence exceeding a band), observable at entry (criterion 2 met), but the exit after 16 minutes during a weekend session contradicts the horizon implied by a mean-reversion trade on a structural mispricing, and the loss is attributed to market movement rather than thesis failure (criterion 4 violated)."
     },
     "ledger:226>ledger:237": {
       "eventsNearEntry": [
@@ -2063,7 +2079,7 @@
           "title": "GraniteShares YieldBOOST NVDA ETF ( NVYY ) To Go Ex - Dividend on September 11th (gdelt/tickerreport.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (NYSE closure duration affecting carry), observable at entry (weekend timing), but the 16-minute exit horizon contradicts the multi-day carry thesis, and the loss is attributed to slippage/fees rather than thesis failure."
+      "judgeReason": "The thesis names a cause (NYSE closure duration affecting NVDA futures), and it was observable at entry (weekend session, known market closure), but the 16-minute holding period contradicts the multi-day horizon implied by carrying a position through a 50-hour closure, and the loss is attributed to slippage and fees rather than testing whether the thesis itself was wrong."
     },
     "ledger:250>ledger:268": {
       "eventsNearEntry": [
@@ -2076,7 +2092,7 @@
           "title": "Roundhill TSLA WeeklyPay ETF ( BATS : TSLW ) Sees Significant Increase in Short Interest (gdelt/tickerreport.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (NYSE closure duration affecting RTSLAUSDT delta), and it was observable at entry (weekend timing confirmed), but the exit after 35.5 minutes contradicts the multi-day horizon the thesis implies, and the loss is not acknowledged as a process failure."
+      "judgeReason": "The thesis names a cause (NYSE closure creating a carry opportunity in TSLAUSDT) and it was observable at entry (weekend timing is known in advance), but the exit occurred after only 35.5 minutes—far shorter than the 49.89-hour thesis horizon—and the trader never addresses why the position was closed early or whether the premise held, making criterion 3 and 4 both fail."
     }
   },
   "detectorsRun": [

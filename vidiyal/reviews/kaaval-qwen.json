@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789790317718,
+  "generatedAt": 1789794647633,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 142,
-    "marks": 142
+    "decisions": 146,
+    "marks": 146
   },
   "bundle": {
     "source": {
@@ -889,21 +889,37 @@
       {
         "ts": 1789789965384,
         "equity": 10001.66799325634
+      },
+      {
+        "ts": 1789790970020,
+        "equity": 10001.69181425634
+      },
+      {
+        "ts": 1789791909691,
+        "equity": 10001.64141425634
+      },
+      {
+        "ts": 1789792850904,
+        "equity": 10001.69039325634
+      },
+      {
+        "ts": 1789793794478,
+        "equity": 10001.65261425634
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note indicates a decision was deferred due to processing delay, not that a trading thesis was formed, observed, and acted upon."
+      "judgeReason": "No thesis was articulated; the trader's note indicates a non-decision (an AI tool timeout) rather than a cause-based rationale for entry, so criterion 1 fails completely."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis is absent entirely—the note indicates no decision was made, only a technical delay; criterion 1 fails completely, and without a stated cause, criteria 2 and 3 cannot be evaluated."
+      "judgeReason": "The note reveals no thesis naming a cause (criterion 1 fails); the trade appears to be a system-generated short with no observable reasoning at entry; the stop was crossed during the hold, indicating the exit did not match any stated horizon (criterion 3 fails); and the loss is presented as a timeout artifact rather than a skill assessment (criterion 4 passes narrowly)."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "Criterion 1 fails: the note provides no thesis stating a cause for the trade, only a technical explanation for why a decision was delayed; without a named cause, no other criterion can be evaluated."
+      "judgeReason": "The thesis names no cause at all—the note records only a timing failure in decision-making, not an observable market reason for entry, so criteria 1 and 2 both fail; the trade remains open with no exit, making criterion 3 impossible to assess."
     }
   },
   "detectorsRun": [
