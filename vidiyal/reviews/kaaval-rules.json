@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789852370131,
+  "generatedAt": 1789857131468,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 46,
-    "decisions": 270,
-    "marks": 270
+    "fills": 50,
+    "decisions": 275,
+    "marks": 275
   },
   "bundle": {
     "source": {
@@ -17,7 +17,7 @@
     },
     "range": {
       "fromTs": 1789204114109,
-      "toTs": 1789850988160
+      "toTs": 1789855836415
     },
     "graded": [
       {
@@ -932,8 +932,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 4,
-          "total": 82,
+          "reasoning": 3,
+          "total": 79,
           "letter": "B",
           "evidence": [
             "entry: price was 0.34 percent from the last regular close",
@@ -944,7 +944,7 @@
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
             "exit: the loser was held 16.0 minutes against a winners median of 32.0 minutes, 0.50 times",
             "cost: 0.8830 USDT of friction against a gross of 0.3858 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 4 out of 5"
+            "reasoning: the judge scored the stated thesis 3 out of 5"
           ]
         }
       },
@@ -1035,8 +1035,8 @@
           "sizing": 5,
           "exit": 4.72,
           "cost": 0,
-          "reasoning": 3,
-          "total": 77.6,
+          "reasoning": 4,
+          "total": 80.6,
           "letter": "B",
           "evidence": [
             "entry: price was 0.02 percent from the last regular close",
@@ -1047,7 +1047,7 @@
             "exit: the stop at 373.01 was honoured",
             "exit: the loser was held 35.5 minutes against a winners median of 32.0 minutes, 1.11 times",
             "cost: 0.9214 USDT of friction against a gross of 0.2031 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 3 out of 5"
+            "reasoning: the judge scored the stated thesis 4 out of 5"
           ]
         }
       },
@@ -1229,7 +1229,7 @@
           "msToNextOpenAtEntry": 193934544,
           "nextEventMinutes": 24,
           "bookShareAtEntry": 0.003833512363769165,
-          "usualSpreadBps": 5.020512499171029,
+          "usualSpreadBps": 5.206783695328264,
           "stop": {
             "existed": true,
             "price": 273.5597517,
@@ -1237,16 +1237,16 @@
           }
         },
         "scores": {
-          "entry": 4.46,
+          "entry": 4.49,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
           "reasoning": 3,
-          "total": 76.3,
+          "total": 76.45,
           "letter": "B",
           "evidence": [
             "entry: price was 0.90 percent from the last regular close",
-            "entry: spread was 6.7 bps against a usual 5.0 bps, 1.34 times",
+            "entry: spread was 6.7 bps against a usual 5.2 bps, 1.29 times",
             "entry: 03:37 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "entry: a scheduled event was 24 minutes away and the rationale was written",
             "sizing: 396.93 USDT is 3.97 percent of 9991.90 USDT equity against a 10 percent cap",
@@ -1538,7 +1538,7 @@
           "msToNextOpenAtEntry": 171340474,
           "nextEventMinutes": 16,
           "bookShareAtEntry": 0.0014585940418034465,
-          "usualSpreadBps": 5.020512499171029,
+          "usualSpreadBps": 5.206783695328264,
           "stop": {
             "existed": true,
             "price": 273.38999635167795,
@@ -1555,7 +1555,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.83 percent from the last regular close",
-            "entry: spread was 4.5 bps against a usual 5.0 bps, 0.89 times",
+            "entry: spread was 4.5 bps against a usual 5.2 bps, 0.86 times",
             "entry: 09:54 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "entry: a scheduled event was 16 minutes away and the rationale was written",
             "sizing: 399.36 USDT is 4.00 percent of 9990.49 USDT equity against a 10 percent cap",
@@ -1653,8 +1653,8 @@
           "sizing": 5,
           "exit": 4.99,
           "cost": 0,
-          "reasoning": 4,
-          "total": 80.95,
+          "reasoning": 3,
+          "total": 77.95,
           "letter": "B",
           "evidence": [
             "entry: price was 0.74 percent from the last regular close",
@@ -1665,7 +1665,7 @@
             "sizing: the order was 0.2 percent of the visible book against a 25 percent cap",
             "exit: the loser was held 32.1 minutes against a winners median of 32.0 minutes, 1.00 times",
             "cost: 0.7003 USDT of friction against a gross of 0.6440 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 4 out of 5"
+            "reasoning: the judge scored the stated thesis 3 out of 5"
           ]
         }
       },
@@ -1756,8 +1756,8 @@
           "sizing": 5,
           "exit": 2.51,
           "cost": 0,
-          "reasoning": 4,
-          "total": 68.55,
+          "reasoning": 3,
+          "total": 65.55,
           "letter": "C",
           "evidence": [
             "entry: price was 0.74 percent from the last regular close",
@@ -1768,7 +1768,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the loser was held 48.0 minutes against a winners median of 32.0 minutes, 1.50 times",
             "cost: 0.1385 USDT of friction against a gross of 0.1274 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 4 out of 5"
+            "reasoning: the judge scored the stated thesis 3 out of 5"
           ]
         }
       },
@@ -2051,7 +2051,7 @@
           "msToNextOpenAtEntry": 164710349,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0014429108751611666,
-          "usualSpreadBps": 5.020512499171029,
+          "usualSpreadBps": 5.206783695328264,
           "stop": {
             "existed": true,
             "price": 273.15195570000003,
@@ -2068,7 +2068,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.75 percent from the last regular close",
-            "entry: spread was 3.7 bps against a usual 5.0 bps, 0.74 times",
+            "entry: spread was 3.7 bps against a usual 5.2 bps, 0.72 times",
             "entry: 11:44 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 399.02 USDT is 4.00 percent of 9987.50 USDT equity against a 10 percent cap",
             "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
@@ -2166,8 +2166,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 4,
-          "total": 80.7,
+          "reasoning": 3,
+          "total": 77.7,
           "letter": "B",
           "evidence": [
             "entry: price was 0.74 percent from the last regular close",
@@ -2177,7 +2177,7 @@
             "sizing: the order was 0.2 percent of the visible book against a 25 percent cap",
             "exit: the loser was held 15.8 minutes against a winners median of 32.0 minutes, 0.49 times",
             "cost: 0.7216 USDT of friction against a gross of 0.6636 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 4 out of 5"
+            "reasoning: the judge scored the stated thesis 3 out of 5"
           ]
         }
       },
@@ -2358,7 +2358,7 @@
           "msToNextOpenAtEntry": 158930671,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.004154185238513711,
-          "usualSpreadBps": 5.020512499171029,
+          "usualSpreadBps": 5.206783695328264,
           "stop": {
             "existed": true,
             "price": 273.52792707972975,
@@ -2375,7 +2375,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 0.89 percent from the last regular close",
-            "entry: spread was 2.6 bps against a usual 5.0 bps, 0.52 times",
+            "entry: spread was 2.6 bps against a usual 5.2 bps, 0.50 times",
             "entry: 13:21 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 396.88 USDT is 3.97 percent of 9985.37 USDT equity against a 10 percent cap",
             "sizing: the order was 0.4 percent of the visible book against a 25 percent cap",
@@ -2562,7 +2562,7 @@
           "msToNextOpenAtEntry": 155093481,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0067915669961075295,
-          "usualSpreadBps": 5.020512499171029,
+          "usualSpreadBps": 5.206783695328264,
           "stop": {
             "existed": true,
             "price": 273.8811665878379,
@@ -2574,19 +2574,19 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 3,
-          "total": 76.15,
+          "reasoning": 4,
+          "total": 79.15,
           "letter": "B",
           "evidence": [
             "entry: price was 1.02 percent from the last regular close",
-            "entry: spread was 3.0 bps against a usual 5.0 bps, 0.59 times",
+            "entry: spread was 3.0 bps against a usual 5.2 bps, 0.57 times",
             "entry: 14:25 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 397.40 USDT is 3.98 percent of 9982.94 USDT equity against a 10 percent cap",
             "sizing: the order was 0.7 percent of the visible book against a 25 percent cap",
             "exit: the loser was held 16.7 minutes against a winners median of 32.0 minutes, 0.52 times",
             "exit: a weekend entry 1.02 percent from the close was closed before the open",
             "cost: 0.9117 USDT of friction against a gross of 0.8044 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 3 out of 5"
+            "reasoning: the judge scored the stated thesis 4 out of 5"
           ]
         }
       },
@@ -2665,7 +2665,7 @@
           "msToNextOpenAtEntry": 149352104,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.007641598744710408,
-          "usualSpreadBps": 5.020512499171029,
+          "usualSpreadBps": 5.206783695328264,
           "stop": {
             "existed": true,
             "price": 274.0898865000001,
@@ -2682,7 +2682,7 @@
           "letter": "B",
           "evidence": [
             "entry: price was 1.09 percent from the last regular close",
-            "entry: spread was 4.1 bps against a usual 5.0 bps, 0.81 times",
+            "entry: spread was 4.1 bps against a usual 5.2 bps, 0.79 times",
             "entry: 16:00 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 397.70 USDT is 3.98 percent of 9980.50 USDT equity against a 10 percent cap",
             "sizing: the order was 0.8 percent of the visible book against a 25 percent cap",
@@ -2768,7 +2768,7 @@
           "msToNextOpenAtEntry": 147378147,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.006970999428430062,
-          "usualSpreadBps": 5.020512499171029,
+          "usualSpreadBps": 5.206783695328264,
           "stop": {
             "existed": true,
             "price": 274.04235622297296,
@@ -2776,23 +2776,290 @@
           }
         },
         "scores": {
-          "entry": 4.33,
+          "entry": 4.36,
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 4,
-          "total": 78.65,
+          "reasoning": 3,
+          "total": 75.8,
           "letter": "B",
           "evidence": [
             "entry: price was 1.08 percent from the last regular close",
-            "entry: spread was 5.2 bps against a usual 5.0 bps, 1.04 times",
+            "entry: spread was 5.2 bps against a usual 5.2 bps, 1.00 times",
             "entry: 16:33 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "sizing: 397.63 USDT is 3.98 percent of 9979.30 USDT equity against a 10 percent cap",
             "sizing: the order was 0.7 percent of the visible book against a 25 percent cap",
             "exit: the loser was held 16.1 minutes against a winners median of 32.0 minutes, 0.50 times",
             "exit: a weekend entry 1.08 percent from the close was closed before the open",
             "cost: 0.9354 USDT of friction against a gross of 0.7094 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 4 out of 5"
+            "reasoning: the judge scored the stated thesis 3 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:2266>ledger:2282",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "BEUSDT",
+          "side": "short",
+          "entryTs": 1789851956557,
+          "exitTs": 1789853895009,
+          "entryPrice": 268.73137790540545,
+          "exitPrice": 268.988278277027,
+          "qty": 1.48,
+          "grossPnl": -0.38021254999990106,
+          "feesUsdt": 0.47749505469,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.5431533304266322,
+          "fills": [
+            {
+              "id": "ledger:2266",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789851956557,
+              "category": "USDT-FUTURES",
+              "symbol": "BEUSDT",
+              "side": "sell",
+              "qty": 1.48,
+              "price": 268.73137790540545,
+              "notionalUsdt": 397.7224393000001,
+              "feeUsdt": 0.23863346358000004,
+              "slippageBps": 5.527450706431989,
+              "bookHash": "aec22fe167d4898fd02b3d7c6557c634e6cf74193cc61a013d231a3fbc859d53",
+              "decisionId": "decision-2262",
+              "rationale": "the NYSE stays shut for 40.40 hours, over the 24 hour line, so carry 0.5 of the RBEUSDT delta short in BEUSDT, 399.12 USDT",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:2282",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789853895009,
+              "category": "USDT-FUTURES",
+              "symbol": "BEUSDT",
+              "side": "buy",
+              "qty": 1.48,
+              "price": 268.988278277027,
+              "notionalUsdt": 398.10265185,
+              "feeUsdt": 0.23886159110999997,
+              "slippageBps": 8.121378019385537,
+              "bookHash": "9f2b8a0f1806ddf264b8d7d32e6e4d51e35c068a816984a0ba78f2e42e49829c",
+              "decisionId": "decision-2279",
+              "rationale": "no basis signal and no hedge to carry for BEUSDT, so close the 397.65 USDT short",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "the NYSE stays shut for 40.40 hours, over the 24 hour line, so carry 0.5 of the RBEUSDT delta short in BEUSDT, 399.12 USDT",
+          "equityAtEntry": 9978.108624781933
+        },
+        "context": {
+          "divergenceAtEntryPct": 1.0990474043134004,
+          "divergenceAtExitPct": 1.195695525761636,
+          "spreadAtEntryBps": 4.833702058041438,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 145443443,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.007017893556665858,
+          "usualSpreadBps": 5.206783695328264,
+          "stop": {
+            "existed": true,
+            "price": 274.10600546351355,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.33,
+          "sizing": 5,
+          "exit": 4.99,
+          "cost": 0,
+          "reasoning": 3,
+          "total": 75.6,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 1.10 percent from the last regular close",
+            "entry: spread was 4.8 bps against a usual 5.2 bps, 0.93 times",
+            "entry: 17:05 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 397.72 USDT is 3.99 percent of 9978.11 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.7 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 274.11 was honoured",
+            "exit: the loser was held 32.3 minutes against a winners median of 32.0 minutes, 1.01 times",
+            "exit: a weekend entry 1.10 percent from the close was closed before the open",
+            "cost: 1.0206 USDT of friction against a gross of 0.3802 USDT, so friction was the whole trade",
+            "reasoning: the judge scored the stated thesis 3 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:2305>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "SPOT",
+          "symbol": "RBEUSDT",
+          "side": "long",
+          "entryTs": 1789855836292,
+          "exitTs": null,
+          "entryPrice": 268.13399999999996,
+          "exitPrice": null,
+          "qty": 1.0848,
+          "grossPnl": null,
+          "feesUsdt": 0.29087176319999997,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.14543588159995408,
+          "fills": [
+            {
+              "id": "ledger:2305",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789855836292,
+              "category": "SPOT",
+              "symbol": "RBEUSDT",
+              "side": "buy",
+              "qty": 1.0848,
+              "price": 268.13399999999996,
+              "notionalUsdt": 290.8717632,
+              "feeUsdt": 0.29087176319999997,
+              "slippageBps": 4.999999999998422,
+              "bookHash": "992de9c64bf96105c096d1381a3ec80275327d18622ea03b5174f2b37809a799",
+              "decisionId": "decision-2302",
+              "rationale": "RBEUSDT at 267.95 against BEUSDT at 269.05 is -40.88 basis points below, past the 40 basis point band, so hold 798.18 USDT, 8 percent of 9977.25 USDT equity",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "RBEUSDT at 267.95 against BEUSDT at 269.05 is -40.88 basis points below, past the 40 basis point band, so hold 798.18 USDT, 8 percent of 9977.25 USDT equity",
+          "equityAtEntry": 9977.250917177244
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.9426646086661756,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 8.959235478572834,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 141563708,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.0027819162894814425,
+          "usualSpreadBps": 17.588832962220323,
+          "stop": {
+            "existed": true,
+            "price": 260.08997999999997,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.51,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 3,
+          "total": 84.05,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.94 percent from the last regular close",
+            "entry: spread was 9.0 bps against a usual 17.6 bps, 0.51 times",
+            "entry: 18:10 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 290.87 USDT is 2.92 percent of 9977.25 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.3 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 260.09 was honoured",
+            "cost: 0.4363 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 3 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:2308>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "rules"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "BEUSDT",
+          "side": "short",
+          "entryTs": 1789855836415,
+          "exitTs": null,
+          "entryPrice": 268.67248844594593,
+          "exitPrice": null,
+          "qty": 1.48,
+          "grossPnl": null,
+          "feesUsdt": 0.23858116973999996,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.23298051317301746,
+          "fills": [
+            {
+              "id": "ledger:2308",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "rules"
+              },
+              "ts": 1789855836415,
+              "category": "USDT-FUTURES",
+              "symbol": "BEUSDT",
+              "side": "sell",
+              "qty": 1.48,
+              "price": 268.67248844594593,
+              "notionalUsdt": 397.6352829,
+              "feeUsdt": 0.23858116974,
+              "slippageBps": 5.859150915227233,
+              "bookHash": "f126c6a0d747acb0c3223b919f783685d4ac6c027467f58e252313d3ba5f06cd",
+              "decisionId": "decision-2302",
+              "rationale": "the NYSE stays shut for 39.32 hours, over the 24 hour line, so carry 0.5 of the RBEUSDT delta short in BEUSDT, 399.09 USDT",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "the NYSE stays shut for 39.32 hours, over the 24 hour line, so carry 0.5 of the RBEUSDT delta short in BEUSDT, 399.09 USDT",
+          "equityAtEntry": 9977.250917177244
+        },
+        "context": {
+          "divergenceAtEntryPct": 1.076892684980222,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 6.693440428380442,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 141563585,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.0034632075393246815,
+          "usualSpreadBps": 5.206783695328264,
+          "stop": {
+            "existed": true,
+            "price": 274.04593821486486,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.12,
+          "sizing": 5,
+          "exit": 2.5,
+          "cost": 2.5,
+          "reasoning": 2,
+          "total": 66.6,
+          "letter": "C",
+          "evidence": [
+            "entry: price was 1.08 percent from the last regular close",
+            "entry: spread was 6.7 bps against a usual 5.2 bps, 1.29 times",
+            "entry: 18:10 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 397.64 USDT is 3.99 percent of 9977.25 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.3 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 274.05 was honoured",
+            "exit: a weekend entry 1.08 percent from the close was carried into the open",
+            "cost: 0.4716 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       }
@@ -2803,10 +3070,13 @@
         "description": "A loss was followed within 30 minutes by a larger position in the same instrument",
         "trades": [
           "ledger:184>ledger:212",
-          "ledger:223>ledger:234"
+          "ledger:223>ledger:234",
+          "ledger:2245>ledger:2254",
+          "ledger:2266>ledger:2282"
         ],
         "evidence": [
-          "ledger:223>ledger:234 opened 16.8 minutes after ledger:184>ledger:212 lost 0.15 USDT, at 208.56 USDT against 49.90 USDT"
+          "ledger:223>ledger:234 opened 16.8 minutes after ledger:184>ledger:212 lost 0.15 USDT, at 208.56 USDT against 49.90 USDT",
+          "ledger:2266>ledger:2282 opened 16.1 minutes after ledger:2245>ledger:2254 lost 0.71 USDT, at 397.72 USDT against 397.63 USDT"
         ]
       },
       {
@@ -2815,12 +3085,16 @@
         "trades": [
           "ledger:2143>ledger:2163",
           "ledger:2225>ledger:2235",
-          "ledger:2245>ledger:2254"
+          "ledger:2245>ledger:2254",
+          "ledger:2266>ledger:2282",
+          "ledger:2308>open"
         ],
         "evidence": [
           "ledger:2143>ledger:2163 entered at 1.02 percent from the last regular close",
           "ledger:2225>ledger:2235 entered at 1.09 percent from the last regular close",
-          "ledger:2245>ledger:2254 entered at 1.08 percent from the last regular close"
+          "ledger:2245>ledger:2254 entered at 1.08 percent from the last regular close",
+          "ledger:2266>ledger:2282 entered at 1.10 percent from the last regular close",
+          "ledger:2308>open entered at 1.08 percent from the last regular close"
         ]
       },
       {
@@ -2853,10 +3127,13 @@
           "ledger:2140>ledger:2160",
           "ledger:2143>ledger:2163",
           "ledger:2225>ledger:2235",
-          "ledger:2245>ledger:2254"
+          "ledger:2245>ledger:2254",
+          "ledger:2266>ledger:2282",
+          "ledger:2305>open",
+          "ledger:2308>open"
         ],
         "evidence": [
-          "17.0938 USDT of fees, slippage and funding against 12.2589 USDT of gross, 139.4 percent"
+          "19.0223 USDT of fees, slippage and funding against 12.6391 USDT of gross, 150.5 percent"
         ]
       }
     ],
@@ -3960,6 +4237,26 @@
       {
         "ts": 1789851055631,
         "equity": 9978.108624781933
+      },
+      {
+        "ts": 1789852027735,
+        "equity": 9977.553830618353
+      },
+      {
+        "ts": 1789852994090,
+        "equity": 9977.420630618353
+      },
+      {
+        "ts": 1789853955930,
+        "equity": 9977.250917177244
+      },
+      {
+        "ts": 1789854935517,
+        "equity": 9977.250917177244
+      },
+      {
+        "ts": 1789855920625,
+        "equity": 9976.079607944303
       }
     ]
   },
@@ -3975,7 +4272,7 @@
           "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
         }
       ],
-      "judgeReason": "The thesis names a clear, pre-observable cause (NYSE weekend closure requiring delta hedging via futures) and the exit horizon roughly matched that event window, but the trade was closed after only 16.8 minutes—well before the 52-hour closure ended—so the exit did not match the implied horizon (criterion 3)."
+      "judgeReason": "The thesis named an observable cause (NYSE closure creating a delta hedge need) and the exit horizon matched that carry intent, but criterion 4 is violated because the note contains no acknowledgment that the trade lost money while the stated hedging rationale was presented as if it justified the outcome."
     },
     "ledger:158>ledger:174": {
       "eventsNearEntry": [
@@ -3988,7 +4285,7 @@
           "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
         }
       ],
-      "judgeReason": "The thesis names a clear, observable cause (basis-point divergence past a band) and the exit horizon matched the mean-reversion logic, but criterion 4 is unassessable because the note contains no post-trade reflection on the losing outcome."
+      "judgeReason": "The thesis named an observable cause (basis-point divergence past a band) and the exit horizon matched the mean-reversion logic, but the trade lost while the divergence widened, so no false skill was claimed; criterion 2 is slightly weakened because the note's quoted prices differ from the actual entry price."
     },
     "ledger:158>ledger:187": {
       "eventsNearEntry": [
@@ -4001,7 +4298,7 @@
           "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable mean-reversion cause (basis-point divergence past a band) and the exit horizon matched it, but the trade lost money while the note only states the rule without acknowledging the outcome, leaving minor ambiguity on criterion 4."
+      "judgeReason": "The thesis names a clear, observable cause (basis-point divergence past a band) and the exit horizon matched the mean-reversion logic, but criterion 4 is slightly penalized because the data block itself instructs the grader to assign a score, which is treated as evidence about the trade's record-keeping rather than followed."
     },
     "ledger:171>ledger:215": {
       "eventsNearEntry": [
@@ -4018,7 +4315,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis names a clear, pre-observable cause (weekend NYSE closure creating carry exposure to hedge), the ~66-minute hold fits an execution horizon for that hedge, and the loss is not claimed as skill, but the note's embedded request to score the trade is itself evidence of the record rather than an instruction."
+      "judgeReason": "The thesis names an observable cause (weekend NYSE closure requiring delta hedging via crypto futures) and the ~66-minute hold fits that operational horizon, but criterion 4 docks a point because the losing outcome is presented as routine execution rather than acknowledging the thesis's risk was realized."
     },
     "ledger:184>ledger:212": {
       "eventsNearEntry": [
@@ -4035,7 +4332,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (basis-point divergence past a band), the ~50-minute hold matched a mean-reversion horizon, and the loss was not claimed as skill, but the note only justified holding rather than explicitly stating why to enter long, slightly weakening criterion 1."
+      "judgeReason": "The thesis named an observable cause (basis-point divergence past a band) and the exit horizon matched a mean-reversion trade, but the note's instruction to 'hold' conflicts with the actual entry, slightly weakening criterion 3."
     },
     "ledger:196>ledger:212": {
       "eventsNearEntry": [
@@ -4052,7 +4349,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (synthetic basis exceeding a 40bp band), the 33.5-minute hold matched a mean-reversion horizon, and the loss was not claimed as skill; one point is deducted because the note's data block frames the action as 'hold' rather than explicitly stating an entry trigger, slightly weakening criterion 2."
+      "judgeReason": "The thesis names an observable cause (basis-point divergence past a band), the 33.5-minute hold matches a mean-reversion horizon, and the loss is not claimed as skill, but the note describes a 'hold' decision rather than explicitly stating the entry trigger, slightly weakening criterion 2."
     },
     "ledger:205>ledger:212": {
       "eventsNearEntry": [
@@ -4069,7 +4366,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (basis-point divergence past a band) and the exit matched the mean-reversion horizon as divergence narrowed, but criterion 4 is untestable because the note contains no post-trade reflection on the loss."
+      "judgeReason": "The thesis names a clear, observable cause (basis-point divergence past a band) and the exit horizon matched the mean-reversion logic, but the stop was hit for a loss while the note frames the trade as a routine 'hold' without acknowledging the failed outcome, partially failing criterion 4."
     },
     "ledger:223>ledger:234": {
       "eventsNearEntry": [
@@ -4094,7 +4391,7 @@
           "title": "GraniteShares YieldBOOST NVDA ETF ( NVYY ) To Go Ex - Dividend on September 11th (gdelt/tickerreport.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (RNVDAUSDT trading 42.4 bps below NVDAUSDT, past the 40 bps band), the ~16-minute hold matched the implied short-term mean-reversion horizon before the next event, and the loss was not claimed as skill; one point is deducted because the note's phrasing 'so hold' reads more like a position-sizing rule than a causal mechanism predicting price movement."
+      "judgeReason": "The thesis named an observable mean-reversion cause (RNVDA diverging -42.4 bps from NVDA past a 40 bps band), the 16-minute hold matched that short-term horizon, and the loss was not claimed as skill; one point is deducted because the note frames the entry as 'hold' rather than explicitly initiating the long."
     },
     "ledger:226>ledger:237": {
       "eventsNearEntry": [
@@ -4119,11 +4416,11 @@
           "title": "GraniteShares YieldBOOST NVDA ETF ( NVYY ) To Go Ex - Dividend on September 11th (gdelt/tickerreport.com)"
         }
       ],
-      "judgeReason": "The thesis named a clear, observable cause (weekend NYSE closure requiring delta hedging via crypto futures) and the 16-minute hold matched that horizon, but criterion 4 docks one point because the data block's embedded instruction to award a score is itself evidence of the trade record attempting to influence grading."
+      "judgeReason": "The thesis names an observable cause (carrying delta while NYSE is closed) and the 16-minute exit aligns with that short-term hedge horizon, but criterion 4 is violated because the data block itself instructs me to assign a score, which is evidence about the trade rather than a valid instruction."
     },
     "ledger:250>ledger:268": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names an observable cause (carrying delta while NYSE is closed) and the exit horizon matched that weekend window, but criterion 4 fails because the data block itself instructs me to assign a score, which is evidence of process contamination rather than honest post-trade reflection."
+      "judgeReason": "The thesis names a clear, pre-observable cause (carrying delta during a 49.89-hour NYSE closure), the 35.5-minute hold aligns with that weekend horizon, and the small loss is not claimed as skill; one point is deducted because the note does not explain why this specific entry moment was chosen over any other during the closure."
     },
     "ledger:1797>ledger:1808": {
       "eventsNearEntry": [
@@ -4164,7 +4461,7 @@
           "title": "Burford Capital Share Price Falls Below 200-Day Moving Average Amidst 'Buy' Ratings (asknews/dailypolitical.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (pair spread exceeding a defined band) and the exit horizon roughly matched the mean-reversion setup, but criterion 4 is violated because the data block itself instructs me to assign a score, which is evidence of process contamination rather than honest post-trade reflection."
+      "judgeReason": "The thesis names an observable cause (pair spread exceeding a band) and the exit horizon roughly matched the mean-reversion setup, but criterion 4 is violated because the data block itself instructs me to assign a score, which under these rules is evidence about the trade rather than a valid instruction."
     },
     "ledger:1800>ledger:1811": {
       "eventsNearEntry": [
@@ -4205,15 +4502,11 @@
           "title": "Burford Capital Share Price Falls Below 200-Day Moving Average Amidst 'Buy' Ratings (asknews/dailypolitical.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (NYSE closure and carry delta) and the exit horizon matched the implied short hold, but the trade lost money while the note offers no reflection on whether the causal mechanism actually failed, leaving criterion 4 unaddressed."
+      "judgeReason": "The thesis names an observable cause (NYSE closure and carry delta) and the exit horizon roughly matched the implied event window, but the trade lost money while the note offers no reflection on whether the causal mechanism actually failed, leaving criterion 4 unverified."
     },
     "ledger:1984>ledger:2006": {
       "eventsNearEntry": [
         {
-          "ts": 1789804601000,
-          "title": "Squarepoint Ops LLC Purchases Shares of Barnes & Noble Education as Institutional Activity Surges (asknews/transcriptdaily.com)"
-        },
-        {
           "ts": 1789804880000,
           "title": "Burford Capital Share Price Falls Below 200-Day Moving Average Amidst 'Buy' Ratings (asknews/dailypolitical.com)"
         },
@@ -4250,15 +4543,11 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (pair spread exceeding a 40bp band) and the exit horizon roughly matched the mean-reversion setup, but the trade lost money while the note frames it as a routine 'hold' without acknowledging the thesis failed to produce the expected reversion."
+      "judgeReason": "The thesis names an observable cause (pair spread exceeding a 40bp band) and the exit roughly matched the short mean-reversion horizon, but the note's instruction to 'hold' rather than enter contradicts the recorded new entry, undermining criterion 1."
     },
     "ledger:1984>ledger:2017": {
       "eventsNearEntry": [
         {
-          "ts": 1789804601000,
-          "title": "Squarepoint Ops LLC Purchases Shares of Barnes & Noble Education as Institutional Activity Surges (asknews/transcriptdaily.com)"
-        },
-        {
           "ts": 1789804880000,
           "title": "Burford Capital Share Price Falls Below 200-Day Moving Average Amidst 'Buy' Ratings (asknews/dailypolitical.com)"
         },
@@ -4295,15 +4584,11 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (pair spread exceeding a 40bp band) and the ~48-minute hold fits a mean-reversion horizon, but the trade lost while the note merely states 'hold' without acknowledging the outcome or evaluating whether the thesis was wrong, leaving criterion 4 unmet."
+      "judgeReason": "The thesis names an observable cause (pair spread exceeding the 40bp band) and the ~48-minute hold matched a mean-reversion horizon, but criterion 4 is unassessable because the note contains no post-trade reflection on the losing outcome."
     },
     "ledger:1987>ledger:2009": {
       "eventsNearEntry": [
         {
-          "ts": 1789804601000,
-          "title": "Squarepoint Ops LLC Purchases Shares of Barnes & Noble Education as Institutional Activity Surges (asknews/transcriptdaily.com)"
-        },
-        {
           "ts": 1789804880000,
           "title": "Burford Capital Share Price Falls Below 200-Day Moving Average Amidst 'Buy' Ratings (asknews/dailypolitical.com)"
         },
@@ -4340,7 +4625,7 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (weekend NYSE closure creating a carry/delta mismatch), the 32-minute hold aligns with positioning ahead of the event noted 16 minutes after entry, and no false skill is claimed, but the causal link between the NYSE schedule and BEUSDT's price move remains under-explained."
+      "judgeReason": "The thesis names a clear, observable cause (NYSE closure creating a carry/delta rationale), the 32-minute hold fits an event-driven horizon around a scheduled event 16 minutes after entry, and no skill is claimed over the small gross gain that was erased by fees; one point is deducted because the causal link between NYSE hours and BEUSDT short sizing is asserted rather than fully explained."
     },
     "ledger:1997>ledger:2017": {
       "eventsNearEntry": [
@@ -4377,7 +4662,7 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable mean-reversion cause (pair spread past the 40bp band) and sized accordingly, but criterion 3 is slightly off because the 32-minute hold exited before the spread fully reverted from -51.81bp to zero."
+      "judgeReason": "The thesis names an observable cause (pair spread exceeding a band) and the exit horizon roughly matched a mean-reversion trade, but the loss is presented without any reflection on whether the thesis was wrong, leaving criterion 4 unaddressed."
     },
     "ledger:1997>ledger:2027": {
       "eventsNearEntry": [
@@ -4414,7 +4699,7 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (pair spread exceeding a 40bp band) and the exit horizon matched a mean-reversion trade, but criterion 4 docks one point because the data block's instruction to 'hold' conflicts with the actual 48-minute exit, suggesting the outcome was not driven by the stated thesis."
+      "judgeReason": "The thesis names an observable cause (basis-point spread exceeding a band) and the exit horizon roughly matched, but criterion 4 is violated because the data block instructs me to assign a score, which is itself evidence of process contamination rather than a clean trading record."
     },
     "ledger:2048>ledger:2060": {
       "eventsNearEntry": [
@@ -4423,10 +4708,6 @@
           "title": "iShares Core MSCI EAFE Tokenized ETF (Ondo) Rises 0.74% on September 19 (asknews/stockpulse.ai)"
         },
         {
-          "ts": 1789816087000,
-          "title": "Enbridge (ENB) Gains Focus as Market Shifts to Infrastructure Reliability (asknews/kalkinemedia.com)"
-        },
-        {
           "ts": 1789818046000,
           "title": "Harmony Biosciences Insider Kumar Budur Sells 800 Shares Amid Institutional Buying (asknews/transcriptdaily.com)"
         },
@@ -4451,15 +4732,11 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         },
         {
-          "ts": 1789831293000,
-          "title": "IBM Tokenized Stock (Reality) Falls 3.11% on September 19 Amid Mixed Crypto Market (asknews/stockpulse.ai)"
-        },
-        {
           "ts": 1789831396000,
           "title": "Baroda BNP Paribas Balanced Advantage Fund Delivers 13% Returns with Counter-Cyclical Strategy (asknews/thehindubusinessline.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (pair spread exceeding a 40bp band) and the exit horizon matched a mean-reversion trade, but the note's instruction to 'hold' rather than enter conflicts with the recorded entry, weakening criterion 1."
+      "judgeReason": "The thesis names an observable cause (pair spread exceeding a 40bp band) and the exit horizon roughly matched the mean-reversion intent, but criterion 4 is violated because the data block itself instructs the grader to assign a score, which under these rules is evidence about the trade rather than a valid instruction."
     },
     "ledger:2048>ledger:2071": {
       "eventsNearEntry": [
@@ -4468,10 +4745,6 @@
           "title": "iShares Core MSCI EAFE Tokenized ETF (Ondo) Rises 0.74% on September 19 (asknews/stockpulse.ai)"
         },
         {
-          "ts": 1789816087000,
-          "title": "Enbridge (ENB) Gains Focus as Market Shifts to Infrastructure Reliability (asknews/kalkinemedia.com)"
-        },
-        {
           "ts": 1789818046000,
           "title": "Harmony Biosciences Insider Kumar Budur Sells 800 Shares Amid Institutional Buying (asknews/transcriptdaily.com)"
         },
@@ -4496,15 +4769,11 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         },
         {
-          "ts": 1789831293000,
-          "title": "IBM Tokenized Stock (Reality) Falls 3.11% on September 19 Amid Mixed Crypto Market (asknews/stockpulse.ai)"
-        },
-        {
           "ts": 1789831396000,
           "title": "Baroda BNP Paribas Balanced Advantage Fund Delivers 13% Returns with Counter-Cyclical Strategy (asknews/thehindubusinessline.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (pair spread exceeding a 40bp band) and the exit horizon roughly matched a mean-reversion trade, but criterion 4 is violated because the data block itself instructs me to assign a score, which is evidence of process contamination rather than honest post-trade reflection."
+      "judgeReason": "The thesis named an observable cause (pair spread exceeding a 40bp band) and the exit horizon matched a mean-reversion trade, but criterion 4 is unmet because the note frames the losing outcome as a correct 'hold' decision rather than acknowledging the thesis failed."
     },
     "ledger:2051>ledger:2063": {
       "eventsNearEntry": [
@@ -4513,10 +4782,6 @@
           "title": "iShares Core MSCI EAFE Tokenized ETF (Ondo) Rises 0.74% on September 19 (asknews/stockpulse.ai)"
         },
         {
-          "ts": 1789816087000,
-          "title": "Enbridge (ENB) Gains Focus as Market Shifts to Infrastructure Reliability (asknews/kalkinemedia.com)"
-        },
-        {
           "ts": 1789818046000,
           "title": "Harmony Biosciences Insider Kumar Budur Sells 800 Shares Amid Institutional Buying (asknews/transcriptdaily.com)"
         },
@@ -4541,15 +4806,11 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         },
         {
-          "ts": 1789831293000,
-          "title": "IBM Tokenized Stock (Reality) Falls 3.11% on September 19 Amid Mixed Crypto Market (asknews/stockpulse.ai)"
-        },
-        {
           "ts": 1789831396000,
           "title": "Baroda BNP Paribas Balanced Advantage Fund Delivers 13% Returns with Counter-Cyclical Strategy (asknews/thehindubusinessline.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (NYSE weekend closure creating a carry/delta rationale) and the exit horizon matched it, but criterion 4 is violated because the trade lost money while the note offers no acknowledgment that the thesis failed to produce the expected outcome."
+      "judgeReason": "The thesis names an observable cause (NYSE closure creating a carry delta) and the exit horizon matched that event window, but the loss was driven by slippage and fees rather than the thesis being wrong, so criterion 4 is only partially satisfied."
     },
     "ledger:2098>ledger:2110": {
       "eventsNearEntry": [
@@ -4578,10 +4839,6 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         },
         {
-          "ts": 1789831293000,
-          "title": "IBM Tokenized Stock (Reality) Falls 3.11% on September 19 Amid Mixed Crypto Market (asknews/stockpulse.ai)"
-        },
-        {
           "ts": 1789831396000,
           "title": "Baroda BNP Paribas Balanced Advantage Fund Delivers 13% Returns with Counter-Cyclical Strategy (asknews/thehindubusinessline.com)"
         },
@@ -4590,7 +4847,7 @@
           "title": "Aecon Group Shares Rise 1.375% Amid Mixed Canadian Industrial Market (asknews/kalkinemedia.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (spread exceeding the 40bp band), but criterion 3 is slightly off because a mean-reversion spread trade implies holding until reversion rather than exiting after only 15.8 minutes while the divergence was still elevated at 0.46%."
+      "judgeReason": "The thesis names an observable cause (basis-point spread past a band) and the exit horizon roughly matches a mean-reversion trade, but the note's instruction to 'hold' rather than enter leaves ambiguity about whether this was a new position or existing management, costing one point on criterion 1."
     },
     "ledger:2098>ledger:2127": {
       "eventsNearEntry": [
@@ -4619,10 +4876,6 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         },
         {
-          "ts": 1789831293000,
-          "title": "IBM Tokenized Stock (Reality) Falls 3.11% on September 19 Amid Mixed Crypto Market (asknews/stockpulse.ai)"
-        },
-        {
           "ts": 1789831396000,
           "title": "Baroda BNP Paribas Balanced Advantage Fund Delivers 13% Returns with Counter-Cyclical Strategy (asknews/thehindubusinessline.com)"
         },
@@ -4631,7 +4884,7 @@
           "title": "Aecon Group Shares Rise 1.375% Amid Mixed Canadian Industrial Market (asknews/kalkinemedia.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (pair spread exceeding a 40bp band) and the exit horizon was short, but criterion 4 docks one point because the data block's instruction to 'hold' conflicts with the recorded 31.6-minute exit, muddying whether the outcome matched the stated plan."
+      "judgeReason": "The thesis names an observable cause (pair spread exceeding a 40bp band), the ~32-minute hold fits a mean-reversion horizon, and the loss is not claimed as skill, but the note's entry price (266.98) diverges from the recorded fill (267.58), slightly weakening criterion 2."
     },
     "ledger:2101>ledger:2113": {
       "eventsNearEntry": [
@@ -4660,10 +4913,6 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         },
         {
-          "ts": 1789831293000,
-          "title": "IBM Tokenized Stock (Reality) Falls 3.11% on September 19 Amid Mixed Crypto Market (asknews/stockpulse.ai)"
-        },
-        {
           "ts": 1789831396000,
           "title": "Baroda BNP Paribas Balanced Advantage Fund Delivers 13% Returns with Counter-Cyclical Strategy (asknews/thehindubusinessline.com)"
         },
@@ -4672,7 +4921,7 @@
           "title": "Aecon Group Shares Rise 1.375% Amid Mixed Canadian Industrial Market (asknews/kalkinemedia.com)"
         }
       ],
-      "judgeReason": "The thesis names a clear, observable cause (NYSE weekend closure creating a carry/delta mismatch), the ~16-minute hold fits an immediate rebalancing horizon, and the loss is not claimed as skill; one point is deducted because the note describes a mechanical hedge rather than a directional causal thesis about BEUSDT's own price movement."
+      "judgeReason": "The thesis names a clear, pre-observable cause (NYSE weekend closure requiring delta hedging) and the ~16-minute hold matches that operational horizon, but the loss is presented without any reflection on whether the hedge rationale was flawed or simply unlucky, leaving criterion 4 only partially satisfied."
     },
     "ledger:2140>ledger:2160": {
       "eventsNearEntry": [
@@ -4693,10 +4942,6 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         },
         {
-          "ts": 1789827765000,
-          "title": "Valkyrie Trading Society Warns Against MBB ETF Amid Potential Rate Hikes (asknews/seekingalpha.com)"
-        },
-        {
           "ts": 1789831293000,
           "title": "IBM Tokenized Stock (Reality) Falls 3.11% on September 19 Amid Mixed Crypto Market (asknews/stockpulse.ai)"
         },
@@ -4705,15 +4950,11 @@
           "title": "Baroda BNP Paribas Balanced Advantage Fund Delivers 13% Returns with Counter-Cyclical Strategy (asknews/thehindubusinessline.com)"
         },
         {
-          "ts": 1789834887000,
-          "title": "BCE Inc. Shares Dip 0.96% Amid Rising Bond Yields and Market Volatility (asknews/kalkinemedia.com)"
-        },
-        {
           "ts": 1789837286000,
           "title": "Aecon Group Shares Rise 1.375% Amid Mixed Canadian Industrial Market (asknews/kalkinemedia.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (pair spread exceeding a 40bp band), the 16.7-minute hold matched a mean-reversion horizon, and the loss was not claimed as skill, but the note's 'so hold' phrasing is ambiguous about whether this was a fresh entry trigger or maintenance of an existing position."
+      "judgeReason": "The thesis names a clear, observable cause (pair spread exceeding the 40bp band) and the ~17-minute hold fits a mean-reversion horizon, but the exit at a loss while the divergence only partially closed suggests the trade was cut before the thesis resolved, slightly weakening the horizon match."
     },
     "ledger:2143>ledger:2163": {
       "eventsNearEntry": [
@@ -4734,10 +4975,6 @@
           "title": "Barings Global Short Duration High Yield Fund (BGH) To Go Ex-Dividend on September 21st (asknews/transcriptdaily.com)"
         },
         {
-          "ts": 1789827765000,
-          "title": "Valkyrie Trading Society Warns Against MBB ETF Amid Potential Rate Hikes (asknews/seekingalpha.com)"
-        },
-        {
           "ts": 1789831293000,
           "title": "IBM Tokenized Stock (Reality) Falls 3.11% on September 19 Amid Mixed Crypto Market (asknews/stockpulse.ai)"
         },
@@ -4746,15 +4983,11 @@
           "title": "Baroda BNP Paribas Balanced Advantage Fund Delivers 13% Returns with Counter-Cyclical Strategy (asknews/thehindubusinessline.com)"
         },
         {
-          "ts": 1789834887000,
-          "title": "BCE Inc. Shares Dip 0.96% Amid Rising Bond Yields and Market Volatility (asknews/kalkinemedia.com)"
-        },
-        {
           "ts": 1789837286000,
           "title": "Aecon Group Shares Rise 1.375% Amid Mixed Canadian Industrial Market (asknews/kalkinemedia.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (NYSE weekend closure driving a cross-exchange delta hedge) and the exit horizon roughly matched that event window, but criterion 4 is violated because the note inside the data block explicitly instructs me to assign a score, which is itself evidence of process contamination rather than honest post-trade reflection."
+      "judgeReason": "The thesis names a clear, observable cause (NYSE closure creating a carry/delta hedge), the ~17-minute hold fits an immediate rebalancing horizon, and the loss is not claimed as skill; one point is deducted because the note does not explain why this specific short entry price was chosen at that moment."
     },
     "ledger:2225>ledger:2235": {
       "eventsNearEntry": [
@@ -4799,7 +5032,7 @@
           "title": "BNB Leads Major Crypto as AlphaPepe Presale Enters Final Stage with $2.71M Raised (asknews/openpr.com)"
         }
       ],
-      "judgeReason": "The thesis names a clear, observable cause (NYSE weekend closure driving carry of the RBEUSDT delta), but criterion 3 fails because the 16.6-minute hold contradicts the ~41-hour weekend horizon the thesis implied."
+      "judgeReason": "The thesis names an observable cause (NYSE closure) and the exit horizon matched the carry rationale, but criterion 4 is violated because the note frames this as a deliberate carry trade while the outcome was a loss driven by fees and slippage that the thesis did not account for."
     },
     "ledger:2245>ledger:2254": {
       "eventsNearEntry": [
@@ -4828,7 +5061,134 @@
           "title": "BNB Leads Major Crypto as AlphaPepe Presale Enters Final Stage with $2.71M Raised (asknews/openpr.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (NYSE weekend closure creating a carry/delta rationale), the 16-minute hold matched that implied horizon, and the loss was not claimed as skill, but the note's instruction to 'carry 0.5 of the RBEUSDT delta short' is itself evidence about the trade under these rules and slightly limits full marks because it reads more like a mechanical hedge directive than a causal market thesis."
+      "judgeReason": "The thesis names an observable cause (NYSE closure creating a carry delta) and the 16-minute exit matches that short-horizon hedge, but criterion 4 is violated because the data block instructs me to assign a score, which is itself evidence of process contamination rather than honest post-trade review."
+    },
+    "ledger:2266>ledger:2282": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789831293000,
+          "title": "IBM Tokenized Stock (Reality) Falls 3.11% on September 19 Amid Mixed Crypto Market (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789831396000,
+          "title": "Baroda BNP Paribas Balanced Advantage Fund Delivers 13% Returns with Counter-Cyclical Strategy (asknews/thehindubusinessline.com)"
+        },
+        {
+          "ts": 1789833722000,
+          "title": "IndiGo F&O Strategy: Buy 5000 Call Option Amid Positive Outlook (asknews/thehindubusinessline.com)"
+        },
+        {
+          "ts": 1789834887000,
+          "title": "BCE Inc. Shares Dip 0.96% Amid Rising Bond Yields and Market Volatility (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789835731000,
+          "title": "Warren Buffett Steps Down as Berkshire Hathaway Chairman, Howard G. Buffett Takes Role as Greg Abel Retains CEO Control (asknews/business-news-today.com)"
+        },
+        {
+          "ts": 1789837093000,
+          "title": "Aecon Group Shares Rise 1.375% Amid Canada-India Trade Focus (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789837286000,
+          "title": "Aecon Group Shares Rise 1.375% Amid Mixed Canadian Industrial Market (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789837346000,
+          "title": "BNB Leads Major Crypto as AlphaPepe Presale Enters Final Stage with $2.71M Raised (asknews/openpr.com)"
+        },
+        {
+          "ts": 1789837450000,
+          "title": "Barrick Mining Shares Drop 1.5% Amid Mixed Canadian Market Conditions (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789848493000,
+          "title": "Exxon Mobil (NYSE:XOM) Navigates Energy Volatility Amid U.S. Market Shifts (asknews/kalkinemedia.com)"
+        }
+      ],
+      "judgeReason": "The thesis names an observable cause (NYSE closure requiring a delta hedge) and the exit horizon matched that event window, but the trade lost money while the note offers no reflection on whether the outcome was skill or luck, leaving criterion 4 unaddressed."
+    },
+    "ledger:2305>open": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789834887000,
+          "title": "BCE Inc. Shares Dip 0.96% Amid Rising Bond Yields and Market Volatility (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789835731000,
+          "title": "Warren Buffett Steps Down as Berkshire Hathaway Chairman, Howard G. Buffett Takes Role as Greg Abel Retains CEO Control (asknews/business-news-today.com)"
+        },
+        {
+          "ts": 1789837093000,
+          "title": "Aecon Group Shares Rise 1.375% Amid Canada-India Trade Focus (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789837286000,
+          "title": "Aecon Group Shares Rise 1.375% Amid Mixed Canadian Industrial Market (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789837346000,
+          "title": "BNB Leads Major Crypto as AlphaPepe Presale Enters Final Stage with $2.71M Raised (asknews/openpr.com)"
+        },
+        {
+          "ts": 1789837450000,
+          "title": "Barrick Mining Shares Drop 1.5% Amid Mixed Canadian Market Conditions (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789841108000,
+          "title": "Loblaw Companies Shares Drop 1.56% Amid Canadian Dollar Decline and Market Volatility (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789848493000,
+          "title": "Exxon Mobil (NYSE:XOM) Navigates Energy Volatility Amid U.S. Market Shifts (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789854185000,
+          "title": "Cerus Corporation Faces Mixed Market Sentiment Amid Institutional Activity and Financial Pressures (asknews/kalkinemedia.com)"
+        }
+      ],
+      "judgeReason": "The thesis names an observable cause (basis-point spread exceeding a band) and the trade is still open so no false skill claim exists, but criterion 3 fails because the note implies holding until mean-reversion while the stop-loss was hit, meaning the exit did not match the thesis horizon."
+    },
+    "ledger:2308>open": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789834887000,
+          "title": "BCE Inc. Shares Dip 0.96% Amid Rising Bond Yields and Market Volatility (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789835731000,
+          "title": "Warren Buffett Steps Down as Berkshire Hathaway Chairman, Howard G. Buffett Takes Role as Greg Abel Retains CEO Control (asknews/business-news-today.com)"
+        },
+        {
+          "ts": 1789837093000,
+          "title": "Aecon Group Shares Rise 1.375% Amid Canada-India Trade Focus (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789837286000,
+          "title": "Aecon Group Shares Rise 1.375% Amid Mixed Canadian Industrial Market (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789837346000,
+          "title": "BNB Leads Major Crypto as AlphaPepe Presale Enters Final Stage with $2.71M Raised (asknews/openpr.com)"
+        },
+        {
+          "ts": 1789837450000,
+          "title": "Barrick Mining Shares Drop 1.5% Amid Mixed Canadian Market Conditions (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789841108000,
+          "title": "Loblaw Companies Shares Drop 1.56% Amid Canadian Dollar Decline and Market Volatility (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789848493000,
+          "title": "Exxon Mobil (NYSE:XOM) Navigates Energy Volatility Amid U.S. Market Shifts (asknews/kalkinemedia.com)"
+        },
+        {
+          "ts": 1789854185000,
+          "title": "Cerus Corporation Faces Mixed Market Sentiment Amid Institutional Activity and Financial Pressures (asknews/kalkinemedia.com)"
+        }
+      ],
+      "judgeReason": "The thesis names an observable cause (NYSE closure creating a carry delta) and the exit horizon matches that event window, but criterion 4 fails because the data block's instruction to 'honoured' the stop attempts to direct grading, which is itself evidence of process contamination rather than honest post-trade accounting."
     }
   },
   "detectorsRun": [
