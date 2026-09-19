@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789781823570,
+  "generatedAt": 1789786098142,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 133,
-    "marks": 133
+    "decisions": 137,
+    "marks": 137
   },
   "bundle": {
     "source": {
@@ -188,8 +188,8 @@
           "sizing": 5,
           "exit": 0,
           "cost": 5,
-          "reasoning": 0,
-          "total": 59.6,
+          "reasoning": 1,
+          "total": 62.6,
           "letter": "C",
           "evidence": [
             "entry: price was 0.57 percent from the last regular close",
@@ -199,7 +199,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 216.58 was crossed and the position stayed open",
             "cost: 0.3384 USDT of friction is 8.0 percent of the 4.2144 USDT gross",
-            "reasoning: the judge scored the stated thesis 0 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -853,21 +853,37 @@
       {
         "ts": 1789781274015,
         "equity": 10001.61750925634
+      },
+      {
+        "ts": 1789782249077,
+        "equity": 10001.63146725634
+      },
+      {
+        "ts": 1789783228452,
+        "equity": 10001.617425256341
+      },
+      {
+        "ts": 1789784189777,
+        "equity": 10001.60480425634
+      },
+      {
+        "ts": 1789785127981,
+        "equity": 10001.639825256341
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all; the note records only a processing delay, not market reasoning, so criterion 1 fails completely and the trade cannot be graded as a reasoned trade."
+      "judgeReason": "The thesis names no cause at all—the note records only a processing delay, not a market observation or reasoning for entry, making criteria 1 and 2 both fail; the trade remains open with no exit, preventing evaluation of criteria 3 and 4."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note indicates no decision was made, only that a system took longer than expected to respond, which is a meta-comment about execution timing rather than a market thesis; criterion 1 fails completely."
+      "judgeReason": "The thesis names no cause at all—the note indicates an automated system timed out rather than a reasoned trade decision, so criterion 1 fails entirely; criterion 2 cannot be assessed because no observable cause was identified at entry; criterion 3 cannot be assessed; criterion 4 is moot since no reasoning was offered to contradict."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note only states that a decision-making process timed out, which describes a technical malfunction rather than a market observation or reasoning for the short position."
+      "judgeReason": "The trade has no stated thesis—only a system timeout note—so criterion 1 (cause named) cannot be met, and the trade cannot be graded against any of the four criteria."
     }
   },
   "detectorsRun": [
