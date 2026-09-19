@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789824330828,
+  "generatedAt": 1789828942080,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 13,
-    "decisions": 180,
-    "marks": 180
+    "decisions": 185,
+    "marks": 185
   },
   "bundle": {
     "source": {
@@ -739,8 +739,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 0,
-          "total": 70,
+          "reasoning": 1,
+          "total": 73,
           "letter": "B",
           "evidence": [
             "entry: price was -0.24 percent from the last regular close",
@@ -750,7 +750,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 341.77 was honoured",
             "cost: 0.0148 USDT of friction against a gross of 0.0075 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 0 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -1864,17 +1864,37 @@
       {
         "ts": 1789823304983,
         "equity": 9999.858443872336
+      },
+      {
+        "ts": 1789824230235,
+        "equity": 9999.865127522333
+      },
+      {
+        "ts": 1789825158547,
+        "equity": 9999.767516872333
+      },
+      {
+        "ts": 1789826087550,
+        "equity": 9999.674181972336
+      },
+      {
+        "ts": 1789827081146,
+        "equity": 9999.775006622334
+      },
+      {
+        "ts": 1789828015491,
+        "equity": 9999.839845122335
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note records no thesis or cause for entry (only a system timeout), failing criterion 1 entirely."
+      "judgeReason": "The trader's note records no thesis or cause for entry (criterion 1), and the trade remains open with no exit to evaluate against any implied horizon (criterion 3)."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause, failing criterion 1 entirely."
+      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause (failing criteria 1 and 2), the stop was crossed while the position stayed open contradicting any implied horizon (criterion 3), and no outcome attribution exists to evaluate (criterion 4)."
     },
     "ledger:1068>ledger:1936": {
       "eventsNearEntry": [
@@ -1899,7 +1919,7 @@
           "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
         }
       ],
-      "judgeReason": "The trader's note records no thesis or cause for the short entry (only an LLM timeout), failing criterion 1 entirely."
+      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause, failing criterion 1 entirely."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [
@@ -1924,7 +1944,7 @@
           "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
         }
       ],
-      "judgeReason": "The trader's note records an AI timeout rather than a thesis, failing criterion 1 because no cause for the short was ever named."
+      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause, failing criterion 1 entirely."
     },
     "ledger:1762>ledger:1887": {
       "eventsNearEntry": [
@@ -1969,7 +1989,7 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (MU momentum and rToken divergence within a defined gate) and the losing outcome was not claimed as skill, but the ~3.4-hour hold for 'continued momentum' implies a horizon mismatch with the exit."
+      "judgeReason": "The thesis names an observable cause (MU momentum and rToken divergence within a defined gate) and the exit matched the implied short-term horizon, but criterion 4 docks one point because the note frames the setup as skillfully 'capturing continued momentum' despite the trade losing and the divergence actually widening from -0.71% to -0.91%, contradicting the thesis."
     },
     "ledger:1762>open": {
       "eventsNearEntry": [
@@ -2014,7 +2034,7 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (MU momentum and rToken divergence within a defined gate) and the exit horizon is consistent with a short-term momentum play, but criterion 4 cannot be evaluated because the trade is still open with no realized outcome."
+      "judgeReason": "The thesis names an observable cause (MU price/volume move and rToken divergence within a defined gate) and the exit horizon is consistent with capturing continued momentum, but criterion 4 cannot be evaluated because the trade is still open with no realized outcome."
     },
     "ledger:1765>open": {
       "eventsNearEntry": [
@@ -2059,7 +2079,7 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis cites a cause (MU news confirming momentum) but the trade record shows a short while the note claims a long, and with no exit yet criterion 3 cannot be satisfied, collapsing the score."
+      "judgeReason": "The thesis names a cause (MU news confirming momentum) but the trade direction contradicts it—the note says 'long' while the record is short—so the stated reasoning and outcome do not belong to the same world, failing criterion 1."
     },
     "ledger:1818>ledger:1890": {
       "eventsNearEntry": [
@@ -2092,7 +2112,7 @@
           "title": "Apple Unveils Redesigned Health App with AI and 'Health Age' Metric (asknews/medium.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend due to thin liquidity, yet a new AAPL short was entered during that same weekend session, so no thesis cause was named for this trade (criterion 1) and the data block's request for a score is itself treated as evidence under these rules."
+      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend, yet a new AAPL short was executed during that same weekend session, so the stated thesis and the trade outcome belong to different worlds (criterion 4)."
     },
     "ledger:1818>open": {
       "eventsNearEntry": [
@@ -2125,7 +2145,7 @@
           "title": "Apple Unveils Redesigned Health App with AI and 'Health Age' Metric (asknews/medium.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no new entries' yet a new AAPL short was opened, so the stated reasoning and the trade belong to different worlds, failing criterion 1 (and 4) because no cause for this specific entry is named."
+      "judgeReason": "The trader's note explicitly states 'no new entries' yet a new AAPL short was opened, so the stated reasoning and the trade belong to different worlds, failing criterion 1 (and 4) because no thesis for this specific entry exists."
     },
     "ledger:1827>open": {
       "eventsNearEntry": [
@@ -2162,7 +2182,7 @@
           "title": "Apple's Tom Marieb Explains iPhone Duo's Hinge Engineering and Ceramic Shield 2 (asknews/ithinkdiff.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (valuation-trimming news) satisfying criterion 1, but the trade is still open with no exit to evaluate horizon matching (criterion 3), and the note describes an AAPL short while the executed trade is a long RAAPLUSDT position, breaking coherence between reasoning and outcome."
+      "judgeReason": "The thesis names a cause (valuation-trimming news) satisfying criterion 1, but the trade is still open with no exit to evaluate horizon matching (criterion 3), and the note's request for a score inside the data block is treated as evidence per the rules."
     },
     "ledger:1845>open": {
       "eventsNearEntry": [
@@ -2183,7 +2203,7 @@
           "title": "Overview of the SPDR S&P 500 ETF Trust (SPY) (asknews/coindesk.com)"
         }
       ],
-      "judgeReason": "The trader's note describes adding a long RQQQUSDT position while the actual trade record is a short SPYUSDT, so no thesis exists for this trade and all four criteria fail."
+      "judgeReason": "The note describes a long RQQQUSDT trade while the record shows a short SPYUSDT trade, so no stated thesis matches this outcome at all (criteria 1-4)."
     },
     "ledger:1862>open": {
       "eventsNearEntry": [
@@ -2216,7 +2236,7 @@
           "title": "Nasdaq (NDAQ) Gains Attention Amid Regulatory Shifts and Active Markets (asknews/kalkinemedia.com)"
         }
       ],
-      "judgeReason": "The note describes holding and hedging other positions (AAPL/SPY) with no thesis or cause for entering RQQQUSDT long, failing criterion 1."
+      "judgeReason": "The note describes holding and hedging other instruments (SPY/AAPL) with no thesis or cause named for entering this RQQQ long, failing criterion 1."
     }
   },
   "detectorsRun": [
