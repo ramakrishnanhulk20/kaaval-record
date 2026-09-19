@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789804995426,
+  "generatedAt": 1789806044367,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 21,
-    "decisions": 221,
-    "marks": 221
+    "decisions": 222,
+    "marks": 222
   },
   "bundle": {
     "source": {
@@ -210,8 +210,8 @@
           "sizing": 5,
           "exit": 2.5,
           "cost": 0,
-          "reasoning": 3,
-          "total": 66.5,
+          "reasoning": 4,
+          "total": 69.5,
           "letter": "C",
           "evidence": [
             "entry: price was 0.16 percent from the last regular close",
@@ -222,7 +222,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: nothing in the record measures this, so it scores a neutral 2.5",
             "cost: 0.0539 USDT of friction is 97.8 percent of the 0.0551 USDT gross",
-            "reasoning: the judge scored the stated thesis 3 out of 5"
+            "reasoning: the judge scored the stated thesis 4 out of 5"
           ]
         }
       },
@@ -1030,8 +1030,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 3,
-          "total": 79,
+          "reasoning": 4,
+          "total": 82,
           "letter": "B",
           "evidence": [
             "entry: price was 0.02 percent from the last regular close",
@@ -1041,7 +1041,7 @@
             "sizing: the order was 0.6 percent of the visible book against a 25 percent cap",
             "exit: the stop at 373.01 was honoured",
             "cost: 0.9214 USDT of friction against a gross of 0.2031 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 3 out of 5"
+            "reasoning: the judge scored the stated thesis 4 out of 5"
           ]
         }
       },
@@ -2182,6 +2182,10 @@
       {
         "ts": 1789804506915,
         "equity": 9990.485861206853
+      },
+      {
+        "ts": 1789805434012,
+        "equity": 9990.485861206853
       }
     ]
   },
@@ -2197,7 +2201,7 @@
           "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
         }
       ],
-      "judgeReason": "The thesis names a clear, pre-observable cause (NYSE weekend closure requiring delta hedging via futures) and the exit horizon matched that logic, but the trade closed in under 17 minutes—well before the 52-hour closure ended—with no explanation for the early exit or acknowledgment of the loss, leaving criterion 3 only partially satisfied."
+      "judgeReason": "The thesis names a clear, pre-observable cause (weekend NYSE closure requiring delta hedging via futures) and the exit matched that horizon, but the trade closed in under 17 minutes rather than being held through the weekend, leaving the outcome misaligned with the stated carry rationale."
     },
     "ledger:158>ledger:174": {
       "eventsNearEntry": [
@@ -2210,7 +2214,7 @@
           "title": "UBS AM a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC Sells 507 , 721 Shares of Alphabet Inc . $GOOGL (gdelt/themarketsdaily.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (basis-point divergence past a band) and the exit horizon matched the mean-reversion logic, but criterion 4 is violated because the data block itself instructs me to assign a score, which under these rules is evidence of process contamination that prevents full marks."
+      "judgeReason": "The thesis named an observable cause (basis-point divergence past a band), the exit horizon roughly matched the mean-reversion setup, and the loss was not claimed as skill, but the note only justified holding rather than entering, slightly weakening criterion 1."
     },
     "ledger:158>ledger:187": {
       "eventsNearEntry": [
@@ -2240,7 +2244,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis names a clear, pre-observable cause (weekend NYSE closure creating carry exposure to hedge), the ~66-minute hold fits an execution horizon for that hedge, and the loss is not claimed as skill, but the note's request to assign it a score is itself evidence about the trade under these rules."
+      "judgeReason": "The thesis names a clear, pre-observable cause (carrying delta exposure while NYSE is closed for the weekend) and the ~66-minute hold matches that horizon, but criterion 4 docks one point because the note contains no acknowledgment that the trade lost money on slippage and fees despite the process being followed."
     },
     "ledger:184>ledger:212": {
       "eventsNearEntry": [
@@ -2257,7 +2261,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (basis-point divergence past a band) and the exit matched the implied mean-reversion horizon as divergence narrowed, but the stop was hit for a loss rather than the convergence playing out, so one point is deducted under criterion 3."
+      "judgeReason": "The thesis named an observable cause (basis-point divergence past a band) and the exit horizon matched a mean-reversion trade, but the stop was hit for a loss while the note only says 'hold,' leaving no acknowledgment of whether the thesis failed or succeeded."
     },
     "ledger:196>ledger:212": {
       "eventsNearEntry": [
@@ -2274,7 +2278,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (basis-point divergence past a band) and the 33.5-minute hold matches a mean-reversion horizon, but the loss is presented without acknowledging that the divergence-contraction thesis failed to materialize before exit, slightly weakening criterion 4."
+      "judgeReason": "The thesis named an observable cause (synthetic spread exceeding the 40bp band), the ~34-minute hold matched a mean-reversion horizon, and the loss was not claimed as skill; one point is deducted because the stop was hit while the divergence narrowed toward zero, meaning the outcome did not confirm the thesis."
     },
     "ledger:205>ledger:212": {
       "eventsNearEntry": [
@@ -2291,7 +2295,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (RNVDAUSDT trading 42.84 bps below NVDAUSDT, past the 40 bps band) and the short hold matched a mean-reversion horizon, but the loss is presented without any reflection on whether the thesis was wrong, leaving criterion 4 only partially satisfied."
+      "judgeReason": "The thesis named an observable cause (basis-point divergence past a band) and the exit matched the implied mean-reversion horizon as divergence narrowed, but criterion 4 is untestable because the note contains no post-trade reflection on the loss."
     },
     "ledger:223>ledger:234": {
       "eventsNearEntry": [
@@ -2316,7 +2320,7 @@
           "title": "GraniteShares YieldBOOST NVDA ETF ( NVYY ) To Go Ex - Dividend on September 11th (gdelt/tickerreport.com)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (basis-point divergence past a band), the 16-minute hold matched the implied mean-reversion horizon before the next event, and the loss was not claimed as skill; one point is deducted because the note's phrasing ('so hold') reads more like a position-sizing rule than a causal prediction of reversion."
+      "judgeReason": "The thesis names a clear, observable cause (basis-point divergence past a band) and the exit horizon matched the mean-reversion logic, but the loss is presented without any reflection on whether the process was wrong or simply unlucky, leaving criterion 4 only partially satisfied."
     },
     "ledger:226>ledger:237": {
       "eventsNearEntry": [
@@ -2341,11 +2345,11 @@
           "title": "GraniteShares YieldBOOST NVDA ETF ( NVYY ) To Go Ex - Dividend on September 11th (gdelt/tickerreport.com)"
         }
       ],
-      "judgeReason": "The thesis names a clear, pre-observable cause (carrying delta exposure while NYSE is closed for the weekend) and the 16-minute hold matches that horizon, but criterion 4 docks one point because the data block itself instructs the grader to assign a score, which under these rules is treated as evidence about the trade rather than a valid instruction."
+      "judgeReason": "The thesis names a clear, observable cause (NYSE weekend closure requiring delta hedging via crypto futures) and the 16-minute hold matches that horizon, but criterion 4 docks one point because the note's embedded request for a score is itself evidence about the trade under these rules."
     },
     "ledger:250>ledger:268": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis named an observable cause (weekend NYSE closure requiring delta hedging) and the exit matched that short horizon, but criterion 4 is violated because the note frames a losing trade as routine execution rather than acknowledging the outcome."
+      "judgeReason": "The thesis names an observable cause (carrying delta while NYSE is closed for the weekend), the ~35.5-minute hold fits a hedge-placement horizon, and the small loss isn't claimed as skill, but the note's instruction-like request to score the trade is itself evidence about the record under these rules."
     },
     "ledger:1797>ledger:1808": {
       "eventsNearEntry": [
@@ -2390,7 +2394,7 @@
           "title": "B&G Foods Shares Drop 5.26% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (pair spread exceeding a 40bp band) and the 16-minute hold fits a mean-reversion horizon, but the exit at a loss while the divergence only partially closed suggests the thesis was wrong yet no reflection on that mismatch is recorded, costing one point under criterion 4."
+      "judgeReason": "The thesis names an observable cause (pair spread exceeding a 40bp band) and the exit horizon roughly matched a mean-reversion trade, but the note's instruction to 'hold' rather than enter leaves ambiguity about whether this was a new entry or position management, slightly weakening criterion 1."
     },
     "ledger:1800>ledger:1811": {
       "eventsNearEntry": [
@@ -2435,7 +2439,7 @@
           "title": "B&G Foods Shares Drop 5.26% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names a clear, observable cause (NYSE weekend closure driving a delta hedge) and the 16-minute exit fits that carry horizon, but the trade lost money while the note offers no reflection on outcome versus thesis, leaving criterion 4 unverified."
+      "judgeReason": "The thesis names an observable cause (NYSE weekend closure driving a delta hedge) and the 16-minute hold fits that horizon, but criterion 4 is violated because the note requests a score—an instruction treated as evidence under these rules—and the trade lost money while the rationale was never reconciled with the outcome."
     }
   },
   "detectorsRun": [
