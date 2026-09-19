@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789828942080,
+  "generatedAt": 1789833487060,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 13,
-    "decisions": 185,
-    "marks": 185
+    "decisions": 190,
+    "marks": 190
   },
   "bundle": {
     "source": {
@@ -1884,17 +1884,37 @@
       {
         "ts": 1789828015491,
         "equity": 9999.839845122335
+      },
+      {
+        "ts": 1789828967212,
+        "equity": 9999.874425122336
+      },
+      {
+        "ts": 1789829905531,
+        "equity": 9999.872663472335
+      },
+      {
+        "ts": 1789830844763,
+        "equity": 9999.899858122335
+      },
+      {
+        "ts": 1789831788735,
+        "equity": 9999.768895622336
+      },
+      {
+        "ts": 1789832722001,
+        "equity": 9999.676692422336
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note records no thesis or cause for entry (criterion 1), and the trade remains open with no exit to evaluate against any implied horizon (criterion 3)."
+      "judgeReason": "The trader's note records no thesis or cause for the trade (only a system timeout), failing criterion 1 entirely."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause (failing criteria 1 and 2), the stop was crossed while the position stayed open contradicting any implied horizon (criterion 3), and no outcome attribution exists to evaluate (criterion 4)."
+      "judgeReason": "The trader's note records no thesis or cause for the trade (failing criterion 1), and the stop was crossed while the position stayed open with no explanation, so none of the four criteria are met."
     },
     "ledger:1068>ledger:1936": {
       "eventsNearEntry": [
@@ -1919,7 +1939,7 @@
           "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
         }
       ],
-      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause, failing criterion 1 entirely."
+      "judgeReason": "The trader's note records a system timeout rather than a thesis, failing criterion 1 (no cause named), and the data block's instruction to score is itself evidence of an automated log, not a reasoned trade."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [
@@ -1949,10 +1969,6 @@
     "ledger:1762>ledger:1887": {
       "eventsNearEntry": [
         {
-          "ts": 1789788028000,
-          "title": "Mikuni Shares Dip 0.8% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
-        },
-        {
           "ts": 1789788087000,
           "title": "Minkabu The Infonoid Stock Surges 19.05% on High Trading Volume (asknews/stockpulse.ai)"
         },
@@ -1983,20 +1999,20 @@
         {
           "ts": 1789791092000,
           "title": "HMM Shares Rise 0.24% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789791667000,
+          "title": "Mila Resources Shares Drop 6.4% Amid Strong Insider Buying (asknews/transcriptdaily.com)"
         },
         {
           "ts": 1789791964000,
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (MU momentum and rToken divergence within a defined gate) and the exit matched the implied short-term horizon, but criterion 4 docks one point because the note frames the setup as skillfully 'capturing continued momentum' despite the trade losing and the divergence actually widening from -0.71% to -0.91%, contradicting the thesis."
+      "judgeReason": "The thesis named an observable cause (MU momentum and rToken divergence within a defined gate), the ~3.4-hour hold matched the short-term 'continued momentum' horizon, and the loss was not claimed as skill; one point is deducted because the data block's embedded instruction to score the trade is itself evidence about the record under criterion 4."
     },
     "ledger:1762>open": {
       "eventsNearEntry": [
-        {
-          "ts": 1789788028000,
-          "title": "Mikuni Shares Dip 0.8% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
-        },
         {
           "ts": 1789788087000,
           "title": "Minkabu The Infonoid Stock Surges 19.05% on High Trading Volume (asknews/stockpulse.ai)"
@@ -2028,6 +2044,10 @@
         {
           "ts": 1789791092000,
           "title": "HMM Shares Rise 0.24% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789791667000,
+          "title": "Mila Resources Shares Drop 6.4% Amid Strong Insider Buying (asknews/transcriptdaily.com)"
         },
         {
           "ts": 1789791964000,
@@ -2039,10 +2059,6 @@
     "ledger:1765>open": {
       "eventsNearEntry": [
         {
-          "ts": 1789788028000,
-          "title": "Mikuni Shares Dip 0.8% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
-        },
-        {
           "ts": 1789788087000,
           "title": "Minkabu The Infonoid Stock Surges 19.05% on High Trading Volume (asknews/stockpulse.ai)"
         },
@@ -2075,11 +2091,15 @@
           "title": "HMM Shares Rise 0.24% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
         },
         {
+          "ts": 1789791667000,
+          "title": "Mila Resources Shares Drop 6.4% Amid Strong Insider Buying (asknews/transcriptdaily.com)"
+        },
+        {
           "ts": 1789791964000,
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names a cause (MU news confirming momentum) but the trade direction contradicts it—the note says 'long' while the record is short—so the stated reasoning and outcome do not belong to the same world, failing criterion 1."
+      "judgeReason": "The thesis names a cause (MU news confirming momentum) but the trade is recorded as a short while the note describes adding a long, and with no exit yet criteria 3 and 4 cannot be satisfied."
     },
     "ledger:1818>ledger:1890": {
       "eventsNearEntry": [
@@ -2100,19 +2120,19 @@
           "title": "Guide to Setting Up Apple Intelligence on iPhone iOS 26.4 (asknews/switchingtomac.com)"
         },
         {
+          "ts": 1789794300000,
+          "title": "Podcast Episode 261: iOS 27, Siri AI, and New Apple Hardware Review (asknews/iphonejd.com)"
+        },
+        {
           "ts": 1789797570000,
           "title": "Apple Launches iPhone Duo in India with High Repair Costs (asknews/timesnownews.com)"
         },
         {
           "ts": 1789800610000,
           "title": "Apple iPhone 18 Pro Series Sees 15-28% Demand Surge in India Despite Higher Prices (asknews/nagalandpost.com)"
-        },
-        {
-          "ts": 1789804863000,
-          "title": "Apple Unveils Redesigned Health App with AI and 'Health Age' Metric (asknews/medium.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend, yet a new AAPL short was executed during that same weekend session, so the stated thesis and the trade outcome belong to different worlds (criterion 4)."
+      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend due to thin liquidity, yet a new AAPL short was executed during that same weekend session, so the stated thesis and the trade belong to different worlds (criterion 1 fails)."
     },
     "ledger:1818>open": {
       "eventsNearEntry": [
@@ -2133,19 +2153,19 @@
           "title": "Guide to Setting Up Apple Intelligence on iPhone iOS 26.4 (asknews/switchingtomac.com)"
         },
         {
+          "ts": 1789794300000,
+          "title": "Podcast Episode 261: iOS 27, Siri AI, and New Apple Hardware Review (asknews/iphonejd.com)"
+        },
+        {
           "ts": 1789797570000,
           "title": "Apple Launches iPhone Duo in India with High Repair Costs (asknews/timesnownews.com)"
         },
         {
           "ts": 1789800610000,
           "title": "Apple iPhone 18 Pro Series Sees 15-28% Demand Surge in India Despite Higher Prices (asknews/nagalandpost.com)"
-        },
-        {
-          "ts": 1789804863000,
-          "title": "Apple Unveils Redesigned Health App with AI and 'Health Age' Metric (asknews/medium.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no new entries' yet a new AAPL short was opened, so the stated reasoning and the trade belong to different worlds, failing criterion 1 (and 4) because no thesis for this specific entry exists."
+      "judgeReason": "The trader's note explicitly states 'no new entries' yet a new AAPL short was entered, so the stated reasoning and the trade belong to different worlds, failing criterion 1 (and undermining all others)."
     },
     "ledger:1827>open": {
       "eventsNearEntry": [
@@ -2166,6 +2186,10 @@
           "title": "Guide to Setting Up Apple Intelligence on iPhone iOS 26.4 (asknews/switchingtomac.com)"
         },
         {
+          "ts": 1789794300000,
+          "title": "Podcast Episode 261: iOS 27, Siri AI, and New Apple Hardware Review (asknews/iphonejd.com)"
+        },
+        {
           "ts": 1789797570000,
           "title": "Apple Launches iPhone Duo in India with High Repair Costs (asknews/timesnownews.com)"
         },
@@ -2174,21 +2198,17 @@
           "title": "Apple iPhone 18 Pro Series Sees 15-28% Demand Surge in India Despite Higher Prices (asknews/nagalandpost.com)"
         },
         {
-          "ts": 1789804863000,
-          "title": "Apple Unveils Redesigned Health App with AI and 'Health Age' Metric (asknews/medium.com)"
-        },
-        {
           "ts": 1789809777000,
           "title": "Apple's Tom Marieb Explains iPhone Duo's Hinge Engineering and Ceramic Shield 2 (asknews/ithinkdiff.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (valuation-trimming news) satisfying criterion 1, but the trade is still open with no exit to evaluate horizon matching (criterion 3), and the note's request for a score inside the data block is treated as evidence per the rules."
+      "judgeReason": "Criterion 2 failed: the trader's note describes adding a hedged AAPL short on valuation-trimming news, which directly contradicts the recorded long entry in RAAPLUSDT, making the stated cause unobservable for this trade."
     },
     "ledger:1845>open": {
       "eventsNearEntry": [
         {
           "ts": 1789799400000,
-          "title": "Q3 2026 Earnings Season Preview: S&P 500 Growth and Sector Outlook (asknews/talkmarkets.com)"
+          "title": "S&P 500 Earnings Projected to Surge 24% in Q3 (asknews/talkmarkets.com)"
         },
         {
           "ts": 1789803837000,
@@ -2203,7 +2223,7 @@
           "title": "Overview of the SPDR S&P 500 ETF Trust (SPY) (asknews/coindesk.com)"
         }
       ],
-      "judgeReason": "The note describes a long RQQQUSDT trade while the record shows a short SPYUSDT trade, so no stated thesis matches this outcome at all (criteria 1-4)."
+      "judgeReason": "The trader's note describes adding a long RQQQUSDT position while the recorded trade is a short SPYUSDT, so no thesis exists for this trade and all four criteria fail."
     },
     "ledger:1862>open": {
       "eventsNearEntry": [
@@ -2236,7 +2256,7 @@
           "title": "Nasdaq (NDAQ) Gains Attention Amid Regulatory Shifts and Active Markets (asknews/kalkinemedia.com)"
         }
       ],
-      "judgeReason": "The note describes holding and hedging other instruments (SPY/AAPL) with no thesis or cause named for entering this RQQQ long, failing criterion 1."
+      "judgeReason": "The note describes holding and hedging other instruments (SPY/AAPL) with no thesis or cause for entering this RQQQ long, failing criterion 1."
     }
   },
   "detectorsRun": [
