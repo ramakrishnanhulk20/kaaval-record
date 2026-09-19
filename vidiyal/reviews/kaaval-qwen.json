@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789794647633,
+  "generatedAt": 1789800352274,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 146,
-    "marks": 146
+    "decisions": 153,
+    "marks": 153
   },
   "bundle": {
     "source": {
@@ -255,7 +255,7 @@
           "spreadAtEntryBps": 0.4526627888550305,
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 8622038,
-          "nextEventMinutes": null,
+          "nextEventMinutes": 45,
           "bookShareAtEntry": 0.00029425997842038595,
           "usualSpreadBps": 0.4697813167966037,
           "stop": {
@@ -265,17 +265,18 @@
           }
         },
         "scores": {
-          "entry": 4.97,
+          "entry": 4.98,
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
           "reasoning": 0,
-          "total": 77.35,
+          "total": 77.4,
           "letter": "B",
           "evidence": [
             "entry: price was 0.52 percent from the last regular close",
             "entry: spread was 0.5 bps against a usual 0.5 bps, 0.96 times",
             "entry: 07:06 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 45 minutes away and the rationale was written",
             "sizing: 123.65 USDT is 1.24 percent of 10001.65 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 225.22 was honoured",
@@ -905,21 +906,74 @@
       {
         "ts": 1789793794478,
         "equity": 10001.65261425634
+      },
+      {
+        "ts": 1789794776203,
+        "equity": 10001.64701425634
+      },
+      {
+        "ts": 1789795723743,
+        "equity": 10001.69181425634
+      },
+      {
+        "ts": 1789796662760,
+        "equity": 10001.73661425634
+      },
+      {
+        "ts": 1789797603574,
+        "equity": 10001.707193256341
+      },
+      {
+        "ts": 1789798548349,
+        "equity": 10001.74079325634
+      },
+      {
+        "ts": 1789798754159,
+        "equity": 10001.73101425634
+      },
+      {
+        "ts": 1789799306632,
+        "equity": 10001.76035125634
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "No thesis was articulated; the trader's note indicates a non-decision (an AI tool timeout) rather than a cause-based rationale for entry, so criterion 1 fails completely."
+      "judgeReason": "The thesis names no cause at all—the note documents a system delay, not a market observation or trading reasoning, so criteria 1 and 2 cannot be met; additionally, the trade remains open with no exit, making criterion 3 impossible to evaluate."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The note reveals no thesis naming a cause (criterion 1 fails); the trade appears to be a system-generated short with no observable reasoning at entry; the stop was crossed during the hold, indicating the exit did not match any stated horizon (criterion 3 fails); and the loss is presented as a timeout artifact rather than a skill assessment (criterion 4 passes narrowly)."
+      "judgeReason": "The thesis names no cause at all—the note indicates an automated delay rather than a market observation, the stop was crossed during the hold violating position management, and the loss is attributed to a system timeout rather than market mechanics."
     },
     "ledger:1068>open": {
-      "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note records only a timing failure in decision-making, not an observable market reason for entry, so criteria 1 and 2 both fail; the trade remains open with no exit, making criterion 3 impossible to assess."
+      "eventsNearEntry": [
+        {
+          "ts": 1789715375000,
+          "title": "NVIDIA Faces Critical Resistance at $219-$220 Amid AI Spending Debate (asknews/investing.com)"
+        },
+        {
+          "ts": 1789724201000,
+          "title": "Nvidia CEO Jensen Huang Expects Chip Sales to Double Next Year (asknews/benzinga.com)"
+        },
+        {
+          "ts": 1789725502000,
+          "title": "Benzinga Analysis: NVIDIA Outperforms Semiconductor Peers on Revenue Growth and Profitability (asknews/benzinga.com)"
+        },
+        {
+          "ts": 1789728573000,
+          "title": "Nvidia Stock Holds Above $5 Trillion Amid Q2 Record Revenue and AI Spending Concerns (asknews/analyticsinsight.net)"
+        },
+        {
+          "ts": 1789728759000,
+          "title": "Nvidia Stock Surges as CEO Huang Projects Chip Demand to Double in 2026 Amid Huawei Competition (asknews/blockonomi.com)"
+        },
+        {
+          "ts": 1789732301000,
+          "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
+        }
+      ],
+      "judgeReason": "The thesis names no cause at all—the note documents a system timeout, not market reasoning—and the trade remains open with no exit logic stated, violating criteria 1, 3, and 4."
     }
   },
   "detectorsRun": [
