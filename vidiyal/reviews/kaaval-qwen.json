@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789773223360,
+  "generatedAt": 1789777509283,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
     "fills": 4,
-    "decisions": 124,
-    "marks": 124
+    "decisions": 128,
+    "marks": 128
   },
   "bundle": {
     "source": {
@@ -86,8 +86,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 2.5,
-          "reasoning": 1,
-          "total": 79.8,
+          "reasoning": 0,
+          "total": 76.8,
           "letter": "B",
           "evidence": [
             "entry: price was 0.63 percent from the last regular close",
@@ -97,7 +97,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 205.92 was honoured",
             "cost: 0.2236 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 0 out of 5"
           ]
         }
       },
@@ -221,7 +221,7 @@
           "qty": 0.56,
           "grossPnl": null,
           "feesUsdt": 0.07418864711999999,
-          "fundingUsdt": 0.032643004732800004,
+          "fundingUsdt": 0.036105141598400003,
           "slippageUsdt": 0.06182387260000098,
           "fills": [
             {
@@ -279,7 +279,7 @@
             "sizing: 123.65 USDT is 1.24 percent of 10001.65 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 225.22 was honoured",
-            "cost: 0.1687 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "cost: 0.1721 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
             "reasoning: the judge scored the stated thesis 0 out of 5"
           ]
         }
@@ -817,21 +817,37 @@
       {
         "ts": 1789772686663,
         "equity": 10001.552398756341
+      },
+      {
+        "ts": 1789773625528,
+        "equity": 10001.60012475634
+      },
+      {
+        "ts": 1789774563403,
+        "equity": 10001.61834575634
+      },
+      {
+        "ts": 1789775550507,
+        "equity": 10001.526656256341
+      },
+      {
+        "ts": 1789776532618,
+        "equity": 10001.547635256342
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note only documents a processing delay, not market reasoning—and the trade remains open with no exit condition matched to any stated horizon, making criteria 1, 3, and 4 impossible to assess."
+      "judgeReason": "The thesis names no cause at all—the note documents a system delay, not a market observation or reasoning for entry, so criterion 1 fails completely."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note indicates no decision was made at entry ('qwen took longer than 180 seconds'), meaning criterion 1 (a named cause) is absent—the trade appears to have been entered without stated reasoning, making it impossible to evaluate whether thesis, observability, exit timing, or outcome attribution were sound."
+      "judgeReason": "The thesis is absent entirely—the trader's note indicates no decision was made ('qwen took longer than 180 seconds'), so criteria 1 (cause named) and 2 (observable at entry) both fail; the trade appears to be either automatic/default or executed without stated reasoning."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note records only a timing failure in decision-making, not a market reason, observable condition, or trade rationale for the short position."
+      "judgeReason": "The thesis names no cause at all—the note states only that a decision-making process (qwen) exceeded a time limit, which is a meta-failure, not a market thesis; criterion 1 fails completely."
     }
   },
   "detectorsRun": [
