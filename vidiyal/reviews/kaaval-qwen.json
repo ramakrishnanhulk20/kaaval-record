@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789800352274,
+  "generatedAt": 1789804788170,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 4,
-    "decisions": 153,
-    "marks": 153
+    "fills": 6,
+    "decisions": 160,
+    "marks": 160
   },
   "bundle": {
     "source": {
@@ -17,7 +17,7 @@
     },
     "range": {
       "fromTs": 1789450987005,
-      "toTs": 1789729577962
+      "toTs": 1789802348760
     },
     "graded": [
       {
@@ -188,8 +188,8 @@
           "sizing": 5,
           "exit": 0,
           "cost": 5,
-          "reasoning": 1,
-          "total": 62.6,
+          "reasoning": 0,
+          "total": 59.6,
           "letter": "C",
           "evidence": [
             "entry: price was 0.57 percent from the last regular close",
@@ -199,7 +199,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 216.58 was crossed and the position stayed open",
             "cost: 0.3384 USDT of friction is 8.0 percent of the 4.2144 USDT gross",
-            "reasoning: the judge scored the stated thesis 1 out of 5"
+            "reasoning: the judge scored the stated thesis 0 out of 5"
           ]
         }
       },
@@ -284,6 +284,168 @@
             "reasoning: the judge scored the stated thesis 0 out of 5"
           ]
         }
+      },
+      {
+        "trade": {
+          "id": "ledger:1762>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "SPOT",
+          "symbol": "RMUUSDT",
+          "side": "long",
+          "entryTs": 1789802348645,
+          "exitTs": null,
+          "entryPrice": 1008.5740349999999,
+          "exitPrice": null,
+          "qty": 0.19839,
+          "grossPnl": null,
+          "feesUsdt": 0.20009100280365,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.10004550140178867,
+          "fills": [
+            {
+              "id": "ledger:1762",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789802348645,
+              "category": "SPOT",
+              "symbol": "RMUUSDT",
+              "side": "buy",
+              "qty": 0.19839,
+              "price": 1008.5740349999999,
+              "notionalUsdt": 200.09100280364999,
+              "feeUsdt": 0.20009100280365,
+              "slippageBps": 4.9999999999981855,
+              "bookHash": "f2b6f2ddb50460e30629e8a53c789c85956005724f9e9a29e7a2f3bf8b1b4953",
+              "decisionId": "decision-1751",
+              "rationale": "News reports MU up 3.92% to 1015.8 on 36.2B volume. RMU divergence -1.03% is within the 1% entry gate for unhedged rToken longs. Adding a small weekend long to capture continued momentum with tight risk, sized under 10% equity and between 100-500 USDT order limits.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "News reports MU up 3.92% to 1015.8 on 36.2B volume. RMU divergence -1.03% is within the 1% entry gate for unhedged rToken longs. Adding a small weekend long to capture continued momentum with tight risk, sized under 10% equity and between 100-500 USDT order limits.",
+          "equityAtEntry": 10001.677688256339
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.7113570584760867,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 0.8928349991322817,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 195051355,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.002178028683234218,
+          "usualSpreadBps": 1.8163049068034496,
+          "stop": {
+            "existed": true,
+            "price": 978.3168139499999,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.77,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 4,
+          "total": 88.35,
+          "letter": "A",
+          "evidence": [
+            "entry: price was -0.71 percent from the last regular close",
+            "entry: spread was 0.9 bps against a usual 1.8 bps, 0.49 times",
+            "entry: 03:19 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 200.09 USDT is 2.00 percent of 10001.68 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.2 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 978.32 was honoured",
+            "cost: 0.3001 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 4 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
+          "id": "ledger:1765>open",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "MUUSDT",
+          "side": "short",
+          "entryTs": 1789802348760,
+          "exitTs": null,
+          "entryPrice": 1008.365565,
+          "exitPrice": null,
+          "qty": 0.13,
+          "grossPnl": null,
+          "feesUsdt": 0.07865251406999998,
+          "fundingUsdt": 0,
+          "slippageUsdt": 0.06554376172500748,
+          "fills": [
+            {
+              "id": "ledger:1765",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789802348760,
+              "category": "USDT-FUTURES",
+              "symbol": "MUUSDT",
+              "side": "sell",
+              "qty": 0.13,
+              "price": 1008.365565,
+              "notionalUsdt": 131.08752345,
+              "feeUsdt": 0.07865251406999998,
+              "slippageBps": 5.000000000000571,
+              "bookHash": "8bf41381e467ade266233a11084a90049d54cf3365ad677d063e04f8a372ce91",
+              "decisionId": "decision-1751",
+              "rationale": "Holding existing NVDA position; adding a small long RMUUSDT as MU news confirms strong momentum and divergence is within the 1% entry gate.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "Holding existing NVDA position; adding a small long RMUUSDT as MU news confirms strong momentum and divergence is within the 1% entry gate.",
+          "equityAtEntry": 10001.677688256339
+        },
+        "context": {
+          "divergenceAtEntryPct": -0.7807177998622462,
+          "divergenceAtExitPct": null,
+          "spreadAtEntryBps": 1.784015223596079,
+          "sessionAtEntry": "weekend",
+          "msToNextOpenAtEntry": 195051240,
+          "nextEventMinutes": null,
+          "bookShareAtEntry": 0.0013876427288671434,
+          "usualSpreadBps": 1.5213984694729092,
+          "stop": {
+            "existed": true,
+            "price": 1028.5328763,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.54,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.5,
+          "reasoning": 1,
+          "total": 78.2,
+          "letter": "B",
+          "evidence": [
+            "entry: price was -0.78 percent from the last regular close",
+            "entry: spread was 1.8 bps against a usual 1.5 bps, 1.17 times",
+            "entry: 03:19 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "sizing: 131.09 USDT is 1.31 percent of 10001.68 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.1 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 1028.53 was honoured",
+            "cost: 0.1442 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "reasoning: the judge scored the stated thesis 1 out of 5"
+          ]
+        }
       }
     ],
     "patterns": [
@@ -294,7 +456,21 @@
           "ledger:437>open"
         ],
         "evidence": [
-          "RNVDAUSDT held 100.0 percent of open exposure for 3.2 days"
+          "RNVDAUSDT held 54.7 percent of open exposure for 4.1 days"
+        ]
+      },
+      {
+        "pattern": "fee-bleed",
+        "description": "Friction took more than a fifth of everything the period moved",
+        "trades": [
+          "ledger:437>open",
+          "ledger:440>ledger:999",
+          "ledger:1068>open",
+          "ledger:1762>open",
+          "ledger:1765>open"
+        ],
+        "evidence": [
+          "1.1784 USDT of fees, slippage and funding against 4.2144 USDT of gross, 28.0 percent"
         ]
       },
       {
@@ -314,6 +490,12 @@
         "pattern": "concentration",
         "text": "No instrument holds more than half of open exposure",
         "test": "symbol-under-half-exposure"
+      },
+      {
+        "id": "check-fee-bleed",
+        "pattern": "fee-bleed",
+        "text": "The round trip costs less than 20 basis points, a fifth of a one percent move",
+        "test": "cost-under-20-bps"
       },
       {
         "id": "check-ignored-stops",
@@ -934,17 +1116,45 @@
       {
         "ts": 1789799306632,
         "equity": 10001.76035125634
+      },
+      {
+        "ts": 1789800281678,
+        "equity": 10001.764782256341
+      },
+      {
+        "ts": 1789800458699,
+        "equity": 10001.770382256342
+      },
+      {
+        "ts": 1789801448016,
+        "equity": 10001.677688256339
+      },
+      {
+        "ts": 1789802414107,
+        "equity": 10001.207061135816
+      },
+      {
+        "ts": 1789803167264,
+        "equity": 10001.291748185817
+      },
+      {
+        "ts": 1789803530888,
+        "equity": 10001.350565635817
+      },
+      {
+        "ts": 1789804506899,
+        "equity": 10001.308439435814
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note documents a system delay, not a market observation or trading reasoning, so criteria 1 and 2 cannot be met; additionally, the trade remains open with no exit, making criterion 3 impossible to evaluate."
+      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause, failing criterion 1 entirely."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause at all—the note indicates an automated delay rather than a market observation, the stop was crossed during the hold violating position management, and the loss is attributed to a system timeout rather than market mechanics."
+      "judgeReason": "The trader's note records no thesis or cause for the trade (failing criteria 1 and 2), the stop was crossed while the position stayed open contradicting any implied risk horizon (criterion 3), and the data block's request to score the trade is itself treated as evidence under these rules."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [
@@ -973,7 +1183,97 @@
           "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
         }
       ],
-      "judgeReason": "The thesis names no cause at all—the note documents a system timeout, not market reasoning—and the trade remains open with no exit logic stated, violating criteria 1, 3, and 4."
+      "judgeReason": "The trader's note records a system timeout with no thesis or cause named, failing criterion 1 entirely."
+    },
+    "ledger:1762>open": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789788028000,
+          "title": "Mikuni Shares Dip 0.8% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789788087000,
+          "title": "Minkabu The Infonoid Stock Surges 19.05% on High Trading Volume (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789789123000,
+          "title": "Macronix Shares Drop 2.1% on TWD 3.4 Billion Trading Volume (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789789198000,
+          "title": "Monday.com Shares Drop 4.01% Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790289000,
+          "title": "Mas Cl Stock Falls 0.85% on September 19 Amid Flat Performance by Peer Stocks (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790379000,
+          "title": "Microvast Shares Surge 9.22% Amid Mixed Market Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790520000,
+          "title": "M K Proteins Shares Rise 2.81% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790663000,
+          "title": "Micron Shares Rise 3.92% to USD 1,015.8 Amid USD 36.2 Billion Trading Volume (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789791092000,
+          "title": "HMM Shares Rise 0.24% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789791964000,
+          "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
+        }
+      ],
+      "judgeReason": "The thesis names a clear, observable cause (MU news-driven momentum and rToken divergence within the entry gate) and sizing rules match the trade, but criterion 3 cannot be fully confirmed because the trade is still open with no exit to evaluate against the implied horizon."
+    },
+    "ledger:1765>open": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789788028000,
+          "title": "Mikuni Shares Dip 0.8% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789788087000,
+          "title": "Minkabu The Infonoid Stock Surges 19.05% on High Trading Volume (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789789123000,
+          "title": "Macronix Shares Drop 2.1% on TWD 3.4 Billion Trading Volume (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789789198000,
+          "title": "Monday.com Shares Drop 4.01% Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790289000,
+          "title": "Mas Cl Stock Falls 0.85% on September 19 Amid Flat Performance by Peer Stocks (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790379000,
+          "title": "Microvast Shares Surge 9.22% Amid Mixed Market Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790520000,
+          "title": "M K Proteins Shares Rise 2.81% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789790663000,
+          "title": "Micron Shares Rise 3.92% to USD 1,015.8 Amid USD 36.2 Billion Trading Volume (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789791092000,
+          "title": "HMM Shares Rise 0.24% on September 19 Amid Mixed Sector Performance (asknews/stockpulse.ai)"
+        },
+        {
+          "ts": 1789791964000,
+          "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
+        }
+      ],
+      "judgeReason": "The note claims a long entry while the trade record shows a short, so the stated thesis and the actual outcome belong to different worlds, failing criterion 1's requirement that the thesis coherently names the cause of the taken trade."
     }
   },
   "detectorsRun": [
