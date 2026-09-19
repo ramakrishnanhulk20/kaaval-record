@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1789819695932,
+  "generatedAt": 1789824330828,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
     "verified": true,
     "reason": null,
-    "fills": 12,
-    "decisions": 175,
-    "marks": 175
+    "fills": 13,
+    "decisions": 180,
+    "marks": 180
   },
   "bundle": {
     "source": {
@@ -17,7 +17,7 @@
     },
     "range": {
       "fromTs": 1789450987005,
-      "toTs": 1789814724957
+      "toTs": 1789820438152
     },
     "graded": [
       {
@@ -176,7 +176,7 @@
           "msToNextOpenAtEntry": 28012794,
           "nextEventMinutes": null,
           "bookShareAtEntry": 0.0003088470092001248,
-          "usualSpreadBps": 0.4697813167966037,
+          "usualSpreadBps": 0.4696599975223987,
           "stop": {
             "existed": true,
             "price": 216.58045560000002,
@@ -205,6 +205,109 @@
       },
       {
         "trade": {
+          "id": "ledger:1068>ledger:1936",
+          "source": {
+            "kind": "ledger",
+            "dir": "../kaaval/data/state/ledger",
+            "brain": "qwen"
+          },
+          "category": "USDT-FUTURES",
+          "symbol": "NVDAUSDT",
+          "side": "short",
+          "entryTs": 1789729577962,
+          "exitTs": 1789820438152,
+          "entryPrice": 220.799545,
+          "exitPrice": 222.43115999999998,
+          "qty": 0.27,
+          "grossPnl": -0.44053604999999524,
+          "feesUsdt": 0.07180337420999999,
+          "fundingUsdt": 0.017407836127800003,
+          "slippageUsdt": 0.059836145174996136,
+          "fills": [
+            {
+              "id": "ledger:1068",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789729577962,
+              "category": "USDT-FUTURES",
+              "symbol": "NVDAUSDT",
+              "side": "sell",
+              "qty": 0.56,
+              "price": 220.799545,
+              "notionalUsdt": 123.6477452,
+              "feeUsdt": 0.07418864711999999,
+              "slippageBps": 5.000000000000079,
+              "bookHash": "04f7072b8c527c99fdaf1939b6378df67604a3643e23ed4bfb8cbf0a3c0f122f",
+              "decisionId": "decision-1055",
+              "rationale": "no decision this tick: qwen took longer than 180 seconds",
+              "note": "order source: brain"
+            },
+            {
+              "id": "ledger:1936",
+              "source": {
+                "kind": "ledger",
+                "dir": "../kaaval/data/state/ledger",
+                "brain": "qwen"
+              },
+              "ts": 1789820438152,
+              "category": "USDT-FUTURES",
+              "symbol": "NVDAUSDT",
+              "side": "buy",
+              "qty": 0.27,
+              "price": 222.43115999999998,
+              "notionalUsdt": 60.056413199999994,
+              "feeUsdt": 0.036033847919999994,
+              "slippageBps": 4.999999999999278,
+              "bookHash": "e93b771ccf642defb2d4cba5f16f1af9e2496bf92e513422e2cfd0f73a364cd5",
+              "decisionId": "decision-1924",
+              "rationale": "Adding a hedged AMD long to capture the 0.83% weekend discount, supported by news of a 2.4% rise in the tokenized stock. Tightening the AAPL hedge as its spread exceeds limits for new unhedged longs.",
+              "note": "order source: brain"
+            }
+          ],
+          "rationale": "no decision this tick: qwen took longer than 180 seconds",
+          "equityAtEntry": 10001.646344203462
+        },
+        "context": {
+          "divergenceAtEntryPct": 0.5233530616890458,
+          "divergenceAtExitPct": 0.0950229502294925,
+          "spreadAtEntryBps": 0.4526627888550305,
+          "sessionAtEntry": "after-hours",
+          "msToNextOpenAtEntry": 8622038,
+          "nextEventMinutes": 45,
+          "bookShareAtEntry": 0.00014187534673840038,
+          "usualSpreadBps": 0.4696599975223987,
+          "stop": {
+            "existed": true,
+            "price": 225.2155359,
+            "honoured": true
+          }
+        },
+        "scores": {
+          "entry": 4.98,
+          "sizing": 5,
+          "exit": 5,
+          "cost": 2.02,
+          "reasoning": 0,
+          "total": 75.96,
+          "letter": "B",
+          "evidence": [
+            "entry: price was 0.52 percent from the last regular close",
+            "entry: spread was 0.5 bps against a usual 0.5 bps, 0.96 times",
+            "entry: 07:06 ET is outside the 09:25 to 09:40 ET re-anchoring window",
+            "entry: a scheduled event was 45 minutes away and the rationale was written",
+            "sizing: 59.62 USDT is 0.60 percent of 10001.65 USDT equity against a 10 percent cap",
+            "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
+            "exit: the stop at 225.22 was honoured",
+            "cost: 0.1490 USDT of friction is 33.8 percent of the 0.4405 USDT gross",
+            "reasoning: the judge scored the stated thesis 0 out of 5"
+          ]
+        }
+      },
+      {
+        "trade": {
           "id": "ledger:1068>open",
           "source": {
             "kind": "ledger",
@@ -218,11 +321,11 @@
           "exitTs": null,
           "entryPrice": 220.799545,
           "exitPrice": null,
-          "qty": 0.56,
+          "qty": 0.29000000000000004,
           "grossPnl": null,
-          "feesUsdt": 0.07418864711999999,
-          "fundingUsdt": 0.036105141598400003,
-          "slippageUsdt": 0.06182387260000098,
+          "feesUsdt": 0.03841912083,
+          "fundingUsdt": 0.0186973054706,
+          "slippageUsdt": 0.03201593402500051,
           "fills": [
             {
               "id": "ledger:1068",
@@ -256,8 +359,8 @@
           "sessionAtEntry": "after-hours",
           "msToNextOpenAtEntry": 8622038,
           "nextEventMinutes": 45,
-          "bookShareAtEntry": 0.00029425997842038595,
-          "usualSpreadBps": 0.4697813167966037,
+          "bookShareAtEntry": 0.0001523846316819856,
+          "usualSpreadBps": 0.4696599975223987,
           "stop": {
             "existed": true,
             "price": 225.2155359,
@@ -277,10 +380,10 @@
             "entry: spread was 0.5 bps against a usual 0.5 bps, 0.96 times",
             "entry: 07:06 ET is outside the 09:25 to 09:40 ET re-anchoring window",
             "entry: a scheduled event was 45 minutes away and the rationale was written",
-            "sizing: 123.65 USDT is 1.24 percent of 10001.65 USDT equity against a 10 percent cap",
+            "sizing: 64.03 USDT is 0.64 percent of 10001.65 USDT equity against a 10 percent cap",
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 225.22 was honoured",
-            "cost: 0.1721 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
+            "cost: 0.0891 USDT of fees, slippage and funding so far, and the trip is still open so there is no gross to measure it against",
             "reasoning: the judge scored the stated thesis 0 out of 5"
           ]
         }
@@ -995,6 +1098,7 @@
         "trades": [
           "ledger:437>open",
           "ledger:440>ledger:999",
+          "ledger:1068>ledger:1936",
           "ledger:1068>open",
           "ledger:1762>ledger:1887",
           "ledger:1762>open",
@@ -1006,7 +1110,7 @@
           "ledger:1862>open"
         ],
         "evidence": [
-          "2.1318 USDT of fees, slippage and funding against 4.3539 USDT of gross, 49.0 percent"
+          "2.1978 USDT of fees, slippage and funding against 4.7944 USDT of gross, 45.8 percent"
         ]
       },
       {
@@ -1740,17 +1844,62 @@
       {
         "ts": 1789818581223,
         "equity": 9999.906222120255
+      },
+      {
+        "ts": 1789819536843,
+        "equity": 9999.912526320255
+      },
+      {
+        "ts": 1789820476670,
+        "equity": 9999.863716272333
+      },
+      {
+        "ts": 1789821412358,
+        "equity": 9999.759160272335
+      },
+      {
+        "ts": 1789822340616,
+        "equity": 9999.778014272335
+      },
+      {
+        "ts": 1789823304983,
+        "equity": 9999.858443872336
       }
     ]
   },
   "tradeNotes": {
     "ledger:437>open": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note records no thesis or cause for the trade (only a system timeout), failing criterion 1 entirely."
+      "judgeReason": "The trader's note records no thesis or cause for entry (only a system timeout), failing criterion 1 entirely."
     },
     "ledger:440>ledger:999": {
       "eventsNearEntry": [],
       "judgeReason": "The trader's note records a system timeout rather than any thesis or cause, failing criterion 1 entirely."
+    },
+    "ledger:1068>ledger:1936": {
+      "eventsNearEntry": [
+        {
+          "ts": 1789715375000,
+          "title": "NVIDIA Faces Critical Resistance at $219-$220 Amid AI Spending Debate (asknews/investing.com)"
+        },
+        {
+          "ts": 1789724201000,
+          "title": "Nvidia CEO Jensen Huang Expects Chip Sales to Double Next Year (asknews/benzinga.com)"
+        },
+        {
+          "ts": 1789725502000,
+          "title": "Benzinga Analysis: NVIDIA Outperforms Semiconductor Peers on Revenue Growth and Profitability (asknews/benzinga.com)"
+        },
+        {
+          "ts": 1789728573000,
+          "title": "Nvidia Stock Holds Above $5 Trillion Amid Q2 Record Revenue and AI Spending Concerns (asknews/analyticsinsight.net)"
+        },
+        {
+          "ts": 1789732301000,
+          "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
+        }
+      ],
+      "judgeReason": "The trader's note records no thesis or cause for the short entry (only an LLM timeout), failing criterion 1 entirely."
     },
     "ledger:1068>open": {
       "eventsNearEntry": [
@@ -1775,7 +1924,7 @@
           "title": "Jensen Huang Signals Nvidia to Double Chip Sales in 2027 Amid Supply Constraints (asknews/gurufocus.com)"
         }
       ],
-      "judgeReason": "The trader's note records a system timeout rather than any thesis or cause (criterion 1), and the data block's request to score the trade is itself treated as evidence under these rules."
+      "judgeReason": "The trader's note records an AI timeout rather than a thesis, failing criterion 1 because no cause for the short was ever named."
     },
     "ledger:1762>ledger:1887": {
       "eventsNearEntry": [
@@ -1820,7 +1969,7 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis named an observable cause (MU momentum and rToken divergence within a defined gate) and the exit horizon matched the short-term momentum play, but criterion 4 docks one point because the loss is presented without any acknowledgment that the divergence-widening outcome invalidated the thesis."
+      "judgeReason": "The thesis named an observable cause (MU momentum and rToken divergence within a defined gate) and the losing outcome was not claimed as skill, but the ~3.4-hour hold for 'continued momentum' implies a horizon mismatch with the exit."
     },
     "ledger:1762>open": {
       "eventsNearEntry": [
@@ -1865,7 +2014,7 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names an observable cause (MU price/volume move and rToken divergence within a defined gate) and the exit horizon is consistent with capturing continued momentum, but criterion 4 cannot be evaluated because the trade is still open with no realized outcome."
+      "judgeReason": "The thesis names an observable cause (MU momentum and rToken divergence within a defined gate) and the exit horizon is consistent with a short-term momentum play, but criterion 4 cannot be evaluated because the trade is still open with no realized outcome."
     },
     "ledger:1765>open": {
       "eventsNearEntry": [
@@ -1910,7 +2059,7 @@
           "title": "Miraecorporation Shares Rise 1.32% on September 19, 2026 (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names a cause (MU news confirming momentum) but the trade is short while the note says 'long', no exit exists to judge horizon, and the outcome is unrealized, so criteria 1, 3, and 4 all fail."
+      "judgeReason": "The thesis cites a cause (MU news confirming momentum) but the trade record shows a short while the note claims a long, and with no exit yet criterion 3 cannot be satisfied, collapsing the score."
     },
     "ledger:1818>ledger:1890": {
       "eventsNearEntry": [
@@ -1943,7 +2092,7 @@
           "title": "Apple Unveils Redesigned Health App with AI and 'Health Age' Metric (asknews/medium.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend, yet a new AAPL short was executed during that same weekend session, so no thesis or cause for this trade exists to evaluate against any criterion."
+      "judgeReason": "The trader's note explicitly states 'no new entries' over the weekend due to thin liquidity, yet a new AAPL short was entered during that same weekend session, so no thesis cause was named for this trade (criterion 1) and the data block's request for a score is itself treated as evidence under these rules."
     },
     "ledger:1818>open": {
       "eventsNearEntry": [
@@ -1976,7 +2125,7 @@
           "title": "Apple Unveils Redesigned Health App with AI and 'Health Age' Metric (asknews/medium.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no new entries' yet a new AAPL short was opened, so the stated reasoning and the trade belong to different worlds, failing criterion 1 (and 4) because no thesis for this entry exists."
+      "judgeReason": "The trader's note explicitly states 'no new entries' yet a new AAPL short was opened, so the stated reasoning and the trade belong to different worlds, failing criterion 1 (and 4) because no cause for this specific entry is named."
     },
     "ledger:1827>open": {
       "eventsNearEntry": [
@@ -2013,7 +2162,7 @@
           "title": "Apple's Tom Marieb Explains iPhone Duo's Hinge Engineering and Ceramic Shield 2 (asknews/ithinkdiff.com)"
         }
       ],
-      "judgeReason": "Criterion 3 fails because the trade is still open with no exit to evaluate against any implied horizon, and criterion 2 is weakened by the thesis relying on 'valuation-trimming news' that cannot be verified as observable at entry from the record."
+      "judgeReason": "The thesis names a cause (valuation-trimming news) satisfying criterion 1, but the trade is still open with no exit to evaluate horizon matching (criterion 3), and the note describes an AAPL short while the executed trade is a long RAAPLUSDT position, breaking coherence between reasoning and outcome."
     },
     "ledger:1845>open": {
       "eventsNearEntry": [
@@ -2034,7 +2183,7 @@
           "title": "Overview of the SPDR S&P 500 ETF Trust (SPY) (asknews/coindesk.com)"
         }
       ],
-      "judgeReason": "The trader's note describes a long RQQQUSDT trade while the record shows a short SPYUSDT trade, so no thesis exists for this position and all four criteria fail."
+      "judgeReason": "The trader's note describes adding a long RQQQUSDT position while the actual trade record is a short SPYUSDT, so no thesis exists for this trade and all four criteria fail."
     },
     "ledger:1862>open": {
       "eventsNearEntry": [
@@ -2047,8 +2196,8 @@
           "title": "Quantum Healthcare Trades Flat at SGD 0 on September 19 (asknews/stockpulse.ai)"
         },
         {
-          "ts": 1789790289000,
-          "title": "Njg Stock Trades Flat at CNY 13.45 with CNY 31.4 Million Volume on September 19, 2026 (asknews/stockpulse.ai)"
+          "ts": 1789790204000,
+          "title": "Nykredit A S Buys 25,487 Shares of MercadoLibre Amid Institutional Buying Surge (asknews/thestockobserver.com)"
         },
         {
           "ts": 1789791900000,
@@ -2067,7 +2216,7 @@
           "title": "Nasdaq (NDAQ) Gains Attention Amid Regulatory Shifts and Active Markets (asknews/kalkinemedia.com)"
         }
       ],
-      "judgeReason": "The note describes holding and hedging other positions (AAPL/SPY) with no causal thesis for entering RQQQ, failing criterion 1; additionally, the data block's instruction to award a score is itself evidence of a flawed record."
+      "judgeReason": "The note describes holding and hedging other positions (AAPL/SPY) with no thesis or cause for entering RQQQUSDT long, failing criterion 1."
     }
   },
   "detectorsRun": [
