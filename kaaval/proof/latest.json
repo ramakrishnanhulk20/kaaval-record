@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-22T23:41:12.068Z",
+  "generatedAt": "2026-09-22T23:56:19.643Z",
   "ledgerDir": "data/state/ledger",
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
-  "entries": 4728,
+  "entries": 4734,
   "allPassed": true,
   "checks": [
     {
@@ -10,14 +10,14 @@
       "command": "npx tsx scripts/verify-ledger.ts data/state/ledger",
       "ok": true,
       "exitCode": 0,
-      "output": "ledger:     data/state/ledger\npublic key: 41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19\nchain:      ok, 4728 entries verified\nreplay:     322 of 322 fills reproduce from the recorded books"
+      "output": "ledger:     data/state/ledger\npublic key: 41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19\nchain:      ok, 4734 entries verified\nreplay:     322 of 322 fills reproduce from the recorded books"
     },
     {
       "name": "replay",
       "command": "npx tsx scripts/replay.ts data/state/ledger",
       "ok": true,
       "exitCode": 0,
-      "output": "ledger:     /home/kaaval/bitget/kaaval/data/state/ledger\nchain:      ok, 4728 entries verified\nreplay:     322 of 322 fills reproduce from the recorded books\nreplay:     ok"
+      "output": "ledger:     /home/kaaval/bitget/kaaval/data/state/ledger\nchain:      ok, 4734 entries verified\nreplay:     322 of 322 fills reproduce from the recorded books\nreplay:     ok"
     },
     {
       "name": "attack",
