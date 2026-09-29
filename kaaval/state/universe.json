@@ -2,23 +2,23 @@
   "entries": [
     {
       "rToken": {
-        "symbol": "RMUUSDT",
+        "symbol": "RSPYUSDT",
         "category": "SPOT",
-        "baseCoin": "rMU",
+        "baseCoin": "rSPY",
         "quoteCoin": "USDT",
         "isStock": true,
         "minOrderUsdt": 10,
-        "minOrderQty": 0.00001,
+        "minOrderQty": 0.0001,
         "pricePrecision": 2,
-        "quantityPrecision": 5,
+        "quantityPrecision": 4,
         "makerFeeRate": null,
         "takerFeeRate": null,
         "status": "online"
       },
       "perp": {
-        "symbol": "MUUSDT",
+        "symbol": "SPYUSDT",
         "category": "USDT-FUTURES",
-        "baseCoin": "MU",
+        "baseCoin": "SPY",
         "quoteCoin": "USDT",
         "isStock": true,
         "minOrderUsdt": 5,
@@ -29,9 +29,9 @@
         "takerFeeRate": 0.0006,
         "status": "online"
       },
-      "underlying": "MU",
+      "underlying": "SPY",
       "roundTheClock": true,
-      "volume24hUsdt": 370644438.48881
+      "volume24hUsdt": 22440518829.7084
     },
     {
       "rToken": {
@@ -64,139 +64,7 @@
       },
       "underlying": "QQQ",
       "roundTheClock": true,
-      "volume24hUsdt": 344579275.5807
-    },
-    {
-      "rToken": {
-        "symbol": "RSNDKUSDT",
-        "category": "SPOT",
-        "baseCoin": "rSNDK",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 10,
-        "minOrderQty": 0.00001,
-        "pricePrecision": 2,
-        "quantityPrecision": 5,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "SNDKUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "SNDK",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.001,
-        "pricePrecision": 2,
-        "quantityPrecision": 3,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "SNDK",
-      "roundTheClock": true,
-      "volume24hUsdt": 278938318.1139
-    },
-    {
-      "rToken": {
-        "symbol": "RSOXSUSDT",
-        "category": "SPOT",
-        "baseCoin": "rSOXS",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 20,
-        "minOrderQty": 0.0001,
-        "pricePrecision": 2,
-        "quantityPrecision": 4,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "SOXSUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "SOXS",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.01,
-        "pricePrecision": 3,
-        "quantityPrecision": 2,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "SOXS",
-      "roundTheClock": true,
-      "volume24hUsdt": 231769273.6419
-    },
-    {
-      "rToken": {
-        "symbol": "RINTCUSDT",
-        "category": "SPOT",
-        "baseCoin": "rINTC",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 10,
-        "minOrderQty": 0.0001,
-        "pricePrecision": 2,
-        "quantityPrecision": 4,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "INTCUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "INTC",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.01,
-        "pricePrecision": 2,
-        "quantityPrecision": 2,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "INTC",
-      "roundTheClock": true,
-      "volume24hUsdt": 229912327.3371
-    },
-    {
-      "rToken": {
-        "symbol": "RMETAUSDT",
-        "category": "SPOT",
-        "baseCoin": "rMETA",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 10,
-        "minOrderQty": 0.0001,
-        "pricePrecision": 2,
-        "quantityPrecision": 4,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "METAUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "META",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.01,
-        "pricePrecision": 2,
-        "quantityPrecision": 2,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "META",
-      "roundTheClock": true,
-      "volume24hUsdt": 193855662.8678
+      "volume24hUsdt": 19719653947.705
     },
     {
       "rToken": {
@@ -229,13 +97,46 @@
       },
       "underlying": "NVDA",
       "roundTheClock": true,
-      "volume24hUsdt": 121633743.2886
+      "volume24hUsdt": 16784992316.7922
     },
     {
       "rToken": {
-        "symbol": "RSPYUSDT",
+        "symbol": "RMUUSDT",
         "category": "SPOT",
-        "baseCoin": "rSPY",
+        "baseCoin": "rMU",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 10,
+        "minOrderQty": 0.00001,
+        "pricePrecision": 2,
+        "quantityPrecision": 5,
+        "makerFeeRate": null,
+        "takerFeeRate": null,
+        "status": "online"
+      },
+      "perp": {
+        "symbol": "MUUSDT",
+        "category": "USDT-FUTURES",
+        "baseCoin": "MU",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 5,
+        "minOrderQty": 0.01,
+        "pricePrecision": 2,
+        "quantityPrecision": 2,
+        "makerFeeRate": 0.0002,
+        "takerFeeRate": 0.0006,
+        "status": "online"
+      },
+      "underlying": "MU",
+      "roundTheClock": true,
+      "volume24hUsdt": 12380337661.42263
+    },
+    {
+      "rToken": {
+        "symbol": "RMETAUSDT",
+        "category": "SPOT",
+        "baseCoin": "rMETA",
         "quoteCoin": "USDT",
         "isStock": true,
         "minOrderUsdt": 10,
@@ -247,9 +148,9 @@
         "status": "online"
       },
       "perp": {
-        "symbol": "SPYUSDT",
+        "symbol": "METAUSDT",
         "category": "USDT-FUTURES",
-        "baseCoin": "SPY",
+        "baseCoin": "META",
         "quoteCoin": "USDT",
         "isStock": true,
         "minOrderUsdt": 5,
@@ -260,9 +161,42 @@
         "takerFeeRate": 0.0006,
         "status": "online"
       },
-      "underlying": "SPY",
+      "underlying": "META",
       "roundTheClock": true,
-      "volume24hUsdt": 117068234.5515
+      "volume24hUsdt": 8846140882.0374
+    },
+    {
+      "rToken": {
+        "symbol": "RTSLAUSDT",
+        "category": "SPOT",
+        "baseCoin": "rTSLA",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 10,
+        "minOrderQty": 0.0001,
+        "pricePrecision": 2,
+        "quantityPrecision": 4,
+        "makerFeeRate": null,
+        "takerFeeRate": null,
+        "status": "online"
+      },
+      "perp": {
+        "symbol": "TSLAUSDT",
+        "category": "USDT-FUTURES",
+        "baseCoin": "TSLA",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 5,
+        "minOrderQty": 0.01,
+        "pricePrecision": 2,
+        "quantityPrecision": 2,
+        "makerFeeRate": 0.0002,
+        "takerFeeRate": 0.0006,
+        "status": "online"
+      },
+      "underlying": "TSLA",
+      "roundTheClock": true,
+      "volume24hUsdt": 8530937566.2336
     },
     {
       "rToken": {
@@ -295,7 +229,7 @@
       },
       "underlying": "AMD",
       "roundTheClock": true,
-      "volume24hUsdt": 119235639.6576
+      "volume24hUsdt": 8277638151.1729
     },
     {
       "rToken": {
@@ -328,7 +262,7 @@
       },
       "underlying": "MARA",
       "roundTheClock": true,
-      "volume24hUsdt": 1040391.5772
+      "volume24hUsdt": 210034335.4526
     }
   ],
   "hedges": [
@@ -375,7 +309,7 @@
       "status": "online"
     }
   ],
-  "builtTs": 1790583830893,
+  "builtTs": 1790670889377,
   "weekendChecked": {
     "start": 1790380800000,
     "end": 1790553600000
