@@ -138,23 +138,23 @@
       "dayKey": "2026-10-01",
       "peakEquity": 10000,
       "halted": false,
-      "lastDecisionTs": 1790864371592,
-      "lastSummary": "1 rTokens under their perpetual by more than 40 basis points, 0 hedges, 1 closes. The NYSE is open.",
+      "lastDecisionTs": 1790865304506,
+      "lastSummary": "0 rTokens under their perpetual by more than 40 basis points, 0 hedges, 1 closes. The NYSE is open.",
       "lastMarks": {
-        "SPOT:RSPYUSDT": 760.45,
-        "USDT-FUTURES:SPYUSDT": 761.115,
-        "SPOT:RNVDAUSDT": 229.64,
-        "USDT-FUTURES:NVDAUSDT": 229.89499999999998,
+        "SPOT:RSPYUSDT": 761.825,
+        "USDT-FUTURES:SPYUSDT": 762.325,
+        "SPOT:RNVDAUSDT": 229.915,
+        "USDT-FUTURES:NVDAUSDT": 230.525,
         "SPOT:RVOOUSDT": 708.275,
         "USDT-FUTURES:VOOUSDT": 709.005,
-        "SPOT:RAAPLUSDT": 329.825,
-        "USDT-FUTURES:AAPLUSDT": 330.095,
-        "SPOT:RMUUSDT": 1028.685,
-        "USDT-FUTURES:MUUSDT": 1030.23,
-        "SPOT:RQQQUSDT": 738.115,
-        "USDT-FUTURES:QQQUSDT": 738.775,
-        "USDT-FUTURES:BTCUSDT": 83937.95,
-        "USDT-FUTURES:ETHUSDT": 2692.885,
+        "SPOT:RAAPLUSDT": 330.885,
+        "USDT-FUTURES:AAPLUSDT": 331.175,
+        "SPOT:RMUUSDT": 1040.43,
+        "USDT-FUTURES:MUUSDT": 1041.615,
+        "SPOT:RQQQUSDT": 740.1500000000001,
+        "USDT-FUTURES:QQQUSDT": 740.355,
+        "USDT-FUTURES:BTCUSDT": 84174.85,
+        "USDT-FUTURES:ETHUSDT": 2698.4449999999997,
         "SPOT:RMETAUSDT": 724.735,
         "USDT-FUTURES:METAUSDT": 725.345,
         "SPOT:RTSLAUSDT": 354.53499999999997,
@@ -195,20 +195,20 @@
         "USDT-FUTURES:SNOWUSDT": 335.51,
         "SPOT:RTEMUSDT": 83.505,
         "USDT-FUTURES:TEMUSDT": 83.53999999999999,
-        "SPOT:RMARAUSDT": 11,
-        "USDT-FUTURES:MARAUSDT": 11.02,
+        "SPOT:RMARAUSDT": 11.125,
+        "USDT-FUTURES:MARAUSDT": 11.1465,
         "SPOT:RAPLDUSDT": 25.71,
         "USDT-FUTURES:APLDUSDT": 25.705,
         "SPOT:RFUTUUSDT": 109.355,
         "USDT-FUTURES:FUTUUSDT": 109.88499999999999,
-        "SPOT:RMSFTUSDT": 516.9849999999999,
-        "USDT-FUTURES:MSFTUSDT": 517.335
+        "SPOT:RMSFTUSDT": 517.1099999999999,
+        "USDT-FUTURES:MSFTUSDT": 517.425
       }
     },
     "qwen": {
       "account": {
         "id": "qwen",
-        "balanceUsdt": 8706.025800825118,
+        "balanceUsdt": 8705.95628989797,
         "positions": [
           [
             "SPOT:RSPYUSDT",
@@ -286,10 +286,21 @@
               "avgEntry": 333.51882982668553,
               "openedTs": 1790804435637
             }
+          ],
+          [
+            "USDT-FUTURES:AAPLUSDT",
+            {
+              "category": "USDT-FUTURES",
+              "symbol": "AAPLUSDT",
+              "side": "short",
+              "qty": 0.35,
+              "avgEntry": 331.00441500000005,
+              "openedTs": 1790865305935
+            }
           ]
         ],
-        "realisedPnl": -195.6560937014127,
-        "feesPaid": 36.135896282420894
+        "realisedPnl": -195.72560462856268,
+        "feesPaid": 36.20540720957089
       },
       "stops": [
         {
@@ -354,37 +365,46 @@
           "qty": 0.30189999999999995,
           "positionSide": "long",
           "createdTs": 1790851964068
+        },
+        {
+          "category": "USDT-FUTURES",
+          "symbol": "AAPLUSDT",
+          "side": "buy",
+          "triggerPrice": 337.6245033000001,
+          "qty": 0.35,
+          "positionSide": "short",
+          "createdTs": 1790865304506
         }
       ],
       "startOfDayEquity": 9821.33184441873,
       "dayKey": "2026-10-01",
       "peakEquity": 10020.167628204545,
       "halted": false,
-      "lastDecisionTs": 1790864371592,
-      "lastSummary": "Adding a small RAAPLUSDT long to ride Q4 open AI momentum and Apple-specific news, hedged with AAPLUSDT short since divergence is 1.09% and session is live.",
+      "lastDecisionTs": 1790865304506,
+      "lastSummary": "Adding a small AAPL perpetual short to hedge the existing RAAPLUSDT long, capturing positive AI sentiment news while controlling single-stock risk during regular hours.",
       "lastMarks": {
-        "SPOT:RSPYUSDT": 760.45,
-        "USDT-FUTURES:SPYUSDT": 761.115,
-        "SPOT:RNVDAUSDT": 229.64,
-        "USDT-FUTURES:NVDAUSDT": 229.89499999999998,
-        "SPOT:RQQQUSDT": 738.115,
-        "USDT-FUTURES:QQQUSDT": 738.775,
-        "SPOT:RMUUSDT": 1028.685,
-        "USDT-FUTURES:MUUSDT": 1030.23,
+        "SPOT:RSPYUSDT": 761.825,
+        "USDT-FUTURES:SPYUSDT": 762.325,
+        "SPOT:RNVDAUSDT": 229.915,
+        "USDT-FUTURES:NVDAUSDT": 230.525,
+        "SPOT:RQQQUSDT": 740.1500000000001,
+        "USDT-FUTURES:QQQUSDT": 740.355,
+        "SPOT:RMUUSDT": 1040.43,
+        "USDT-FUTURES:MUUSDT": 1041.615,
         "SPOT:RAVGOUSDT": 339.52,
         "USDT-FUTURES:AVGOUSDT": 340.015,
         "SPOT:RGOOGLUSDT": 345.22,
         "USDT-FUTURES:GOOGLUSDT": 345.4,
-        "USDT-FUTURES:BTCUSDT": 83937.95,
-        "USDT-FUTURES:ETHUSDT": 2692.885,
+        "USDT-FUTURES:BTCUSDT": 84174.85,
+        "USDT-FUTURES:ETHUSDT": 2698.4449999999997,
         "SPOT:RAMDUSDT": 618.28,
         "USDT-FUTURES:AMDUSDT": 618.47,
         "SPOT:RTSLAUSDT": 354.53499999999997,
         "USDT-FUTURES:TSLAUSDT": 355.245,
         "SPOT:RSPCXUSDT": 148.195,
         "USDT-FUTURES:SPCXUSDT": 148.845,
-        "SPOT:RAAPLUSDT": 329.825,
-        "USDT-FUTURES:AAPLUSDT": 330.095,
+        "SPOT:RAAPLUSDT": 330.885,
+        "USDT-FUTURES:AAPLUSDT": 331.175,
         "SPOT:RBEUSDT": 267.9,
         "USDT-FUTURES:BEUSDT": 267.8,
         "SPOT:RVOOUSDT": 708.275,
@@ -415,18 +435,18 @@
         "USDT-FUTURES:SNOWUSDT": 335.51,
         "SPOT:RTEMUSDT": 83.505,
         "USDT-FUTURES:TEMUSDT": 83.53999999999999,
-        "SPOT:RMARAUSDT": 11,
-        "USDT-FUTURES:MARAUSDT": 11.02,
+        "SPOT:RMARAUSDT": 11.125,
+        "USDT-FUTURES:MARAUSDT": 11.1465,
         "SPOT:RAPLDUSDT": 25.71,
         "USDT-FUTURES:APLDUSDT": 25.705,
         "SPOT:RFUTUUSDT": 109.355,
         "USDT-FUTURES:FUTUUSDT": 109.88499999999999,
-        "SPOT:RMSFTUSDT": 516.9849999999999,
-        "USDT-FUTURES:MSFTUSDT": 517.335
+        "SPOT:RMSFTUSDT": 517.1099999999999,
+        "USDT-FUTURES:MSFTUSDT": 517.425
       }
     }
   },
-  "lastTickTs": 1790864371592,
-  "lastNewsTs": 1790864371592,
+  "lastTickTs": 1790865304506,
+  "lastNewsTs": 1790865304506,
   "startedTs": 1789114888225
 }
