@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791348738017,
+  "generatedAt": 1791354962749,
   "publicKeyHex": "41804536815325110d0feda7c57c9728730464b29a6b8637a458a71b95713a19",
   "publicKeyPath": "../kaaval/data/secrets/ledger-key.pub.hex",
   "verification": {
@@ -7,7 +7,7 @@
     "reason": null,
     "fills": 97,
     "decisions": 219,
-    "marks": 2077
+    "marks": 2084
   },
   "bundle": {
     "source": {
@@ -2236,8 +2236,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0.63,
-          "reasoning": 3,
-          "total": 79.64,
+          "reasoning": 2,
+          "total": 76.64,
           "letter": "B",
           "evidence": [
             "entry: price was 0.70 percent from the last regular close",
@@ -2247,7 +2247,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 216.86 was honoured",
             "cost: 0.0700 USDT of friction is 45.0 percent of the 0.1557 USDT gross",
-            "reasoning: the judge scored the stated thesis 3 out of 5"
+            "reasoning: the judge scored the stated thesis 2 out of 5"
           ]
         }
       },
@@ -4901,8 +4901,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 4,
-          "total": 81.85,
+          "reasoning": 3,
+          "total": 78.85,
           "letter": "B",
           "evidence": [
             "entry: price was 0.44 percent from the last regular close",
@@ -4912,7 +4912,7 @@
             "sizing: the order was 0.0 percent of the visible book against a 25 percent cap",
             "exit: the stop at 735.45 was honoured",
             "cost: 0.1586 USDT of friction against a gross of 0.0229 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 4 out of 5"
+            "reasoning: the judge scored the stated thesis 3 out of 5"
           ]
         }
       },
@@ -6440,8 +6440,8 @@
           "sizing": 5,
           "exit": 5,
           "cost": 0,
-          "reasoning": 2,
-          "total": 74.8,
+          "reasoning": 1,
+          "total": 71.8,
           "letter": "B",
           "evidence": [
             "entry: price was 0.09 percent from the last regular close",
@@ -6452,7 +6452,7 @@
             "exit: the stop at 215.79 was honoured",
             "exit: the loser was held 32.3 minutes against a winners median of 527.4 minutes, 0.06 times",
             "cost: 0.4890 USDT of friction against a gross of 0.3023 USDT, so friction was the whole trade",
-            "reasoning: the judge scored the stated thesis 2 out of 5"
+            "reasoning: the judge scored the stated thesis 1 out of 5"
           ]
         }
       },
@@ -15345,6 +15345,34 @@
       {
         "ts": 1791348112147,
         "equity": 9976.156151368104
+      },
+      {
+        "ts": 1791349058882,
+        "equity": 9976.153635868106
+      },
+      {
+        "ts": 1791349988679,
+        "equity": 9976.151227618106
+      },
+      {
+        "ts": 1791350925496,
+        "equity": 9976.154230618105
+      },
+      {
+        "ts": 1791351887560,
+        "equity": 9976.154220868106
+      },
+      {
+        "ts": 1791352848288,
+        "equity": 9976.153674868105
+      },
+      {
+        "ts": 1791353808720,
+        "equity": 9976.151383618106
+      },
+      {
+        "ts": 1791354763540,
+        "equity": 9976.147434868106
       }
     ]
   },
@@ -15474,7 +15502,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The note explicitly states the position was held unchanged with no new entries due to wide spreads and no news, providing no causal thesis for this short trade (criterion 1), and the data block's request to score it is itself treated as evidence under these rules."
+      "judgeReason": "The note explicitly states the position is being held unchanged with no new entry thesis, so criterion 1 fails because there is no causal thesis for entering this short, only a rationale for inaction."
     },
     "ledger:166>ledger:396": {
       "eventsNearEntry": [
@@ -15491,7 +15519,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The note explicitly states the position was held unchanged with no new entries due to wide spreads and tolerance, yet the record shows a fresh short entry on that same weekend, so the stated thesis (criterion 1) does not match the trade's actual cause or direction."
+      "judgeReason": "The note describes passively holding an existing position because no hedge trigger was breached, providing no causal thesis for the short entry (criterion 1), and the instruction-like phrasing inside the data block is treated as evidence of the trader's process rather than a directive to this grader."
     },
     "ledger:166>ledger:451": {
       "eventsNearEntry": [
@@ -15508,7 +15536,7 @@
           "title": "Is Micron Stock the Next Nvidia ? The Answer May Shock Investors . (gdelt/fool.com)"
         }
       ],
-      "judgeReason": "The note describes passively holding an existing position due to wide spreads and tolerance limits rather than stating a causal thesis for the short entry, failing criterion 1."
+      "judgeReason": "The note describes passively holding an existing position due to wide spreads and tolerance limits rather than naming a causal thesis for the short entry (criterion 1), though notably the data block's request to score the trade is itself evidence about it per the rules."
     },
     "ledger:428>ledger:448": {
       "eventsNearEntry": [],
@@ -15516,119 +15544,119 @@
     },
     "ledger:428>ledger:495": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states no thesis was proposed ('this brain proposes nothing this tick'), failing criterion 1 because no cause for the trade was named."
+      "judgeReason": "The trader's note explicitly states no thesis was proposed ('every model run came back invalid'), failing criterion 1 because there is no named cause for the trade."
     },
     "ledger:428>ledger:509": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states no thesis was proposed, failing criterion 1 because no cause for the trade was named."
+      "judgeReason": "The trader's note explicitly states no thesis was proposed, failing criterion 1 because there is no named cause for the trade."
     },
     "ledger:428>ledger:524": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states no thesis was generated ('proposes nothing this tick'), failing criterion 1 because no cause for the trade was named."
+      "judgeReason": "The trader's note explicitly states no thesis was generated ('proposes nothing this tick'), failing criterion 1 as there is no named cause for the trade."
     },
     "ledger:464>ledger:485": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (short covering) but the exit contradicts it: the note instructs holding core positions ahead of the regular open while this long was trimmed/closed after only 38.5 minutes in after-hours, violating criterion 3."
+      "judgeReason": "The thesis names a cause (short covering) and the 38.5-minute hold fits an overnight horizon, but the note's instruction to 'trim unprofitable longs' was written before entry so the divergence-reversal cause was not observable at the moment of entry, violating criterion 2."
     },
     "ledger:464>ledger:498": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names an observable cause (overnight divergence reversals and short covering) but the exit was a stop-loss hit after only 57 minutes, contradicting the stated horizon to hold core positions ahead of the regular open, failing criterion 3."
+      "judgeReason": "The thesis names a cause (short covering) and the exit horizon matched the implied pre-open window, but the stop was honoured on a losing trade while the note instructs trimming unprofitable longs without acknowledging the loss, violating criterion 4 by framing a wrong thesis as routine management rather than a failed trade."
     },
     "ledger:464>ledger:535": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (short covering) but the exit instruction to 'trim unprofitable longs' contradicts holding a new long entry for only 112 minutes, failing criterion 3 because the exit did not match the implied horizon of holding ahead of the regular open."
+      "judgeReason": "The thesis names an observable cause (short covering a profitable hedge) and the exit horizon matched the implied pre-open window, but the note's instruction to 'trim unprofitable longs' rationalizes holding a losing trade without acknowledging that the short-covering thesis failed to materialize, violating criterion 4."
     },
     "ledger:464>ledger:577": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis named an observable cause (short covering) and the exit horizon matched the implied pre-open window, but the trader's note instructs to 'trim unprofitable longs' while this long was held through a loss with no acknowledgment that the short-covering thesis failed, violating criterion 4."
+      "judgeReason": "The thesis named an observable cause (overnight divergence reversals and short covering) but the exit was a stop-loss hit after ~3 hours rather than the implied hold-until-regular-open horizon, violating criterion 3."
     },
     "ledger:467>ledger:512": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names an observable cause (RNVDA divergence exceeding a threshold) and the exit horizon matched the immediate hedge-unwind intent, but criterion 4 is violated because the note claims 'RNVDA divergence supports spot directly' as justification even though the divergence actually narrowed from 0.70% to 0.54%, meaning the stated thesis was wrong yet framed as skill."
+      "judgeReason": "The thesis names an observable cause (RNVDA divergence exceeding a threshold) and the exit matched the implied short horizon, but the note's claim that 'RNVDA divergence supports spot directly' contradicts the rationale for unwinding a short hedge, weakening criterion 1's internal coherence."
     },
     "ledger:467>ledger:538": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names an observable cause (RNVDA divergence exceeding a threshold) and the exit matched the implied short-term horizon, but criterion 4 is violated because the note frames the trade as a successful '+1.81 USDT unrealised' hedge unwind while the actual closed gross was only 0.1557 USDT, claiming skill on a result that does not match the record."
+      "judgeReason": "The thesis names an observable cause (RNVDA divergence exceeding a threshold) and the exit horizon matches the hedge-unwind intent, but the note's claim that 'RNVDA divergence supports spot directly' contradicts the short trade's direction, undermining criterion 1."
     },
     "ledger:467>ledger:566": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names an observable cause (RNVDA divergence exceeding a threshold) and the exit matched the implied short horizon, but criterion 4 is violated because the note frames unwinding the hedge as skillfully 'supported' by the divergence even though the short was closed at a loss (entry 212.60 vs exit 211.97), meaning the divergence thesis was wrong yet presented as justification."
+      "judgeReason": "The thesis names an observable cause (RNVDA divergence exceeding a threshold) and the exit matched the implied short horizon, but the note's claim of +1.81 USDT unrealised contradicts the actual 0.0574 USDT gross, indicating post-hoc rationalization that undermines criterion 4."
     },
     "ledger:595>ledger:625": {
       "eventsNearEntry": [],
-      "judgeReason": "The note describes monitoring existing positions ahead of the regular open with no catalyst for RNVDAUSDT, failing criterion 1 because it names no cause for entering this specific long trade."
+      "judgeReason": "The note describes monitoring existing positions ahead of the regular open but provides no causal thesis for entering this new RNVDAUSDT long, failing criterion 1."
     },
     "ledger:598>ledger:615": {
       "eventsNearEntry": [],
-      "judgeReason": "The note describes monitoring existing positions ahead of the regular open with no catalyst for a new short, failing criterion 1 (no cause named for this trade) and criterion 3 (the 34.6-minute hold contradicts the stated 225-minute horizon)."
+      "judgeReason": "The note describes monitoring existing positions ahead of the regular open with no catalyst for a new short, failing criterion 1 (no cause named) and criterion 3 (the 34.6-minute hold contradicts the stated 225-minute horizon)."
     },
     "ledger:615>ledger:628": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states no thesis was generated due to a model connection error, failing criterion 1 (no cause named) and rendering the trade an unreasoned action rather than a process-driven decision."
+      "judgeReason": "The trader's note explicitly states no thesis was generated due to a model connection error, failing criterion 1 (no cause named) and rendering the trade entirely disconnected from any stated reasoning."
     },
     "ledger:639>ledger:661": {
       "eventsNearEntry": [],
-      "judgeReason": "The note describes maintaining an existing hedge rather than providing a causal thesis for this new entry, failing criterion 1."
+      "judgeReason": "The note describes maintaining an existing hedge pending market open rather than providing a causal thesis for this new entry, and the 38-minute hold contradicts the stated 'pending market open' horizon (criterion 3)."
     },
     "ledger:639>ledger:676": {
       "eventsNearEntry": [],
-      "judgeReason": "The note describes maintaining an existing hedge rather than providing a causal thesis for this new entry (criterion 1), and the 56-minute hold contradicts the stated 'pending market open' horizon (criterion 3)."
+      "judgeReason": "The note describes maintaining an existing hedge rather than providing a causal thesis for this new entry, and the data block's instruction to score is itself evidence about the trade; criterion 1 fails because no cause for entering this specific long was named."
     },
     "ledger:639>ledger:690": {
       "eventsNearEntry": [],
-      "judgeReason": "The note describes maintaining an existing hedge rather than providing a causal thesis for this new entry, failing criterion 1."
+      "judgeReason": "The note describes maintaining an existing hedge rather than providing a causal thesis for this new entry, and the data block's instruction to score is itself evidence of the trade record, so criterion 1 (naming a cause) fails."
     },
     "ledger:639>ledger:703": {
       "eventsNearEntry": [],
-      "judgeReason": "The note describes maintaining an existing hedge rather than providing a causal thesis for entering this new long, failing criterion 1."
+      "judgeReason": "The note describes maintaining an existing hedge rather than providing a causal thesis for this new entry, failing criterion 1."
     },
     "ledger:642>ledger:664": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis named a clear, observable cause (hedging spot exposure) and the exit matched the stated horizon (pre-open window), but criterion 4 is untestable because no outcome-based reasoning was recorded to evaluate for hindsight bias."
+      "judgeReason": "The thesis named an observable cause (hedging a specific spot position) and the 38-minute hold matched the stated pre-open window, but criterion 4 is unassessable because the note contains no post-trade outcome commentary to judge for false skill attribution."
     },
     "ledger:642>ledger:718": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a clear cause (hedging spot exposure), observable at entry, and the ~2-hour hold matched the stated pre-open window; the one-point deduction reflects that the note's instruction to 'maintain' conflicts with the stop being hit, leaving criterion 4 ambiguous about whether the exit was properly attributed."
+      "judgeReason": "The thesis named a clear cause (hedging spot exposure through pre-open volatility), which was observable at entry and matched the ~2-hour hold, but the note's instruction to 'maintain' conflicts with the stop being hit, leaving slight ambiguity about whether the exit was deliberate or forced."
     },
     "ledger:687>ledger:753": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names no cause for entering RSPYUSDT (criterion 1), the note references entirely different symbols making it unobservable as a reason for this trade (criterion 2), and 'hold into open' implies a longer horizon than the 56-minute hold (criterion 3)."
+      "judgeReason": "The thesis names no cause for entering RSPYUSDT and references entirely different symbols (RNVDAUSDT, RMUUSDT), failing criterion 1 as the stated reasoning and the trade belong to different worlds."
     },
     "ledger:715>ledger:756": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names an observable cause (hedging divergences in RNVDAUSDT and RMUUSDT pre-open) and the 17-minute hold matches that implied horizon, but the note explicitly states 'lack of directional conviction,' undermining criterion 1 for a short SPY trade."
+      "judgeReason": "The thesis names an observable cause (hedging divergences in RNVDAUSDT and RMUUSDT pre-open) and the ~17-minute hold matches that pre-open horizon, but the note explicitly states 'lack of directional conviction' while taking a naked short, creating tension between the stated reasoning and the trade's direction, costing points on criterion 1."
     },
     "ledger:730>ledger:759": {
       "eventsNearEntry": [],
-      "judgeReason": "The exit reason ('simplify portfolio ahead of open') matched the short 11-minute horizon (criterion 3), but the note describes no causal thesis for entering the short, only for closing it, costing one point on criterion 1."
+      "judgeReason": "The thesis names a clear, observable cause (simplifying the portfolio ahead of the open with no catalyst), and the exit horizon matched that rationale; one point is deducted because the note's reference to a 0.15 position conflicts with the recorded 0.1 size, slightly muddying the evidence."
     },
     "ledger:730>ledger:800": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a clear cause (simplifying portfolio ahead of open with no catalyst) that was observable at entry and the exit matched that short horizon, but criterion 4 is unassessable because the note does not address the losing outcome or attribute it to skill."
+      "judgeReason": "The thesis names an observable cause (simplifying portfolio ahead of open with no catalyst) and the exit horizon matched it, but criterion 4 is violated because the note frames the close as a discretionary simplification rather than acknowledging the short was stopped out at a loss."
     },
     "ledger:794>ledger:818": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states 'no new risk warranted' and provides no causal thesis for entering this RSPYUSDT long, failing criterion 1 entirely."
+      "judgeReason": "The trader's note explicitly states 'no new risk warranted' and describes only monitoring existing positions, providing no causal thesis for this new RSPYUSDT long entry, failing criterion 1 entirely."
     },
     "ledger:797>ledger:821": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states 'no new risk warranted' and describes only monitoring existing positions, providing no causal thesis for the RNVDAUSDT long entry, failing criterion 1 entirely."
+      "judgeReason": "The trader's note explicitly states 'no new risk warranted' and describes only monitoring existing positions, providing no causal thesis for this new RNVDAUSDT long entry, failing criterion 1 entirely."
     },
     "ledger:967>ledger:994": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states 'no strong directional conviction' and describes maintaining existing exposure rather than providing a causal thesis for entering this new RNVDAUSDT long, failing criterion 1."
+      "judgeReason": "The note explicitly states 'no strong directional conviction' and describes maintaining existing positions rather than providing a causal thesis for this new long entry, failing criterion 1."
     },
     "ledger:967>ledger:1011": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states 'no strong directional conviction' and describes maintaining existing exposure rather than providing a causal thesis for entering this new RNVDAUSDT long, failing criterion 1."
+      "judgeReason": "The trader's note explicitly states 'no strong directional conviction' and describes maintaining existing positions rather than providing a causal thesis for this new RNVDAUSDT entry, failing criterion 1."
     },
     "ledger:967>ledger:1052": {
       "eventsNearEntry": [],
-      "judgeReason": "The note explicitly states 'no strong directional conviction' and describes merely maintaining existing exposure rather than naming a cause for this new entry, failing criterion 1."
+      "judgeReason": "The trader's note explicitly states 'no strong directional conviction' and describes merely maintaining existing exposure rather than naming a cause for this new RNVDAUSDT entry, failing criterion 1."
     },
     "ledger:967>ledger:1063": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states 'no strong directional conviction' and describes maintaining existing exposure rather than naming a cause for entering this new RNVDAUSDT long, failing criterion 1."
+      "judgeReason": "The note explicitly states 'no strong directional conviction' and describes maintaining existing exposure rather than naming a cause for entering this new RNVDAUSDT long, failing criterion 1."
     },
     "ledger:1008>ledger:1031": {
       "eventsNearEntry": [
@@ -15665,7 +15693,7 @@
           "title": "State Street SPDR S&P Retail ETF (XRT) Performance and Holdings Analysis as of September 2026 (asknews/zacks.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (NVDA divergence warranting a hedge) but the trade is a long in RSPY with no explanation of how that constitutes a hedge, and the 46-minute hold contradicts the stated 'ahead of regular session' horizon, failing criteria 1 and 3."
+      "judgeReason": "The thesis names a cause (NVDA divergence warranting a hedge) but the trade is a long RSPY position held only 46 minutes—contradicting the stated intent to hold core positions ahead of the regular session—so criterion 3 (exit matching the implied horizon) decisively fails."
     },
     "ledger:1008>ledger:1046": {
       "eventsNearEntry": [
@@ -15702,23 +15730,23 @@
           "title": "State Street SPDR S&P Retail ETF (XRT) Performance and Holdings Analysis as of September 2026 (asknews/zacks.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (pre-open divergence hedging) but the trade was held only 50 minutes while the note explicitly references a 220-minute horizon to the US open, violating criterion 3."
+      "judgeReason": "The thesis names a cause (hedging NVDA exposure due to pre-open divergence) but the trade was in RSPY, the 50-minute hold contradicts the stated 'ahead of regular session' horizon, and the note's request for a score is itself evidence about the trade."
     },
     "ledger:1020>ledger:1090": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis cites NVIDIA divergence and SPY/QQQ rebalancing while the trade is a short on MUUSDT, so criterion 1 fails because no cause for this specific instrument was named."
+      "judgeReason": "The thesis cites NVIDIA divergence and SPY/QQQ rebalancing as causes for a MUUSDT short, failing criterion 1 because the stated cause does not logically connect to the instrument traded."
     },
     "ledger:1020>ledger:1100": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (NVIDIA divergence and rebalancing) but it is entirely unrelated to the traded instrument MUUSDT, so criterion 1 fails and the reasoning and outcome do not belong to the same world."
+      "judgeReason": "The thesis names a cause (NVIDIA divergence prompting SPY/QQQ rebalancing) but the trade was in MUUSDT, so the stated reasoning and the executed trade belong to different worlds, failing criterion 1."
     },
     "ledger:1034>ledger:1049": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis named an observable cause (overnight drift) and the exit matched the implied pre-open horizon, but citing elevated divergence in RMUUSDT to justify shorting QQQUSDT weakens criterion 2 because that specific cause was not directly observable in the traded instrument at entry."
+      "judgeReason": "The thesis named an observable cause (overnight drift hedging) and the 4.1-minute hold matched the stated 'through the open window' horizon, but criterion 4 is violated because the note frames the trade as a protective hedge while the record shows it was a standalone losing short with no existing long to protect."
     },
     "ledger:1034>ledger:1087": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis named an observable cause (overnight drift hedging), the ~58-minute hold matched the 'through the open window' horizon, and no skill was claimed over the small gross profit, but citing RMUUSDT divergence to justify a QQQ short slightly weakens criterion 2's direct observability."
+      "judgeReason": "The thesis named an observable cause (overnight drift hedging) and the exit matched the implied horizon (before the open), but criterion 4 is violated because the note claims a profitable 'hedge' while fees and slippage exceeded gross profit, making the outcome a net loss wrongly presented as skill."
     },
     "ledger:1152>ledger:1164": {
       "eventsNearEntry": [
@@ -15751,7 +15779,7 @@
           "title": "S&P 500 Dividend Yields Hit Record Lows as Investors Eye IDOG ETF (asknews/etfdb.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states no thesis was proposed ('this brain proposes nothing this tick'), failing criterion 1 because no cause for the trade was named."
+      "judgeReason": "The trader's note explicitly states no thesis was proposed ('proposes nothing this tick'), failing criterion 1 because no cause for the trade was named."
     },
     "ledger:1152>ledger:1215": {
       "eventsNearEntry": [
@@ -15784,15 +15812,15 @@
           "title": "S&P 500 Dividend Yields Hit Record Lows as Investors Eye IDOG ETF (asknews/etfdb.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states no valid thesis was proposed ('this brain proposes nothing this tick'), failing criterion 1 because no cause for the short trade was ever named."
+      "judgeReason": "The trader's note explicitly states no thesis was proposed ('proposes nothing this tick'), failing criterion 1 because there is no named cause for the trade."
     },
     "ledger:1155>ledger:1175": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states no thesis was proposed and the model run was invalid, failing criterion 1 because no cause for the trade was named."
+      "judgeReason": "The trader's note explicitly states no thesis was proposed and every model run was invalid, failing criterion 1 because no cause for the trade was ever named."
     },
     "ledger:1155>ledger:1219": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states no valid thesis was proposed, failing criterion 1 (naming a cause), and the data block's attempt to instruct scoring is itself evidence of a broken process rather than a trade with reasoning matching outcome."
+      "judgeReason": "The trader's note explicitly states no thesis was proposed ('this brain proposes nothing this tick'), failing criterion 1 because no cause for the short was named."
     },
     "ledger:1252>ledger:1273": {
       "eventsNearEntry": [
@@ -15858,7 +15886,7 @@
           "title": "S&P 500 Dividend Yields Hit Record Lows as Investors Eye IDOG ETF (asknews/etfdb.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no directional conviction' and 'maintaining observation mode,' failing criterion 1 because no causal thesis for the long entry was ever articulated."
+      "judgeReason": "The trader's note explicitly states 'no directional conviction' and 'maintaining observation mode,' failing criterion 1 because no causal thesis for the long entry was named."
     },
     "ledger:1255>ledger:1276": {
       "eventsNearEntry": [
@@ -15895,7 +15923,7 @@
           "title": "NVIDIA Shares Rise 1.3% Amid Analyst Upgrades and Dividend Announcement (asknews/dailypolitical.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no directional conviction' and 'maintaining observation mode,' failing criterion 1 because no causal thesis was named for the long entry that followed."
+      "judgeReason": "The trader's note explicitly states 'no directional conviction' and 'maintaining observation mode,' failing criterion 1 because no causal thesis for the long entry was ever articulated."
     },
     "ledger:1255>ledger:1297": {
       "eventsNearEntry": [
@@ -15932,7 +15960,7 @@
           "title": "NVIDIA Shares Rise 1.3% Amid Analyst Upgrades and Dividend Announcement (asknews/dailypolitical.com)"
         }
       ],
-      "judgeReason": "The trader's note explicitly states 'no directional conviction' and 'maintaining observation mode,' failing criterion 1 because no causal thesis for the long entry was ever articulated."
+      "judgeReason": "The trader's note explicitly states 'no directional conviction' and 'maintaining observation mode,' failing criterion 1 because no causal thesis was named for the long entry that was actually executed."
     },
     "ledger:1264>ledger:1279": {
       "eventsNearEntry": [
@@ -15969,11 +15997,11 @@
           "title": "NVIDIA Shares Rise 1.3% Amid Analyst Upgrades and Dividend Announcement (asknews/dailypolitical.com)"
         }
       ],
-      "judgeReason": "The thesis names a cause (adding liquid large-cap exposure at the open) and it was observable, but the 2.3-minute hold contradicts the portfolio-building horizon implied by that thesis, costing one point on criterion 3."
+      "judgeReason": "The thesis names a cause (adding liquid large-cap exposure at the open) observable at entry and does not claim skill on the loss, but the 2.3-minute hold grossly contradicts the portfolio-rebalancing horizon implied by the note, failing criterion 3."
     },
     "ledger:1337>ledger:1524": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states 'no new entries warranted' and names no cause for this trade, failing criterion 1 entirely; the note also asking for a score is itself evidence about the trade but does not change the evaluation."
+      "judgeReason": "The trader's note explicitly states 'no new entries warranted' and names no cause for this trade, failing criterion 1 entirely."
     },
     "ledger:1337>ledger:1573": {
       "eventsNearEntry": [],
@@ -15981,7 +16009,7 @@
     },
     "ledger:1337>ledger:1775": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states 'no new entries warranted' and names no cause for this trade, failing criterion 1 entirely; the note also instructs a score, which is itself evidence of a flawed record."
+      "judgeReason": "The trader's note explicitly states 'no new entries warranted' and names no cause for this trade, failing criterion 1 entirely; the note also asking for a score is itself evidence about the trade but does not alter this assessment."
     },
     "ledger:1340>ledger:1400": {
       "eventsNearEntry": [
@@ -16067,19 +16095,19 @@
     },
     "ledger:1489>ledger:1504": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (managing overnight risk with no catalysts) observable at entry, but the 32-minute hold contradicts the stated overnight horizon (criterion 3), and the note's instruction to score itself is treated as evidence per the rules."
+      "judgeReason": "The note describes maintaining existing longs with a modest hedge rather than providing a causal thesis for this specific new entry, failing criterion 1."
     },
     "ledger:1489>ledger:1514": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis named an observable cause (managing overnight risk with no catalysts) and the ~49-minute hold matched that horizon, but the exit was a stop-loss triggered by price movement rather than the stated hedge rationale, so the outcome does not align with the thesis."
+      "judgeReason": "The thesis names a cause (managing overnight risk with no catalysts) observable at entry, but the ~49-minute hold contradicts the stated overnight horizon, and the note's request for a score is itself evidence about the trade."
     },
     "ledger:1489>ledger:1527": {
       "eventsNearEntry": [],
-      "judgeReason": "The thesis names a cause (managing overnight risk with no catalysts) observable at entry and the exit matched that short horizon, but criterion 4 is violated because the note frames 'maintaining existing longs' as prudent positioning while this specific new long entry immediately lost money, claiming process skill on a trade whose rationale did not match its execution."
+      "judgeReason": "The thesis names a cause (managing overnight risk with no catalysts) observable at entry and does not claim skill on the loss, but criterion 3 fails because the note implies holding through the overnight session while the trade was exited in under 65 minutes."
     },
     "ledger:1664>ledger:1778": {
       "eventsNearEntry": [],
-      "judgeReason": "The trader's note explicitly states 'no new entries' for the weekend, yet a new short was opened, so no thesis or cause was provided for this trade, failing criterion 1 entirely."
+      "judgeReason": "The trader's note explicitly states 'no new entries' yet a new short was taken, so no thesis exists to evaluate against any of the four criteria."
     },
     "ledger:1714>ledger:1725": {
       "eventsNearEntry": [
@@ -16116,7 +16144,7 @@
           "title": "OpenGPU Rises 3.66% on September 19 Amid Mixed Crypto Market Performance (asknews/stockpulse.ai)"
         }
       ],
-      "judgeReason": "The thesis names a cause (elevated spread making hedging unfavorable) but the trade was a long while the note explicitly says 'reducing here' to cut a short, so the stated reasoning and the executed direction belong to different worlds, failing criterion 1."
+      "judgeReason": "The thesis names an observable cause (elevated spread making hedging unfavorable) but the trade was a long while the note explicitly says 'reducing here' to cut a short, so the stated reasoning and the executed direction belong to different worlds, failing criterion 1."
     }
   },
   "detectorsRun": [
