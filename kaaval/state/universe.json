@@ -2,6 +2,39 @@
   "entries": [
     {
       "rToken": {
+        "symbol": "RSPYUSDT",
+        "category": "SPOT",
+        "baseCoin": "rSPY",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 10,
+        "minOrderQty": 0.0001,
+        "pricePrecision": 2,
+        "quantityPrecision": 4,
+        "makerFeeRate": null,
+        "takerFeeRate": null,
+        "status": "online"
+      },
+      "perp": {
+        "symbol": "SPYUSDT",
+        "category": "USDT-FUTURES",
+        "baseCoin": "SPY",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 5,
+        "minOrderQty": 0.01,
+        "pricePrecision": 2,
+        "quantityPrecision": 2,
+        "makerFeeRate": 0.0002,
+        "takerFeeRate": 0.0006,
+        "status": "online"
+      },
+      "underlying": "SPY",
+      "roundTheClock": true,
+      "volume24hUsdt": 14435034732.8494
+    },
+    {
+      "rToken": {
         "symbol": "RMUUSDT",
         "category": "SPOT",
         "baseCoin": "rMU",
@@ -31,40 +64,7 @@
       },
       "underlying": "MU",
       "roundTheClock": true,
-      "volume24hUsdt": 14551390466.09048
-    },
-    {
-      "rToken": {
-        "symbol": "RMETAUSDT",
-        "category": "SPOT",
-        "baseCoin": "rMETA",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 10,
-        "minOrderQty": 0.0001,
-        "pricePrecision": 2,
-        "quantityPrecision": 4,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "METAUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "META",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.01,
-        "pricePrecision": 2,
-        "quantityPrecision": 2,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "META",
-      "roundTheClock": true,
-      "volume24hUsdt": 13574508726.9804
+      "volume24hUsdt": 14365762364.56269
     },
     {
       "rToken": {
@@ -97,40 +97,7 @@
       },
       "underlying": "QQQ",
       "roundTheClock": true,
-      "volume24hUsdt": 12285367520.7067
-    },
-    {
-      "rToken": {
-        "symbol": "RSPYUSDT",
-        "category": "SPOT",
-        "baseCoin": "rSPY",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 10,
-        "minOrderQty": 0.0001,
-        "pricePrecision": 2,
-        "quantityPrecision": 4,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "SPYUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "SPY",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.01,
-        "pricePrecision": 2,
-        "quantityPrecision": 2,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "SPY",
-      "roundTheClock": true,
-      "volume24hUsdt": 10572020008.9933
+      "volume24hUsdt": 12593811340.8318
     },
     {
       "rToken": {
@@ -163,40 +130,73 @@
       },
       "underlying": "NVDA",
       "roundTheClock": true,
-      "volume24hUsdt": 9013011748.227
+      "volume24hUsdt": 11955837358.1706
     },
     {
       "rToken": {
-        "symbol": "RSNDKUSDT",
+        "symbol": "RMSFTUSDT",
         "category": "SPOT",
-        "baseCoin": "rSNDK",
+        "baseCoin": "rMSFT",
         "quoteCoin": "USDT",
         "isStock": true,
         "minOrderUsdt": 10,
-        "minOrderQty": 0.00001,
+        "minOrderQty": 0.0001,
         "pricePrecision": 2,
-        "quantityPrecision": 5,
+        "quantityPrecision": 4,
         "makerFeeRate": null,
         "takerFeeRate": null,
         "status": "online"
       },
       "perp": {
-        "symbol": "SNDKUSDT",
+        "symbol": "MSFTUSDT",
         "category": "USDT-FUTURES",
-        "baseCoin": "SNDK",
+        "baseCoin": "MSFT",
         "quoteCoin": "USDT",
         "isStock": true,
         "minOrderUsdt": 5,
-        "minOrderQty": 0.001,
+        "minOrderQty": 0.01,
         "pricePrecision": 2,
-        "quantityPrecision": 3,
+        "quantityPrecision": 2,
         "makerFeeRate": 0.0002,
         "takerFeeRate": 0.0006,
         "status": "online"
       },
-      "underlying": "SNDK",
+      "underlying": "MSFT",
       "roundTheClock": true,
-      "volume24hUsdt": 6262676863.63919
+      "volume24hUsdt": 7789608495.3269
+    },
+    {
+      "rToken": {
+        "symbol": "RMETAUSDT",
+        "category": "SPOT",
+        "baseCoin": "rMETA",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 10,
+        "minOrderQty": 0.0001,
+        "pricePrecision": 2,
+        "quantityPrecision": 4,
+        "makerFeeRate": null,
+        "takerFeeRate": null,
+        "status": "online"
+      },
+      "perp": {
+        "symbol": "METAUSDT",
+        "category": "USDT-FUTURES",
+        "baseCoin": "META",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 5,
+        "minOrderQty": 0.01,
+        "pricePrecision": 2,
+        "quantityPrecision": 2,
+        "makerFeeRate": 0.0002,
+        "takerFeeRate": 0.0006,
+        "status": "online"
+      },
+      "underlying": "META",
+      "roundTheClock": true,
+      "volume24hUsdt": 7701039618.2817
     },
     {
       "rToken": {
@@ -229,7 +229,7 @@
       },
       "underlying": "AAPL",
       "roundTheClock": true,
-      "volume24hUsdt": 3748234196.3112
+      "volume24hUsdt": 7506886649.0284
     },
     {
       "rToken": {
@@ -262,7 +262,7 @@
       },
       "underlying": "MARA",
       "roundTheClock": true,
-      "volume24hUsdt": 117851405.6779
+      "volume24hUsdt": 209602585.8407
     }
   ],
   "hedges": [
@@ -309,7 +309,7 @@
       "status": "online"
     }
   ],
-  "builtTs": 1791886164784,
+  "builtTs": 1791973167283,
   "weekendChecked": {
     "start": 1791590400000,
     "end": 1791763200000
