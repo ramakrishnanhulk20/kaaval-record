@@ -36,23 +36,23 @@
       "dayKey": "2026-10-19",
       "peakEquity": 10001.28094782386,
       "halted": true,
-      "lastDecisionTs": 1792419434415,
+      "lastDecisionTs": 1792420354273,
       "lastSummary": "retired by the operator: this brain is no longer asked, and its record stands as it closed",
       "lastMarks": {
-        "SPOT:RSPYUSDT": 768.55,
-        "USDT-FUTURES:SPYUSDT": 769.835,
-        "SPOT:RNVDAUSDT": 217.23000000000002,
-        "USDT-FUTURES:NVDAUSDT": 217.475,
+        "SPOT:RSPYUSDT": 767.555,
+        "USDT-FUTURES:SPYUSDT": 768.765,
+        "SPOT:RNVDAUSDT": 217.45999999999998,
+        "USDT-FUTURES:NVDAUSDT": 217.725,
         "SPOT:RVOOUSDT": 708.275,
         "USDT-FUTURES:VOOUSDT": 709.005,
-        "SPOT:RAAPLUSDT": 345.435,
-        "USDT-FUTURES:AAPLUSDT": 345.71500000000003,
-        "SPOT:RMUUSDT": 914.4549999999999,
-        "USDT-FUTURES:MUUSDT": 916.825,
-        "SPOT:RQQQUSDT": 720.87,
-        "USDT-FUTURES:QQQUSDT": 721.945,
-        "USDT-FUTURES:BTCUSDT": 82063.35,
-        "USDT-FUTURES:ETHUSDT": 2394.115,
+        "SPOT:RAAPLUSDT": 345,
+        "USDT-FUTURES:AAPLUSDT": 345.27,
+        "SPOT:RMUUSDT": 911.95,
+        "USDT-FUTURES:MUUSDT": 914.015,
+        "SPOT:RQQQUSDT": 719.9,
+        "USDT-FUTURES:QQQUSDT": 720.935,
+        "USDT-FUTURES:BTCUSDT": 81900.35,
+        "USDT-FUTURES:ETHUSDT": 2389.115,
         "SPOT:RMETAUSDT": 737.25,
         "USDT-FUTURES:METAUSDT": 738.28,
         "SPOT:RTSLAUSDT": 354.57000000000005,
@@ -93,8 +93,8 @@
         "USDT-FUTURES:SNOWUSDT": 335.51,
         "SPOT:RTEMUSDT": 83.505,
         "USDT-FUTURES:TEMUSDT": 83.53999999999999,
-        "SPOT:RMARAUSDT": 7.645,
-        "USDT-FUTURES:MARAUSDT": 7.6415,
+        "SPOT:RMARAUSDT": 7.575,
+        "USDT-FUTURES:MARAUSDT": 7.594,
         "SPOT:RAPLDUSDT": 25.71,
         "USDT-FUTURES:APLDUSDT": 25.705,
         "SPOT:RFUTUUSDT": 109.355,
@@ -128,7 +128,7 @@
     "rules": {
       "account": {
         "id": "rules",
-        "balanceUsdt": 9805.610662546645,
+        "balanceUsdt": 9304.860873236876,
         "positions": [
           [
             "USDT-FUTURES:MARAUSDT",
@@ -140,10 +140,21 @@
               "avgEntry": 9.70121537242236,
               "openedTs": 1790497333542
             }
+          ],
+          [
+            "SPOT:RMARAUSDT",
+            {
+              "category": "SPOT",
+              "symbol": "RMARAUSDT",
+              "side": "long",
+              "qty": 65.963,
+              "avgEntry": 7.58379,
+              "openedTs": 1792420355592
+            }
           ]
         ],
-        "realisedPnl": -194.3893374533312,
-        "feesPaid": 82.46075792964447
+        "realisedPnl": -194.8895869931012,
+        "feesPaid": 82.96100746941447
       },
       "stops": [
         {
@@ -154,29 +165,38 @@
           "qty": 0.0799999999999983,
           "positionSide": "short",
           "createdTs": 1791663726459
+        },
+        {
+          "category": "SPOT",
+          "symbol": "RMARAUSDT",
+          "side": "sell",
+          "triggerPrice": 7.356276299999999,
+          "qty": 65.963,
+          "positionSide": "long",
+          "createdTs": 1792420354273
         }
       ],
       "startOfDayEquity": 9800.33468515168,
       "dayKey": "2026-10-19",
       "peakEquity": 10000,
       "halted": false,
-      "lastDecisionTs": 1792419434415,
-      "lastSummary": "0 rTokens under their perpetual by more than 40 basis points, 0 hedges, 2 closes. The NYSE is open.",
+      "lastDecisionTs": 1792420354273,
+      "lastSummary": "1 rTokens under their perpetual by more than 40 basis points, 0 hedges, 1 closes. The NYSE is open.",
       "lastMarks": {
-        "SPOT:RSPYUSDT": 768.55,
-        "USDT-FUTURES:SPYUSDT": 769.835,
-        "SPOT:RNVDAUSDT": 217.23000000000002,
-        "USDT-FUTURES:NVDAUSDT": 217.475,
+        "SPOT:RSPYUSDT": 767.555,
+        "USDT-FUTURES:SPYUSDT": 768.765,
+        "SPOT:RNVDAUSDT": 217.45999999999998,
+        "USDT-FUTURES:NVDAUSDT": 217.725,
         "SPOT:RVOOUSDT": 708.275,
         "USDT-FUTURES:VOOUSDT": 709.005,
-        "SPOT:RAAPLUSDT": 345.435,
-        "USDT-FUTURES:AAPLUSDT": 345.71500000000003,
-        "SPOT:RMUUSDT": 914.4549999999999,
-        "USDT-FUTURES:MUUSDT": 916.825,
-        "SPOT:RQQQUSDT": 720.87,
-        "USDT-FUTURES:QQQUSDT": 721.945,
-        "USDT-FUTURES:BTCUSDT": 82063.35,
-        "USDT-FUTURES:ETHUSDT": 2394.115,
+        "SPOT:RAAPLUSDT": 345,
+        "USDT-FUTURES:AAPLUSDT": 345.27,
+        "SPOT:RMUUSDT": 911.95,
+        "USDT-FUTURES:MUUSDT": 914.015,
+        "SPOT:RQQQUSDT": 719.9,
+        "USDT-FUTURES:QQQUSDT": 720.935,
+        "USDT-FUTURES:BTCUSDT": 81900.35,
+        "USDT-FUTURES:ETHUSDT": 2389.115,
         "SPOT:RMETAUSDT": 737.25,
         "USDT-FUTURES:METAUSDT": 738.28,
         "SPOT:RTSLAUSDT": 354.57000000000005,
@@ -217,8 +237,8 @@
         "USDT-FUTURES:SNOWUSDT": 335.51,
         "SPOT:RTEMUSDT": 83.505,
         "USDT-FUTURES:TEMUSDT": 83.53999999999999,
-        "SPOT:RMARAUSDT": 7.645,
-        "USDT-FUTURES:MARAUSDT": 7.6415,
+        "SPOT:RMARAUSDT": 7.575,
+        "USDT-FUTURES:MARAUSDT": 7.594,
         "SPOT:RAPLDUSDT": 25.71,
         "USDT-FUTURES:APLDUSDT": 25.705,
         "SPOT:RFUTUUSDT": 109.355,
@@ -252,7 +272,7 @@
     "qwen": {
       "account": {
         "id": "qwen",
-        "balanceUsdt": 9331.868989658225,
+        "balanceUsdt": 9331.750173975786,
         "positions": [
           [
             "SPOT:RAAPLUSDT",
@@ -330,10 +350,21 @@
               "avgEntry": 215.34762,
               "openedTs": 1792418102975
             }
+          ],
+          [
+            "USDT-FUTURES:NVDAUSDT",
+            {
+              "category": "USDT-FUTURES",
+              "symbol": "NVDAUSDT",
+              "side": "short",
+              "qty": 0.91,
+              "avgEntry": 217.61114,
+              "openedTs": 1792420354774
+            }
           ]
         ],
-        "realisedPnl": -268.1627104603401,
-        "feesPaid": 77.36207572141927
+        "realisedPnl": -268.28152614278014,
+        "feesPaid": 77.48089140385927
       },
       "stops": [
         {
@@ -398,37 +429,46 @@
           "qty": 0.9291,
           "positionSide": "long",
           "createdTs": 1792418102795
+        },
+        {
+          "category": "USDT-FUTURES",
+          "symbol": "NVDAUSDT",
+          "side": "buy",
+          "triggerPrice": 221.9633628,
+          "qty": 0.91,
+          "positionSide": "short",
+          "createdTs": 1792420354273
         }
       ],
       "startOfDayEquity": 9747.741497276493,
       "dayKey": "2026-10-19",
       "peakEquity": 10020.167628204545,
       "halted": false,
-      "lastDecisionTs": 1792419434415,
-      "lastSummary": "Adding a small long RMUUSDT to capture the reported Nasdaq tech rebound, hedged with existing QQQUSDT short.",
+      "lastDecisionTs": 1792420354273,
+      "lastSummary": "Adding a small NVDA perpetual short to hedge the existing RNVDAUSDT long, as news highlights crowded tech positioning and Nasdaq correction risk while we hold unhedged rToken exposure.",
       "lastMarks": {
-        "SPOT:RSPYUSDT": 768.55,
-        "USDT-FUTURES:SPYUSDT": 769.835,
-        "SPOT:RNVDAUSDT": 217.23000000000002,
-        "USDT-FUTURES:NVDAUSDT": 217.475,
-        "SPOT:RQQQUSDT": 720.87,
-        "USDT-FUTURES:QQQUSDT": 721.945,
-        "SPOT:RMUUSDT": 914.4549999999999,
-        "USDT-FUTURES:MUUSDT": 916.825,
+        "SPOT:RSPYUSDT": 767.555,
+        "USDT-FUTURES:SPYUSDT": 768.765,
+        "SPOT:RNVDAUSDT": 217.45999999999998,
+        "USDT-FUTURES:NVDAUSDT": 217.725,
+        "SPOT:RQQQUSDT": 719.9,
+        "USDT-FUTURES:QQQUSDT": 720.935,
+        "SPOT:RMUUSDT": 911.95,
+        "USDT-FUTURES:MUUSDT": 914.015,
         "SPOT:RAVGOUSDT": 339.52,
         "USDT-FUTURES:AVGOUSDT": 340.015,
         "SPOT:RGOOGLUSDT": 345.22,
         "USDT-FUTURES:GOOGLUSDT": 345.4,
-        "USDT-FUTURES:BTCUSDT": 82063.35,
-        "USDT-FUTURES:ETHUSDT": 2394.115,
+        "USDT-FUTURES:BTCUSDT": 81900.35,
+        "USDT-FUTURES:ETHUSDT": 2389.115,
         "SPOT:RAMDUSDT": 609.22,
         "USDT-FUTURES:AMDUSDT": 609.345,
         "SPOT:RTSLAUSDT": 354.57000000000005,
         "USDT-FUTURES:TSLAUSDT": 354.90999999999997,
         "SPOT:RSPCXUSDT": 163.47,
         "USDT-FUTURES:SPCXUSDT": 163.59,
-        "SPOT:RAAPLUSDT": 345.435,
-        "USDT-FUTURES:AAPLUSDT": 345.71500000000003,
+        "SPOT:RAAPLUSDT": 345,
+        "USDT-FUTURES:AAPLUSDT": 345.27,
         "SPOT:RBEUSDT": 267.9,
         "USDT-FUTURES:BEUSDT": 267.8,
         "SPOT:RVOOUSDT": 708.275,
@@ -459,8 +499,8 @@
         "USDT-FUTURES:SNOWUSDT": 335.51,
         "SPOT:RTEMUSDT": 83.505,
         "USDT-FUTURES:TEMUSDT": 83.53999999999999,
-        "SPOT:RMARAUSDT": 7.645,
-        "USDT-FUTURES:MARAUSDT": 7.6415,
+        "SPOT:RMARAUSDT": 7.575,
+        "USDT-FUTURES:MARAUSDT": 7.594,
         "SPOT:RAPLDUSDT": 25.71,
         "USDT-FUTURES:APLDUSDT": 25.705,
         "SPOT:RFUTUUSDT": 109.355,
@@ -492,7 +532,7 @@
       }
     }
   },
-  "lastTickTs": 1792419434415,
-  "lastNewsTs": 1792419434415,
+  "lastTickTs": 1792420354273,
+  "lastNewsTs": 1792420354273,
   "startedTs": 1789114888225
 }
