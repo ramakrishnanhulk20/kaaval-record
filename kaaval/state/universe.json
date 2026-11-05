@@ -2,39 +2,6 @@
   "entries": [
     {
       "rToken": {
-        "symbol": "RQQQUSDT",
-        "category": "SPOT",
-        "baseCoin": "rQQQ",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 10,
-        "minOrderQty": 0,
-        "pricePrecision": 2,
-        "quantityPrecision": 4,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "QQQUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "QQQ",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.01,
-        "pricePrecision": 2,
-        "quantityPrecision": 2,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "QQQ",
-      "roundTheClock": true,
-      "volume24hUsdt": 21896224253.1018
-    },
-    {
-      "rToken": {
         "symbol": "RSPYUSDT",
         "category": "SPOT",
         "baseCoin": "rSPY",
@@ -64,13 +31,13 @@
       },
       "underlying": "SPY",
       "roundTheClock": true,
-      "volume24hUsdt": 20974844542.5733
+      "volume24hUsdt": 34533767866.2382
     },
     {
       "rToken": {
-        "symbol": "RAMDUSDT",
+        "symbol": "RQQQUSDT",
         "category": "SPOT",
-        "baseCoin": "rAMD",
+        "baseCoin": "rQQQ",
         "quoteCoin": "USDT",
         "isStock": true,
         "minOrderUsdt": 10,
@@ -82,9 +49,9 @@
         "status": "online"
       },
       "perp": {
-        "symbol": "AMDUSDT",
+        "symbol": "QQQUSDT",
         "category": "USDT-FUTURES",
-        "baseCoin": "AMD",
+        "baseCoin": "QQQ",
         "quoteCoin": "USDT",
         "isStock": true,
         "minOrderUsdt": 5,
@@ -95,42 +62,9 @@
         "takerFeeRate": 0.0006,
         "status": "online"
       },
-      "underlying": "AMD",
+      "underlying": "QQQ",
       "roundTheClock": true,
-      "volume24hUsdt": 16877382339.2728
-    },
-    {
-      "rToken": {
-        "symbol": "RMUUSDT",
-        "category": "SPOT",
-        "baseCoin": "rMU",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 10,
-        "minOrderQty": 0,
-        "pricePrecision": 2,
-        "quantityPrecision": 5,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "MUUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "MU",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.01,
-        "pricePrecision": 2,
-        "quantityPrecision": 2,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "MU",
-      "roundTheClock": true,
-      "volume24hUsdt": 15174844642.20692
+      "volume24hUsdt": 29369865355.505
     },
     {
       "rToken": {
@@ -163,40 +97,7 @@
       },
       "underlying": "NVDA",
       "roundTheClock": true,
-      "volume24hUsdt": 14986680040.233
-    },
-    {
-      "rToken": {
-        "symbol": "RMSFTUSDT",
-        "category": "SPOT",
-        "baseCoin": "rMSFT",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 10,
-        "minOrderQty": 0,
-        "pricePrecision": 2,
-        "quantityPrecision": 4,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "MSFTUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "MSFT",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.01,
-        "pricePrecision": 2,
-        "quantityPrecision": 2,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "MSFT",
-      "roundTheClock": true,
-      "volume24hUsdt": 11309094495.9782
+      "volume24hUsdt": 21282764860.101
     },
     {
       "rToken": {
@@ -229,7 +130,73 @@
       },
       "underlying": "AAPL",
       "roundTheClock": true,
-      "volume24hUsdt": 10218283810.5764
+      "volume24hUsdt": 21274782092.8492
+    },
+    {
+      "rToken": {
+        "symbol": "RMUUSDT",
+        "category": "SPOT",
+        "baseCoin": "rMU",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 10,
+        "minOrderQty": 0,
+        "pricePrecision": 2,
+        "quantityPrecision": 5,
+        "makerFeeRate": null,
+        "takerFeeRate": null,
+        "status": "online"
+      },
+      "perp": {
+        "symbol": "MUUSDT",
+        "category": "USDT-FUTURES",
+        "baseCoin": "MU",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 5,
+        "minOrderQty": 0.01,
+        "pricePrecision": 2,
+        "quantityPrecision": 2,
+        "makerFeeRate": 0.0002,
+        "takerFeeRate": 0.0006,
+        "status": "online"
+      },
+      "underlying": "MU",
+      "roundTheClock": true,
+      "volume24hUsdt": 19564151647.33408
+    },
+    {
+      "rToken": {
+        "symbol": "RMSFTUSDT",
+        "category": "SPOT",
+        "baseCoin": "rMSFT",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 10,
+        "minOrderQty": 0,
+        "pricePrecision": 2,
+        "quantityPrecision": 4,
+        "makerFeeRate": null,
+        "takerFeeRate": null,
+        "status": "online"
+      },
+      "perp": {
+        "symbol": "MSFTUSDT",
+        "category": "USDT-FUTURES",
+        "baseCoin": "MSFT",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 5,
+        "minOrderQty": 0.01,
+        "pricePrecision": 2,
+        "quantityPrecision": 2,
+        "makerFeeRate": 0.0002,
+        "takerFeeRate": 0.0006,
+        "status": "online"
+      },
+      "underlying": "MSFT",
+      "roundTheClock": true,
+      "volume24hUsdt": 18832878210.3922
     },
     {
       "rToken": {
@@ -262,7 +229,7 @@
       },
       "underlying": "GOOGL",
       "roundTheClock": true,
-      "volume24hUsdt": 6059379882.5278
+      "volume24hUsdt": 9068075077.7818
     },
     {
       "rToken": {
@@ -295,7 +262,7 @@
       },
       "underlying": "META",
       "roundTheClock": true,
-      "volume24hUsdt": 7931677211.4217
+      "volume24hUsdt": 11845856460.8399
     },
     {
       "rToken": {
@@ -328,7 +295,7 @@
       },
       "underlying": "MARA",
       "roundTheClock": true,
-      "volume24hUsdt": 224051296.9793
+      "volume24hUsdt": 194621774.3613
     }
   ],
   "hedges": [
@@ -375,7 +342,7 @@
       "status": "online"
     }
   ],
-  "builtTs": 1793796783545,
+  "builtTs": 1793883401843,
   "weekendChecked": {
     "start": 1793404800000,
     "end": 1793577600000
