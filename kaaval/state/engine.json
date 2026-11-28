@@ -36,23 +36,23 @@
       "dayKey": "2026-11-28",
       "peakEquity": 10001.28094782386,
       "halted": true,
-      "lastDecisionTs": 1795850791830,
+      "lastDecisionTs": 1795851766427,
       "lastSummary": "retired by the operator: this brain is no longer asked, and its record stands as it closed",
       "lastMarks": {
         "SPOT:RSPYUSDT": 729.29,
         "USDT-FUTURES:SPYUSDT": 730.315,
-        "SPOT:RNVDAUSDT": 148.45499999999998,
-        "USDT-FUTURES:NVDAUSDT": 148.725,
+        "SPOT:RNVDAUSDT": 148.46499999999997,
+        "USDT-FUTURES:NVDAUSDT": 148.745,
         "SPOT:RVOOUSDT": 708.275,
         "USDT-FUTURES:VOOUSDT": 709.005,
-        "SPOT:RAAPLUSDT": 358.745,
-        "USDT-FUTURES:AAPLUSDT": 358.945,
-        "SPOT:RMUUSDT": 644.385,
-        "USDT-FUTURES:MUUSDT": 645.875,
-        "SPOT:RQQQUSDT": 648.35,
-        "USDT-FUTURES:QQQUSDT": 649.575,
-        "USDT-FUTURES:BTCUSDT": 59665.05,
-        "USDT-FUTURES:ETHUSDT": 1653.315,
+        "SPOT:RAAPLUSDT": 358.59,
+        "USDT-FUTURES:AAPLUSDT": 359.03,
+        "SPOT:RMUUSDT": 644.895,
+        "USDT-FUTURES:MUUSDT": 646.415,
+        "SPOT:RQQQUSDT": 648.6700000000001,
+        "USDT-FUTURES:QQQUSDT": 650.105,
+        "USDT-FUTURES:BTCUSDT": 59738.850000000006,
+        "USDT-FUTURES:ETHUSDT": 1656.205,
         "SPOT:RMETAUSDT": 645,
         "USDT-FUTURES:METAUSDT": 646.3050000000001,
         "SPOT:RTSLAUSDT": 395.71500000000003,
@@ -94,7 +94,7 @@
         "SPOT:RTEMUSDT": 83.505,
         "USDT-FUTURES:TEMUSDT": 83.53999999999999,
         "SPOT:RMARAUSDT": 5.59,
-        "USDT-FUTURES:MARAUSDT": 5.588,
+        "USDT-FUTURES:MARAUSDT": 5.593999999999999,
         "SPOT:RAPLDUSDT": 25.71,
         "USDT-FUTURES:APLDUSDT": 25.705,
         "SPOT:RFUTUUSDT": 109.355,
@@ -124,7 +124,7 @@
         "SPOT:RTQQQUSDT": 78.53,
         "USDT-FUTURES:TQQQUSDT": 78.58500000000001,
         "SPOT:RSOXLUSDT": 35.82,
-        "USDT-FUTURES:SOXLUSDT": 36.195,
+        "USDT-FUTURES:SOXLUSDT": 36.285,
         "SPOT:RAMATUSDT": 387.155,
         "USDT-FUTURES:AMATUSDT": 388.375,
         "SPOT:RIBMUSDT": 257.615,
@@ -153,14 +153,14 @@
         "SPOT:RWMTUSDT": 127.53999999999999,
         "SPOT:RTXNUSDT": 294.71000000000004,
         "SPOT:RCOSTUSDT": 1094.135,
-        "SPOT:RANTUSDT": 91.41499999999999,
-        "USDT-FUTURES:ANTUSDT": 91.555
+        "SPOT:RANTUSDT": 91.5,
+        "USDT-FUTURES:ANTUSDT": 91.66
       }
     },
     "rules": {
       "account": {
         "id": "rules",
-        "balanceUsdt": 8723.930306110413,
+        "balanceUsdt": 9070.638426072903,
         "positions": [
           [
             "USDT-FUTURES:MARAUSDT",
@@ -172,32 +172,10 @@
               "avgEntry": 5.587890987376141,
               "openedTs": 1793772272469
             }
-          ],
-          [
-            "SPOT:RANTUSDT",
-            {
-              "category": "SPOT",
-              "symbol": "RANTUSDT",
-              "side": "long",
-              "qty": 3.802,
-              "avgEntry": 91.53574499999999,
-              "openedTs": 1795850793114
-            }
-          ],
-          [
-            "USDT-FUTURES:ANTUSDT",
-            {
-              "category": "USDT-FUTURES",
-              "symbol": "ANTUSDT",
-              "side": "short",
-              "qty": 1.98,
-              "avgEntry": 91.49847030303033,
-              "openedTs": 1795850793223
-            }
           ]
         ],
-        "realisedPnl": -928.0507913995706,
-        "feesPaid": 389.327550995252
+        "realisedPnl": -929.3615739270805,
+        "feesPaid": 389.784104462762
       },
       "stops": [
         {
@@ -208,47 +186,29 @@
           "qty": 0.019999999999988916,
           "positionSide": "short",
           "createdTs": 1795843206615
-        },
-        {
-          "category": "SPOT",
-          "symbol": "RANTUSDT",
-          "side": "sell",
-          "triggerPrice": 88.78967264999999,
-          "qty": 3.802,
-          "positionSide": "long",
-          "createdTs": 1795850791830
-        },
-        {
-          "category": "USDT-FUTURES",
-          "symbol": "ANTUSDT",
-          "side": "buy",
-          "triggerPrice": 93.32843970909094,
-          "qty": 1.98,
-          "positionSide": "short",
-          "createdTs": 1795850791830
         }
       ],
       "startOfDayEquity": 9073.032030665421,
       "dayKey": "2026-11-28",
       "peakEquity": 10000,
       "halted": false,
-      "lastDecisionTs": 1795850791830,
-      "lastSummary": "1 rTokens under their perpetual by more than 40 basis points, 1 hedges, 1 closes. The NYSE is shut for another 55.06 hours.",
+      "lastDecisionTs": 1795851766427,
+      "lastSummary": "0 rTokens under their perpetual by more than 40 basis points, 0 hedges, 3 closes. The NYSE is shut for another 54.79 hours.",
       "lastMarks": {
         "SPOT:RSPYUSDT": 729.29,
         "USDT-FUTURES:SPYUSDT": 730.315,
-        "SPOT:RNVDAUSDT": 148.45499999999998,
-        "USDT-FUTURES:NVDAUSDT": 148.725,
+        "SPOT:RNVDAUSDT": 148.46499999999997,
+        "USDT-FUTURES:NVDAUSDT": 148.745,
         "SPOT:RVOOUSDT": 708.275,
         "USDT-FUTURES:VOOUSDT": 709.005,
-        "SPOT:RAAPLUSDT": 358.745,
-        "USDT-FUTURES:AAPLUSDT": 358.945,
-        "SPOT:RMUUSDT": 644.385,
-        "USDT-FUTURES:MUUSDT": 645.875,
-        "SPOT:RQQQUSDT": 648.35,
-        "USDT-FUTURES:QQQUSDT": 649.575,
-        "USDT-FUTURES:BTCUSDT": 59665.05,
-        "USDT-FUTURES:ETHUSDT": 1653.315,
+        "SPOT:RAAPLUSDT": 358.59,
+        "USDT-FUTURES:AAPLUSDT": 359.03,
+        "SPOT:RMUUSDT": 644.895,
+        "USDT-FUTURES:MUUSDT": 646.415,
+        "SPOT:RQQQUSDT": 648.6700000000001,
+        "USDT-FUTURES:QQQUSDT": 650.105,
+        "USDT-FUTURES:BTCUSDT": 59738.850000000006,
+        "USDT-FUTURES:ETHUSDT": 1656.205,
         "SPOT:RMETAUSDT": 645,
         "USDT-FUTURES:METAUSDT": 646.3050000000001,
         "SPOT:RTSLAUSDT": 395.71500000000003,
@@ -290,7 +250,7 @@
         "SPOT:RTEMUSDT": 83.505,
         "USDT-FUTURES:TEMUSDT": 83.53999999999999,
         "SPOT:RMARAUSDT": 5.59,
-        "USDT-FUTURES:MARAUSDT": 5.588,
+        "USDT-FUTURES:MARAUSDT": 5.593999999999999,
         "SPOT:RAPLDUSDT": 25.71,
         "USDT-FUTURES:APLDUSDT": 25.705,
         "SPOT:RFUTUUSDT": 109.355,
@@ -320,7 +280,7 @@
         "SPOT:RTQQQUSDT": 78.53,
         "USDT-FUTURES:TQQQUSDT": 78.58500000000001,
         "SPOT:RSOXLUSDT": 35.82,
-        "USDT-FUTURES:SOXLUSDT": 36.195,
+        "USDT-FUTURES:SOXLUSDT": 36.285,
         "SPOT:RAMATUSDT": 387.155,
         "USDT-FUTURES:AMATUSDT": 388.375,
         "SPOT:RIBMUSDT": 257.615,
@@ -349,8 +309,8 @@
         "SPOT:RWMTUSDT": 127.53999999999999,
         "SPOT:RTXNUSDT": 294.71000000000004,
         "SPOT:RCOSTUSDT": 1094.135,
-        "SPOT:RANTUSDT": 91.41499999999999,
-        "USDT-FUTURES:ANTUSDT": 91.555
+        "SPOT:RANTUSDT": 91.5,
+        "USDT-FUTURES:ANTUSDT": 91.66
       }
     },
     "qwen": {
@@ -528,31 +488,31 @@
       "dayKey": "2026-11-28",
       "peakEquity": 10020.167628204545,
       "halted": false,
-      "lastDecisionTs": 1795850791830,
-      "lastSummary": "Holding all existing positions through the weekend; spreads on most rTokens are wide and divergence is outside the 1 percent entry gate, so no new trades.",
+      "lastDecisionTs": 1795851766427,
+      "lastSummary": "Adding a small RNVDAUSDT long to lean into analyst bottom call ahead of congressional testimony, hedged with NVDAUSDT perp since NYSE is closed all weekend and divergence exceeds 0.5%.",
       "lastMarks": {
         "SPOT:RSPYUSDT": 729.29,
         "USDT-FUTURES:SPYUSDT": 730.315,
-        "SPOT:RNVDAUSDT": 148.45499999999998,
-        "USDT-FUTURES:NVDAUSDT": 148.725,
-        "SPOT:RQQQUSDT": 648.35,
-        "USDT-FUTURES:QQQUSDT": 649.575,
-        "SPOT:RMUUSDT": 644.385,
-        "USDT-FUTURES:MUUSDT": 645.875,
+        "SPOT:RNVDAUSDT": 148.46499999999997,
+        "USDT-FUTURES:NVDAUSDT": 148.745,
+        "SPOT:RQQQUSDT": 648.6700000000001,
+        "USDT-FUTURES:QQQUSDT": 650.105,
+        "SPOT:RMUUSDT": 644.895,
+        "USDT-FUTURES:MUUSDT": 646.415,
         "SPOT:RAVGOUSDT": 338.365,
         "USDT-FUTURES:AVGOUSDT": 338.41,
         "SPOT:RGOOGLUSDT": 283.515,
         "USDT-FUTURES:GOOGLUSDT": 283.935,
-        "USDT-FUTURES:BTCUSDT": 59665.05,
-        "USDT-FUTURES:ETHUSDT": 1653.315,
+        "USDT-FUTURES:BTCUSDT": 59738.850000000006,
+        "USDT-FUTURES:ETHUSDT": 1656.205,
         "SPOT:RAMDUSDT": 407.475,
         "USDT-FUTURES:AMDUSDT": 407.80499999999995,
         "SPOT:RTSLAUSDT": 395.71500000000003,
         "USDT-FUTURES:TSLAUSDT": 396.55,
         "SPOT:RSPCXUSDT": 130.81,
         "USDT-FUTURES:SPCXUSDT": 130.91,
-        "SPOT:RAAPLUSDT": 358.745,
-        "USDT-FUTURES:AAPLUSDT": 358.945,
+        "SPOT:RAAPLUSDT": 358.59,
+        "USDT-FUTURES:AAPLUSDT": 359.03,
         "SPOT:RBEUSDT": 267.9,
         "USDT-FUTURES:BEUSDT": 267.8,
         "SPOT:RVOOUSDT": 708.275,
@@ -584,7 +544,7 @@
         "SPOT:RTEMUSDT": 83.505,
         "USDT-FUTURES:TEMUSDT": 83.53999999999999,
         "SPOT:RMARAUSDT": 5.59,
-        "USDT-FUTURES:MARAUSDT": 5.588,
+        "USDT-FUTURES:MARAUSDT": 5.593999999999999,
         "SPOT:RAPLDUSDT": 25.71,
         "USDT-FUTURES:APLDUSDT": 25.705,
         "SPOT:RFUTUUSDT": 109.355,
@@ -614,7 +574,7 @@
         "SPOT:RTQQQUSDT": 78.53,
         "USDT-FUTURES:TQQQUSDT": 78.58500000000001,
         "SPOT:RSOXLUSDT": 35.82,
-        "USDT-FUTURES:SOXLUSDT": 36.195,
+        "USDT-FUTURES:SOXLUSDT": 36.285,
         "SPOT:RAMATUSDT": 387.155,
         "USDT-FUTURES:AMATUSDT": 388.375,
         "SPOT:RIBMUSDT": 257.615,
@@ -643,12 +603,12 @@
         "SPOT:RWMTUSDT": 127.53999999999999,
         "SPOT:RTXNUSDT": 294.71000000000004,
         "SPOT:RCOSTUSDT": 1094.135,
-        "SPOT:RANTUSDT": 91.41499999999999,
-        "USDT-FUTURES:ANTUSDT": 91.555
+        "SPOT:RANTUSDT": 91.5,
+        "USDT-FUTURES:ANTUSDT": 91.66
       }
     }
   },
-  "lastTickTs": 1795850791830,
-  "lastNewsTs": 1795850791830,
+  "lastTickTs": 1795851766427,
+  "lastNewsTs": 1795851766427,
   "startedTs": 1789114888225
 }
