@@ -2,6 +2,39 @@
   "entries": [
     {
       "rToken": {
+        "symbol": "RSPYUSDT",
+        "category": "SPOT",
+        "baseCoin": "rSPY",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 10,
+        "minOrderQty": 0,
+        "pricePrecision": 2,
+        "quantityPrecision": 4,
+        "makerFeeRate": null,
+        "takerFeeRate": null,
+        "status": "online"
+      },
+      "perp": {
+        "symbol": "SPYUSDT",
+        "category": "USDT-FUTURES",
+        "baseCoin": "SPY",
+        "quoteCoin": "USDT",
+        "isStock": true,
+        "minOrderUsdt": 5,
+        "minOrderQty": 0.01,
+        "pricePrecision": 2,
+        "quantityPrecision": 2,
+        "makerFeeRate": 0.0002,
+        "takerFeeRate": 0.0006,
+        "status": "online"
+      },
+      "underlying": "SPY",
+      "roundTheClock": true,
+      "volume24hUsdt": 19969716406.6377
+    },
+    {
+      "rToken": {
         "symbol": "RNVDAUSDT",
         "category": "SPOT",
         "baseCoin": "rNVDA",
@@ -31,7 +64,7 @@
       },
       "underlying": "NVDA",
       "roundTheClock": true,
-      "volume24hUsdt": 7871244191.217
+      "volume24hUsdt": 13407601882.4969
     },
     {
       "rToken": {
@@ -64,73 +97,7 @@
       },
       "underlying": "QQQ",
       "roundTheClock": true,
-      "volume24hUsdt": 5639223443.6814
-    },
-    {
-      "rToken": {
-        "symbol": "RSOXLUSDT",
-        "category": "SPOT",
-        "baseCoin": "rSOXL",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 10,
-        "minOrderQty": 0,
-        "pricePrecision": 2,
-        "quantityPrecision": 4,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "SOXLUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "SOXL",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.01,
-        "pricePrecision": 2,
-        "quantityPrecision": 2,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "SOXL",
-      "roundTheClock": true,
-      "volume24hUsdt": 5274039600.7729
-    },
-    {
-      "rToken": {
-        "symbol": "RSPYUSDT",
-        "category": "SPOT",
-        "baseCoin": "rSPY",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 10,
-        "minOrderQty": 0,
-        "pricePrecision": 2,
-        "quantityPrecision": 4,
-        "makerFeeRate": null,
-        "takerFeeRate": null,
-        "status": "online"
-      },
-      "perp": {
-        "symbol": "SPYUSDT",
-        "category": "USDT-FUTURES",
-        "baseCoin": "SPY",
-        "quoteCoin": "USDT",
-        "isStock": true,
-        "minOrderUsdt": 5,
-        "minOrderQty": 0.01,
-        "pricePrecision": 2,
-        "quantityPrecision": 2,
-        "makerFeeRate": 0.0002,
-        "takerFeeRate": 0.0006,
-        "status": "online"
-      },
-      "underlying": "SPY",
-      "roundTheClock": true,
-      "volume24hUsdt": 4678872288.4885
+      "volume24hUsdt": 11917349430.2724
     },
     {
       "rToken": {
@@ -163,7 +130,7 @@
       },
       "underlying": "MU",
       "roundTheClock": true,
-      "volume24hUsdt": 4647719882.75222
+      "volume24hUsdt": 8112005460.27766
     },
     {
       "rToken": {
@@ -196,7 +163,7 @@
       },
       "underlying": "ANT",
       "roundTheClock": true,
-      "volume24hUsdt": 3036181402.5592
+      "volume24hUsdt": 6117569594.3852
     },
     {
       "rToken": {
@@ -229,7 +196,7 @@
       },
       "underlying": "AAPL",
       "roundTheClock": true,
-      "volume24hUsdt": 1282927806.7915
+      "volume24hUsdt": 5585151035.7255
     },
     {
       "rToken": {
@@ -262,7 +229,7 @@
       },
       "underlying": "MARA",
       "roundTheClock": true,
-      "volume24hUsdt": 22442175.7291
+      "volume24hUsdt": 72158456.3345
     }
   ],
   "hedges": [
@@ -309,7 +276,7 @@
       "status": "online"
     }
   ],
-  "builtTs": 1795791202157,
+  "builtTs": 1795878484178,
   "weekendChecked": {
     "start": 1795219200000,
     "end": 1795392000000
